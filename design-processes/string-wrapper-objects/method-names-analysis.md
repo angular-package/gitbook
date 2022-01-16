@@ -572,6 +572,6 @@ new Wrapper('<', '>', 'span').toArray(); // Returns Wrap {'<span>'}
 
 ## Conclusion
 
-Analysis of possible structures above gives answers that can help prepare some method names useful in the Wrap and Wrapper objects.
+Analysis of possible structures above gives answers that can help prepare some method names useful in the `Wrap` and `Wrapper` objects.
 
 I see it also as a material for creating general principles of designing primitive wrapper objects for angular-package.
