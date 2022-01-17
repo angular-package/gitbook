@@ -68,3 +68,7 @@
 
 * [@ Contact](other/contact.md)
 * [฿ Donate](other/thb-donate.md)
+
+***
+
+* [More versions](https://designing.angular-package.dev)
