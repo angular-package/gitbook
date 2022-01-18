@@ -1,6 +1,6 @@
 # Static methods
 
-| Wrapper.                              | Description                                                                                                                                          |
+|                                       |                                                                                                                                                      |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [define()](define.md)                 | Defines a new [`Wrapper`](../wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.                                 |
 | [isWrapper()](iswrapper.md)           | The method checks if the value of any type is an instance of the [`Wrapper`](../wrapper.md) of any, or given `opening`, `closing` chars, and `text`. |
