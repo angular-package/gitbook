@@ -4,13 +4,13 @@ The [`Wrapper`](https://github.com/angular-package/wrapper/blob/main/src/lib/wra
 
 ### Instance accessors
 
-| Name                                                               | Description                                                                                                                                                                                                                  |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [\[Symbol.toStringTag\]](instance-accessors.md#symbol.tostringtag) | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of `toStringTag`, changes the default tag to `'wrapper'` in the [`Wrapper`](broken-reference) instance. |
+|                                                                                                                                                |                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ​[\[Symbol.toStringTag\]](https://app.gitbook.com/s/fKPxHpkGbNljEvVlRVgz/c/JULYvW5NSbPwI2RD5MLX/wrapper/instance-accessors#symbol.tostringtag) | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of `toStringTag`, changes the default tag to `'wrapper'` in the [`Wrapper`](broken-reference) instance. |
 
 ### Static methods
 
-| Wrapper.                                             | Description                                                                                                                                       |
+|                                                      |                                                                                                                                                   |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [define()](static-methods/define.md)                 | Defines a new [`Wrapper`](wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.                                 |
 | [isWrapper()](static-methods/iswrapper.md)           | The method checks if the value of any type is an instance of the [`Wrapper`](wrapper.md) of any, or given `opening`, `closing` chars, and `text`. |
@@ -20,7 +20,7 @@ The [`Wrapper`](https://github.com/angular-package/wrapper/blob/main/src/lib/wra
 
 ### Instance methods
 
-| Wrapper.prototype.                                             | Description                                                                                                                                                                                                                                                                                                              |
+|                                                                |                                                                                                                                                                                                                                                                                                                          |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [isClosingIn()](instance-methods/isclosingin.md)               | Determines whether the provided `text` has the [`closing`](../wrap/instance-accessors/#wrap.prototype.closing) chars of the specified [`Wrapper`](wrapper.md) object at the **end**.                                                                                                                                     |
 | [isOpeningIn()](instance-methods/isopeningin.md)               | Checks whether the provided `text` has the [`opening`](../wrap/instance-accessors/#wrap.prototype.opening) chars of a specified [`Wrapper`](wrapper.md) object at the **beginning**.                                                                                                                                     |
