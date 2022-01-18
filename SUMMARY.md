@@ -5,6 +5,7 @@
   * [Explanation](benefits/explanation.md)
   * [Designing](https://docs.angular-package.dev/v/designing/)
 * [General concepts](general-concepts.md)
+* [npm](https://www.npmjs.com/package/@angular-package/wrapper)
 
 ## Getting started
 
