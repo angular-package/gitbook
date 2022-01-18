@@ -9,5 +9,5 @@ import {
     Wrapper,
     // Type.
     Wrapped
-} from '@angular-package/text';
+} from '@angular-package/wrapper';
 ```

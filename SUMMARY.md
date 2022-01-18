@@ -85,6 +85,10 @@
 
 * [Wrapped](types/wrapped.md)
 
+## License
+
+* [MIT](https://github.com/angular-package/wrapper/blob/master/LICENSE)
+
 ## Contact
 
 * [⋯ Chat](contact/chat.md)
