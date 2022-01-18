@@ -5,12 +5,12 @@
   * [Explanation](benefits/explanation.md)
   * [Designing](https://docs.angular-package.dev/v/designing/)
 * [General concepts](general-concepts.md)
-* [npm](https://www.npmjs.com/package/@angular-package/wrapper)
 
 ## Getting started
 
 * [Skeleton](getting-started/skeleton.md)
-* [Installation](getting-started/installation.md)
+* [Installation](getting-started/installation/README.md)
+  * [npm](https://www.npmjs.com/package/@angular-package/wrapper)
 * [Public API](getting-started/public-api.md)
 
 ## Library
