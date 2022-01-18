@@ -1,0 +1,54 @@
+# hasClosing()
+
+### `Wrap.hasClosing()`
+
+Checks whether the `text` has given `closing` chars at the **end**.
+
+{% code title="wrap.class.ts" %}
+```typescript
+public static hasClosing(text: string, closing: string): boolean {
+  return (
+    isStringLength(text, { min: 1 }) &&
+    isStringLength(closing, { min: 1 }) &&
+    text.slice(-closing.length) === closing
+  );
+}
+
+```
+{% endcode %}
+
+### Parameters
+
+| Name: type         | Description                                                                    |
+| ------------------ | ------------------------------------------------------------------------------ |
+| `text: string`     | The text of `string` type, to check whether it contains given `closing` chars. |
+| `closing: Closing` | The closing chars of `string` type to check if a given `text` contains.        |
+
+### Returns
+
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the `text` contains `closing` chars at the **end**.
+
+### Functions used
+
+`isStringLength()`
+
+### Example usage
+
+```typescript
+// Example usage.
+import { Wrap } from '@angular-package/text';
+
+const quote = new Wrap(`[`, `]`, 'quote');
+
+// Returns true.
+Wrap.hasClosing(quote.valueOf(), ']');
+
+// Returns false.
+Wrap.hasClosing(quote.valueOf(), '>');
+
+// Returns false.
+Wrap.hasClosing(quote.valueOf(), '');
+
+// Returns false.
+Wrap.hasClosing(new Wrap(`[`, ``, 'quote').valueOf(), '');
+```
