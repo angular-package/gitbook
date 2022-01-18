@@ -13,7 +13,7 @@ The [`Wrap`](wrap.md) object represents the [immutable](https://developer.mozill
 
 ### Static methods
 
-| Wrap.                                        | Description                                                                                                                        |
+|                                              |                                                                                                                                    |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | [hasClosing()](static-methods/hasclosing.md) | Checks whether the `text` has given `closing` chars at the **end**.                                                                |
 | [hasOpening()](static-methods/hasopening.md) | Checks whether the `text` has `opening` chars at the **beginning**.                                                                |
@@ -21,7 +21,7 @@ The [`Wrap`](wrap.md) object represents the [immutable](https://developer.mozill
 
 ### Instance methods
 
-| Wrap.prototype.                                        | Description                                                                                                                                                                                                                                                                                  |
+|                                                        |                                                                                                                                                                                                                                                                                              |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [getClosing()](instance-methods/getclosing.md)         | Gets the [closing](../library/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](instance-properties.md#closing-closing) property of a specified object.                                                                                                             |
 | [getOpening()](instance-methods/getopening.md)         | Gets the [opening](../library/basic-concepts.md#opening) chars of the wrap by returning the [`#opening`](instance-properties.md#opening-opening) property of a specified object.                                                                                                             |
