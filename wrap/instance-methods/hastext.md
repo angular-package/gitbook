@@ -8,8 +8,8 @@ The method checks whether the [text](../instance-accessors/#wrap.prototype.text)
 ```typescript
 public hasText(text?: string): boolean {
   return (
-    isStringLength(this.#text, { min: 1 }) &&
-    (isStringType(text) ? this.#text === text : true)
+    this.#text.length >= 1 &&
+    (typeof text === 'string' ? this.#text === text : true)
   );
 }
 ```

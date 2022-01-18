@@ -8,8 +8,8 @@ Checks whether the primitive value of a specified object has the [opening](../in
 ```typescript
 public hasOpening(opening?: string): boolean {
   return (
-    isStringLength(this.#opening, { min: 1 }) &&
-    (isStringType(opening) ? this.#opening === opening : true)
+    this.#opening.length >= 1 &&
+    (typeof opening === 'string' ? this.#opening === opening : true)
   );
 }
 ```

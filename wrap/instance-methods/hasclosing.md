@@ -8,8 +8,8 @@ Checks whether the primitive value of a specified object has the [closing](../in
 ```typescript
 public hasClosing(closing?: string): boolean {
   return (
-    isStringLength(this.#closing, { min: 1 }) &&
-    (isStringType(closing) ? this.#closing === closing : true)
+    this.#closing.length >= 1 &&
+    (typeof closing === 'string' ? this.#closing === closing : true)
   );
 }
 ```

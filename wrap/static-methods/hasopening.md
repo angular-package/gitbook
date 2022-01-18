@@ -7,8 +7,10 @@ Checks whether the `text` has `opening` chars at the **beginning**.
 ```typescript
 public static hasOpening(text: string, opening: string): boolean {
   return (
-    isStringLength(text, { min: 1 }) &&
-    isStringLength(opening, { min: 1 }) &&
+    typeof text === 'string' &&
+    text.length >= 1 &&
+    typeof opening === 'string' &&
+    opening.length >= 1 &&
     text.slice(0, opening.length) === opening
   );
 }

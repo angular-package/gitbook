@@ -4,12 +4,6 @@ Click the [**link**](https://github.com/angular-package/wrapper/blob/main/src/li
 
 {% code title="wrap.class.ts" %}
 ```typescript
-// @angular-package/type.
-import {
-  isStringLength,
-  isStringType,
-  isInstance,
-} from '@angular-package/type';
 /**
  * The `Wrap` object represents the immutable text wrapped by the opening and closing chars. It is designed to preserve the names of the
  * opening, text and closing.
@@ -85,8 +79,10 @@ export class Wrap<
    */
   public static hasClosing(text: string, closing: string): boolean {
     return (
-      isStringLength(text, { min: 1 }) &&
-      isStringLength(closing, { min: 1 }) &&
+      typeof text === 'string' &&
+      text.length >= 1 &&
+      typeof closing === 'string' &&
+      closing.length >= 1 &&
       text.slice(-closing.length) === closing
     );
   }
@@ -100,8 +96,10 @@ export class Wrap<
    */
   public static hasOpening(text: string, opening: string): boolean {
     return (
-      isStringLength(text, { min: 1 }) &&
-      isStringLength(opening, { min: 1 }) &&
+      typeof text === 'string' &&
+      text.length >= 1 &&
+      typeof opening === 'string' &&
+      opening.length >= 1 &&
       text.slice(0, opening.length) === opening
     );
   }
@@ -126,10 +124,10 @@ export class Wrap<
     closing?: Closing,
     text?: Text
   ): value is Wrap<Opening, Text, Closing> {
-    return isInstance(value, this)
-      ? (isStringType(opening) ? opening === value.opening : true) &&
-          (isStringType(closing) ? closing === value.closing : true) &&
-          (isStringType(text) ? text === value.text : true)
+    return typeof value === 'object' && value instanceof this
+      ? (typeof opening === 'string' ? opening === value.opening : true) &&
+          (typeof closing === 'string' ? closing === value.closing : true) &&
+          (typeof text === 'string' ? text === value.text : true)
       : false;
   }
   //#endregion static public methods.
@@ -187,8 +185,8 @@ export class Wrap<
    */
   public hasClosing(closing?: string): boolean {
     return (
-      isStringLength(this.#closing, { min: 1 }) &&
-      (isStringType(closing) ? this.#closing === closing : true)
+      this.#closing.length >= 1 &&
+      (typeof closing === 'string' ? this.#closing === closing : true)
     );
   }
 
@@ -201,8 +199,8 @@ export class Wrap<
    */
   public hasOpening(opening?: string): boolean {
     return (
-      isStringLength(this.#opening, { min: 1 }) &&
-      (isStringType(opening) ? this.#opening === opening : true)
+      this.#opening.length >= 1 &&
+      (typeof opening === 'string' ? this.#opening === opening : true)
     );
   }
 
@@ -215,8 +213,8 @@ export class Wrap<
    */
   public hasText(text?: string): boolean {
     return (
-      isStringLength(this.#text, { min: 1 }) &&
-      (isStringType(text) ? this.#text === text : true)
+      this.#text.length >= 1 &&
+      (typeof text === 'string' ? this.#text === text : true)
     );
   }
 

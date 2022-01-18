@@ -8,12 +8,13 @@ Checks whether the `text` has given `closing` chars at the **end**.
 ```typescript
 public static hasClosing(text: string, closing: string): boolean {
   return (
-    isStringLength(text, { min: 1 }) &&
-    isStringLength(closing, { min: 1 }) &&
+    typeof text === 'string' &&
+    text.length >= 1 &&
+    typeof closing === 'string' &&
+    closing.length >= 1 &&
     text.slice(-closing.length) === closing
   );
 }
-
 ```
 {% endcode %}
 

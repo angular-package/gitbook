@@ -17,7 +17,9 @@ public static isWrapper<
   text?: Text
 ): value is Wrapper<Opening, Text, Closing> {
   return (
-    isInstance(value, this) && super.isWrap(value, opening, closing, text)
+    typeof value === 'object' &&
+    value instanceof this &&
+    super.isWrap(value, opening, closing, text)
   );
 }
 ```

@@ -16,10 +16,10 @@ public static isWrap<
   closing?: Closing,
   text?: Text
 ): value is Wrap<Opening, Text, Closing> {
-  return isInstance(value, this)
-    ? (isStringType(opening) ? opening === value.opening : true) &&
-        (isStringType(closing) ? closing === value.closing : true) &&
-        (isStringType(text) ? text === value.text : true)
+  return typeof value === 'object' && value instanceof this
+    ? (typeof opening === 'string' ? opening === value.opening : true) &&
+        (typeof closing === 'string' ? closing === value.closing : true) &&
+        (typeof text === 'string' ? text === value.text : true)
     : false;
 }
 ```
