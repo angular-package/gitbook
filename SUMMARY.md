@@ -85,7 +85,12 @@
 
 * [Wrapped](types/wrapped.md)
 
-## Other
+## Contact
 
-* [@ Contact](other/contact.md)
-* [฿ Donate](other/thb-donate.md)
+* [⋯ Chat](contact/chat.md)
+* [@ Email](contact/email.md)
+
+## Donate
+
+* [฿ Cryptocurrency](donate/thb-cryptocurrency.md)
+* [$ Fiat](donate/usd-fiat.md)
