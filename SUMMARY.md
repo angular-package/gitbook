@@ -19,8 +19,8 @@
 
 ## Wrap
 
-* [Wrap {}](wrap/wrap.md)
 * [Code](wrap/code.md)
+* [Wrap {}](wrap/wrap.md)
 * [Generic type variables](wrap/generic-type-variables.md)
 * [Instance accessors](wrap/instance-accessors/README.md)
   * [closing](wrap/instance-accessors/closing.md)
@@ -50,8 +50,8 @@
 
 ## Wrapper
 
-* [Wrapper {}](wrapper/wrapper.md)
 * [Code](wrapper/code.md)
+* [Wrapper {}](wrapper/wrapper.md)
 * [Generic type variables](wrapper/generic-type-variables.md)
 * [Instance accessors](wrapper/instance-accessors.md)
 * [Static methods](wrapper/static-methods/README.md)
