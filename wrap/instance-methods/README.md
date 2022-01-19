@@ -1,5 +1,7 @@
 # Instance methods
 
+## Public
+
 | Wrap.prototype.                         | Description                                                                                                                                                                                                                                                                                     |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [getClosing()](getclosing.md)           | Gets the [closing](../../library/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](../instance-properties.md#closing-closing) property of a specified object.                                                                                                          |

@@ -1,5 +1,7 @@
 # Static methods
 
+## Public
+
 |                                       |                                                                                                                                                      |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [define()](define.md)                 | Defines a new [`Wrapper`](../wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.                                 |

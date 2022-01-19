@@ -1,5 +1,7 @@
 # Instance accessors
 
+## Public
+
 ### `[Symbol.toStringTag]`
 
 The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of `toStringTag`, changes the default tag to `'wrapper'` in the [`Wrapper`](../wrap/wrap.md#wrapper) instance. It can be read by the `typeOf()` function of [`@angular-package/type`](https://github.com/angular-package/type).

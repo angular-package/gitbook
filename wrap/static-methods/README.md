@@ -4,6 +4,8 @@ description: The static methods of `Wrap` the string object.
 
 # Static methods
 
+## Public
+
 | Wrap.                         | Description                                                                                                                           |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | [hasClosing()](hasclosing.md) | Checks whether the `text` has given `closing` chars at the **end**.                                                                   |

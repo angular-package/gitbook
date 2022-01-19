@@ -1,5 +1,7 @@
 # Instance accessors
 
+## Public
+
 | Wrap.prototype.                                 | Decription                                                                                                                                                                                                                                                                                                                                     |   |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
 | [closing](closing.md)                           | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [closing](../../library/basic-concepts.md#closing) of the wrap by returning the [`#closing`](../instance-properties.md#closing-closing) property of the specified object.                                                       |   |
