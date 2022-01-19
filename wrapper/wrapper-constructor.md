@@ -1,5 +1,7 @@
 # Wrapper() constructor
 
+### `Wrapper()`
+
 Creates a new [`Wrapper`](wrapper.md) instance with the **opening** and **closing** chars and optional **text**.
 
 {% code title="wrapper.class.ts" %}
