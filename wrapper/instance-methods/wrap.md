@@ -2,7 +2,7 @@
 
 ### `Wrapper.prototype.wrap()`
 
-The method wraps the primitive value of a specified [`Wrapper`](../wrapper.md) object by its [`opening`](../../wrap/instance-accessors/#wrap.prototype.opening) and [`closing`](../../wrap/instance-accessors/#wrap.prototype.closing) chars, or the given `opening` and `closing` chars.
+The method wraps the primitive value of a specified [`Wrapper`](../wrapper.md) object by its [`opening`](../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../wrap/instance/accessors/#wrap.prototype.closing) chars, or the given `opening` and `closing` chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript

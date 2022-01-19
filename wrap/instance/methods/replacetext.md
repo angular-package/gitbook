@@ -1,8 +1,8 @@
-# ★replaceText()
+# ★ replaceText()
 
 ### `Wrap.prototype.replaceText()`
 
-Returns the primitive value with replaced [`text`](../instance-accessors/text.md).
+Returns the primitive value with replaced [`text`](../accessors/text.md).
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -20,13 +20,13 @@ public replaceText<ReplaceText extends string = ''>(
 
 ### Parameters
 
-| Name: type          | Description                                                                                                                      |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `text: ReplaceText` | The text of a generic type variable `ReplaceText` to replace the [`text`](../instance-accessors/text.md) in the primitive value. |
+| Name: type          | Description                                                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `text: ReplaceText` | The text of a generic type variable `ReplaceText` to replace the [`text`](../accessors/text.md) in the primitive value. |
 
 ### Returns
 
-The **return value** is the primitive value with replaced [`text`](../instance-accessors/text.md) of a generic type variables in order [`Opening`](../generic-type-variables.md#wrap-opening), `ReplaceText` and [`Closing`](../generic-type-variables.md#wrap-closing) on the template `${Opening}${ReplaceText}${Closing}`.
+The **return value** is the primitive value with replaced [`text`](../accessors/text.md) of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), `ReplaceText` and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${Opening}${ReplaceText}${Closing}`.
 
 ### Example usage
 

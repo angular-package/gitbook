@@ -1,4 +1,4 @@
-# ★replaceClosing()
+# ★ replaceClosing()
 
 ### `Wrap.prototype.replaceClosing()`
 
@@ -26,7 +26,7 @@ public replaceClosing<ReplaceClosing extends string = ''>(
 
 ### Returns
 
-The **return value** is the primitive value with replaced closing chars of a generic type variables in order [`Opening`](../generic-type-variables.md#wrap-opening), [`Text`](../generic-type-variables.md#wrap-less-than...-text-...greater-than) and `ReplaceClosing` on the template `${Opening}${Text}${ReplaceClosing}.`
+The **return value** is the primitive value with replaced closing chars of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and `ReplaceClosing` on the template `${Opening}${Text}${ReplaceClosing}.`
 
 ### Example usage
 

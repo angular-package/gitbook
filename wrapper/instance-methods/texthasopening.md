@@ -22,7 +22,7 @@ public textHasOpening(text: string): boolean {
 
 | Name: type     | Description                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `text: string` | The text of a `string` to test against the existence of the [`opening`](../../wrap/instance-accessors/#wrap.prototype.opening) chars. |
+| `text: string` | The text of a `string` to test against the existence of the [`opening`](../../wrap/instance/accessors/#wrap.prototype.opening) chars. |
 
 ### Returns
 

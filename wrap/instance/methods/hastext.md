@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.hasText()`
 
-The method checks whether the [text](../instance-accessors/#wrap.prototype.text) of a specified [`Wrap`](../wrap.md) object is defined, which means it's a `string` of at least one char and optionally equal to the given `text`.
+The method checks whether the [text](../accessors/#wrap.prototype.text) of a specified [`Wrap`](../../wrap.md) object is defined, which means it's a `string` of at least one char and optionally equal to the given `text`.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -17,9 +17,9 @@ public hasText(text?: string): boolean {
 
 ### Parameters
 
-| Name: type        | Description                                                                                                |
-| ----------------- | ---------------------------------------------------------------------------------------------------------- |
-| `text`?`: string` | Optional text of `string` type to check whether it's equal to the text of the [`Wrap`](../wrap.md) object. |
+| Name: type        | Description                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| `text`?`: string` | Optional text of `string` type to check whether it's equal to the text of the [`Wrap`](../../wrap.md) object. |
 
 ### Returns
 

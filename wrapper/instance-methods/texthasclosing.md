@@ -22,7 +22,7 @@ public textHasClosing(text: string): boolean {
 
 | Name: type     | Description                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `text: string` | The text of a `string` to test against the existence of the [`closing`](../../wrap/instance-accessors/#wrap.prototype.closing) chars. |
+| `text: string` | The text of a `string` to test against the existence of the [`closing`](../../wrap/instance/accessors/#wrap.prototype.closing) chars. |
 
 ### Returns
 

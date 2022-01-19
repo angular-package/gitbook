@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.isWrapped()`
 
-The method checks whether the primitive value of the specified object is wrapped by the [opening](../instance-accessors/#wrap.prototype.opening) and [closing](../instance-accessors/#wrap.prototype.closing) chars of an instance or given opening and closing chars.
+The method checks whether the primitive value of the specified object is wrapped by the [opening](../accessors/#wrap.prototype.opening) and [closing](../accessors/#wrap.prototype.closing) chars of an instance or given opening and closing chars.
 
 {% code title="wrap.class.ts" %}
 ```typescript

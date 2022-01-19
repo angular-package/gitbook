@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.hasOpening()`
 
-Checks whether the primitive value of a specified object has the [opening](../instance-accessors/#wrap.prototype.opening) chars or given opening chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+Checks whether the primitive value of a specified object has the [opening](../accessors/#wrap.prototype.opening) chars or given opening chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 {% code title="wrap.class.ts" %}
 ```typescript

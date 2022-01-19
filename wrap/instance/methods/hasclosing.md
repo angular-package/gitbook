@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.hasClosing()`
 
-Checks whether the primitive value of a specified object has the [closing](../instance-accessors/#wrap.prototype.closing) chars or given closing chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+Checks whether the primitive value of a specified object has the [closing](../accessors/#wrap.prototype.closing) chars or given closing chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 {% code title="wrap.class.ts" %}
 ```typescript
