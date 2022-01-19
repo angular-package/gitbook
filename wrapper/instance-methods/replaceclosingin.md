@@ -31,7 +31,7 @@ The **return value** is the text of [`string`](https://developer.mozilla.org/en-
 
 ```typescript
 // Example usage.
-import { Wrapper } from '@angular-package/wrapperwrapper';
+import { Wrapper } from '@angular-package/wrapper';
 
 
 ```

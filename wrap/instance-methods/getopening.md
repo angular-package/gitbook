@@ -20,7 +20,7 @@ The **return value** is opening chars of a generic type variable [`Opening`](../
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns [ of type "[".
 new Wrap(`[`, `]`, 'quote').getOpening();

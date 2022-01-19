@@ -20,7 +20,7 @@ The **return value** is [closing](../instance-accessors/#wrap.prototype.closing)
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns ] of type "]".
 new Wrap(`[`, `]`).getClosing();

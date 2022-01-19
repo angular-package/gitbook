@@ -35,7 +35,7 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 const quote = new Wrap(`[`, `]`, 'quote');
 

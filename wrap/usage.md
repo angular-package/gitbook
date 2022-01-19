@@ -6,7 +6,7 @@ Let's create a wrap for the BBCode tag.
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Let's create a BBCode wrap.
 class BBCode<Name extends string> extends Wrap<`[`, Name, `]`> {
@@ -38,7 +38,7 @@ Let's create a wrap for the HTML tag.
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Let's create a Html wrap.
 class Html<Name extends string> extends Wrap<`<`, Name, `>`> {

@@ -20,7 +20,7 @@ The **return value** is the [opening](../../library/basic-concepts.md#opening) o
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns [ of type "[".
 new Wrap(`[`, `]`, 'quote').opening;

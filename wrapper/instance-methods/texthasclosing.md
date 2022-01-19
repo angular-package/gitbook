@@ -32,7 +32,7 @@ The return value is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/J
 
 ```typescript
 // Example usage.
-import { Wrapper } from '@angular-package/text';
+import { Wrapper } from '@angular-package/wrapper';
 
 // Returns true of boolean.
 new Wrapper(`[`, `]`).textHasClosing(`[quote]`);
@@ -40,6 +40,3 @@ new Wrapper(`[`, `]`).textHasClosing(`[quote]`);
 // Returns false of boolean.
 new Wrapper(`{{`, `}}`).textHasClosing(`{{variable`);
 ```
-
-
-

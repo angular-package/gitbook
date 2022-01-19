@@ -20,7 +20,7 @@ The **return value** is the text of a generic type variable [`Text`](../generic-
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns quote of type "quote".
 new Wrap(`[`, `]`, 'quote').getText();

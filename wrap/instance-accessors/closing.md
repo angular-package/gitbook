@@ -20,8 +20,9 @@ The **return value** is [closing](../../library/basic-concepts.md#closing) of th
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns ] of type "]".
 new Wrap(`[`, `]`, 'quote').closing;
 ```
+

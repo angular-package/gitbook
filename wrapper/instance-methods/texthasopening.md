@@ -32,7 +32,7 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 
 ```typescript
 // Example usage.
-import { Wrapper } from '@angular-package/text';
+import { Wrapper } from '@angular-package/wrapper';
 
 // Returns true of boolean.
 new Wrapper(`[`, `]`).textHasOpening(`[quote]`);

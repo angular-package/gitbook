@@ -1,5 +1,7 @@
 # \[Symbol.toStringTag]
 
+### `[Symbol.toStringTag]`
+
 The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of [`toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol/toStringTag) of Symbol, changes the default object tag to `wrap` for an instance of the [`Wrap`](../wrap.md).
 
 {% hint style="info" %}
@@ -18,7 +20,7 @@ public get [Symbol.toStringTag](): string {
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 import { typeOf } from '@angular-package/type';
 
 // Define the wrap.
@@ -27,3 +29,4 @@ const tagWrap = new Wrap('[', ']');
 // Returns wrap.
 typeOf(tagWrap);
 ```
+

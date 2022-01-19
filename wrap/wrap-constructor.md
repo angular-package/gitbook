@@ -31,7 +31,7 @@ The **return value** is a new instance of [`Wrap`](wrap.md) with the primitive v
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns Wrap{'[]'}
 new Wrap('[', ']');

@@ -32,7 +32,7 @@ The **return value** is the primitive value with replaced closing chars of a gen
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns [quote}} of type "[quote}}".
 new Wrap(`[`, `]`, 'quote').replaceClosing('}}');

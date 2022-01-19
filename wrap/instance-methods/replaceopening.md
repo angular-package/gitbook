@@ -32,7 +32,7 @@ The return value is the primitive value with replaced opening chars of a generic
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns {{quote] of type "{{quote]".
 new Wrap(`[`, `]`, 'quote').replaceOpening('{{');

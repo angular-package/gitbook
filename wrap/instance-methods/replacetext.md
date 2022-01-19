@@ -32,7 +32,7 @@ The **return value** is the primitive value with replaced [`text`](../instance-a
 
 ```typescript
 // Example usage.
-import { Wrap } from '@angular-package/text';
+import { Wrap } from '@angular-package/wrapper';
 
 // Returns [span] of type "[span]".
 new Wrap(`[`, `]`, 'quote').replaceText('span');
