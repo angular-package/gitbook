@@ -28,7 +28,7 @@
   * [opening](wrap/instance-accessors/opening.md)
   * [text](wrap/instance-accessors/text.md)
   * [\[Symbol.toStringTag\]](wrap/instance-accessors/symbol.tostringtag.md)
-* [Instance properties](wrap/instance-properties/README.md)
+* [Instance properties](wrap/instance-properties.md)
   * [#closing](wrap/instance-properties/closing.md)
   * [#opening](wrap/instance-properties/opening.md)
   * [#text](wrap/instance-properties/text.md)

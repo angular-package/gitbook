@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.opening`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [opening](../../library/basic-concepts.md#opening) of the wrap by returning the [`#opening`](../instance-properties/#opening-opening) property of the specified object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [opening](../../library/basic-concepts.md#opening) of the wrap by returning the [`#opening`](../instance-properties.md#opening-opening) property of the specified object.
 
 {% code title="wrap.class.ts" %}
 ```typescript

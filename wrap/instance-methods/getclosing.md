@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.getClosing()`
 
-Gets the [closing](../../library/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](../instance-properties/#closing-closing) property of a specified object.
+Gets the [closing](../../library/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](../instance-properties.md#closing-closing) property of a specified object.
 
 {% code title="wrap.class.ts" %}
 ```typescript

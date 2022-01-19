@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.text`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the text of the [`Wrap`](../wrap.md) by returning the [`#text`](../instance-properties/#text-text) property of a specified object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the text of the [`Wrap`](../wrap.md) by returning the [`#text`](../instance-properties.md#text-text) property of a specified object.
 
 {% code title="wrap.class.ts" %}
 ```typescript

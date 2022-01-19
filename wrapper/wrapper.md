@@ -2,23 +2,17 @@
 
 The [`Wrapper`](https://github.com/angular-package/wrapper/blob/main/src/lib/wrapper.class.ts) is an extension of the [`Wrap`](../wrap/wrap.md) object, which means it represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) wrap of the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) with the additional main ability to use it to wrap strings.&#x20;
 
-### Instance accessors
+## Instance
+
+### Accessors
 
 |                                                                                                                                                |                                                                                                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ​[\[Symbol.toStringTag\]](https://app.gitbook.com/s/fKPxHpkGbNljEvVlRVgz/c/JULYvW5NSbPwI2RD5MLX/wrapper/instance-accessors#symbol.tostringtag) | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of `toStringTag`, changes the default tag to `'wrapper'` in the [`Wrapper`](broken-reference) instance. |
 
-### Static methods
 
-|                                                      |                                                                                                                                                   |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [define()](static-methods/define.md)                 | Defines a new [`Wrapper`](wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.                                 |
-| [isWrapper()](static-methods/iswrapper.md)           | The method checks if the value of any type is an instance of the [`Wrapper`](wrapper.md) of any, or given `opening`, `closing` chars, and `text`. |
-| [replaceClosing()](static-methods/replaceclosing.md) | Replaces the closing chars in a given `text` with a given replacement value at the end of the **text**.                                           |
-| [replaceOpening()](static-methods/replaceopening.md) | Replaces the opening chars in a given `text` with a given replacement value at the beginning of the **text**.                                     |
-| [unwrap()](static-methods/unwrap.md)                 | The method returns the **text** without the given `opening` and `closing` chars.                                                                  |
 
-### Instance methods
+### Methods
 
 |                                                                |                                                                                                                                                                                                                                                                                                                          |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -38,3 +32,15 @@ The [`Wrapper`](https://github.com/angular-package/wrapper/blob/main/src/lib/wra
 | [★ wrap()](instance-methods/wrap.md)                           | The method wraps the primitive value of a specified [`Wrapper`](wrapper.md) object by its [`opening`](../wrap/instance-accessors/#wrap.prototype.opening) and [`closing`](../wrap/instance-accessors/#wrap.prototype.closing) chars, or the given `opening` and `closing` chars.                                         |
 | [★ wrapOn()](instance-methods/wrapon.md)                       | Wraps given `text` with the wrap, the [`opening`](../wrap/instance-accessors/#wrap.prototype.opening), and [`closing`](../wrap/instance-accessors/#wrap.prototype.closing) chars of the [`Wrapper`](wrapper.md) object.                                                                                                  |
 | [★ wrapText()](instance-methods/wraptext.md)                   | The method returns the primitive value of the `Wrapper` object with [`text`](../wrap/instance-accessors/#wrap.prototype.text) wrapped by given `opening` and `closing` chars.                                                                                                                                            |
+
+## Static
+
+### Methods
+
+|                                                      |                                                                                                                                                   |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [define()](static-methods/define.md)                 | Defines a new [`Wrapper`](wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.                                 |
+| [isWrapper()](static-methods/iswrapper.md)           | The method checks if the value of any type is an instance of the [`Wrapper`](wrapper.md) of any, or given `opening`, `closing` chars, and `text`. |
+| [replaceClosing()](static-methods/replaceclosing.md) | Replaces the closing chars in a given `text` with a given replacement value at the end of the **text**.                                           |
+| [replaceOpening()](static-methods/replaceopening.md) | Replaces the opening chars in a given `text` with a given replacement value at the beginning of the **text**.                                     |
+| [unwrap()](static-methods/unwrap.md)                 | The method returns the **text** without the given `opening` and `closing` chars.                                                                  |
