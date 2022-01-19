@@ -29,10 +29,6 @@ public static hasClosing(text: string, closing: string): boolean {
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the `text` contains `closing` chars at the **end**.
 
-### Functions used
-
-`isStringLength()`
-
 ### Example usage
 
 ```typescript

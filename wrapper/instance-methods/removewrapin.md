@@ -16,17 +16,17 @@ public removeWrapIn(text: string): string {
 ```
 {% endcode %}
 
-#### Parameters
+### Parameters
 
 | Name: type     | Description                                                                                                                                                                                                                                                                                                                              |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `text: string` | The **text** of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to unwrap with the [`opening`](../../wrap/instance-accessors/#wrap.prototype.opening) and [`closing`](../../wrap/instance-accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../wrapper.md) object. |
 
-#### Returns
+### Returns
 
 The **return value** is the **text** of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type unwrapped from the [`opening`](../../wrap/instance-accessors/#wrap.prototype.opening) and [`closing`](../../wrap/instance-accessors/#wrap.prototype.closing) chars of the `Wrapper` object.
 
-#### Example usage
+### Example usage
 
 ```typescript
 // Example usage.

@@ -27,10 +27,6 @@ public static hasOpening(text: string, opening: string): boolean {
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the `text` contains `opening` chars at the **beginning**.
 
-### Functions used
-
-`isStringLength()`
-
 ### Example usage
 
 ```typescript

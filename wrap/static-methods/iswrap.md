@@ -48,10 +48,6 @@ public static isWrap<
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the value is an instance of `Wrap` of any, or the given `opening`, `closing`, and `text`.
 
-### Functions used
-
-`isStringType()`, `isInstance()`
-
 ### Example usage
 
 ```typescript

@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.getOpening()`
 
-Gets the [opening](../../library/basic-concepts.md#opening) chars of the wrap by returning the [`#opening`](../instance-properties.md#opening-opening) property of a specified object.
+Gets the [opening](../../library/basic-concepts.md#opening) chars of the wrap by returning the [`#opening`](../instance-properties/#opening-opening) property of a specified object.
 
 {% code title="wrap.class.ts" %}
 ```typescript

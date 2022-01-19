@@ -27,7 +27,7 @@ public replaceOpeningIn(text: string, replaceValue: string): string {
 
 The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`opening`](../../wrap/instance-accessors/#wrap.prototype.opening) chars by given replacement value.
 
-#### Example usage
+### Example usage
 
 ```typescript
 // Example usage.

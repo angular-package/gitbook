@@ -4,7 +4,7 @@ Let's create a new `HtmlWrap` object extending it with the `Wrapper` to make an 
 
 ```typescript
 // Example usage.
-import { Wrapper } from '@angular-package/text';
+import { Wrapper } from '@angular-package/wrapper';
  
 // Define HtmlWrap class.
 class HtmlWrap extends Wrapper<`<`, `>`> {
@@ -23,7 +23,7 @@ Create a  new object `OfType` to make an immutable string indicating of type `: 
 
 ```typescript
 // Example usage.
-import { Wrapper } from '@angular-package/text';
+import { Wrapper } from '@angular-package/wrapper';
 
 class OfType extends String {
   constructor(name: string) {

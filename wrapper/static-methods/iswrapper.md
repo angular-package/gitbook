@@ -48,10 +48,6 @@ public static isWrapper<
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the value is an instance of [`Wrapper`](../wrapper.md) of any, or the given `opening`, `closing` chars, and `text`.
 
-### Functions used
-
-`isInstance()`
-
 ### Example usage
 
 ```typescript
