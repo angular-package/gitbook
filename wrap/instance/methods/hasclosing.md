@@ -25,10 +25,6 @@ public hasClosing(closing?: string): boolean {
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the primitive value has the closing chars.
 
-### Functions used
-
-`isStringLength()`, `isStringType()`
-
 ### Example usage
 
 ```typescript

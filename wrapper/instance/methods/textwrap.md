@@ -2,7 +2,7 @@
 
 ### `Wrapper.prototype.textWrap()`
 
-The method returns the [`text`](../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../wrapper.md) object wrapped by the given [`opening`](../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../wrap/instance/accessors/#wrap.prototype.closing) chars.
+The method returns the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) object wrapped by the given [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -22,14 +22,14 @@ public textWrap<TextOpening extends string, TextClosing extends string>(
 
 ### Parameters
 
-| Name: type             | Description                                                                                                                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opening: TextOpening` | The **opening** chars of a generic type variable `TextOpening` to wrap the [`text`](../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../wrapper.md) instance. |
-| `closing: TextClosing` | The **closing** chars of a generic type variable `TextClosing` to wrap the [`text`](../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../wrapper.md) instance. |
+| Name: type             | Description                                                                                                                                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `opening: TextOpening` | The **opening** chars of a generic type variable `TextOpening` to wrap the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) instance. |
+| `closing: TextClosing` | The **closing** chars of a generic type variable `TextClosing` to wrap the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) instance. |
 
 ### Returns
 
-The **return value** is the [`text`](../../wrap/instance/accessors/#wrap.prototype.text) wrapped by given `opening` and `closing` chars of generic type `Wrapped`.
+The **return value** is the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) wrapped by given `opening` and `closing` chars of generic type `Wrapped`.
 
 ### Example usage
 

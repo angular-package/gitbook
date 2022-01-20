@@ -22,7 +22,7 @@ public static replaceOpening(
 
 | Name: type          | Description                                                                                             |
 | ------------------- | ------------------------------------------------------------------------------------------------------- |
-| `value: any`        | The **value** of any type to test against the instance of [`Wrapper`](../wrapper.md).                   |
+| `value: any`        | The **value** of any type to test against the instance of [`Wrapper`](../../wrapper.md).                |
 | `opening?: Opening` | Optional **opening** chars of a generic type variable `Opening` to check if the given `value` contains. |
 | `closing?: Closing` | Optional **closing** chars of a generic type variable `Closing` to check if the given `value` contains. |
 | `text?: Text`       | An optional **text** of generic type variable `Text` to check if the given `value` contains.            |

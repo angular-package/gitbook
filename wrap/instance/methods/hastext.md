@@ -25,10 +25,6 @@ public hasText(text?: string): boolean {
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the text is defined and equal to the optionally given text.
 
-### Functions used
-
-`isStringLength()`, `isStringType()`
-
 ### Example usage
 
 ```typescript

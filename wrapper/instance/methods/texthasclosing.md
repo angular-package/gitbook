@@ -6,7 +6,7 @@ The method does not yet exist.
 
 ### `Wrapper.prototype.textHasClosing()`
 
-Checks if the provided `text` has the closing of specified [`Wrapper`](../wrapper.md) object at the end of the text.
+Checks if the provided `text` has the closing of specified [`Wrapper`](../../wrapper.md) object at the end of the text.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,9 +20,9 @@ public textHasClosing(text: string): boolean {
 
 ### Parameters
 
-| Name: type     | Description                                                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `text: string` | The text of a `string` to test against the existence of the [`closing`](../../wrap/instance/accessors/#wrap.prototype.closing) chars. |
+| Name: type     | Description                                                                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `text: string` | The text of a `string` to test against the existence of the [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars. |
 
 ### Returns
 

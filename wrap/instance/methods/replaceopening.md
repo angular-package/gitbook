@@ -26,7 +26,7 @@ public replaceOpening<ReplaceOpening extends string = ''>(
 
 ### Returns
 
-The return value is the primitive value with replaced opening chars of a generic type variables in order `ReplaceOpening`, [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${ReplaceOpening}${Text}${Closing}`.
+The **return value** is the primitive value with replaced [`opening`](../accessors/opening.md) chars of a generic type variables in order `ReplaceOpening`, [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${ReplaceOpening}${Text}${Closing}`.
 
 ### Example usage
 

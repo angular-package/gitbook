@@ -2,7 +2,7 @@
 
 ### `Wrapper.define()`
 
-Defines a new [`Wrapper`](../wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.
+Defines a new [`Wrapper`](../../wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -28,15 +28,15 @@ public static define<
 
 ### Parameters
 
-| Name: type         | Description                                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------------------------- |
-| `opening: Opening` | The **opening** chars of generic type variable `Opening` for new [`Wrapper`](../wrapper.md) instance. |
-| `closing: Closing` | The **closing** chars of generic type variable `Closing` for new [`Wrapper`](../wrapper.md) instance. |
-| `text?: Text`      | An optional **text** of generic type variable `Text` for new [`Wrapper`](../wrapper.md) instance.     |
+| Name: type         | Description                                                                                              |
+| ------------------ | -------------------------------------------------------------------------------------------------------- |
+| `opening: Opening` | The **opening** chars of generic type variable `Opening` for new [`Wrapper`](../../wrapper.md) instance. |
+| `closing: Closing` | The **closing** chars of generic type variable `Closing` for new [`Wrapper`](../../wrapper.md) instance. |
+| `text?: Text`      | An optional **text** of generic type variable `Text` for new [`Wrapper`](../../wrapper.md) instance.     |
 
 ### Returns
 
-The **return value** is the [`Wrapper`](../wrapper.md) instance of given `opening`, `closing` chars, and optional `text`.
+The **return value** is the [`Wrapper`](../../wrapper.md) instance of given `opening`, `closing` chars, and optional `text`.
 
 ### Example usage
 
@@ -56,3 +56,4 @@ Wrapper.define('!', '!');
 // of type Wrapper<"\"", "This is quoted text", "\"">
 Wrapper.define('"', '"', 'This is quoted text');
 ```
+
