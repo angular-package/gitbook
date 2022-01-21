@@ -1,0 +1,7 @@
+# Methods
+
+## Public
+
+|               |   |
+| ------------- | - |
+| isAttribute() |   |
