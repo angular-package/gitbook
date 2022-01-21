@@ -28,13 +28,11 @@ The `Payload` generic type variable constrained by generic type variable [`Commo
 
 ### Parameters
 
-#### callback: <mark style="color:yellow;">ResultCallback</mark>\<any, Payload>
-
-
+#### `callback: ResultCallback<any, Payload>`
 
 A callback `function` of [`ResultCallback`](../../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
-`payload?: Payload`
+#### `payload?: Payload`
 
 Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
 

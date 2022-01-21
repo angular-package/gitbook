@@ -26,11 +26,11 @@ const isClass = <Class = Function, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Class`**</mark>**`=`**<mark style="color:green;">**`Function`**</mark>
 
-Class
+The `Class` generic type variable indicates the class type of the given `value` via the return type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-Payload
+The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
 
 ### Parameters
 

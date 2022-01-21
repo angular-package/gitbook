@@ -6,32 +6,40 @@ Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.
 
 {% code title="is-boolean-object.func.ts" %}
 ```typescript
-const isArray = <Type = any, Payload extends object = object>(
+const isBooleanObject = <Payload extends object>(
   value: any,
   callback: ResultCallback<any, Payload> = resultCallback,
   payload?: Payload
-): value is Array<Type> =>
+): value is Boolean =>
   callback(
-    (typeOf(value) === 'array' || typeof value === 'object') &&
-      Array.isArray(value),
+    (typeOf(value) === 'boolean' || typeof value === 'object') &&
+    value instanceof Boolean &&
+    (value.valueOf() === true || value.valueOf() === false),
     value,
     payload
   );
 ```
 {% endcode %}
 
-| Generic type variables                                                                                                                                                                                                                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><mark style="color:green;"><strong><code>Type</code></strong></mark><strong><code>=</code></strong><mark style="color:green;"><strong><code>any</code></strong></mark><br></p>                                                                                                                  |
-| <p><mark style="color:green;"><strong><code>Payload</code></strong></mark><strong><code>extends</code></strong><mark style="color:green;"><strong><code>object</code></strong></mark><strong><code>=</code></strong><mark style="color:green;"><strong><code>object</code></strong></mark><br></p> |
+### Generic type variables
+
+#### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
+
+The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
 
 ### Parameters
 
-| Name: type                               | Description                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value: any`                             | The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.                                                                                                                                                                                                                                                     |
-| `callback: ResultCallback<any, Payload>` | A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function. |
-| `payload?: Payload`                      | Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.                                                                                                                                                                                                                                          |
+#### `value: any`
+
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.
+
+#### `callback: ResultCallback<any, Payload>`
+
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+
+#### `payload?: Payload`
+
+Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
 
 ### Returns
 

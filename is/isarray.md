@@ -20,18 +20,29 @@ const isArray = <Type = any, Payload extends object = object>(
 ```
 {% endcode %}
 
-| Generic type variables                                                                                                                                                                                                                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><mark style="color:green;"><strong><code>Type</code></strong></mark><strong><code>=</code></strong><mark style="color:green;"><strong><code>any</code></strong></mark><br></p>                                                                                                                  |
-| <p><mark style="color:green;"><strong><code>Payload</code></strong></mark><strong><code>extends</code></strong><mark style="color:green;"><strong><code>object</code></strong></mark><strong><code>=</code></strong><mark style="color:green;"><strong><code>object</code></strong></mark><br></p> |
+### Generic type variables
+
+#### <mark style="color:green;">**`Type`**</mark>**`=`**<mark style="color:green;">**`any`**</mark>
+
+The `Type` generic type variable indicates the array type of the given `value` via the return type.
+
+#### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
+
+The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
 
 ### Parameters
 
-| Name: type                               | Description                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value: any`                             | The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.                                                                                                                                                                                                                                                     |
-| `callback: ResultCallback<any, Payload>` | A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function. |
-| `payload?: Payload`                      | Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.                                                                                                                                                                                                                                          |
+#### `value: any`
+
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.
+
+#### `callback: ResultCallback<any, Payload>`
+
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+
+#### `payload?: Payload`
+
+Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
 
 ### Returns
 
