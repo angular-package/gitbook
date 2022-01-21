@@ -1,0 +1,3 @@
+# guardType()
+
+### `guardType()`

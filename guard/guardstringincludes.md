@@ -1,0 +1,3 @@
+# guardStringIncludes()
+
+### `guardStringIncludes()`

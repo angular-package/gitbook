@@ -1,0 +1,3 @@
+# guardInstance()
+
+### `guardInstance()`

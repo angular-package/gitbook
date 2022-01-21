@@ -9,10 +9,6 @@
 * [Public API](getting-started/public-api.md)
 * [General concepts](getting-started/general-concepts.md)
 
-## Group 1
-
-* [Page 5](group-1/page-5.md)
-
 ## Are
 
 * [areDeterminer()](are/aredeterminer/README.md)
@@ -113,15 +109,35 @@
 * [guardArray()](guard/guardarray.md)
 * [guardBigInt()](guard/guardbigint.md)
 * [guardBoolean()](guard/guardboolean.md)
-* [Page 2](guard/page-2.md)
-* [Page 8](guard/page-8.md)
-* [Page 7](guard/page-7.md)
-* [Page 7](guard/page-7-1.md)
-* [Page 6](guard/page-6.md)
-* [Page 4](guard/page-4.md)
-* [Page 4](guard/page-4-1.md)
-* [Page 9](guard/page-9.md)
-* [Page 3](guard/page-3.md)
+* [guardClass()](guard/guardclass.md)
+* [guardDate()](guard/guarddate.md)
+* [guardDefined()](guard/guarddefined.md)
+* [guardFalse()](guard/guardfalse.md)
+* [guardFunction()](guard/guardfunction.md)
+* [guardInstance()](guard/guardinstance.md)
+* [guardKey()](guard/guardkey.md)
+* [guardNull()](guard/guardnull.md)
+* [guardNumberBetween()](guard/guardnumberbetween.md)
+* [guardNumber()](guard/guardnumber.md)
+* [guardObject()](guard/guardobject.md)
+* [guardObjectKey()](guard/guardobjectkey.md)
+* [guardObjectKeyIn()](guard/guardobjectkeyin.md)
+* [guardObjectKeys()](guard/guardobjectkeys.md)
+* [guardObjectKeysIn()](guard/guardobjectkeysin.md)
+* [guardObjectSomeKeys()](guard/guardobjectsomekeys.md)
+* [guardPrimitive()](guard/guardprimitive.md)
+* [guardRegExp()](guard/guardregexp.md)
+* [guardString()](guard/guardstring.md)
+* [guardStringIncludes()](guard/guardstringincludes.md)
+* [guardStringIncludesSome()](guard/guardstringincludessome.md)
+* [guardStringLength()](guard/guardstringlength.md)
+* [guardSymbol()](guard/guardsymbol.md)
+* [guardTrue()](guard/guardtrue.md)
+* [guardSymbol()](guard/guardsymbol-1.md)
+* [guardTrue()](guard/guardtrue-1.md)
+* [guardType()](guard/guardtype.md)
+* [guardUndefined()](guard/guardundefined.md)
+* [guard: Guard {}](guard/guard-guard.md)
 
 ## Types
 
@@ -142,6 +158,11 @@
 * [Type](types/type.md)
 * [Types](types/types.md)
 * [Undefined](types/undefined.md)
+
+## Changelog
+
+* [v5.0.0](changelog/v5.0.0.md)
+* [v4.2.0](changelog/v4.2.0.md)
 
 ## License
 

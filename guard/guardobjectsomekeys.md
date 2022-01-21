@@ -1,0 +1,3 @@
+# guardObjectSomeKeys()
+
+### `guardObjectSomeKeys()`

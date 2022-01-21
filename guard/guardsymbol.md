@@ -1,0 +1,3 @@
+# guardSymbol()
+
+### `guardSymbol()`

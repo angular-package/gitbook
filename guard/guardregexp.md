@@ -1,0 +1,3 @@
+# guardRegExp()
+
+### `guardRegExp()`

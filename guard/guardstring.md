@@ -1,0 +1,3 @@
+# guardString()
+
+### `guardString()`

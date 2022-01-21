@@ -1,0 +1,3 @@
+# guardObjectKey()
+
+### `guardObjectKey()`

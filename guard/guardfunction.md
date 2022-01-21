@@ -1,0 +1,3 @@
+# guardFunction()
+
+### `guardFunction()`

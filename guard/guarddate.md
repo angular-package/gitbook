@@ -1,0 +1,3 @@
+# guardDate()
+
+### `guardDate()`

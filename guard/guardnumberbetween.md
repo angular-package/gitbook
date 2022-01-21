@@ -1,0 +1,3 @@
+# guardNumberBetween()
+
+### `guardNumberBetween()`

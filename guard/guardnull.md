@@ -1,0 +1,3 @@
+# guardNull()
+
+### `guardNull()`

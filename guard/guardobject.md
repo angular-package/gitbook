@@ -1,0 +1,3 @@
+# guardObject()
+
+### `guardObject()`

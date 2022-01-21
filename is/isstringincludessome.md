@@ -21,6 +21,10 @@ const isKey = <Payload extends object>(
 
 ### Generic type variables
 
+#### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
+
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+
 ### Parameters
 
 ### Return type

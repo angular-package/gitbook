@@ -1,0 +1,3 @@
+# guardPrimitive()
+
+### `guardPrimitive()`
