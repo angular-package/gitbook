@@ -46,16 +46,21 @@ const areDeterminer = <CommonPayload extends object>(
 ```
 {% endcode %}
 
-| Generic type variables                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><mark style="color:green;"><strong><code>CommonPayload</code></strong></mark><strong><code>extends</code></strong><mark style="color:green;"><strong><code>object</code></strong></mark><br>The <code>CommonPayload</code> generic type variable constrained by the <code>object</code> constrains the generic type variable <code>Payload</code> of each returned method.</p> |
+### Generic type variables
+
+#### <mark style="color:green;">**`CommonPayload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
+
+The `CommonPayload` generic type variable constrained by the `object` constrains the generic type variable `Payload` of each returned method.
 
 ### Parameters
 
-| Name: type         | Description                                                                               |
-| ------------------ | ----------------------------------------------------------------------------------------- |
-| `checkFn`          | Function to test given `values`.                                                          |
-| `...values: any[]` | A rest parameter of `any` type to check its elements against test given in the `checkFn`. |
+#### `checkFn: Function`
+
+Function to test given `values`.
+
+#### `...values: any[]`
+
+A rest parameter of `any` type to check its elements against test given in the `checkFn`.
 
 ### Returns
 
