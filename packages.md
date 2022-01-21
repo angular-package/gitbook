@@ -19,6 +19,6 @@ Below is the list of all **angular packages.** Some of them are **not** publishe
 | [tag](https://tag.angular-package.dev)         | Any tag with optional attributes.                                 |
 | testing                                        | Support for **testing** other packages.                           |
 | [text](https://text.angular-package.dev)       | **Text** on the template with replaceable tags.                   |
-| type                                           | Common types, type guards, and type checkers.                     |
+| [type](https://type.angular-package.dev)       | Common types, type guards, and type checkers.                     |
 | ui                                             | User interface.                                                   |
 | [wrapper](https://wrapper.angular-package.dev) | Wrap the text with the opening and closing chars.                 |
