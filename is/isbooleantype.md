@@ -39,6 +39,12 @@ A callback `function` of [`ResultCallback`](../types/resultcallback.md) type wit
 
 Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
 
+### Return type
+
+#### `value is boolean`
+
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement.
+
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type.
@@ -46,8 +52,9 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isBooleanType } from '@angular-package/type';
 
+isBooleanType(false); // true
+isBooleanType(new Boolean(false)); // false
 ```
-

@@ -39,11 +39,13 @@ A callback `function` of [`ResultCallback`](../types/resultcallback.md) type wit
 
 Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
 
-### Returns
+### Return type
 
-|                                                                                                                                                                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong><code>value is false</code></strong></p><p>The <strong>return type</strong> is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"><code>boolean</code></a> as the result of its statement, indicating the <code>value</code> is equal to <code>false</code>.</p> |
+#### `value is false`
+
+The **return type** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) as the result of its statement, indicating the `value` is equal to `false`.
+
+### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) that is equal to `false`.
 

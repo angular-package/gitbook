@@ -2,7 +2,7 @@
 
 ### `isBooleanObject()`
 
-Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is of the type obtained from its `Object.prototype` equal to `'boolean'` or an `object` type, and an instance of `Boolean` that is equal to `true` or `false`.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is of the type obtained from its `Object.prototype` equal to `'boolean'` or an `object` type, and an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) that is equal to `true` or `false`.
 
 {% code title="is-boolean-object.func.ts" %}
 ```typescript
@@ -41,6 +41,12 @@ A callback `function` of [`ResultCallback`](../types/resultcallback.md) type wit
 
 Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
 
+### Return type
+
+#### `value is Boolean`
+
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean).
+
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean).
@@ -48,8 +54,9 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isBooleanObject } from '@angular-package/type';
 
+isBooleanObject(false); // false
+isBooleanObject(new Boolean(false)); // true
 ```
-

@@ -7,6 +7,11 @@
 * [Skeleton](getting-started/skeleton.md)
 * [Installation](getting-started/installation.md)
 * [Public API](getting-started/public-api.md)
+* [General concepts](getting-started/general-concepts.md)
+
+## Group 1
+
+* [Page 5](group-1/page-5.md)
 
 ## Are
 
@@ -63,10 +68,6 @@
   * [forEach()](are/areundefined/foreach.md)
   * [some()](are/areundefined/some.md)
 * [are: Are {}](are/are-are.md)
-
-## Group 1
-
-* [Page 5](group-1/page-5.md)
 
 ## is
 
