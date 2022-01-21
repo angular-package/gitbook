@@ -1,11 +1,12 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [Type](README.md)
 
 ## Getting started
 
 * [Skeleton](getting-started/skeleton.md)
-* [Installation](getting-started/installation.md)
+* [Installation](getting-started/installation/README.md)
+  * [npm](https://www.npmjs.com/package/@angular-package/type)
 * [Public API](getting-started/public-api.md)
 * [General concepts](getting-started/general-concepts.md)
 
@@ -109,14 +110,14 @@
 * [guardArray()](guard/guardarray.md)
 * [guardBigInt()](guard/guardbigint.md)
 * [guardBoolean()](guard/guardboolean.md)
-* [guardClass()](guard/guardclass.md)
-* [guardDate()](guard/guarddate.md)
-* [guardDefined()](guard/guarddefined.md)
-* [guardFalse()](guard/guardfalse.md)
-* [guardFunction()](guard/guardfunction.md)
-* [guardInstance()](guard/guardinstance.md)
-* [guardKey()](guard/guardkey.md)
-* [guardNull()](guard/guardnull.md)
+* [guardClass()](guard/page-2.md)
+* [guardDate()](guard/page-8.md)
+* [guardDefined()](guard/page-7.md)
+* [guardFalse()](guard/page-7-1.md)
+* [guardFunction()](guard/page-6.md)
+* [guardInstance()](guard/page-4.md)
+* [guardKey()](guard/page-4-1.md)
+* [guardNull()](guard/page-9.md)
 * [guardNumberBetween()](guard/guardnumberbetween.md)
 * [guardNumber()](guard/guardnumber.md)
 * [guardObject()](guard/guardobject.md)
@@ -134,7 +135,7 @@
 * [guardSymbol()](guard/guardsymbol.md)
 * [guardTrue()](guard/guardtrue.md)
 * [guardSymbol()](guard/guardsymbol-1.md)
-* [guardTrue()](guard/guardtrue-1.md)
+* [guardTrue()](guard/page-3.md)
 * [guardType()](guard/guardtype.md)
 * [guardUndefined()](guard/guardundefined.md)
 * [guard: Guard {}](guard/guard-guard.md)
@@ -161,7 +162,7 @@
 
 ## Changelog
 
-* [v5.0.0](changelog/v5.0.0.md)
+* [v5.0.0](group-1/page-5.md)
 * [v4.2.0](changelog/v4.2.0.md)
 
 ## License
