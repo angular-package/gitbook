@@ -18,13 +18,11 @@ const isString = <
 ```
 {% endcode %}
 
+### Generic type variables
+
 ### Parameters
 
-| Name: type                               | Description                     |
-| ---------------------------------------- | ------------------------------- |
-| `value: any`                             | The value of any type to check. |
-| `callback: ResultCallback<any, Payload>` |                                 |
-| `payload?: Payload`                      |                                 |
+### Return type
 
 ### Returns
 

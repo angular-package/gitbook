@@ -19,13 +19,11 @@ const isObjectKeyIn = <Obj = object, Payload extends object = object>(
 ```
 {% endcode %}
 
+### Generic type variables
+
 ### Parameters
 
-| Name: type | Description |
-| ---------- | ----------- |
-|            |             |
-|            |             |
-|            |             |
+### Return type
 
 ### Returns
 

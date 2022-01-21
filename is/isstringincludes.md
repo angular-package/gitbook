@@ -30,13 +30,11 @@ const isStringIncludes = <
 ```
 {% endcode %}
 
+### Generic type variables
+
 ### Parameters
 
-| Name: type | Description |
-| ---------- | ----------- |
-|            |             |
-|            |             |
-|            |             |
+### Return type
 
 ### Returns
 

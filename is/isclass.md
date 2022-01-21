@@ -26,7 +26,7 @@ const isClass = <Class = Function, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Class`**</mark>**`=`**<mark style="color:green;">**`Function`**</mark>
 
-The `Class` generic type variable indicates the class type of the given `value` via the [return type](isclass.md#undefined).
+The `Class` generic type variable indicates the class type of the given `value` via the [return type](isclass.md#return-type).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -40,7 +40,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](isclass.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
@@ -50,7 +50,7 @@ Optional `object` of generic type variable `Payload` is assigned to the `payload
 
 #### `value is Class`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type variable `Class` by default equal to [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type variable [`Class`](isclass.md#class-function) by default equal to [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
 ### Returns
 
