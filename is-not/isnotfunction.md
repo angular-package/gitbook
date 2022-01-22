@@ -1,0 +1,3 @@
+# isNotFunction()
+
+### `isNotFunction()`

@@ -1,0 +1,5 @@
+# isNotDefined()
+
+### `isNotDefined()`
+
+``

@@ -10,6 +10,60 @@
 * [Public API](getting-started/public-api.md)
 * [General concepts](getting-started/general-concepts.md)
 
+## Helpers
+
+* [recognizeValue()](helpers/recognizevalue.md)
+* [typeOf()](helpers/typeof.md)
+
+## is
+
+* [isArray()](is/isarray.md)
+* [isBigInt()](is/isbigint.md)
+* [isBoolean()](is/isboolean.md)
+* [isBooleanObject()](is/isbooleanobject.md)
+* [isBooleanType()](is/isbooleantype.md)
+* [isClass()](is/isclass.md)
+* [isDate()](is/isdate.md)
+* [isDefined()](is/isdefined.md)
+* [isFalse()](is/isfalse.md)
+* [isFunction()](is/isfunction.md)
+* [isInstance()](is/isinstance.md)
+* [isKey()](is/iskey.md)
+* [isNull()](is/isnull.md)
+* [isNumber()](is/isnumber.md)
+* [isNumberBetween()](is/isnumberbetween.md)
+* [isNumberObject()](is/isnumberobject.md)
+* [isNumberType()](is/isnumbertype.md)
+* [isObject()](is/isobject.md)
+* [isObjectKey()](is/isobjectkey.md)
+* [isObjectKeyIn()](is/isobjectkeyin.md)
+* [isObjectKeysIn()](is/isobjectkeysin.md)
+* [isObjectKeys()](is/isobjectkeys.md)
+* [isObjectSomeKeys()](is/isobjectsomekeys.md)
+* [isPrimitive()](is/isprimitive.md)
+* [isRegExp()](is/isregexp.md)
+* [isString()](is/isstring.md)
+* [isStringIncludes()](is/isstringincludes.md)
+* [isStringIncludesSome()](is/isstringincludessome.md)
+* [isStringLength()](is/isstringlength.md)
+* [isStringObject()](is/isstringobject.md)
+* [isStringType()](is/isstringtype.md)
+* [isSymbol()](is/issymbol.md)
+* [isTrue()](is/istrue.md)
+* [isType()](is/istype.md)
+* [isUndefined()](is/isundefined.md)
+* [is: Is {}](is/is-is.md)
+
+## is not
+
+* [isNotBoolean()](is-not/isnotboolean.md)
+* [isNotDefined()](is-not/isnotdefined.md)
+* [isNotFunction()](is-not/isnotfunction.md)
+* [isNotNull()](is-not/isnotnull.md)
+* [isNotNumber()](is-not/isnotnumber.md)
+* [isNotString()](is-not/isnotstring.md)
+* [isNotUndefined()](is-not/isnotundefined.md)
+
 ## Are
 
 * [areDeterminer()](are/aredeterminer/README.md)
@@ -66,45 +120,6 @@
   * [some()](are/areundefined/some.md)
 * [are: Are {}](are/are-are.md)
 
-## is
-
-* [isArray()](is/isarray.md)
-* [isBigInt()](is/isbigint.md)
-* [isBoolean()](is/isboolean.md)
-* [isBooleanObject()](is/isbooleanobject.md)
-* [isBooleanType()](is/isbooleantype.md)
-* [isClass()](is/isclass.md)
-* [isDate()](is/isdate.md)
-* [isDefined()](is/isdefined.md)
-* [isFalse()](is/isfalse.md)
-* [isFunction()](is/isfunction.md)
-* [isInstance()](is/isinstance.md)
-* [isKey()](is/iskey.md)
-* [isNull()](is/isnull.md)
-* [isNumber()](is/isnumber.md)
-* [isNumberBetween()](is/isnumberbetween.md)
-* [isNumberObject()](is/isnumberobject.md)
-* [isNumberType()](is/isnumbertype.md)
-* [isObject()](is/isobject.md)
-* [isObjectKey()](is/isobjectkey.md)
-* [isObjectKeyIn()](is/isobjectkeyin.md)
-* [isObjectKeysIn()](is/isobjectkeysin.md)
-* [isObjectKeys()](is/isobjectkeys.md)
-* [isObjectSomeKeys()](is/isobjectsomekeys.md)
-* [isPrimitive()](is/isprimitive.md)
-* [isRegExp()](is/isregexp.md)
-* [isString()](is/isstring.md)
-* [isStringIncludes()](is/isstringincludes.md)
-* [isStringIncludesSome()](is/isstringincludessome.md)
-* [isStringLength()](is/isstringlength.md)
-* [isStringObject()](is/isstringobject.md)
-* [isStringType()](is/isstringtype.md)
-* [isSymbol()](is/issymbol.md)
-* [isTrue()](is/istrue.md)
-* [isType()](is/istype.md)
-* [isUndefined()](is/isundefined.md)
-* [is: Is {}](is/is-is.md)
-
 ## Guard
 
 * [guardArray()](guard/guardarray.md)
@@ -137,6 +152,10 @@
 * [guardType()](guard/guardtype.md)
 * [guardUndefined()](guard/guardundefined.md)
 * [guard: Guard {}](guard/guard-guard.md)
+
+## Interfaces
+
+* [MinMax](interfaces/minmax.md)
 
 ## Types
 
