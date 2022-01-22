@@ -2,7 +2,7 @@
 
 ### `guardDefined()`
 
-Description
+Guards the value to be defined, not [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 {% code title="guard-defined.func.ts" %}
 ```typescript
@@ -16,18 +16,47 @@ const guardDefined = <Type, Payload extends object = object>(
 
 ### Generic type variables
 
+#### <mark style="color:green;">**`Type`**</mark>
+
+A generic type variable `Type` indicates captured type of the given [`value`](page-7.md#value-array-less-than-type-greater-than) via the [return type](page-7.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](page-7.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+
+#### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
+
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the [`payload`](page-7.md#payload-payload) parameter of the main function from which it gets its value and [`callback`](page-7.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`payload`](../types/resultcallback.md#payload-payload) parameter.
+
 ### Parameters
+
+#### `value: Defined<Type>`
+
+The value of generic type [`Defined<Type>`](../types/defined.md), [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) undefined type captured from the provided `value` to guard against [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
+
+#### `callback?: ResultCallback<Defined<Type>, Payload>`
+
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](page-7.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+
+#### `payload?: Payload`
+
+Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](page-7.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](page-7.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
 
 ### Return type
 
+#### `value is Defined<Type>`
+
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](page-7.md#value-defined-less-than-type-greater-than) is a generic type [`Defined`](../types/defined.md) that takes a generic type variable [`Type`](page-7.md#type) of value by default equal to the type captured from the supplied [`value`](page-7.md#value-defined-less-than-type-greater-than) parameter excepts [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
+
 ### Returns
+
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](page-7.md#value-defined-less-than-type-greater-than) is defined.
 
 ### Example usage
 
 ```typescript
 // Example usage.
-import {  } from '@angular-package/type';
+import { guardDefined } from '@angular-package/type';
 
+let letFirstName = 'my name';
+guardDefined(letFirstName); // true; return type `value is string`
 
+const firstName = 'my const name';
+guardDefined(firstName); // true; return type `value is string`
 ```
-

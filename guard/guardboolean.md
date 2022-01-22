@@ -21,11 +21,11 @@ const guardBoolean = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyBoolean`**</mark>
 
-A generic type variable `Type` constrained by generic type [`AnyBoolean`](../types/anyboolean.md) indicates captured [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type of the given `value` via the [return type](guardboolean.md#return-type) and the `value` parameter of the provided callback function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` constrained by generic type [`AnyBoolean`](../types/anyboolean.md) indicates captured [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type of the given [`value`](guardboolean.md#value-type) via the [return type](guardboolean.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardboolean.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the [`payload`](guardboolean.md#payload-payload) parameter of the main function from which it gets its value and [`callback`](guardboolean.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`payload`](../types/resultcallback.md#payload-payload) parameter.
 
 ### Parameters
 
@@ -33,23 +33,23 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 The value of generic type variable [`Type`](guardboolean.md#bigint) to guard.
 
-#### `callback: ResultCallback<bigint, Payload>`
+#### `callback?: ResultCallback<bigint, Payload>`
 
-A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardboolean.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardboolean.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
-Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](guardboolean.md#payloadextendsobject-object) is assigned to the `payload` of the supplied `callback` function.
+Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](guardboolean.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardboolean.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
 
 ### Return type
 
 #### `value is Type`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type variable [`Type`](guardboolean.md#bigint) by default of type captured from the supplied `value`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](guardboolean.md#value-type) is a generic type variable [`Type`](guardboolean.md#bigint) by default of type captured from the supplied [`value`](guardboolean.md#value-type).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the `value` is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type or an instance of [`Boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
+The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the [`value`](guardboolean.md#value-type) is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type or an instance of [`Boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
 
 ### Example usage
 
@@ -60,4 +60,3 @@ import { guardBoolean } from '@angular-package/type';
 guardBoolean(true), // true, value is boolean
 guardBoolean(new Boolean(false)) // true, value is Boolean
 ```
-
