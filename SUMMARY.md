@@ -133,7 +133,7 @@
 * [guardStringIncludesSome()](guard/guardstringincludessome.md)
 * [guardStringLength()](guard/guardstringlength.md)
 * [guardSymbol()](guard/guardsymbol.md)
-* [guardTrue()](guard/guardtrue.md)
+* [guardTrue()](guard/page-3.md)
 * [guardType()](guard/guardtype.md)
 * [guardUndefined()](guard/guardundefined.md)
 * [guard: Guard {}](guard/guard-guard.md)
