@@ -151,6 +151,7 @@
 * [★ guardTrue()](guard/page-3.md)
 * [guardType()](guard/guardtype.md)
 * [guardUndefined()](guard/guardundefined.md)
+* [guardIs: GuardIs {}](guard/guardis-guardis.md)
 * [guard: Guard {}](guard/guard-guard.md)
 
 ## Interfaces

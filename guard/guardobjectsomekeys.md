@@ -1,6 +1,6 @@
 # guardObjectSomeKeys()
 
-### `guardObjectSomeKeys()`
+## `guardObjectSomeKeys()`
 
 Description
 
