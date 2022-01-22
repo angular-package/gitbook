@@ -1,3 +1,0 @@
-# guardTrue()
-
-### `guardTrue()`
