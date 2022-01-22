@@ -19,13 +19,13 @@ const guardBoolean = <
 
 ### Generic type variables
 
-#### <mark style="color:green;">**`Type`**</mark>
+#### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyBoolean`**</mark>
 
-A generic type variable `Type` constrained by generic type [`AnyBoolean`](../types/anyboolean.md) indicates captured [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type of the given `value` via the [return type](guardboolean.md#return-type).
+A generic type variable `Type` constrained by generic type [`AnyBoolean`](../types/anyboolean.md) indicates captured [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type of the given `value` via the [return type](guardboolean.md#return-type) and the `value` parameter of the provided callback function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
 
 ### Parameters
 
