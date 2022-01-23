@@ -1,6 +1,6 @@
 # guardNumberBetween()
 
-### `guardNumberBetween()`
+## `guardNumberBetween()`
 
 Guards the value to be [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between the specified range.
 
@@ -55,6 +55,10 @@ Optional minimum or maximum range of generic type [`MinMax`](../interfaces/minma
 
 The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
+{% hint style="info" %}
+The `payload` parameter of the callback function consists of the `min` and `max` properties of the given [`range`](guardnumberbetween.md#range-minmax-less-than-min-max-greater-than), and they can't be overwritten by the given [`payload`](guardnumberbetween.md#payload-payload) parameter of the main function.
+{% endhint %}
+
 #### `payload?: Payload`
 
 An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardnumberbetween.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
@@ -67,7 +71,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardnumberbetween.md#value-type) is a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between the specified range.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardnumberbetween.md#value-type) is a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between the specified [range](guardnumberbetween.md#range-minmax-less-than-min-max-greater-than).
 
 ### Example usage
 

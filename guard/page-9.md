@@ -1,6 +1,6 @@
 # guardNull()
 
-### `guardNull()`
+## `guardNull()`
 
 Guards the value to be [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/null).
 

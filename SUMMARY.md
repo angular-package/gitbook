@@ -136,7 +136,7 @@
 * [guardNumber()](guard/guardnumber.md)
 * [guardNumberBetween()](guard/guardnumberbetween.md)
 * [guardObject()](guard/guardobject.md)
-* [guardObjectKey()](guard/guardobjectkey.md)
+* [CHECK guardObjectKey()](guard/check-guardobjectkey.md)
 * [guardObjectKeyIn()](guard/guardobjectkeyin.md)
 * [guardObjectKeys()](guard/guardobjectkeys.md)
 * [guardObjectKeysIn()](guard/guardobjectkeysin.md)

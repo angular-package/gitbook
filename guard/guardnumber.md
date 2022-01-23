@@ -1,6 +1,6 @@
 # guardNumber()
 
-### `guardNumber()`
+## `guardNumber()`
 
 Guards the value to be a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) of any type.
 
