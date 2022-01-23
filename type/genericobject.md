@@ -12,3 +12,6 @@ type GenericObject<Value = any> = {
 ```
 {% endcode %}
 
+### Generic type variables
+
+#### <mark style="color:green;">`Value`</mark>`=`<mark style="color:green;">`any`</mark>

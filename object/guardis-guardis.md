@@ -1,7 +1,10 @@
 # guardIs: GuardIs {}
 
-```typescript
+## `guardIs: GuardIs {}`
 
+The object contains prefixed with **guard** functions.
+
+```typescript
 const guardIs: GuardIs = Object.freeze({
   array: guardArray,
   bigint: guardBigInt,
@@ -20,13 +23,10 @@ const guardIs: GuardIs = Object.freeze({
   objectKey: guardObjectKey,
   objectKeyIn: guardObjectKeyIn,
   objectKeys: guardObjectKeys,
-  objectKeysIn: guardObjectKeysIn,
   objectSomeKeys: guardObjectSomeKeys,
   primitive: guardPrimitive,
   regexp: guardRegExp,
   string: guardString,
-  stringIncludes: guardStringIncludes,
-  stringIncludesSome: guardStringIncludesSome,
   stringLength: guardStringLength,
   symbol: guardSymbol,
   true: guardTrue,

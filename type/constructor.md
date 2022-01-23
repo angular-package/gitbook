@@ -10,3 +10,6 @@ type Constructor<Type> = new (...args: any[]) => Type;
 ```
 {% endcode %}
 
+### Generic type variables
+
+Type

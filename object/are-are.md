@@ -1,5 +1,7 @@
 # are: Are {}
 
+## `are: Are {}`
+
 The `object` consists of `are` prefixed functions.
 
 {% code title="are.object.ts" %}

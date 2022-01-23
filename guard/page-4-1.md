@@ -20,11 +20,11 @@ Code on [**GitHub**](https://github.com/angular-package/type/blob/5.0.x/src/guar
 
 #### <mark style="color:green;">**`Key`**</mark>**`extends`**<mark style="color:green;">**`PropertyKey`**</mark>
 
-A generic type variable `Key` constrained by `PropertyKey` indicates captured type of the given [`value`](page-4-1.md#value-type) via the [return type](page-4-1.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](page-4-1.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Key` constrained by `PropertyKey` indicates captured type of the given [`value`](page-4-1.md#value-type) via the [return type](page-4-1.md#return-type) and the [`value`](../type/resultcallback.md#value-value) parameter of the provided [`callback`](page-4-1.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../type/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](page-4-1.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](page-4-1.md#payload-payload) optional parameter of the [`guardKey()`](page-4-1.md#guardkey) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../type/resultcallback.md#payload-payload) of the supplied [`callback`](page-4-1.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](page-4-1.md#payload-payload) optional parameter of the [`guardKey()`](page-4-1.md#guardkey) function from which it captures its value.
 
 ### Parameters
 
@@ -34,11 +34,11 @@ The value of generic type variable [`Key`](page-4-1.md#keyextendspropertykey) to
 
 #### `callback?: ResultCallback<Key, Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](page-4-1.md#payloadextendsobject-object) with optional properties from the provided [`payload`](page-4-1.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../type/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](page-4-1.md#payloadextendsobject-object) with optional properties from the provided [`payload`](page-4-1.md#payload-payload), to handle them before the [`result`](../type/resultcallback.md#result-boolean) return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](page-4-1.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](page-4-1.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](page-4-1.md#payloadextendsobject-object) is assigned to the [`payload`](../type/resultcallback.md#payload-payload) of the given [`callback`](page-4-1.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
 
 ### Return type
 
