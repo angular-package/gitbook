@@ -1,8 +1,10 @@
 # guardType()
 
-### `guardType()`
+## `guardType()`
 
-Description
+Guards the value to be a type from a given `type`.
+
+Use `guardType()` or `guard.type()` to guard the value to be the `Type` from a given `type` of the `Types`.
 
 {% code title="guard-type.func.ts" %}
 ```typescript
@@ -12,14 +14,15 @@ const guardType = <T extends Type, Payload extends object = object>(
   callback?: ResultCallback<T, Payload>,
   payload?: Payload
 ): value is T => isType(value, type, callback, payload);
+
 ```
 {% endcode %}
 
 ### Generic type variables
 
-#### <mark style="color:green;">**`Obj`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
+#### <mark style="color:green;">**`T`**</mark>**`extends`**<mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `Obj` constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates captured [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type of the given [`value`](guardtype.md#value-type) via the [return type](guardtype.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardtype.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `T` constrained by generic type [`Type`](../types/type.md) indicates captured type of the supplied [`value`](guardtype.md#value-type) via the [return type](guardtype.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardtype.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -29,9 +32,13 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: T`
 
-The value of a generic type variable `T` constrained by the `Type`, by default of the type captured from the provided `value` to guard.
+The value of a generic type variable [`T`](guardtype.md#textendstype) constrained by the [`Type`](../types/type.md), by default of the type captured from itself, to guard.
 
-#### `callback?: ResultCallback<undefined, Payload>`
+#### `type: Types<T>`
+
+The value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) or [`Constructor<T>`](../types/constructor.md) type of the [`Types`](../types/types.md) indicates against which type a given [`value`](guardtype.md#value-t) is checked.
+
+#### `callback?: ResultCallback<T, Payload>`
 
 The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardtype.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
@@ -41,13 +48,13 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
-#### `value is T`
+#### `value is`<mark style="color:green;">`T`</mark>
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `T` by default of the type captured from the `value`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](guardtype.md#value-t) is a generic type variable [`T`](guardtype.md#textendstype) by default of the type captured from the supplied [`value`](guardtype.md#value-t).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the `value` is a type from a given `type` of the `Types`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardtype.md#value-t) is a type from a given [`type`](guardtype.md#type-types-less-than-t-greater-than) of the [`Types`](../types/types.md).
 
 ### Example usage
 
