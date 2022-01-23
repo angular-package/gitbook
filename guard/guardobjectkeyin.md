@@ -37,11 +37,7 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: Obj`
 
-An [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of a generic type variable [`Obj`](guardobjectkeyin.md#objextendsobject), by default of the type captured from itself that contains(or its prototype chain) the given `key`, to guard.
-
-An `object` of a generic type variable `Obj` that contains the given `key` to guard.
-
-An `object` of a generic type variable `Obj`, by default of the type captured from itself that contains (or its prototype chain) the given `key`.
+An [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of a generic type variable [`Obj`](guardobjectkeyin.md#objextendsobject), by default of the type captured from itself that contains(or its prototype chain) the given [`key`](guardobjectkeyin.md#key-key), to guard.
 
 #### `key: Key`
 
@@ -50,6 +46,10 @@ A key of [`Obj`](guardobjectkeyin.md#objextendsobject) type, as the name of the 
 #### `callback?: ResultCallback<Obj, { key: typeof key } & Payload>`
 
 The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardobjectkeyin.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+
+{% hint style="info" %}
+The `payload` parameter of the callback function consists of the `key` property given in the [`key`](guardobjectkeyin.md#key-key) parameter, and it can't be overwritten by the given [`payload`](guardobjectkeyin.md#payload-payload) parameter of the main function.
+{% endhint %}
 
 #### `payload?: Payload`
 
