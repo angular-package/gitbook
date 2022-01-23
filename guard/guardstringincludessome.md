@@ -1,6 +1,6 @@
 # guardStringIncludesSome()
 
-### `guardStringIncludesSome()`
+## `guardStringIncludesSome()`
 
 Description
 

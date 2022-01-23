@@ -2,9 +2,7 @@
 
 ## `guardType()`
 
-Guards the value to be a type from a given `type`.
-
-Use `guardType()` or `guard.type()` to guard the value to be the `Type` from a given `type` of the `Types`.
+Guards the value to be a type of given [`type`](guardtype.md#type-types-less-than-t-greater-than).
 
 {% code title="guard-type.func.ts" %}
 ```typescript
@@ -14,7 +12,6 @@ const guardType = <T extends Type, Payload extends object = object>(
   callback?: ResultCallback<T, Payload>,
   payload?: Payload
 ): value is T => isType(value, type, callback, payload);
-
 ```
 {% endcode %}
 
@@ -32,7 +29,7 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: T`
 
-The value of a generic type variable [`T`](guardtype.md#textendstype) constrained by the [`Type`](../types/type.md), by default of the type captured from itself, to guard.
+The value of a generic type variable [`T`](guardtype.md#textendstype) constrained by generic type [`Type`](../types/type.md), by default of the type captured from itself, to guard.
 
 #### `type: Types<T>`
 
@@ -120,4 +117,3 @@ guardType(Symbol(firstName), 'symbol'); // true; return type `value is symbol`
 // Instance.
 guardType(someone, Person); // true; return type `value is Person`
 ```
-

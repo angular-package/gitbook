@@ -1,6 +1,6 @@
 # guardPrimitive()
 
-### `guardPrimitive()`
+## `guardPrimitive()`
 
 Description
 

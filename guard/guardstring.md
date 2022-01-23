@@ -1,6 +1,6 @@
 # ★ guardString()
 
-### `guardString()`
+## `guardString()`
 
 Description
 

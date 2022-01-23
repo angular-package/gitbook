@@ -1,6 +1,6 @@
 # guardRegExp()
 
-### `guardRegExp()`
+## `guardRegExp()`
 
 Description
 
