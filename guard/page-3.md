@@ -36,7 +36,7 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
-#### `value is true`
+#### `value is`<mark style="color:green;">`true`</mark>
 
 The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement [`value`](page-3.md#value-true) is [`true`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
 
