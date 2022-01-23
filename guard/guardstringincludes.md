@@ -39,19 +39,19 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: Type`
 
-The value of a generic type variable [`Type`](guardstringincludes.md#typeextendsanystring) constrained by the [`AnyString`](../types/anystring.md), by default of the type captured from itself to check against the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that contains words/sentences from a given [`includes`](guardstringincludes.md#includes-string).
-
-The value of a generic type variable `Type` constrained by the `AnyString`, by default of the type captured from the provided `value` to check against the \[`string`]\[js-string] that contains **words/sentences** from a given `includes`.
+The value of a generic type variable [`Type`](guardstringincludes.md#typeextendsanystring) constrained by the [`AnyString`](../types/anystring.md), by default of the type captured from itself to check against the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that contains **words/sentences** from a given [`includes`](guardstringincludes.md#includes-string).
 
 #### `includes: string[]`
 
-An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) as words/sentences to be case-sensitive searched for within the given [`value`](guardstringincludes.md#value-type).
-
-An \[`Array`]\[js-array] of \[`string`]\[js-string] as **words/sentences** to be **case-sensitive** searched for within a given `value`.
+An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) as **words/sentences** to be **case-sensitive** searched for within the given [`value`](guardstringincludes.md#value-type).
 
 #### `callback?: ResultCallback<Type, { includes: typeof includes } & Payload>`
 
 The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardstringincludes.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+
+{% hint style="info" %}
+The **`payload`** parameter of given `callback` function consists of the **`includes`** property of the given [`includes`](guardstringincludes.md#includes-string), and it can't be overwritten by the given [`payload`](guardstringincludes.md#payload-payload) parameter of the main function.
+{% endhint %}
 
 #### `payload?: Payload`
 
@@ -65,9 +65,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the provided [`value`](guardstringincludes.md#value-type) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that includes the specified words/sentences.
-
-The **return value** is a `boolean` indicating whether the provided `value` is a \[`string`]\[js-string] type or an instance of \[`String`]\[js-string] that includes the specified **words/sentences**.
+The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the provided [`value`](guardstringincludes.md#value-type) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that includes the specified **words/sentences**.
 
 ### Example usage
 

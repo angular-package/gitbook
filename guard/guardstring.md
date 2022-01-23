@@ -2,9 +2,7 @@
 
 ## `guardString()`
 
-Use `guardString()` or `guard.string()` to guard the value to be \[`string`]\[js-string] of any type.
-
-Guards the value to be `string` of any type.
+Guards the value to be [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of any type.
 
 {% code title="guard-string.func.ts" %}
 ```typescript
@@ -21,21 +19,19 @@ const guardString = <
 
 ### Generic type variables
 
-#### <mark style="color:green;">**`Obj`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
+<mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>
 
-A generic type variable `Obj` constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates captured [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type of the given [`value`](guardstring.md#value-type) via the [return type](guardstring.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardstring.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
-
-A generic type variable `Type` guarded by `AnyString`, by default of value captured from the supplied `value` indicates the type of the `value` via the return type `value is Type`.
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](guardstring.md#value-type) via the [return type](guardstring.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardstring.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardstring.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardstring.md#payload-payload) optional parameter of the [`guardObject()`](guardstring.md#guardobject) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardstring.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardstring.md#payload-payload) optional parameter of the [`guardString()`](guardstring.md#guardstring) function from which it captures its value.
 
 ### Parameters
 
 #### `value: Type`
 
-The value of a generic type variable `Type` constrained by the `AnyString`, by default of the type captured from the provided `value` to guard.
+The value of a generic type variable `Type` constrained by the [`AnyString`](../types/anystring.md), by default of the type captured from itself to guard.
 
 #### `callback?: ResultCallback<null, Payload>`
 
@@ -47,15 +43,13 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
-value is Type
+#### `value is Type`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Type` by default of the type captured from the `value`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](guardstring.md#value-type) is a generic type variable `Type` by default of the type captured from the [`value`](guardstring.md#value-type).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the `value` is a `string` type or an instance of `String`.
-
-The **return value** is a `boolean` indicating whether the `value` is a `string` type or an instance of `String`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardstring.md#value-type) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String).
 
 ### Example usage
 

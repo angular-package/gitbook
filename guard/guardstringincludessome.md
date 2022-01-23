@@ -2,9 +2,7 @@
 
 ## `guardStringIncludesSome()`
 
-Guards the value to be a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that includes some of the specified words/sentences.
-
-Use `guardStringIncludesSome()` or `guard.stringIncludesSome()` to guard the value to be a `string` type or an instance of `String` that includes **some** of the specified **words/sentences**.
+Guards the value to be a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that **includes** **some** of the specified **words/sentences**.
 
 {% code title="guard-string-includes-some.func.ts" %}
 ```typescript
@@ -47,6 +45,10 @@ An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 
 The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardstringincludessome.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
+{% hint style="info" %}
+The **`payload`** parameter of given `callback` function consists of the **`includes`** property of the given [`includes`](guardstringincludessome.md#includes-string), and it can't be overwritten by the given [`payload`](guardstringincludessome.md#payload-payload) parameter of the main function.
+{% endhint %}
+
 #### `payload?: Payload`
 
 An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardstringincludessome.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardstringincludessome.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
@@ -60,8 +62,6 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](guardstringincludessome.md#value-type) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that includes **some** of the specified **words/sentences**.
-
-
 
 ### Example usage
 
