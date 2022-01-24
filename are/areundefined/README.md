@@ -1,6 +1,6 @@
 # areUndefined()
 
-### `areTrue()`
+## `areTrue()`
 
 Checks whether the values are `undefined` by using `every()`, `forEach()` and `some()` methods of the returned object.
 

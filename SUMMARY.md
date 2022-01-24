@@ -13,7 +13,9 @@
 
 ## Helper
 
-* [recognizeValue()](helpers/recognizevalue.md)
+* [recognizeValue()](helper/recognizevalue/README.md)
+  * [Recognized instances](helper/recognizevalue/recognized-instances.md)
+  * [OfRecognized](helper/recognizevalue/ofrecognized.md)
 * [typeOf()](helpers/typeof.md)
 
 ## is
@@ -68,9 +70,9 @@
 ## Are
 
 * [areDeterminer()](are/aredeterminer/README.md)
-  * [every()](are/aredeterminer/every.md)
-  * [forEach()](are/aredeterminer/foreach.md)
-  * [some()](are/aredeterminer/some.md)
+  * [v: every()](are/aredeterminer/v-every.md)
+  * [v: forEach()](are/aredeterminer/v-foreach.md)
+  * [v: some()](are/aredeterminer/v-some.md)
 * [areBigInt()](are/arebigint/README.md)
   * [every()](are/arebigint/every.md)
   * [forEach()](are/arebigint/foreach.md)
@@ -198,8 +200,8 @@
 ## Change log
 
 * [Keep a changelog](change-log/keep-a-changelog.md)
-* [v5.0.0](change-log/v5.0.0.md)
-* [v4.2.0](change-log/v4.2.0.md)
+* [v5.0.0](group-1/page-5.md)
+* [v4.2.0](changelog/v4.2.0.md)
 
 ## License
 

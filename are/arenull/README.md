@@ -1,6 +1,6 @@
 # areNull()
 
-### `areFalse()`
+## `areFalse()`
 
 Checks if the values are `null` by using `every()`, `forEach()` and `some()` methods of the returned object.
 

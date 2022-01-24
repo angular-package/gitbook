@@ -1,8 +1,8 @@
 # areDeterminer()
 
-### `areDeterminer()`
+## `areDeterminer()`
 
-The helper function returns the object with [`every()`](every.md), [`forEach()`](foreach.md) and [`some()`](some.md) methods to check given values by the given `checkFn` function.
+The helper function returns the object with [`every()`](v-every.md), [`forEach()`](v-foreach.md) and [`some()`](v-some.md) methods to check given [`values`](./#...values-any) by the given [`checkFn`](./#checkfn-function) function.
 
 {% code title="are-determiner.func.ts" %}
 ```typescript
@@ -50,18 +50,18 @@ const areDeterminer = <CommonPayload extends object>(
 
 #### <mark style="color:green;">**`CommonPayload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `CommonPayload` generic type variable constrained by the `object` constrains the generic type variable `Payload` of each returned method.
+The `CommonPayload` generic type variable constrained by the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) constrains the generic type variable `Payload` of each returned method.
 
 ### Parameters
 
 #### `checkFn: Function`
 
-Function to test given `values`.
+Function to test given [`values`](./#...values-any).
 
 #### `...values: any[]`
 
-A rest parameter of `any` type to check its elements against test given in the `checkFn`.
+A rest parameter of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check its elements against test given in the [`checkFn`](./#checkfn-function).
 
 ### Returns
 
-The **return value** is an `object` of [`every()`](every.md), [`some()`](some.md) and [`forEach()`](foreach.md) as methods of checking supplied `values`.
+The **return value** is an [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) of [`every()`](v-every.md), [`some()`](v-some.md) and [`forEach()`](v-foreach.md) as methods of checking supplied [`values`](./#...values-any).

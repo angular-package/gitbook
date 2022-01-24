@@ -1,6 +1,6 @@
-# areTrue()
+# ★ areTrue()
 
-### `areTrue()`
+## `areTrue()`
 
 Checks if the values are a `boolean` type or an instance of `Boolean` equal to `true` by using `every()`, `forEach()` and `some()` methods of the returned object.
 

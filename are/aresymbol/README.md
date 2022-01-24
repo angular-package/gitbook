@@ -1,6 +1,6 @@
 # areSymbol()
 
-### `areSymbol()`
+## `areSymbol()`
 
 Checks if the values are a `symbol` type by using `every()`, `forEach()` and `some()` methods of the returned object.
 

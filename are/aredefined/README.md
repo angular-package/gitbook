@@ -1,6 +1,6 @@
 # areDefined()
 
-### `areDefined()`
+## `areDefined()`
 
 Checks whether the values are `Date` by using `every()`, `forEach()` and `some()` methods of the returned object.
 

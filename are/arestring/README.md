@@ -1,6 +1,6 @@
-# areString()
+# ★ areString()
 
-### `areString()`
+## `areString()`
 
 Checks if the values are a `string` type or an instance of `String` by using `every()`, `forEach()` and `some()` methods of the returned object.
 

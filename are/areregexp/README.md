@@ -1,6 +1,6 @@
 # areRegExp()
 
-### `areRegExp()`
+## `areRegExp()`
 
 Checks if the values are regular expressions of `RegExp` by using `every()`, `forEach()` and `some()` methods of the returned object.
 

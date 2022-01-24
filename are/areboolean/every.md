@@ -2,7 +2,7 @@
 
 ### `areBoolean().every()`
 
-Checks if **every** of the provided `values` of [`areBoolean()`](./) is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean).
+Checks if **every** of the provided [`values`](./#...values-any) of [`areBoolean()`](./) is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean).
 
 ### Returns
 

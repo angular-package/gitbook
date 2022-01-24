@@ -1,6 +1,6 @@
-# areFalse()
+# ★ areFalse()
 
-### `areFalse()`
+## `areFalse()`
 
 Checks if the values are a `boolean` type or an instance of `Boolean` equal to `false` by using `every()`, `forEach()` and `some()`methods of the returned object.false
 
