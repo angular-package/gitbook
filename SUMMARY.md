@@ -90,9 +90,18 @@
     * [unwrap()](wrapper/static/methods/unwrap.md)
 * [Usage](wrapper/usage.md)
 
-## Types
+## Type
 
-* [Wrapped](types/wrapped.md)
+* [Wrapped](type/wrapped.md)
+
+## Change log
+
+* [Keep a changelog](change-log/keep-a-changelog.md)
+
+## GIT
+
+* [Commit](git/commit.md)
+* [Semantic Versioning](git/semantic-versioning.md)
 
 ## License
 
