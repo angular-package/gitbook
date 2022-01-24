@@ -2,7 +2,7 @@
 
 ## `areDate()`
 
-Checks whether the values are [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Date) by using [`every()`](every.md), [`forEach()`](foreach.md) and [`some()`](some.md) methods of the returned object.
+Checks whether the values are [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Date) by using `every()`, `forEach()` and `some()` methods of the returned object.
 
 {% code title="are-date.func.ts" %}
 ```typescript
@@ -25,14 +25,4 @@ A rest parameter of [`any`](https://www.typescriptlang.org/docs/handbook/basic-t
 
 ### Returns
 
-The **return value** is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) with [`every()`](https://app.gitbook.com/s/HmRqpb9wXbHlBaTRCXZm/c/Z9sSoOwYGMSlx70JVmqo/are/aredate/v-every), [`some()`](https://app.gitbook.com/s/HmRqpb9wXbHlBaTRCXZm/c/Z9sSoOwYGMSlx70JVmqo/are/aredate/v-some) and [`forEach()`](https://app.gitbook.com/s/HmRqpb9wXbHlBaTRCXZm/c/Z9sSoOwYGMSlx70JVmqo/are/aredate/v-foreach) as methods of checking supplied [`values`](./#...values-any).
-
-### Example usage
-
-```typescript
-// Example usage.
-import { areDate } from '@angular-package/type';
-
-
-```
-
+The **return value** is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of `every()`, `some()` and `forEach()` as methods of checking supplied [`values`](./#...values-any).

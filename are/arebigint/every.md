@@ -5,7 +5,7 @@
 Checks whether **every** provided [`value`](./#...values-any) of [`areBigInt()`](./) is a [`bigint`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/BigInt) type.
 
 {% hint style="info" %}
-The method uses [`every()`](../aredeterminer/v-every.md) of [`areDeterminer()`](../aredeterminer/).
+The method uses [`every()`](../aredeterminer/every.md) method of [`areDeterminer()`](../aredeterminer/).
 {% endhint %}
 
 ### Returns

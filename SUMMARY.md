@@ -13,7 +13,7 @@
 
 ## Helper
 
-* [recognizeValue()](helper/recognizevalue/README.md)
+* [recognizeValue()](helpers/recognizevalue.md)
   * [Recognized instances](helper/recognizevalue/recognized-instances.md)
   * [OfRecognized](helper/recognizevalue/ofrecognized.md)
 * [typeOf()](helpers/typeof.md)
@@ -70,9 +70,9 @@
 ## Are
 
 * [areDeterminer()](are/aredeterminer/README.md)
-  * [v: every()](are/aredeterminer/v-every.md)
-  * [v: forEach()](are/aredeterminer/v-foreach.md)
-  * [v: some()](are/aredeterminer/v-some.md)
+  * [every()](are/aredeterminer/every.md)
+  * [forEach()](are/aredeterminer/foreach.md)
+  * [some()](are/aredeterminer/some.md)
 * [areBigInt()](are/arebigint/README.md)
   * [every()](are/arebigint/every.md)
   * [forEach()](are/arebigint/foreach.md)

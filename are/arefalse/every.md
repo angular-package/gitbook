@@ -1,16 +1,16 @@
 # every()
 
-### `areFalse().every()`
+## `areFalse().every()`
 
-Checks if the values are a `boolean` type or an instance of `Boolean` equal to `false` by using `every()`, `forEach()` and `some()` methods of the returned object.
+Checks whether **every** provided value of rest parameter [`values`](./#...values-any) of the [`areFalse()`](./) function is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) equal to false.
 
-Checks if every of the provided `values` of `areFalse()` is a `boolean` type or an instance of `Boolean` equal to `false`.
+{% hint style="info" %}
+The method uses [`every()`](../aredeterminer/every.md) method of [`areDeterminer()`](../aredeterminer/).
+{% endhint %}
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `values` of [`areBigInt()`](../arebigint/) are a [`bigint`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/BigInt) type.
-
-The return value is a `boolean` indicating whether the provided values of `areFalse()` are a `boolean` type or an instance of `Boolean` equal to `false`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided values of [`areFalse()`](./) are a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) equal to `false`.
 
 ### Example usage
 
@@ -18,6 +18,10 @@ The return value is a `boolean` indicating whether the provided values of `areFa
 // Example usage.
 import { areFalse } from '@angular-package/type';
 
-
+areFalse(true, null, false, new Boolean(false)).every((result, value, payload) => {
+  result // false
+  value // [ true, null, false, Boolean ]
+  payload // undefined
+  return result;
+}); // false, boolean
 ```
-

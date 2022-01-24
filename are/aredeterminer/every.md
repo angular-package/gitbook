@@ -1,4 +1,4 @@
-# v: every()
+# every()
 
 ## `areDeterminer().every()`
 
@@ -24,7 +24,7 @@ Checks whether every of the provided [`values`](./#...values-any) in the [`array
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`CommonPayload`**</mark>
 
-The `Payload` generic type variable constrained by generic type variable [`CommonPayload`](./#commonpayloadextendsobject) indicates the type of the [`payload`](v-every.md#payload-payload) parameter from which it gets its value.
+The `Payload` generic type variable constrained by generic type variable [`CommonPayload`](./#commonpayloadextendsobject) indicates the type of the [`payload`](every.md#payload-payload) parameter from which it gets its value.
 
 ### Parameters
 
@@ -34,7 +34,7 @@ A callback `function` of [`ResultCallback`](../../types/resultcallback.md) type 
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](v-every.md#payloadextendscommonpayload) is assigned to the [`payload`](../../types/resultcallback.md#payload-payload) of the given [`callback`](v-every.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](every.md#payloadextendscommonpayload) is assigned to the [`payload`](../../types/resultcallback.md#payload-payload) of the given [`callback`](every.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Returns
 

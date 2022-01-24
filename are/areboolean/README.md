@@ -1,6 +1,6 @@
 # areBoolean()
 
-### `areBoolean()`
+## `areBoolean()`
 
 Checks whether the **values** are a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) by using `every()`, `forEach()` and `some()` methods of the returned object.
 

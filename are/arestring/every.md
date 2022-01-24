@@ -1,12 +1,16 @@
 # every()
 
-### `areString().every()`
+## `areString().every()`
 
-Checks if every of the provided `values` of `areString()` is a `string` type or an instance of `String`.
+Checks whether **every** of the provided [`values`](./#...values-any) of [`areString()`](./) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String).
+
+{% hint style="info" %}
+The method uses [`every()`](../aredeterminer/every.md) method of [`areDeterminer()`](../aredeterminer/).
+{% endhint %}
 
 ### Returns
 
-The return value is a `boolean` indicating whether the provided values of `areString()` are a `string` type or an instance of `String`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided values of [`areString()`](./) are a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String).
 
 ### Example usage
 
@@ -14,6 +18,10 @@ The return value is a `boolean` indicating whether the provided values of `areSt
 // Example usage.
 import { areString } from '@angular-package/type';
 
-
+areString(1, '2', '3').every((result, value, payload) => {
+  result // true
+  value // [1, '2', '3']
+  payload // undefined
+  return result;
+}); // false, boolean
 ```
-

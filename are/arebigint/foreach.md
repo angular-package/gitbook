@@ -2,10 +2,10 @@
 
 ## `areBigInt().forEach()`
 
-The `forEach()` method executes a provided [`callback`](../aredeterminer/v-foreach.md#foreachcallback-foreachcallback-less-than-any-payload-greater-than) function **once** for each element of the supplied [`values`](./#...values-any) of [`areBigInt()`](./).&#x20;
+The `forEach()` method executes a provided [`callback`](../aredeterminer/foreach.md#foreachcallback-foreachcallback-less-than-any-payload-greater-than) function **once** for each element of the supplied [`values`](./#...values-any) of [`areBigInt()`](./).&#x20;
 
 {% hint style="info" %}
-The method uses [`forEach()`](../aredeterminer/v-foreach.md) of [`areDeterminer()`](../aredeterminer/).
+The method uses [`forEach()`](../aredeterminer/foreach.md) method of [`areDeterminer()`](../aredeterminer/).
 {% endhint %}
 
 ### Example usage

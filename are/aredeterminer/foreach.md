@@ -1,8 +1,8 @@
-# v: forEach()
+# forEach()
 
 ## `areDeterminer().forEach()`
 
-The `forEach()` method executes a provided [`callback`](v-foreach.md#foreachcallback-foreachcallback-less-than-any-payload-greater-than) function **once** for each element of the supplied [`values`](./#...values-any).
+The `forEach()` method executes a provided [`callback`](foreach.md#foreachcallback-foreachcallback-less-than-any-payload-greater-than) function **once** for each element of the supplied [`values`](./#...values-any).
 
 {% code title="are-determiner.func.ts" %}
 ```typescript
@@ -25,7 +25,7 @@ The `forEach()` method executes a provided [`callback`](v-foreach.md#foreachcall
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`CommonPayload`**</mark>
 
-The `Payload` generic type variable constrained by generic type variable [`CommonPayload`](./#commonpayloadextendsobject) indicates the type of the [`payload`](v-foreach.md#payload-payload) parameter from which it gets its value.
+The `Payload` generic type variable constrained by generic type variable [`CommonPayload`](./#commonpayloadextendsobject) indicates the type of the [`payload`](foreach.md#payload-payload) parameter from which it gets its value.
 
 ### Parameters
 
@@ -35,7 +35,7 @@ A callback `function` of [`ForEachCallback`](../../types/foreachcallback.md) typ
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](v-foreach.md#payloadextendscommonpayload) is assigned to the [`payload`](../../types/resultcallback.md#payload-payload) of the given [`callback`](v-foreach.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](foreach.md#payloadextendscommonpayload) is assigned to the [`payload`](../../types/resultcallback.md#payload-payload) of the given [`callback`](foreach.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Example usage
 

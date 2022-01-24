@@ -1,11 +1,11 @@
 # some()
 
-### `areBigInt().some()`
+## `areBigInt().some()`
 
 Checks whether **some** provided [`values`](./#...values-any) of [`areBigInt()`](./) are a [`bigint`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/BigInt) type.
 
 {% hint style="info" %}
-The method uses [`some()`](../aredeterminer/v-some.md) of [`areDeterminer()`](../aredeterminer/).
+The method uses [`some()`](../aredeterminer/some.md) method of [`areDeterminer()`](../aredeterminer/).
 {% endhint %}
 
 ### Returns

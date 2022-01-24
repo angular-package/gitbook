@@ -2,7 +2,7 @@
 
 ## `areFalse()`
 
-Checks if the values are `null` by using `every()`, `forEach()` and `some()` methods of the returned object.
+Checks whether the values are [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/null) by using `every()`, `forEach()` and `some()` methods of the returned object.
 
 {% code title="are-number.func.ts" %}
 ```typescript
@@ -11,26 +11,18 @@ const areNumber = <CommonPayload extends object>(...values: any[]) =>
 ```
 {% endcode %}
 
-| Generic type variables                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><mark style="color:green;"><strong><code>CommonPayload</code></strong></mark><strong><code>extends</code></strong><mark style="color:green;"><strong><code>object</code></strong></mark><br>The <code>CommonPayload</code> generic type variable constrained by the <code>object</code> constrains the generic type variable <code>Payload</code> of each returned method.</p> |
+### Generic type variables
+
+#### <mark style="color:green;">**`CommonPayload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
+
+The `CommonPayload` generic type variable constrained by the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) constrains the generic type variable `Payload` of each returned method.
 
 ### Parameters
 
-| Name: type         | Description                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------- |
-| `...values: any[]` | A rest parameter of `any` type to check its elements against a `number` type or an instance of `Number`. |
+#### `...values: any[]`
+
+A rest parameter of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check its elements against a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
 
 ### Returns
 
-The **return value** is an `object` with `every()`, `some()` and `forEach()` as methods of checking supplied `values`.
-
-### Example usage
-
-```typescript
-// Example usage.
-import { areNumber } from '@angular-package/type';
-
-
-```
-
+The **return value** is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) with `every()`, `some()` and `forEach()` as methods of checking supplied [`values`](./#...values-any).

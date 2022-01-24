@@ -2,7 +2,7 @@
 
 ## `recognizeValue()`
 
-Gets recognized types and instances of given [`value`](./#value-any).
+Gets recognized types and instances of given [`value`](recognizevalue.md#value-any).
 
 {% code title="recognize-value.func.ts" %}
 ```typescript

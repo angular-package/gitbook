@@ -2,7 +2,7 @@
 
 ## `areDeterminer()`
 
-The helper function returns the object with [`every()`](v-every.md), [`forEach()`](v-foreach.md) and [`some()`](v-some.md) methods to check given [`values`](./#...values-any) by the given [`checkFn`](./#checkfn-function) function.
+The helper function returns the object with [`every()`](every.md), [`forEach()`](foreach.md) and [`some()`](some.md) methods to check given [`values`](./#...values-any) by the given [`checkFn`](./#checkfn-function) function.
 
 {% code title="are-determiner.func.ts" %}
 ```typescript
@@ -64,4 +64,4 @@ A rest parameter of [`any`](https://www.typescriptlang.org/docs/handbook/basic-t
 
 ### Returns
 
-The **return value** is an [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) of [`every()`](v-every.md), [`some()`](v-some.md) and [`forEach()`](v-foreach.md) as methods of checking supplied [`values`](./#...values-any).
+The **return value** is an [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) of [`every()`](every.md), [`some()`](some.md) and [`forEach()`](foreach.md) as methods of checking supplied [`values`](./#...values-any).
