@@ -1,6 +1,6 @@
 # Public API
 
-Public features that can be imported.
+Public **features** that can be imported.
 
 ```typescript
 // Main.

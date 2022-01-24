@@ -1,6 +1,7 @@
 # Table of contents
 
-* [angular-package/type](README.md)
+* [Introduction](README.md)
+* [❤ Benefits](benefits.md)
 
 ## Getting started
 
@@ -135,7 +136,7 @@
 * [guardNumber()](guard/guardnumber.md)
 * [guardNumberBetween()](guard/guardnumberbetween.md)
 * [guardObject()](guard/guardobject.md)
-* [guardObjectKey()](guard/guardobjectkey.md)
+* [guardObjectKey()](guard/check-guardobjectkey.md)
 * [guardObjectKeyIn()](guard/guardobjectkeyin.md)
 * [guardObjectKeys()](guard/guardobjectkeys.md)
 * [guardObjectKeysIn()](guard/guardobjectkeysin.md)
