@@ -4,7 +4,7 @@ description: Examine other naming possibilities
 
 # Analysis
 
-The selected names appear [**intuitive**](../../definitions/intuitive-adjective.md), simple, and understandable, but they have alternatives. The following analysis using the Html tag `<span>` as an example should clarify the choice.
+The selected names appear [**intuitive**](../../../definitions/intuitive-adjective.md), simple, and understandable, but they have alternatives. The following analysis using the Html tag `<span>` as an example should clarify the choice.
 
 ## <<mark style="background-color:orange;">span</mark>>
 
@@ -48,7 +48,7 @@ The possible words describe the **`span`**.
 
 ### Reasons
 
-I selected to wrap the **text** because it's not only the word, [phrase](../../definitions/phrase-noun-verb.md), or sentence, but sentences and we can find a feature called 'word wrap'. On the other hand, wrap **text** may suggest wrapping words in the text. The text after the wrapping is also the content of the `Wrap`. There is a wrap that can be opened or closed.
+I selected to wrap the **text** because it's not only the word, [phrase](../../../definitions/phrase-noun-verb.md), or sentence, but sentences and we can find a feature called 'word wrap'. On the other hand, wrap **text** may suggest wrapping words in the text. The text after the wrapping is also the content of the `Wrap`. There is a wrap that can be opened or closed.
 
 > _"Phrases can consist of a single word or a complete sentence."_ - Wikipedia
 
