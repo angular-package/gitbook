@@ -23,7 +23,7 @@ The `Type` generic type variable indicates captured type of the given `value` vi
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the `payload` parameter of the main function from which it gets its value and `payload` parameter of a given `callback` function [`ResultCallback`](../type/resultcallback.md) type.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the `payload` parameter of the main function from which it gets its value and `payload` parameter of a given `callback` function [`ResultCallback`](../types/resultcallback.md) type.
 
 ### Parameters
 
@@ -33,7 +33,7 @@ The value of a generic type variable [`Type`](isdefined.md#type), by default of 
 
 #### `callback: ResultCallback<Type, Payload>`
 
-A callback `function` of [`ResultCallback`](../type/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
@@ -43,7 +43,7 @@ Optional `object` of generic type variable `Payload` is assigned to the `payload
 
 #### `value is Defined<Type>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type [`Defined`](../type/defined.md) that takes a generic type variable [`Type`](isdefined.md#type) of value by default equal to the type captured from the supplied `value` parameter excepts `undefined` which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type [`Defined`](../types/defined.md) that takes a generic type variable [`Type`](isdefined.md#type) of value by default equal to the type captured from the supplied `value` parameter excepts `undefined` which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
 
 ### Returns
 

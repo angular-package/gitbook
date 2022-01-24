@@ -1,6 +1,6 @@
 # Type
 
-### `Type`
+## `Type`
 
 Main types.
 
@@ -9,4 +9,3 @@ Main types.
 type Type = Function | object | Primitive;
 ```
 {% endcode %}
-

@@ -1,8 +1,8 @@
 # GenericObject
 
-### `GenericObject<Value>`
+## `GenericObject<Value>`
 
-The type of generic object that takes generic type variable `Value`.
+The type of generic object that takes generic type variable [`Value`](genericobject.md#value-any).
 
 {% code title="generic-object.type.ts" %}
 ```typescript

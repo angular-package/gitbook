@@ -1,8 +1,8 @@
 # Constructor
 
-### `Constructor<Type>`
+## `Constructor<Type>`
 
-An instance of a type from the provided generic type variable `Type`.
+An instance of a type from the provided generic type variable [`Type`](constructor.md#type).
 
 {% code title="constructor.type.ts" %}
 ```typescript
@@ -12,4 +12,4 @@ type Constructor<Type> = new (...args: any[]) => Type;
 
 ### Generic type variables
 
-Type
+#### `Type`

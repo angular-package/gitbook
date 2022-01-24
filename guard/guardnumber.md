@@ -23,11 +23,11 @@ Code on [**GitHub**](https://github.com/angular-package/type/blob/5.0.x/src/guar
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyNumber`**</mark>
 
-A generic type variable `Type` constrained by generic type [`AnyNumber`](../type/anynumber.md) indicates captured [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type of the given [`value`](guardnumber.md#value-type) via the [return type](guardnumber.md#return-type) and the [`value`](../type/resultcallback.md#value-value) parameter of the provided [`callback`](guardnumber.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../type/resultcallback.md) type.
+A generic type variable `Type` constrained by generic type [`AnyNumber`](../types/anynumber.md) indicates captured [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type of the given [`value`](guardnumber.md#value-type) via the [return type](guardnumber.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardnumber.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../type/resultcallback.md#payload-payload) of the supplied [`callback`](guardnumber.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardnumber.md#payload-payload) optional parameter of the [`guardNumber()`](guardnumber.md#guardnumber) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardnumber.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardnumber.md#payload-payload) optional parameter of the [`guardNumber()`](guardnumber.md#guardnumber) function from which it captures its value.
 
 ### Parameters
 
@@ -37,11 +37,11 @@ The value of generic type variable [`Type`](guardnumber.md#typeextendsanynumber)
 
 #### `callback?: ResultCallback<Type, Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../type/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumber.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumber.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardnumber.md#payloadextendsobject-object) is assigned to the [`payload`](../type/resultcallback.md#payload-payload) of the given [`callback`](guardnumber.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardnumber.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardnumber.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
 
 ### Return type
 

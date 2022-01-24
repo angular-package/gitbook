@@ -1,6 +1,6 @@
 # AnyNumber
 
-### `AnyNumber`
+## `AnyNumber`
 
 A [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type or an instance of a [`Number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number).
 
@@ -9,4 +9,3 @@ A [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#numbe
 type AnyNumber = number | Number;
 ```
 {% endcode %}
-

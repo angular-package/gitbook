@@ -1,6 +1,6 @@
 # AnyBoolean
 
-### `AnyBoolean`
+## `AnyBoolean`
 
 A [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type or an instance of a [`Boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
 
@@ -9,4 +9,3 @@ A [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#bool
 type AnyBoolean = Exclude<boolean | Boolean, true | false>;
 ```
 {% endcode %}
-

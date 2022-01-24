@@ -1,6 +1,6 @@
 # Primitive
 
-### `Primitive`
+## `Primitive`
 
 All primitives types.
 
@@ -16,4 +16,3 @@ type Primitive =
   | undefined;
 ```
 {% endcode %}
-

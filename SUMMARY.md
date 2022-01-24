@@ -12,8 +12,8 @@
 
 ## Helper
 
-* [recognizeValue()](helper/recognizevalue.md)
-* [typeOf()](helper/typeof.md)
+* [recognizeValue()](helpers/recognizevalue.md)
+* [typeOf()](helpers/typeof.md)
 
 ## is
 
@@ -135,7 +135,7 @@
 * [guardNumber()](guard/guardnumber.md)
 * [guardNumberBetween()](guard/guardnumberbetween.md)
 * [guardObject()](guard/guardobject.md)
-* [CHECK guardObjectKey()](guard/check-guardobjectkey.md)
+* [guardObjectKey()](guard/guardobjectkey.md)
 * [guardObjectKeyIn()](guard/guardobjectkeyin.md)
 * [guardObjectKeys()](guard/guardobjectkeys.md)
 * [guardObjectKeysIn()](guard/guardobjectkeysin.md)
@@ -154,34 +154,40 @@
 ## object
 
 * [are: Are {}](object/are-are.md)
-* [guard: Guard {}](object/guard-guard.md)
-* [guardIs: GuardIs {}](object/guardis-guardis.md)
+* [guard: Guard {}](guard/guard-guard.md)
+* [guardIs: GuardIs {}](guard/guardis-guardis.md)
+* [is: Is {}](object/is-is.md)
+* [isNot: IsNot {}](object/isnot-isnot.md)
 * [type {}](object/type.md)
 
 ## Interface
 
-* [MinMax](interface/minmax.md)
+* [MinMax](interfaces/minmax.md)
 
 ## Type
 
-* [AnyBoolean](type/anyboolean.md)
-* [AnyNumber](type/anynumber.md)
-* [AnyString](type/anystring.md)
+* [AnyBoolean](types/anyboolean.md)
+* [AnyNumber](types/anynumber.md)
+* [AnyString](types/anystring.md)
 * [CallbackPayload](type/callbackpayload.md)
-* [Constructor](type/constructor.md)
-* [Defined](type/defined.md)
-* [ForEachCallback](type/foreachcallback.md)
-* [GenericObject](type/genericobject.md)
-* [Never](type/never.md)
-* [NotUndefined](type/notundefined.md)
-* [NumberBetween](type/numberbetween.md)
-* [Primitive](type/primitive.md)
-* [Primitives](type/primitives.md)
-* [ResultCallback](type/resultcallback.md)
-* [StringOfLength](type/stringoflength.md)
-* [Type](type/type.md)
-* [Types](type/types.md)
-* [Undefined](type/undefined.md)
+* [Constructor](types/constructor.md)
+* [Defined](types/defined.md)
+* [ForEachCallback](types/foreachcallback.md)
+* [GenericObject](types/genericobject.md)
+* [Never](types/never.md)
+* [NotUndefined](types/notundefined.md)
+* [NumberBetween](types/numberbetween.md)
+* [Primitive](types/primitive.md)
+* [Primitives](types/primitives.md)
+* [ResultCallback](types/resultcallback.md)
+* [StringOfLength](types/stringoflength.md)
+* [Type](types/type.md)
+* [Types](types/types.md)
+* [Undefined](types/undefined.md)
+
+## Experimental
+
+* [isParam()](experimental/isparam.md)
 
 ## Changelog
 

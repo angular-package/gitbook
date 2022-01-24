@@ -29,7 +29,7 @@ const isBoolean = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`anyBoolean`**</mark>**`=`**<mark style="color:green;">**`boolean`**</mark>
 
-The `Type` generic type variable constrained by generic type [`AnyBoolean`](../type/anyboolean.md) by default of [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicates the given `value` type via the return type.
+The `Type` generic type variable constrained by generic type [`AnyBoolean`](../types/anyboolean.md) by default of [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicates the given `value` type via the return type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -43,7 +43,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../type/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](isboolean.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](isboolean.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
@@ -53,7 +53,7 @@ Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 #### `value is Type`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement, indicating the `value` is a generic type variable [`Type`](isboolean.md#typeextendsanyboolean-boolean) constrained by [`AnyBoolean`](../type/anyboolean.md) by default equal to the [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement, indicating the `value` is a generic type variable [`Type`](isboolean.md#typeextendsanyboolean-boolean) constrained by [`AnyBoolean`](../types/anyboolean.md) by default equal to the [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
 
 ### Returns
 

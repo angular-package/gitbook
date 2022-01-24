@@ -1,6 +1,6 @@
 # ForEachCallback
 
-### `ForEachCallback<Value, Payload>`
+## `ForEachCallback<Value, Payload>`
 
 Represents a callback function of `.forEach()` method which is executed **once** for each element.
 

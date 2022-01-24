@@ -24,11 +24,11 @@ Code on [**GitHub**](https://github.com/angular-package/type/blob/5.0.x/src/guar
 
 #### <mark style="color:green;">**`Obj`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-A generic type variable `Obj` constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates captured [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type of the given [`value`](page-4.md#value-type) via the [return type](page-4.md#return-type) and the [`value`](../type/resultcallback.md#value-value) parameter of the provided [`callback`](page-4.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../type/resultcallback.md) type.
+A generic type variable `Obj` constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates captured [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type of the given [`value`](page-4.md#value-type) via the [return type](page-4.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](page-4.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../type/resultcallback.md#payload-payload) of the supplied [`callback`](page-4.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](page-4.md#payload-payload) optional parameter of the [`guardInstance()`](page-4.md#guardinstance) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](page-4.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](page-4.md#payload-payload) optional parameter of the [`guardInstance()`](page-4.md#guardinstance) function from which it captures its value.
 
 ### Parameters
 
@@ -38,11 +38,11 @@ An [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 #### `constructor: Constructor<Obj>`
 
-A [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) or [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Function) that specifies the type of the [`Constructor`](../type/constructor.md).
+A [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) or [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Function) that specifies the type of the [`Constructor`](../types/constructor.md).
 
 #### `callback?: ResultCallback<Obj, { ctor: typeof constructor } & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../type/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](page-4.md#payloadextendsobject-object) with optional properties from the provided [`payload`](page-4.md#payload-payload), to handle them before the [`result`](../type/resultcallback.md#result-boolean) return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](page-4.md#payloadextendsobject-object) with optional properties from the provided [`payload`](page-4.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses `resultCallback()` function.
 
 {% hint style="info" %}
 The `payload` parameter of the callback function consists of the `ctor` property under which is set given `constructor`, and it can't be overwritten by the given [`payload`](page-4.md#payload-payload) parameter of the main function.
@@ -50,7 +50,7 @@ The `payload` parameter of the callback function consists of the `ctor` property
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](page-4.md#payloadextendsobject-object) is assigned to the [`payload`](../type/resultcallback.md#payload-payload) of the given [`callback`](page-4.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](page-4.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](page-4.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
 
 ### Return type
 

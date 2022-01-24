@@ -2,7 +2,7 @@
 
 ## `type {}`
 
-A frozen `object` that consists of `is`, `are`, and `guard` objects.
+A frozen [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that consists of [`is`](../is/is-is.md), [`are`](are-are.md), and [`guard`](../guard/guard-guard.md) objects.
 
 {% code title="type.object.ts" %}
 ```typescript
@@ -18,15 +18,15 @@ const type = Object.freeze({
 
 #### `are`
 
-The `object` consists of `are` functions.
+The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **are** functions.
 
 #### `guard`
 
-The `object` consists of `guard` functions.
+The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **guard** functions.
 
 #### `is`
 
-The `object` consists of `is` functions.
+The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **is** functions.
 
 ### Example usage
 

@@ -2,7 +2,7 @@
 
 ## `are: Are {}`
 
-The `object` consists of `are` prefixed functions.
+The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **are** prefixed functions.
 
 {% code title="are.object.ts" %}
 ```typescript
