@@ -2,7 +2,7 @@
 
 ## `areDeterminer()`
 
-The helper function returns the object with [`every()`](every.md), [`forEach()`](foreach.md) and [`some()`](some.md) methods to check given [`values`](./#...values-any) by the given [`checkFn`](./#checkfn-function) function.
+The function returns the object of [`every()`](every.md), [`forEach()`](foreach.md) and [`some()`](some.md) methods to check given [`values`](./#...values-any) with the test implemented by the given [`checkFn`](./#checkfn-function) function.
 
 {% code title="are-determiner.func.ts" %}
 ```typescript
@@ -60,7 +60,7 @@ Function to test given [`values`](./#...values-any).
 
 #### `...values: any[]`
 
-A rest parameter of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check its elements against test given in the [`checkFn`](./#checkfn-function).
+A rest parameter of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check its elements against test given in the [`checkFn`](./#checkfn-function) function.
 
 ### Returns
 

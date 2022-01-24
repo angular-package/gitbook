@@ -2,7 +2,7 @@
 
 ## `areDeterminer().every()`
 
-Checks whether every of the provided [`values`](./#...values-any) in the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) pass the test implemented by the given [`checkFn`](./#checkfn-function).
+Checks whether **every** of the provided [`values`](./#...values-any) pass the test implemented by the given [`checkFn`](./#checkfn-function) function.
 
 {% code title="are-determiner.func.ts" %}
 ```typescript
@@ -24,7 +24,7 @@ Checks whether every of the provided [`values`](./#...values-any) in the [`array
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`CommonPayload`**</mark>
 
-The `Payload` generic type variable constrained by generic type variable [`CommonPayload`](./#commonpayloadextendsobject) indicates the type of the [`payload`](every.md#payload-payload) parameter from which it gets its value.
+The `Payload` generic type variable constrained by the generic type variable [`CommonPayload`](./#commonpayloadextendsobject) indicates the type of optional parameter [`payload`](../../types/resultcallback.md#payload-payload) of the supplied [`callback`](every.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](every.md#payload-payload) optional parameter of the [`areDeterminer().every()`](every.md#aredeterminer-.every) method from which it captures its value.
 
 ### Parameters
 
@@ -38,7 +38,7 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`values`](./#...values-any) passed the test by given [`checkFn`](./#checkfn-function).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`values`](./#...values-any) passed the test implemented by the given [`checkFn`](./#checkfn-function) function.
 
 ### Example usage
 
