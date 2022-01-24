@@ -190,10 +190,16 @@
 
 * [isParam()](experimental/isparam.md)
 
-## Changelog
+## GIT
 
-* [v5.0.0](group-1/page-5.md)
-* [v4.2.0](changelog/v4.2.0.md)
+* [Commit](git/commit.md)
+* [Semantic Versioning](git/semantic-versioning.md)
+
+## Change log
+
+* [Keep a changelog](change-log/keep-a-changelog.md)
+* [v5.0.0](change-log/v5.0.0.md)
+* [v4.2.0](change-log/v4.2.0.md)
 
 ## License
 

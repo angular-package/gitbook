@@ -13,3 +13,5 @@ type Types<Obj> = Constructor<Obj> | 'function' | 'object' | Primitives;
 ### Generic type variables
 
 #### `Obj`
+
+Generic type variable `Obj` indicates an instance of the generic type [`Constructor`](constructor.md).

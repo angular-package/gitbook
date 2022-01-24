@@ -18,27 +18,27 @@ type CallbackPayload<Payload = object> = GenericObject & {
 
 #### <mark style="color:green;">`Payload`</mark>`=`<mark style="color:green;">`object`</mark>
 
-The shape of the optional `payload` parameter, by default equal to the \[`object`]\[js-object].
+The shape of the optional `payload` parameter, by default equal to the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object).
 
 ### Properties
 
 #### `action?: string`
 
-An optional action of a `string` type that describes the cause of performed callback.
+An optional action of a [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type that describes the cause of performed callback.
 
 #### `name?: string`
 
-An optional name of the function or method of a `string` type that performed callback.
+An optional name of the function or method of a [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type that performed callback.
 
 #### `param?: string`
 
-An optional name of the parameter of a `string` type to which performed callback relates.
+An optional name of the parameter of a [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to which performed callback relates.
 
 ### Example usage
 
 ```typescript
 // Example usage.
-import { CallbackPayload, ResultCallback } from '@angular-package/callback';
+import { CallbackPayload, ResultCallback } from '@angular-package/type';
 
 // Create a new function.
 const isString = (

@@ -20,33 +20,33 @@ type ForEachCallback<Value = any, Payload = object> = (
 
 #### <mark style="color:green;">`Value`</mark>`=`<mark style="color:green;">`any`</mark>
 
-A generic type variable `Value` by default equal to `any` determines the type of the `value` parameter.
+A generic type variable `Value` determines the type of the [`value`](foreachcallback.md#value-value) parameter, by default [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any).
 
 #### <mark style="color:green;">`Payload`</mark>`=`<mark style="color:green;">`object`</mark>
 
-The shape of the optional `payload` parameter, by default equal to the \[`object`]\[js-object].
+The shape of the optional [`payload`](foreachcallback.md#payload-payload) parameter, by default [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object).
 
 ### Parameters
 
 #### `result: boolean`
 
-The result of the check of a `boolean` type.
+The result of the check of a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type.
 
 #### `value: Value`
 
-The **value** that has been checked of a generic type variable `Value`.
+The **value** that has been checked of a generic type variable [`Value`](foreachcallback.md#value-any).
 
 #### `index: number`
 
-An optional `number` of checked `array` element.
+An optional [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) of checked `array` element.
 
 #### `array: any[]`
 
-An optional `array` of `any` type that **each** element is checked.
+An optional `array` of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type that **each** element is checked.
 
 #### `payload?: Payload`
 
-An optional `object` of a generic type variable `Payload` to provide more data.
+An optional [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) of a generic type variable [`Payload`](foreachcallback.md#payload-object) to provide more data.
 
 ### Return type
 

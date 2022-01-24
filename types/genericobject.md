@@ -15,3 +15,5 @@ type GenericObject<Value = any> = {
 ### Generic type variables
 
 #### <mark style="color:green;">`Value`</mark>`=`<mark style="color:green;">`any`</mark>
+
+A generic type variable `Value` indicates the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) property type, by default [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any).

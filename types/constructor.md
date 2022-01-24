@@ -13,3 +13,5 @@ type Constructor<Type> = new (...args: any[]) => Type;
 ### Generic type variables
 
 #### `Type`
+
+A generic type variable `Type` indicates the type of an instance.

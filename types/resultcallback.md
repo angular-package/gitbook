@@ -18,11 +18,11 @@ type ResultCallback<Value = any, Payload = object> = (
 
 #### <mark style="color:green;">`Value`</mark>`=`<mark style="color:green;">`any`</mark>
 
-A generic type variable `Value` by default [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) determines [`value`](resultcallback.md#value-any) parameter type.
+A generic type variable `Value` determines [`value`](resultcallback.md#value-any) parameter type, by default [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any).
 
 #### <mark style="color:green;">`Payload`</mark>`=`<mark style="color:green;">`object`</mark>
 
-Generic type variable `Payload` indicates [`payload`](resultcallback.md#payload-payload) parameter type, which by default is [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object).
+Generic type variable `Payload` indicates [`payload`](resultcallback.md#payload-payload) parameter type, by default [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object).
 
 ### Parameters
 

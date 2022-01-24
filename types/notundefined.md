@@ -13,3 +13,5 @@ type NotUndefined<Type> = Type extends undefined ? never : Type;
 ### Generic type variables
 
 #### `Type`
+
+A generic type `Type` that is never [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined).
