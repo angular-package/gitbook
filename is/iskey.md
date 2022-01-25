@@ -1,6 +1,6 @@
 # isKey()
 
-### `isKey()`
+## `isKey()`
 
 Checks if any value is one of the `string`, `number`, or `symbol` type.
 

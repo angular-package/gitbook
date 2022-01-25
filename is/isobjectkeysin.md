@@ -1,6 +1,6 @@
 # isObjectKeysIn()
 
-### `isObjectKeysIn()`
+## `isObjectKeysIn()`
 
 Checks if any value is an `object` by using the `isObject()` function with keys of the `PropertyKey` in it(or its prototype chain) by using the `in` operator.
 

@@ -1,6 +1,6 @@
 # isInstance()
 
-### `isInstance()`
+## `isInstance()`
 
 Checks if any value is an instance of a given constructor.
 

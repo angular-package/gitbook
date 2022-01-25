@@ -1,10 +1,8 @@
 # isObjectKey()
 
-## `isObjectKey()`
+### `isObjectKey()`
 
 Checks if any value is an `object` by using the `isObject()` function with its key of the `PropertyKey` type.
-
-Use `isObjectKey()` or `is.objectKey()` to check if **any** value is an \[`object`]\[js-object] with its key of the `PropertyKey` type. The function uses \[`hasOwnProperty`]\[js-hasownproperty] method of \[`Object`]\[js-object] to finds enumerable and non-enumerable `PropertyKey` as `string`, `number`, `symbol` unlike `Object.keys()`, but it can't find \[`getter`]\[js-getter] property unlike \[`in`]\[js-in-operator] operator, which can.
 
 {% code title="is-object-key.func.ts" %}
 ```typescript
@@ -27,112 +25,17 @@ const isObjectKey = <
 
 ### Generic type variables
 
-`Obj`
-
-A generic type variable `Obj` indicates the type of `value` parameter by default `object` via the return type `value is Obj`.
-
-#### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
-
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isobjectkey.md#payload-payload) optional parameter of the [`isObjectKey()`](isobjectkey.md#isobjectkey) function from which it captures its value.
-
 ### Parameters
-
-#### `value: any`
-
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.
-
-The value of any type to check against an `object` that contains a key from a given `key`.
-
-#### `key: PropertyKey`
-
-A property key to check if a given `value` contains.
-
-#### `callback: ResultCallback<any, Payload>`
-
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
-
-#### `payload?: Payload`
-
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isobjectkey.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 
-#### `value is Obj`
-
-The **return type** is a `boolean` as the result of its statement, indicating the `value` is a generic type variable `Obj` by default equal to the `object`.
-
 ### Returns
-
-The **return value** is a `boolean` indicating whether the provided `value` is an `object` with its `key`.
 
 ### Example usage
 
 ```typescript
-// Example usage.
+// Example usage
 import { isObjectKey } from '@angular-package/type';
 
-const NUMBER = 10304050;
-const STRING = '!@#$%^&*()abcdefghijklmnoprstuwyz';
-const SYMBOL_NUMBER: unique symbol = Symbol(NUMBER);
-const SYMBOL_STRING: unique symbol = Symbol(STRING);
-
-interface ObjectOne {
-  'key as string'?: boolean;
-  1030405027?: string;
-  5?: string;
-  [NUMBER]: number;
-  [STRING]: string;
-  [SYMBOL_NUMBER]?: string;
-  [SYMBOL_STRING]?: number;
-  x: number;
-}
-const OBJECT_ONE: ObjectOne = {
-  'key as string': true,
-  1030405027: 'key is number',
-  5: 'key is also number',
-  [NUMBER]: NUMBER,
-  [STRING]: 'key is string',
-  [SYMBOL_NUMBER]: 'key is symbol number',
-  [SYMBOL_STRING]: 6,
-  x: 3000
-};
-isObjectKey(OBJECT_ONE, STRING); // true
-isObjectKey(OBJECT_ONE, 1030405027); // true
-isObjectKey(OBJECT_ONE, NUMBER); // true
-isObjectKey(OBJECT_ONE, SYMBOL_NUMBER); // true
-isObjectKey(OBJECT_ONE, SYMBOL_STRING); // true
-
-class Class {
-
-  1030405027 = 'my new number';
-  5 = 'my number';
-
-  firstName = 'My name';
-  surname = 'Surname';
-
-  x = NUMBER;
-  y = STRING;
-
-  get [NUMBER](): number {
-    return this.x;
-  }
-  get [STRING](): string {
-    return this.y;
-  }
-
-  get [SYMBOL_NUMBER](): number {
-    return this.x;
-  }
-
-  get [SYMBOL_STRING](): string {
-    return this.y;
-  }
-}
-
-const CLASS = new Class();
-
-// One of the differences between the `in` operator and the `hasOwnProperty()`
-// method is that it doesn't find a getter key
-isObjectKey(CLASS, SYMBOL_NUMBER); // false
-isObjectKey(CLASS, SYMBOL_STRING); // false
 ```
+

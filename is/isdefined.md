@@ -1,8 +1,8 @@
 # isDefined()
 
-### `isDefined()`
+## `isDefined()`
 
-Checks if any value is not an [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined) type and is not equal to [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is not an [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined) type and is not equal to [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
 
 {% code title="is-defined.func.ts" %}
 ```typescript
@@ -30,6 +30,8 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 #### `value: Type`
 
 The value of a generic type variable [`Type`](isdefined.md#type), by default of type captured from the provided `value`, to check.
+
+The value of a generic type variable `Type`, by default of type captured from the provided `value`, to check.
 
 #### `callback: ResultCallback<Type, Payload>`
 

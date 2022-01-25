@@ -1,6 +1,6 @@
 # isNull()
 
-### `isNull()`
+## `isNull()`
 
 Checks if any value is of the type obtained from its `Object.prototype` equal to `'null'` or an `object` type that is equal to `null`.
 

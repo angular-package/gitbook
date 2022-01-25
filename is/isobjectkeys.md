@@ -1,6 +1,6 @@
 # isObjectKeys()
 
-### `isObjectKeys()`
+## `isObjectKeys()`
 
 Checks if any value is an `object` by using the `isObject()` function with some of its keys or some groups of its keys of the `PropertyKey` type.
 

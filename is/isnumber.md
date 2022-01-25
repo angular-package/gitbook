@@ -1,6 +1,6 @@
 # ★ isNumber()
 
-### `isNumber()`
+## `isNumber()`
 
 Checks if any value is a `number` type, or the type obtained from its `Object.prototype` equal to `'number'` or an `object` type and an instance of `Number`. The value is also checked by the `Number.isFinite()` method to determine whether it's finite and is validated by the `Number.isNaN()` method.
 

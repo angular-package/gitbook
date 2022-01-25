@@ -2,9 +2,7 @@
 
 ## `isString()`
 
-Checks if any value is a `string` type by using the `isStringType()` function or an instance of `String` by using the `isStringObject()` function.
-
-Use `isString()` or `is.string()` to check if **any** value is a \[`string`]\[js-string] type or an instance of \[`String`]\[js-string].
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) value is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type by using the [`isStringType()`](isstringtype.md) function or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) by using the [`isStringObject()`](isstringobject.md) function.
 
 {% code title="is-string.func.ts" %}
 ```typescript
@@ -24,9 +22,7 @@ const isString = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstring.md#value-any) via the [return type](isstring.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstring.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
-
-A generic type variable `Type` guarded by `AnyString` by default `string` indicates the type of the `value` via the return type `value is Type`.
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates the captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstring.md#value-any) via the return type and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstring.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function of [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -40,7 +36,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isstring.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isstring.md#payloadextendsobject) with optional properties from the provided [`payload`](isstring.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -50,13 +46,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Type`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Type` by default equal to the `string`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isstring.md#value-any) is a generic type variable [`Type`](isstring.md#typeextendsanystring-string) by default equal to the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string).
 
 ### Returns
 
-The return value is a `boolean` indicating whether the provided `value` is a `string` type or an instance of `String`.
-
-The **return value** is a `boolean` indicating whether the provided `value` is a `string` type or an instance of \[`String`]\[js-string].
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isstring.md#value-any) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String).
 
 ### Example usage
 

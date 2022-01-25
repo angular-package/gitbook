@@ -1,6 +1,6 @@
 # isBigInt()
 
-## `isBigInt()`
+### `isBigInt()`
 
 Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [`bigint`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/BigInt) type.
 
@@ -18,7 +18,7 @@ const isBigInt = <Payload extends object>(
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isbigint.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isbigint.md#payload-payload) optional parameter of the [`isBigInt()`](isbigint.md#isbigint) function from which it captures its value.
+The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
 
 ### Parameters
 
@@ -32,7 +32,7 @@ A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isbigint.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isbigint.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](isbigint.md#payloadextendsobject) is assigned to the `payload` of the supplied `callback` function.
 
 ### Return type
 
