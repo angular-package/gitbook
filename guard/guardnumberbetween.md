@@ -53,7 +53,7 @@ Optional minimum or maximum range of generic type [`MinMax`](../interfaces/minma
 
 #### `callback?: ResultCallback<Type, MinMax<Min, Max> & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The `payload` parameter of the callback function consists of the `min` and `max` properties of the given [`range`](guardnumberbetween.md#range-minmax-less-than-min-max-greater-than), and they can't be overwritten by the given [`payload`](guardnumberbetween.md#payload-payload) parameter of the main function.

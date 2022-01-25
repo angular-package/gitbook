@@ -1,6 +1,6 @@
 # isBooleanType()
 
-### `isBooleanType()`
+## `isBooleanType()`
 
 Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [`boolean`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type equal to `true` or `false`.
 
@@ -23,7 +23,7 @@ const isBooleanType = <Payload extends object>(
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isbooleantype.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isbooleantype.md#payload-payload) optional parameter of the [`isBooleanType()`](isbooleantype.md#isbooleantype) function from which it captures its value.
 
 ### Parameters
 
@@ -37,7 +37,7 @@ A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 #### `payload?: Payload`
 
-Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isbooleantype.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isbooleantype.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 
@@ -47,7 +47,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isbooleantype.md#value-any) is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type.
 
 ### Example usage
 

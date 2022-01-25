@@ -16,6 +16,7 @@
 * [recognizeValue()](helpers/recognizevalue.md)
   * [Recognized instances](helper/recognizevalue/recognized-instances.md)
   * [OfRecognized](helper/recognizevalue/ofrecognized.md)
+* [resultCallback()](helper/resultcallback.md)
 * [typeOf()](helpers/typeof.md)
 
 ## is
@@ -55,7 +56,6 @@
 * [★ isTrue()](is/istrue.md)
 * [isType()](is/istype.md)
 * [isUndefined()](is/isundefined.md)
-* [is: Is {}](is/is-is.md)
 
 ## is not
 
@@ -160,6 +160,7 @@
 * [guard: Guard {}](guard/guard-guard.md)
 * [guardIs: GuardIs {}](guard/guardis-guardis.md)
 * [is: Is {}](object/is-is.md)
+* [is: Is {}](object/is-is-1.md)
 * [isNot: IsNot {}](object/isnot-isnot.md)
 * [type {}](object/type.md)
 

@@ -27,7 +27,7 @@ const isFunction = <Payload extends object>(
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of the `payload` parameter of the main function from which it gets its value and `payload` parameter of a given `callback` function [`ResultCallback`](../types/resultcallback.md) type.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isfunction.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isfunction.md#payload-payload) optional parameter of the [`isFunction()`](isfunction.md#isfunction) function from which it captures its value.
 
 ### Parameters
 
@@ -41,7 +41,7 @@ A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 #### `payload?: Payload`
 
-Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](isfunction.md#payloadextendsobject) is assigned to the `payload` of the supplied `callback` function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isfunction.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isfunction.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 

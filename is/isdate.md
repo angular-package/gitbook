@@ -25,7 +25,7 @@ const isDate = <Payload extends object>(
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isdate.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isdate.md#payload-payload) optional parameter of the [`isDate()`](isdate.md#isdate) function from which it captures its value.
 
 ### Parameters
 
@@ -39,7 +39,7 @@ A callback `function` of [`ResultCallback`](../types/resultcallback.md) type wit
 
 #### `payload?: Payload`
 
-Optional `object` of generic type variable `Payload` is assigned to the `payload` of the supplied `callback` function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isdate.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isdate.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 
