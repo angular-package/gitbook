@@ -1,8 +1,10 @@
 # isRegExp()
 
-### `isRegExp()`
+## `isRegExp()`
 
 Checks if any value is a regular expression of the type obtained from its `Object.prototype` equal to `'regexp'`, or an `object` type, and an instance of `RegExp`.
+
+Use `isRegExp()` or `is.regexp()` to check if **any** value is a regular expression of the type obtained from its `Object.prototype` equal to `'regexp'`, or an \[`object`]\[js-object] type, and an instance of \[`RegExp`]\[js-regexp].
 
 {% code title="is-reg-exp.func.ts" %}
 ```typescript
@@ -42,13 +44,19 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+#### `value is RegExp`
+
+The **return type** is a `boolean` as the result of its statement indicating the `value` is a regular expression of a \[`RegExp`]\[js-regexp].
+
 ### Returns
+
+The **return value** is a `boolean` indicating whether the provided `value` is a regular expression.
 
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isRegExp } from '@angular-package/type';
 
+isRegExp(/[^a-z]/g); // true; The return type `value is RegExp`
 ```
-

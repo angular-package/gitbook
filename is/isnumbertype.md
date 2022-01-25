@@ -1,8 +1,10 @@
 # isNumberType()
 
-### `isNumberType()`
+## `isNumberType()`
 
 Checks if any value is a `number` type and is checked by the `Number.isFinite()` method to determine whether it's finite and is validated by the `Number.isNaN()` method.
+
+Use `isNumberType()` or `is.numberType()` to check if **any** value is a \[`number`]\[js-number] type and is checked by the \[`Number.isFinite()`]\[js-numberisfinite] method to determine whether it's finite and is validated by the \[`Number.isNaN()`]\[js-numberisnan] method.
 
 {% code title="is-number-type.func.ts" %}
 ```typescript
@@ -41,13 +43,21 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+#### `value is number`
+
+The **return type** is a `boolean` as the result of its statement indicating the provided value is a `number`.
+
 ### Returns
+
+The **return value** is a `boolean` indicating whether the provided `value` is a `number` type.
 
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isNumberType } from '@angular-package/type';
 
+isNumberType(10304050); // true
+isNumberType(Number(10304050)); // true
+isNumberType(new Number(10304050)); // false
 ```
-

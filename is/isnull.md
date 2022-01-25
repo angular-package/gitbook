@@ -4,6 +4,8 @@
 
 Checks if any value is of the type obtained from its `Object.prototype` equal to `'null'` or an `object` type that is equal to `null`.
 
+Use `isNull()` or `is.null()` to check if **any** value is of the type obtained from its `Object.prototype` equal to `'null'` or an \[`object`]\[js-object] type that is equal to \[`null`]\[js-null].
+
 {% code title="is-null.func.ts" %}
 ```typescript
 const isNull = <Payload extends object>(
@@ -41,13 +43,20 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+`value is null`
+
+The **return type** is a `boolean` as the result of its statement.
+
 ### Returns
+
+The **return value** is a `boolean` indicating whether the provided `value` is \[`null`]\[js-null].
 
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isNull } from '@angular-package/type';
 
+isNull(null); // true
+isNull(27); // false
 ```
-

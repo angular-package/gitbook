@@ -1,8 +1,8 @@
 # is: Is {}
 
-### `is: Is {}`
+## `is: Is {}`
 
-The object contains prefixed with `is` functions and prefixed with `isNot` functions in property `not`.
+The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) contains prefixed with **is** functions and prefixed with **isNot** functions in property `not`.
 
 ```typescript
 const is: Is = Object.freeze({
@@ -44,5 +44,3 @@ const is: Is = Object.freeze({
   undefined: isUndefined
 });
 ```
-
-### Example usage

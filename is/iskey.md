@@ -4,6 +4,8 @@
 
 Checks if any value is one of the `string`, `number`, or `symbol` type.
 
+Use `isKey()` or `is.key()` to check if **any** value is one of the \[`string`]\[js-string], \[`number`]\[js-number], or \[`symbol`]\[js-symbol] type.
+
 {% code title="is-key.func.ts" %}
 ```typescript
 const isKey = <Payload extends object>(
@@ -41,7 +43,13 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+`value is PropertyKey`
+
+The **return type** is a `boolean` as the result of its statement indicating the `value` is `PropertyKey`.
+
 ### Returns
+
+The **return value** is a `boolean` indicating whether the provided `value` is a `PropertyKey`.
 
 ### Example usage
 
@@ -49,5 +57,18 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 // Example usage
 import { isKey } from '@angular-package/type';
 
-```
+const STRING = 'surname';
+const STRING_INSTANCE = new String(STRING);
+isKey(STRING); // true
+isKey(STRING_INSTANCE); // true
 
+const NUMBER = 27;
+const NUMBER_INSTANCE = new Number(NUMBER);
+isKey(NUMBER); // true
+isKey(NUMBER_INSTANCE); // true
+
+const SYMBOL_NUMBER: unique symbol = Symbol(NUMBER);
+const SYMBOL_STRING: unique symbol = Symbol(STRING);
+isKey(SYMBOL_NUMBER); // true
+isKey(SYMBOL_STRING); // true
+```

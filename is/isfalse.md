@@ -4,6 +4,10 @@
 
 Checks if any value is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) by using [`isBoolean()`](isboolean.md) function, that is equal to `false`.
 
+
+
+Use `isFalse()` or `is.false()` to check if **any** value is a \[`boolean`]\[js-boolean] type or an instance of \[`Boolean`]\[js-boolean] that is equal to `false`.
+
 {% code title="is-false.func.ts" %}
 ```typescript
 const isFalse = <Payload extends object>(
@@ -45,9 +49,15 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 The **return type** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) as the result of its statement, indicating the `value` is equal to `false`.
 
+The **return type** is a `boolean` as the result of its statement, indicating the `value` is equal to`false`.
+
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) that is equal to `false`.
+
+
+
+The **return value** is a `boolean` indicating whether the provided `value` is a \[`boolean`]\[js-boolean] type or an instance of \[`Boolean`]\[js-boolean] equal to `false`.
 
 ### Example usage
 

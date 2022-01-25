@@ -1,8 +1,8 @@
 # isStringIncludes()
 
-### `isStringIncludes()`
+## `isStringIncludes()`
 
-Checks if any value is a `string` type or an instance of `String` by using `isString()` that includes all of the specified words/sentences.
+Checks if [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) value is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) by using [`isString()`](isstring.md) that includes all of the specified **words/sentences**.
 
 {% code title="is-string-includes.func.ts" %}
 ```typescript
@@ -20,17 +20,21 @@ const isStringIncludes = <
 ): value is Type =>
   callback(
     isString(value)
-    ? isArray(includes)
-      ? includes.every((include) => value.valueOf().includes(include))
-      : false
-    : false,
+      ? isArray(includes)
+        ? includes.every((include) => value.valueOf().includes(include))
+        : false
+      : false,
     value,
-    { ...payload, includes, } as any
+    { ...payload, includes } as any
   );
 ```
 {% endcode %}
 
 ### Generic type variables
+
+#### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
+
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstringincludes.md#value-any) via the [return type](isstringincludes.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstringincludes.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -40,11 +44,15 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check against the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that contains **words/sentences** from a given [`includes`](isstringincludes.md#includes-string).
 
-#### `callback: ResultCallback<any, Payload>`
+#### `includes: string[]`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of `string` as **words/sentences** to be **case-sensitive** searched for within the given [`value`](isstringincludes.md#value-any).
+
+#### `callback: ResultCallback<any, { includes: typeof includes } & Payload>`
+
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isstringincludes.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isstringincludes.md#payloadextendsobject) with optional properties from the provided [`payload`](isstringincludes.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -52,9 +60,15 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+#### `value is Type`
+
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isstringincludes.md#value-any) is a generic type variable [`Type`](isstringincludes.md#typeextendsanystring-string) by default equal to the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string).
+
 ### Returns
 
-The return value is a `boolean` indicating whether the provided `value` is a `string` type or an instance of `String` that includes all of the specified words/sentences.
+The **return value** is a `boolean` indicating whether the provided `value` is a `string` type or an instance of `String` that includes all of the specified words/sentences.
+
+The **return value** is a `boolean` indicating whether the provided `value` is a \[`string`]\[js-string] type or an instance of \[`String`]\[js-string] that includes all of the specified **words/sentences**.
 
 ### Example usage
 

@@ -1,8 +1,10 @@
 # isObject()
 
-### `isObject()`
+## `isObject()`
 
 Checks if any value is an `object` type or the type obtained from its `Object.prototype` equal to `'object'`, and an instance of `Object`.
+
+Use `isObject()` or `is.object()` to check if **any** value is an \[`object`]\[js-object] type or the type obtained from its `Object.prototype` equal to `'object'`, and an instance of \[`Object`]\[js-object].
 
 {% code title="is-object.func.ts" %}
 ```typescript
@@ -21,6 +23,10 @@ const isObject = <Obj = object, Payload extends object = object>(
 {% endcode %}
 
 ### Generic type variables
+
+Obj
+
+A generic type variable `Obj` indicates the type of `value` parameter via the return type `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -42,13 +48,47 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+#### `value is Obj`
+
+The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Obj` by default equal to `object`.
+
 ### Returns
+
+The **return value** is a `boolean` indicating whether the provided `value` is an \[`object`]\[js-object].
 
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isObject } from '@angular-package/type';
 
-```
+const x = 10304050;
+const NUMBER = 10304050;
+const STRING = '!@#$%^&*()abcdefghijklmnoprstuwyz';
+const SYMBOL_NUMBER: unique symbol = Symbol(NUMBER);
+const SYMBOL_STRING: unique symbol = Symbol(STRING);
 
+interface ObjectOne {
+  'key as string'?: boolean;
+  1030405027?: string;
+  5?: string;
+  [NUMBER]: number;
+  [STRING]: string;
+  [SYMBOL_NUMBER]?: string;
+  [SYMBOL_STRING]?: number;
+  x: number;
+}
+
+const OBJECT_ONE: ObjectOne = {
+  'key as string': true,
+  1030405027: 'key is number',
+  5: 'key is also number',
+  [NUMBER]: NUMBER,
+  [STRING]: 'key is string',
+  [SYMBOL_NUMBER]: 'key is symbol number',
+  [SYMBOL_STRING]: 6,
+  x: 3000
+};
+
+isObject(OBJECT_ONE); // true
+```

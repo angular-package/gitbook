@@ -1,8 +1,10 @@
 # isNumberObject()
 
-### `isNumberObject()`
+## `isNumberObject()`
 
 Checks if any value is of the type obtained from its `Object.prototype` equal to `'number'`, or an `object` type and an instance of `Number` and is also checked by the `isFinite()` method to determine whether it's finite and is validated by the `Number.isNaN()` method.
+
+Use `isNumberObject()` or `is.numberObject()` to check if **any** value is of the type obtained from its `Object.prototype` equal to `'number'`, or an \[`object`]\[js-object] type and an instance of \[`Number`]\[js-number] and is also checked by the \[`Number.isFinite()`]\[js-numberisfinite] method to determine whether it's finite and is validated by the \[`Number.isNaN()`]\[js-numberisnan] function.
 
 {% code title="is-number-object.func.ts" %}
 ```typescript
@@ -44,13 +46,21 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+#### `value is Number`
+
+The **return type** is a `boolean` as the result of its statement indicating the `value` is `Number`.
+
 ### Returns
+
+The **return value** is a `boolean` indicating whether the `value` is an instance of `Number`.
 
 ### Example usage
 
 ```typescript
-// Example usage
+// Example usage.
 import { isNumberObject } from '@angular-package/type';
 
+isNumberObject(10304050); // false
+isNumberObject(Number(10304050)); // false
+isNumberObject(new Number(10304050)); // true
 ```
-

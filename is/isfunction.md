@@ -4,6 +4,8 @@
 
 Checks if any value is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) type or the type obtained from its `Object.prototype` equal to `'function'` and an instance of [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions). It also denies it's a [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) by using `regexp` on the obtained string from its `Function.prototype`.
 
+Use `isFunction()` or `is.function()` to check if **any** value is a \[`function`]\[js-function] type or the type obtained from its `Object.prototype` equal to `'function'` and an instance of \[`Function`]\[js-function]. It also **denies** it's a \[`class`]\[ts-classes] by using \[`RegExp`]\[js-regexp] on the obtained string from its `Function.prototype`.
+
 {% code title="is-function.func.ts" %}
 ```typescript
 const isFunction = <Payload extends object>(
@@ -49,9 +51,13 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
+The **return type** is a `boolean` as the result of its statement indicating the `value` is a \[`Function`]\[js-function].
+
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
+
+The **return value** is a `boolean` indicating whether the provided `value` is a \[`Function`]\[js-function].
 
 ### Example usage
 

@@ -45,9 +45,15 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type [`Defined`](../types/defined.md) that takes a generic type variable [`Type`](isdefined.md#type) of value by default equal to the type captured from the supplied `value` parameter excepts `undefined` which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
 
+
+
+The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type `Defined` that takes a generic type variable `Type` of value by default equal to the type captured from the supplied `value` parameter excepts \[`undefined`]\[js-undefined] which changes to \[`never`]\[ts-never].
+
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is defined, not [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
+
+The **return value** is a `boolean` indicating whether the provided `value` is defined, not `undefined`
 
 ### Example usage
 

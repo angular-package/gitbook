@@ -1,6 +1,6 @@
 # isStringObject()
 
-### `isStringObject()`
+## `isStringObject()`
 
 Checks if [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) value is of the type obtained from its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'string'` or an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type, and an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String).
 

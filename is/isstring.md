@@ -1,8 +1,10 @@
 # ★ isString()
 
-### `isString()`
+## `isString()`
 
 Checks if any value is a `string` type by using the `isStringType()` function or an instance of `String` by using the `isStringObject()` function.
+
+Use `isString()` or `is.string()` to check if **any** value is a \[`string`]\[js-string] type or an instance of \[`String`]\[js-string].
 
 {% code title="is-string.func.ts" %}
 ```typescript
@@ -19,6 +21,12 @@ const isString = <
 {% endcode %}
 
 ### Generic type variables
+
+#### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
+
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstring.md#value-any) via the [return type](isstring.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstring.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+
+A generic type variable `Type` guarded by `AnyString` by default `string` indicates the type of the `value` via the return type `value is Type`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -40,9 +48,15 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
+#### `value is Type`
+
+The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Type` by default equal to the `string`.
+
 ### Returns
 
 The return value is a `boolean` indicating whether the provided `value` is a `string` type or an instance of `String`.
+
+The **return value** is a `boolean` indicating whether the provided `value` is a `string` type or an instance of \[`String`]\[js-string].
 
 ### Example usage
 
@@ -50,5 +64,19 @@ The return value is a `boolean` indicating whether the provided `value` is a `st
 // Example usage.
 import { isString } from '@angular-package/type';
 
-```
+isString('age'); // true; The return type `value is string`
+isString(new String('age')); // true; The return type `value is string`
 
+// Fake string example.
+const fakeString = new Number('asd');
+
+Object.assign(fakeString, {
+  get [Symbol.toStringTag](): string {
+    return 'string';
+  },
+});
+
+isString(fakeString); // false
+typeOf(fakeString); // "string"
+typeof fakeString; // "object"
+```
