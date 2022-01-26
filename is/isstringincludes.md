@@ -70,7 +70,7 @@ The **return value** is a `boolean` indicating whether the provided `value` is a
 
 The **return value** is a `boolean` indicating whether the provided `value` is a \[`string`]\[js-string] type or an instance of \[`String`]\[js-string] that includes all of the specified **words/sentences**.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

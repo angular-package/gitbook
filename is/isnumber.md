@@ -62,7 +62,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isnumber.md#value-any) is a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

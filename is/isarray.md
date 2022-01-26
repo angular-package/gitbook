@@ -1,8 +1,8 @@
 # isArray()
 
-### `isArray()`
+## `isArray()`
 
-Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is the type obtained from its `Object.prototype` equal to `'array'` or an `object` type. The value is also checked by the [`isArray()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/isArray) method of `Array`.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is of the type obtained from its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'array'` or an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type and passes the test [`Array.isArray()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/isArray) method.
 
 {% code title="is-array.func.ts" %}
 ```typescript
@@ -24,11 +24,11 @@ const isArray = <Type = any, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>**`=`**<mark style="color:green;">**`any`**</mark>
 
-The `Type` generic type variable indicates the [`array`](https://www.typescriptlang.org/docs/handbook/basic-types.html#array) element type, which by default is [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) of the given `value` via the return type.
+The `Type` generic type variable indicates the [`array`](https://www.typescriptlang.org/docs/handbook/basic-types.html#array) element type, which by default is [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) of the given [`value`](isarray.md#value-any) via the [return type](isarray.md#return-type).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isarray.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isarray.md#payload-payload) optional parameter of the [`isArray()`](isarray.md#isarray) function from which it captures its value.
 
 ### Parameters
 
@@ -38,11 +38,11 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](isarray.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isarray.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isarray.md#payloadextendsobject) with optional properties from the provided [`payload`](isarray.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
-Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](isarray.md#payloadextendsobject-object) is assigned to the `payload` of the supplied `callback` function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isarray.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isarray.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 
@@ -52,12 +52,14 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isarray.md#value-any) is an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).
 
-### Example usage
+## Example usage
+
+### Basic example
 
 ```typescript
-// Example usage.
+// Basic example.
 import { isArray } from '@angular-package/type'; 
 
 const ARRAY_NUMBER = [1, 2, 3];
@@ -65,8 +67,14 @@ const ARRAY_STRING = ['a', 'b', 'c'];
 
 isArray(ARRAY_NUMBER); // Returns `true` as `value is any[]`
 isArray<string>(ARRAY_STRING); // Returns `true` as `value is string[]`
+```
 
+### Fake array
+
+```typescript
 // Fake array example.
+import { isArray } from '@angular-package/type'; 
+
 const fakeArray = new String('');
 
 Object.assign(fakeArray, {
@@ -79,8 +87,14 @@ isArray(fakeArray), // false
 typeOf(fakeArray), // "array"
 typeof fakeArray, // "object"
 Array.isArray(fakeArray) // false
+```
 
+### Callback and payload parameters
+
+```typescript
 // Example usage with callback and payload.
+import { isArray } from '@angular-package/type';
+
 isArray([1, 2, 3], (result, value, payload) => {
   if (result === true) {
     // Returns `(3) [1, 2, 3]`
@@ -94,4 +108,3 @@ isArray([1, 2, 3], (result, value, payload) => {
   return result;
 }, { transform: { 1: 'First', 2: 'Second', 3: 'Third'} }); // Returns `true` as `value is any[]`
 ```
-

@@ -49,7 +49,7 @@ The **return type** is a [`boolean`](https://developer.mozilla.org/en-US/docs/We
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isfalse.md#value-any) is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) that is equal to `false`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
@@ -60,8 +60,14 @@ isFalse(false); // Returns `true` as `value is false`
 
 isFalse(new Boolean(true)); // Returns `false` as `value is false`
 isFalse(new Boolean(false)); // Returns `true` as `value is false`
+```
 
-// Example usage with callback and payload.
+### Callback and payload parameters
+
+```typescript
+// Callback and payload parameters example usage.
+import { isFalse } from '@angular-package/type';
+
 isFalse(new Boolean(false), (result, value, payload) => {
   value // Returns `Boolean {false}`
   if (payload) {

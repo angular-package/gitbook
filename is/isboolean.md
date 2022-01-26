@@ -1,8 +1,8 @@
 # isBoolean()
 
-### `isBoolean()`
+## `isBoolean()`
 
-Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type, or the obtained type from its `Object.prototype` equal to `'boolean'`, or an `object` type and an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) that is equal to `true` or `false`.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type, or the obtained type from its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'boolean'`, or an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type and an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) that is equal to `true` or `false`.
 
 {% code title="is-boolean.func.ts" %}
 ```typescript
@@ -27,13 +27,13 @@ const isBoolean = <
 
 ### Generic type variables
 
-#### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`anyBoolean`**</mark>**`=`**<mark style="color:green;">**`boolean`**</mark>
+#### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyBoolean`**</mark>**`=`**<mark style="color:green;">**`boolean`**</mark>
 
-The `Type` generic type variable constrained by generic type [`AnyBoolean`](../types/anyboolean.md) by default of [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicates the given `value` type via the return type.
+The `Type` generic type variable constrained by generic type [`AnyBoolean`](../types/anyboolean.md) by default of [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicates the given [`value`](isboolean.md#value-any) type via the return type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by object indicates the type of the `payload` parameter of the main function from which it gets its value and callback function `payload` parameter.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isboolean.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isboolean.md#payload-payload) optional parameter of the [`isBoolean()`](isboolean.md#isboolean) function from which it captures its value.
 
 ### Parameters
 
@@ -43,30 +43,40 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](isboolean.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isboolean.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isboolean.md#payloadextendsobject) with optional properties from the provided [`payload`](isboolean.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
-Optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Payload`](isboolean.md#payloadextendsobject-object) is assigned to the `payload` of the supplied `callback` function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isboolean.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isboolean.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 
 #### `value is Type`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement, indicating the `value` is a generic type variable [`Type`](isboolean.md#typeextendsanyboolean-boolean) constrained by [`AnyBoolean`](../types/anyboolean.md) by default equal to the [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement, indicating the [`value`](isboolean.md#value-any) is a generic type variable [`Type`](isboolean.md#typeextendsanyboolean-boolean) constrained by [`AnyBoolean`](../types/anyboolean.md) by default equal to the [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isboolean.md#value-any) is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean).
 
-### Example usage
+## Example usage
+
+### Basic example
 
 ```typescript
-// Example usage.
+// Basic example usage.
 import { isBoolean } from '@angular-package/type';
 
 isBoolean(false); // Returns `true` as `value is boolean`
 isBoolean(new Boolean(false)); // Returns `true` as `value is boolean`
+```
+
+### Callback and payload parameters
+
+```typescript
+// Callback and payload parameters example usage.
+import { isBoolean } from '@angular-package/type';
+
 isBoolean('my name', (result, value, payload) => {
   if (result === false) {
     value // "my name"
@@ -79,8 +89,14 @@ isBoolean('my name', (result, value, payload) => {
   }
   return result;
 }, { accepted: 'my name' }); // Returns `true` as `value is boolean`.
+```
 
-// Fake boolean example.
+### String as boolean
+
+```typescript
+// String as boolean example usage.
+import { isBoolean } from '@angular-package/type';
+
 const fakeBoolean = new String('');
 
 Object.assign(fakeBoolean, {
@@ -92,8 +108,14 @@ Object.assign(fakeBoolean, {
 isBoolean(fakeBoolean); // false
 typeOf(fakeBoolean); // "boolean"
 typeof fakeBoolean; // "object"
+```
 
+### Boolean as string
+
+```typescript
 // Boolean as string example.
+import { isBoolean } from '@angular-package/type';
+
 const stringAsBoolean = new Boolean('');
 
 Object.assign(stringAsBoolean, {

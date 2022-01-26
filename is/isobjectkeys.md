@@ -2,9 +2,11 @@
 
 ## `isObjectKeys()`
 
-Checks if any value is an `object` by using the `isObject()` function with some of its keys or some groups of its keys of the `PropertyKey` type.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object)(by using the [`isObject()`](isobject.md)) with its keys by using [`hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/hasOwnProperty) method of [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object).
 
-Use `isObjectKeys()` or `is.objectKeys()` to check if **any** value is an \[`object`]\[js-object] with its keys. The function uses \[`hasOwnProperty`]\[js-hasownproperty] method of \[`Object`]\[js-object] to find enumerable and non-enumerable `PropertyKey` as `string`, `number`, `symbol` unlike `Object.keys()`, but it can't find \[`getter`]\[js-getter] property unlike \[`in`]\[js-in-operator] operator, which can.
+{% hint style="info" %}
+The function uses the [`hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/hasOwnProperty) method of [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) to find enumerable and non-enumerable `PropertyKey` as string, number, symbol unlike [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys) that finds only [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability\_and\_ownership\_of\_properties) property names excluding symbol, but it can't find getter accessor unlike [`in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in) operator, which can. To find also getter accessors use the [`isObjectKeysIn()`](isobjectkeysin.md) function.
+{% endhint %}
 
 {% code title="is-object-keys.func.ts" %}
 ```typescript
@@ -29,9 +31,9 @@ const isObjectKeys = <Obj = object, Payload extends object = object>(
 
 ### Generic type variables
 
+#### <mark style="color:green;">`Obj`</mark>`=`<mark style="color:green;">`object`</mark>
 
-
-A generic type variable `Obj` indicates the type of `value` parameter by default `object` via the return type `value is Obj`.
+A generic type variable `Obj` indicates the type of [`value`](isobjectkeys.md#value-any) parameter by default [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) via the [return type](isobjectkeys.md#return-type) `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -41,17 +43,19 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.
-
-The value of any type to check against an \[`object`]\[js-object] that contains its keys from given `keys`.
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check against an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that contains its keys from given [`keys`](isobjectkeys.md#keys-propertykey).
 
 #### `keys: PropertyKey[]`
 
-An \[`Array`]\[js-array] of property keys to check if a given `value` contains all of them.
+An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of property keys to check if a given [`value`](isobjectkeys.md#value-any) contains all of them.
 
-#### `callback: ResultCallback<any, Payload>`
+#### `callback: ResultCallback<any, { keys: typeof keys } & Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeys.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeys.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkeys.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+
+{% hint style="info" %}
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeys.md#callback-resultcallback-less-than-any-payload-greater-than) function consists of the [`keys`](isobjectkeys.md#keys-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeys.md#payload-payload) parameter of the core function.
+{% endhint %}
 
 #### `payload?: Payload`
 
@@ -59,15 +63,15 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
-`value is Obj`
+#### `value is Obj`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Obj` by default equal to the `object`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isobjectkeys.md#value-any) is a generic type variable [`Obj`](isobjectkeys.md#obj-object) by default equal to the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is an `object` with its `keys`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isobjectkeys.md#value-any) is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) with its [`keys`](isobjectkeys.md#keys-propertykey).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

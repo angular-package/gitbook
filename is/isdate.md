@@ -51,7 +51,9 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isdate.md#value-any) is a [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Date).
 
-### Example usage
+## Example usage
+
+### Basic example
 
 ```typescript
 // Example usage.
@@ -64,8 +66,14 @@ isDate(new Date('1995-12-17T03:24:00')), // true
 isDate(new Date(1995, 11, 17)), // true
 isDate(new Date(628021800000)), // true
 isDate(DATE); // Returns `true` as `value is Date`
+```
 
-// Example usage with callback and payload.
+### Callback and payload parameters
+
+```typescript
+// Callback and payload parameters example usage.
+import { isDate } from '@angular-package/type';
+
 isDate(DATE, (result, payload) => {
   if (payload) {
     result // Returns `true`

@@ -2,9 +2,7 @@
 
 ## `isObjectKeysIn()`
 
-Checks if any value is an `object` by using the `isObject()` function with keys of the `PropertyKey` in it(or its prototype chain) by using the `in` operator.
-
-Use `isObjectKeysIn()` or `is.objectKeysIn()` to check if **any** value is an \[`object`]\[js-object] with keys in it(or its prototype chain) by using the \[`in`]\[js-in-operator] operator.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) by using the [`isObject()`](isobject.md) function with keys of the `PropertyKey` in it(or its prototype chain) by using the [`in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in) operator.
 
 {% code title="is-object-keys-in.func.ts" %}
 ```typescript
@@ -27,9 +25,9 @@ const isObjectKeysIn = <Obj = object, Payload extends object = object>(
 
 ### Generic type variables
 
-`Obj`
+#### <mark style="color:green;">`Obj`</mark>`=`<mark style="color:green;">`object`</mark>
 
-A generic type variable `Obj` indicates the type of `value` parameter by default `object` via the return type `value is Obj`.
+A generic type variable `Obj` indicates the type of [`value`](isobjectkeysin.md#value-any) parameter by default [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) via the [return type](isobjectkeysin.md#return-type) `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -39,17 +37,15 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check.
-
-The value of any type to check against an \[`object`]\[js-object] that contains(or its prototype chain) keys from given `keys`.
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check against the [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that contains(or its prototype chain) keys from the given [`keys`](isobjectkeysin.md#keys-propertykey).
 
 #### `keys: PropertyKey[]`
 
-An \[`Array`]\[js-array] of property keys to check if a given `value` contains(or its prototype chain) all of them.
+An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of property keys to check if a given [`value`](isobjectkeysin.md#value-any) contains(or its prototype chain) all of them.
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeysin.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeysin.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkeysin.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -65,7 +61,7 @@ The **return type** is a `boolean` as the result of its statement indicating the
 
 The **return value** is a `boolean` indicating whether the provided `value` is an `object` that contains(or its prototype chain) given `keys`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

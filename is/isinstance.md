@@ -69,7 +69,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isinstance.md#value-any) is an instance of a given [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
@@ -107,6 +107,7 @@ function functionConstructor(this: any, ...args: any[]): any {
 const anyInstance: any = new (functionConstructor as any)('First name', 'Sur name', 27);
 
 isInstance(anyInstance, functionConstructor as any); // true
+
 isInstance(new Array(), Array), // Returns `true` as `value is Array`
 isInstance(new Boolean(), Boolean), // Returns `true` as `value is Boolean`
 isInstance(new Date(), Date), // Returns `true` as `value is Date`
@@ -118,4 +119,38 @@ isInstance(new Object(), Object), // Returns `true` as `value is Object`
 isInstance(new RegExp(/^[]/), RegExp), // Returns `true` as `value is RegExp`
 isInstance(new Set(), Set), // Returns `true` as `value is Set`
 isInstance(new String(), String), // Returns `true` as `value is String`
+```
+
+### Callback and payload parameters
+
+```typescript
+// Example usage with callback and payload.
+import { isInstance } from '@angular-package/type';
+
+isInstance(TWO, Some, (result, value, payload) => {
+  value // Returns the provided `Two`
+  if (payload) {
+    payload.className // Returns `'Some'`
+    payload.ctor // Returns the provided `Some`
+  }
+  return result;
+}, { className: Some });
+```
+
+### Function constructor
+
+```typescript
+// Example usage with function constructor.
+import { isInstance } from '@angular-package/type';
+
+// Function constructor.
+function functionConstructor(this: any, ...args: any[]): any {
+  if (args) {
+    args.forEach((arg, index: number) => this[index] = arg[index]);
+  }
+  return this;
+}
+
+const anyInstance: any = new (functionConstructor as any)('First name', 'Sur name', 27);
+isInstance(anyInstance, functionConstructor as any); // true
 ```

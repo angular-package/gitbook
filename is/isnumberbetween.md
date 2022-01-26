@@ -87,7 +87,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](isnumberbetween.md#value-any) is a finite [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between a specified range.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

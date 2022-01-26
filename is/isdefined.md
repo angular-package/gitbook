@@ -49,7 +49,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isdefined.md#value-type) is defined, not [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
@@ -62,8 +62,14 @@ isDefined(UNDEFINED); // Returns `false` as `value is never`
 isDefined(defined); // Returns `false` as `value is never`
 isDefined(27); // Returns `true` as `value is number`
 isDefined('age'); // Returns `true` as `value is string`
+```
 
-// Example usage with callback and payload.
+### Callback and payload parameters
+
+```typescript
+// Callback and payload parameters example usage.
+import { isDefined } from '@angular-package/type';
+
 isDefined('age', (result, value, payload) => {
   value // 'age'
   if (payload) {

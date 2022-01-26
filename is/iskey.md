@@ -49,7 +49,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the provided [`value`](iskey.md#value-any) is a `PropertyKey`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage

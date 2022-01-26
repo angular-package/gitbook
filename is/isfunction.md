@@ -53,7 +53,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isfunction.md#value-any) is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
@@ -65,8 +65,14 @@ const FUNC = (x: number): any => x + 5;
 isFunction(Class); // Returns `false` as `value is typeof Class`, it must not be a `class`.
 isFunction(FUNC); // Returns `true` as `value is (x: number) => any`
 isFunction(() => 5); // Returns `true` as `value is () => 5`
+```
 
+### Callback and payload parameters
+
+```typescript
 // Example usage with callback and payload.
+import { isFunction } from '@angular-package/type';
+
 isFunction(() => 5, (result, value, payload) => {
   value // Returns `() => 5`
   if (payload) {

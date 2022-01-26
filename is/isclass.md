@@ -56,7 +56,9 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isclass.md#value-any) is a [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class).
 
-### Example usage
+## Example usage
+
+### Basic example
 
 ```typescript
 // Example usage.
@@ -68,8 +70,14 @@ const FUNC = (x: number): any => x + 5;
 isClass<Class>(Class); // Returns `true` as `value is Class`
 isClass(FUNC); // Returns `false` as `value is Function`
 isClass(() => 5); // Returns `false` as `value is Function`
+```
 
-// Example usage with callback and payload.
+### Callback and payload parameters
+
+```typescript
+// Callback and payload parameters example usage.
+import { isClass } from '@angular-package/type';
+
 isClass(() => 5, (result, value, payload) => {
   value // Returns `() => 5`
   if (payload) {
