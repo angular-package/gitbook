@@ -2,9 +2,7 @@
 
 ## `isFunction()`
 
-Checks if any value is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) type or the type obtained from its `Object.prototype` equal to `'function'` and an instance of [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions). It also denies it's a [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) by using `regexp` on the obtained string from its `Function.prototype`.
-
-Use `isFunction()` or `is.function()` to check if **any** value is a \[`function`]\[js-function] type or the type obtained from its `Object.prototype` equal to `'function'` and an instance of \[`Function`]\[js-function]. It also **denies** it's a \[`class`]\[ts-classes] by using \[`RegExp`]\[js-regexp] on the obtained string from its `Function.prototype`.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) type or the type obtained from its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'function'` and an instance of [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions). It also denies it's a [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) by checking whether the function converted with [`Function.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Function/toString) to the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) does not contain the word [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) at the beginning.
 
 {% code title="is-function.func.ts" %}
 ```typescript
@@ -15,10 +13,10 @@ const isFunction = <Payload extends object>(
 ): value is Function =>
   callback(
     typeof value === 'function' ||
-    (typeOf(value) === 'function' && (value as any) instanceof Function)
-    ? /class/.test(Function.prototype.toString.call(value).slice(0, 5)) ===
-        false
-    : false,
+      (typeOf(value) === 'function' && (value as any) instanceof Function)
+      ? /class/.test(Function.prototype.toString.call(value).slice(0, 5)) ===
+          false
+      : false,
     value,
     payload
   );
@@ -39,7 +37,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](isfunction.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isfunction.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isfunction.md#payloadextendsobject) with optional properties from the provided [`payload`](isfunction.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -49,15 +47,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Function`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
-
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a \[`Function`]\[js-function].
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isfunction.md#value-any) is a [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
-
-The **return value** is a `boolean` indicating whether the provided `value` is a \[`Function`]\[js-function].
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isfunction.md#value-any) is a [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
 ### Example usage
 

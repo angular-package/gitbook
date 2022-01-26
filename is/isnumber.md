@@ -2,9 +2,9 @@
 
 ## `isNumber()`
 
-Checks if any value is a `number` type, or the type obtained from its `Object.prototype` equal to `'number'` or an `object` type and an instance of `Number`. The value is also checked by the `Number.isFinite()` method to determine whether it's finite and is validated by the `Number.isNaN()` method.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type, or the type obtained from its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'number'` or an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type and an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).&#x20;
 
-Use `isNumber()` or `is.number()` to check if **any** value is a \[`number`]\[js-number] type, or the type obtained from its `Object.prototype` equal to `'number'` or an \[`object`]\[js-object] type and an instance of \[`Number`]\[js-number]. The value is also checked by the \[`Number.isFinite()`]\[js-numberisfinite] method to determine whether it's **finite** and is **validated** by the \[`Number.isNaN()`]\[js-numberisnan] method.
+The value is also checked by the `Number.isFinite()` method to determine whether it's finite and is validated by the `Number.isNaN()` method.
 
 {% code title="is-number.func.ts" %}
 ```typescript
@@ -30,9 +30,9 @@ const isNumber = <
 
 ### Generic type variables
 
-Type
+#### <mark style="color:green;">`Type`</mark>`extends`<mark style="color:green;">`AnyNumber`</mark>`=`<mark style="color:green;">`number`</mark>
 
-A generic type variable `Type` guarded by `AnyNumber` by default of `number` indicates the type of the `value` via the return type `value is Type`.
+A generic type variable `Type` constrained by [`AnyNumber`](../types/anynumber.md) indicates the captured [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type of the given [`value`](isnumber.md#value-any) via the return type and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnumber.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function of [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -46,7 +46,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isnumber.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isnumber.md#payloadextendsobject) with optional properties from the provided [`payload`](isnumber.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -56,11 +56,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Type`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Type` constrained by `AnyNumber` by default of `number` type.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isnumber.md#value-any) is a generic type variable [`Type`](isnumber.md#type) constrained by [`AnyNumber`](../types/anynumber.md) by default of [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type.
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is a `number` type or an instance of \[`Number`]\[js-number].
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isnumber.md#value-any) is a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
 
 ### Example usage
 

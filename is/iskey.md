@@ -2,9 +2,7 @@
 
 ## `isKey()`
 
-Checks if any value is one of the `string`, `number`, or `symbol` type.
-
-Use `isKey()` or `is.key()` to check if **any** value is one of the \[`string`]\[js-string], \[`number`]\[js-number], or \[`symbol`]\[js-symbol] type.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is one of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number), or [`symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol) type.
 
 {% code title="is-key.func.ts" %}
 ```typescript
@@ -35,7 +33,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](iskey.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](iskey.md#payloadextendsobject) with optional properties from the provided [`payload`](iskey.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -43,13 +41,13 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Return type
 
-`value is PropertyKey`
+#### `value is PropertyKey`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is `PropertyKey`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](iskey.md#value-any) is `PropertyKey`.
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is a `PropertyKey`.
+The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the provided [`value`](iskey.md#value-any) is a `PropertyKey`.
 
 ### Example usage
 

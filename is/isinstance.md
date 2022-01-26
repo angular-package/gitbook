@@ -2,9 +2,7 @@
 
 ## `isInstance()`
 
-Checks if any value is an instance of a given constructor.
-
-Use `isInstance()` or `is.instance()` to check if **any** value is an instance of a given `Constructor`.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is an instance of a given [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
 {% code title="is-instance.func.ts" %}
 ```typescript
@@ -19,10 +17,10 @@ const isInstance = <Obj, Payload extends object>(
 ): value is Obj =>
   callback(
     isObject(value) &&
-    typeof constructor === 'function' &&
-    constructor instanceof Function
-    ? value instanceof constructor
-    : false,
+      typeof constructor === 'function' &&
+      constructor instanceof Function
+      ? value instanceof constructor
+      : false,
     value,
     { ...payload, ctor: constructor } as any
   );
@@ -31,9 +29,9 @@ const isInstance = <Obj, Payload extends object>(
 
 ### Generic type variables
 
-`Obj`
+#### <mark style="color:green;">`Obj`</mark>
 
-A generic type variable `Obj`, by default captured from the provided `constructor` indicates the type of `value` parameter via the return type `value is Obj`.
+A generic type variable `Obj`, by default captured from the provided `constructor` indicates the type of generic type [`Constructor`](../types/constructor.md) and the type of [`value`](isinstance.md#value-any) parameter via the [return type](isinstance.md#return-type) `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
@@ -45,17 +43,17 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to be an instance of a given `constructor`.
 
-The value of any type to be an instance of a given `constructor`.
-
 #### `constructor: Constructor<Obj>`
 
 A [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) or [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) that specifies the type of [`Constructor`](../types/constructor.md).
 
-A \[`class`]\[ts-classes] or \[`function`]\[ts-function] that specifies the type of `Constructor`.
+#### `callback: ResultCallback<{ ctor: typeof constructor } & Payload>`
 
-#### `callback: ResultCallback<any, Payload>`
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isinstance.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isinstance.md#payloadextendsobject) with optional properties from the provided [`payload`](isinstance.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+{% hint style="info" %}
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isinstance.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function consists of the [`ctor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) property of the value given in the [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) parameter of the core function, and it can't be overwritten by the given [`payload`](isinstance.md#payload-payload) parameter of the core function.
+{% endhint %}
 
 #### `payload?: Payload`
 
@@ -65,11 +63,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Obj`
 
-The **return type** is a `boolean` as the result of its statement, indicating the `value` is a generic type variable `Obj` by default of type captured from the supplied `constructor`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement, indicating the [`value`](isinstance.md#value-any) is a generic type variable [`Obj`](isinstance.md#obj) by default of type captured from the supplied [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is an instance of a given `constructor`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isinstance.md#value-any) is an instance of a given [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
 ### Example usage
 

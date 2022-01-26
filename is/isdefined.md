@@ -19,7 +19,7 @@ const isDefined = <Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-The `Type` generic type variable indicates captured type of the given `value` via the return type except [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
+A generic type variable indicates the captured type of the given [`value`](isdefined.md#value-type) via the return type except [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -29,13 +29,11 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: Type`
 
-The value of a generic type variable [`Type`](isdefined.md#type), by default of type captured from the provided `value`, to check.
-
-The value of a generic type variable `Type`, by default of type captured from the provided `value`, to check.
+The value of a generic type variable [`Type`](isdefined.md#type), by default of type captured from itself, to check.
 
 #### `callback: ResultCallback<Type, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isdefined.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isdefined.md#payloadextendsobject) with optional properties from the provided [`payload`](isdefined.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -45,17 +43,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Defined<Type>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the `value` is a generic type [`Defined`](../types/defined.md) that takes a generic type variable [`Type`](isdefined.md#type) of value by default equal to the type captured from the supplied `value` parameter excepts `undefined` which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
-
-
-
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type `Defined` that takes a generic type variable `Type` of value by default equal to the type captured from the supplied `value` parameter excepts \[`undefined`]\[js-undefined] which changes to \[`never`]\[ts-never].
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isdefined.md#value-type) is a generic type [`Defined`](../types/defined.md) that takes a generic type variable [`Type`](isdefined.md#type) of value by default equal to the type captured from the supplied [`value`](isdefined.md#value-type) parameter excepts [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided `value` is defined, not [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
-
-The **return value** is a `boolean` indicating whether the provided `value` is defined, not `undefined`
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isdefined.md#value-type) is defined, not [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
 
 ### Example usage
 
