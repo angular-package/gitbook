@@ -2,8 +2,6 @@
 
 ## `OfRecognized`
 
-The generic type represents the returned object of recognized instances, types, and other tests.
-
 {% code title="of-recognized.interface.ts" %}
 ```typescript
 interface OfRecognized {

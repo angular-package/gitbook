@@ -28,7 +28,7 @@ The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **is** functions.
 
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.

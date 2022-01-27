@@ -2,7 +2,7 @@
 
 ### `is: Is {}`
 
-The object contains prefixed with **`is`** functions and prefixed with **`isNot`** functions in property **`not`**.
+The object contains prefixed with `is` functions and prefixed with `isNot` functions in property `not`.
 
 ```typescript
 const is: Is = Object.freeze({
@@ -45,4 +45,4 @@ const is: Is = Object.freeze({
 });
 ```
 
-## Example usage
+### Example usage

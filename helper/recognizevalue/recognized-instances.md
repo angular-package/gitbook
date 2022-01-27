@@ -2,7 +2,7 @@
 
 ## Recognized instances
 
-An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of default objects that is used by the [`recognizeValue()`](https://type.angular-package.dev/helper/recognizevalue) function to check the value instance by using the [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator. It can be expanded by the provided [`instances`](recognized-instances.md#instances-any) parameter.
+An `Array` of default objects that is used by the [`recognizeValue()`](https://type.angular-package.dev/helper/recognizevalue) function to check the value instance by using the [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator. It can be expanded by the provided [`instances`](recognized-instances.md#instances-any) parameter.
 
 {% code title="recognize-instances.const.ts" %}
 ```typescript

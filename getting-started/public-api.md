@@ -4,16 +4,19 @@
 
 ### Helper
 
+Help to determine the value type.
+
 ```typescript
+// Helper.
 import {
   recognizeValue, // From the `5.0.0` version
   typeOf,
-} from '@angular-package/type';Are prefixed functions
+} from '@angular-package/type';
 ```
 
 ### `is`
 
-Functions with the prefix **`is`**.
+Functions with the prefix **`is`** determine whether the value of [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type is of the specified type.
 
 ```typescript
 // `is` prefix functions.
@@ -58,7 +61,7 @@ import {
 
 ### `isNot`
 
-Functions with the prefix **`isNot`**.
+Functions with the prefix **`isNot`** determine whether the value of [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type is **not** of a specified type.
 
 ```typescript
 // `isNot` prefix functions.
@@ -75,7 +78,7 @@ import {
 
 ### `are`
 
-Functions with the prefix **`are`**.
+Functions with the prefix **`are`** determine whether the values of [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type are of the specified type.
 
 ```typescript
 // `are` prefix functions.
@@ -98,7 +101,7 @@ import {
 
 ### `guard`
 
-Functions with the prefix **`guard`**.
+Functions with the prefix **`guard`** constraint the type and determine the value is of the specified type.
 
 ```typescript
 // `guard` prefix functions.
@@ -133,6 +136,8 @@ import {
 ```
 
 ## Object
+
+The objects represent the check and guard functions.
 
 ```typescript
 // Objects.
