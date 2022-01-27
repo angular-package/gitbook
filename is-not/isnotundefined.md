@@ -1,2 +1,3 @@
 # isNotUndefined()
 
+## `isNotUndefined()`

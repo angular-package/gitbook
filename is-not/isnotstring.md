@@ -1,2 +1,4 @@
 # isNotString()
 
+## `isNotString()`
+

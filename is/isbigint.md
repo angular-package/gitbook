@@ -47,7 +47,7 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 ## Example usage
 
 ```typescript
-// Basc example usage.
+// Basic example usage.
 import { isBigInt } from '@angular-package/type';
 
 isBigInt(27); // Returns `false` as `value is bigint`
