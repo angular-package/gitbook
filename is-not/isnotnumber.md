@@ -2,13 +2,7 @@
 
 ## `isNotNumber()`
 
-Checks if the [`value`](isnotnumber.md#value-type) is **not** the type obtained from its [object class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'null'` and **not** equal to [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/null).
-
-Use `isNotNumber()` or `is.not.number()` to check if the value of a generic `Type` is **not** the type obtained from its `Object.prototype` equal to `'number'`, **not** a `number` type and **not** an instance of \[`Number`]\[js-number].
-
-
-
-Checks if the `value` is not the type obtained from its object class equal to `'number'`, not a `number` type and not an instance of `Number`.
+Checks if the [`value`](isnotnumber.md#value-type) is **not** the type obtained from its [object class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'number'`, not a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type and not an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
 
 {% code title="is-not-number.func.ts" %}
 ```typescript
@@ -55,20 +49,27 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Never<AnyNumber, Type>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isnotnumber.md#value-type) is a generic type [`Never`](../types/never.md) that takes a generic type variable [`Type`](isnotnumber.md#type) by default of value captured from the supplied [`value`](isnotnumber.md#value-type), but on the captured [`null`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
-
-
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isnotnumber.md#value-type) is a generic type [`Never`](../types/never.md) that takes a generic type variable [`Type`](isnotnumber.md#type) from the supplied [`value`](isnotnumber.md#value-type) and **not** equal to [`AnyNumber`](../types/anynumber.md), which makes it [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) [`AnyNumber`](../types/anynumber.md) but of type captured from the supplied [`value`](isnotnumber.md#value-type).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isnotnumber.md#value-type) is not [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/null).&#x20;
-
-The return value is a `boolean` indicating whether the provided `value` is not a `number` type and not an instance of `Number`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isnotnumber.md#value-type) is not a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type and not an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
 
 ## Example usage
 
 ```typescript
 // Example usage.
+import { isNotNumber } from '@angular-package/type';
+
+const anyNumber: any = 'any number';
+const firstName = 'firstName';
+const age = 27;
+const objectNumber = new Number(927);
+
+isNotNumber(anyNumber); // return type is `value is any`
+isNotNumber(firstName); // return type is `value is string`
+isNotNumber(age); // return type is `value is never`
+isNotNumber(objectNumber); // return type is `value is never`// Example usage.
 import { isNotNull } from '@angular-package/type';
 
 const anyNull: any = null;
