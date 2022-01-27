@@ -1,6 +1,6 @@
 # isOpeningIn()
 
-### `Wrapper.prototype.isOpeningIn()`
+## `Wrapper.prototype.isOpeningIn()`
 
 Checks whether the provided `text` has the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars of a specified [`Wrapper`](../../wrapper.md) object at the **beginning**.
 

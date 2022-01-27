@@ -1,6 +1,6 @@
 # textReplaceOpening()
 
-### `Wrapper.prototype.textReplaceOpening()`
+## `Wrapper.prototype.textReplaceOpening()`
 
 Replaces the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars of the [`Wrapper`](../../wrapper.md) object in the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) object with the given `closing` chars.
 
