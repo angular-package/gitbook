@@ -2,9 +2,7 @@
 
 ## `isPrimitive()`
 
-Checks if any value is a `Primitive` type or specific type from a given `type` of the `Primitives`.
-
-Use `isPrimitive()` or `is.primitive()` to check if **any** value is the `Primitive` type or specific type from a given `type` of the `Primitives`.
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is of the generic type [`Primitive`](../types/primitive.md) or specific type from a given [`type`](isprimitive.md#type-primitives) of the generic type [`Primitives`](../types/primitives.md).
 
 {% code title="is-primitive.func.ts" %}
 ```typescript
@@ -38,7 +36,9 @@ const isPrimitive = <
 
 ### Generic type variables
 
-A generic type variable `Type` constrained by the `Primitive` type indicates the type of `value` parameter via the return type `value is Type`.
+#### <mark style="color:green;">`Type`</mark>`extends`<mark style="color:green;">`Primitive`</mark>
+
+A generic type variable `Type` constrained by the generic type [`Primitive`](../types/primitive.md) type indicates the type of [`value`](isprimitive.md#value-any) parameter via the [return type](isprimitive.md#return-type) `value is Type`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -52,11 +52,11 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `type?: Primitives`
 
-An optional value of `Primitives` type indicates against which type the provided `value` is checked.
+An optional value of the generic type [`Primitives`](../types/primitives.md) type indicates against which type the provided [`value`](isprimitive.md#value-any) is checked.
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isprimitive.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isprimitive.md#payloadextendsobject) with optional properties from the provided [`payload`](isprimitive.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -66,11 +66,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Type`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Type` by default equal to `Primitive`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isprimitive.md#value-any) is a generic type variable [`Type`](isprimitive.md#typeextendsprimitive) by default equal to [`Primitive`](../types/primitive.md).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is a primitive type of the `Primitives`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isprimitive.md#value-any) is a primitive type of the [`Primitives`](../types/primitives.md).
 
 ## Example usage
 

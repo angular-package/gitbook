@@ -1,6 +1,6 @@
 # forEach()
 
-### `areTrue().forEach()`
+## `areTrue().forEach()`
 
 The `forEach()` method executes a provided [`callback`](../aredeterminer/foreach.md#foreachcallback-foreachcallback-less-than-any-payload-greater-than) function **once** for each element of the supplied [`values`](./#...values-any) of [`areTrue()`](./).
 
@@ -8,7 +8,7 @@ The `forEach()` method executes a provided [`callback`](../aredeterminer/foreach
 The method uses [`forEach()`](../aredeterminer/foreach.md) method of [`areDeterminer()`](../aredeterminer/).
 {% endhint %}
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

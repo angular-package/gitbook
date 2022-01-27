@@ -37,7 +37,7 @@ A callback `function` of [`ForEachCallback`](../../types/foreachcallback.md) typ
 
 An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](foreach.md#payloadextendscommonpayload) is assigned to the [`payload`](../../types/resultcallback.md#payload-payload) of the given [`callback`](foreach.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

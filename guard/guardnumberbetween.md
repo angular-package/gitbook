@@ -53,7 +53,7 @@ Optional minimum or maximum range of generic type [`MinMax`](../interfaces/minma
 
 #### `callback?: ResultCallback<Type, MinMax<Min, Max> & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The `payload` parameter of the callback function consists of the `min` and `max` properties of the given [`range`](guardnumberbetween.md#range-minmax-less-than-min-max-greater-than), and they can't be overwritten by the given [`payload`](guardnumberbetween.md#payload-payload) parameter of the main function.
@@ -73,7 +73,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardnumberbetween.md#value-type) is a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or an instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between the specified [range](guardnumberbetween.md#range-minmax-less-than-min-max-greater-than).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

@@ -12,7 +12,7 @@ The method uses [`every()`](../aredeterminer/every.md) method of [`areDeterminer
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided values of [`areSymbol()`](./) are a [`symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol) type.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

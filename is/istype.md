@@ -2,7 +2,7 @@
 
 ## `isType()`
 
-Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is the type from a given [`type`](istype.md#type-types-less-than-t-greater-than) of the [`Types`](../types/types.md).
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is the type from a given [`type`](istype.md#type-types-less-than-t-greater-than) of the generic type [`Types`](../types/types.md).
 
 {% code title="is-type.func.ts" %}
 ```typescript
@@ -48,7 +48,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `type: Types<T>`
 
-A value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) or [`Constructor`](../types/constructor.md) type of the [`Types`](../types/types.md) indicates against which type the provided [`value`](istype.md#value-any) is checked.
+A value of the generic type [`Types`](../types/types.md) indicates against which type the provided [`value`](istype.md#value-any) is checked.
 
 #### `callback: ResultCallback<any, Payload>`
 

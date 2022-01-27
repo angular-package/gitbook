@@ -1,6 +1,6 @@
 # some()
 
-### `areTrue().some()`
+## `areTrue().some()`
 
 Checks whether some of the provided [`values`](./#...values-any) of [`areTrue()`](./) are a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) equal to `true`.
 
@@ -12,7 +12,7 @@ The method uses [`some()`](../aredeterminer/some.md) method of [`areDeterminer()
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether **some** of the provided [`values`](./#...values-any) of [`areTrue()`](./) are a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type or an instance of [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) equal to `true`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

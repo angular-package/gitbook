@@ -1,6 +1,6 @@
 # some()
 
-### `areRegExp().some()`
+## `areRegExp().some()`
 
 Checks whether **some** of the provided [`values`](./#...values-any) of [`areRegExp()`](./) are regular expressions of [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/RegExp).
 
@@ -12,7 +12,7 @@ The method uses [`some()`](../aredeterminer/some.md) method of [`areDeterminer()
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether some of the provided `values` of [`areRegExp()`](./) are [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/RegExp) type.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

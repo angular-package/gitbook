@@ -2,9 +2,7 @@
 
 ## `isRegExp()`
 
-Checks if any value is a regular expression of the type obtained from its `Object.prototype` equal to `'regexp'`, or an `object` type, and an instance of `RegExp`.
-
-Use `isRegExp()` or `is.regexp()` to check if **any** value is a regular expression of the type obtained from its `Object.prototype` equal to `'regexp'`, or an \[`object`]\[js-object] type, and an instance of \[`RegExp`]\[js-regexp].
+Checks if [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) value is a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular\_Expressions) of the type obtained from its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'regexp'`, or an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type, and an instance of [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/RegExp).
 
 {% code title="is-reg-exp.func.ts" %}
 ```typescript
@@ -36,7 +34,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable `Payload` with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isregexp.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isregexp.md#payloadextendsobject) with optional properties from the provided [`payload`](isregexp.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -46,11 +44,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is RegExp`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a regular expression of a \[`RegExp`]\[js-regexp].
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isregexp.md#value-any) is a regular expression of a [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/RegExp).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is a regular expression.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isregexp.md#value-any) is a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular\_Expressions).
 
 ## Example usage
 

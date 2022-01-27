@@ -1,61 +1,21 @@
 # Public API
 
-Public **features** that can be imported.
+## Function
+
+### Helper
 
 ```typescript
-// Main.
 import {
   recognizeValue, // From the `5.0.0` version
   typeOf,
-} from '@angular-package/type';
+} from '@angular-package/type';Are prefixed functions
+```
 
-// `are` prefix functions.
-import {
-  // Function.
-  areBigInt, // From the `5.0.0` version
-  areBoolean, // From the `5.0.0` version
-  areDate, // From the `5.0.0` version
-  areDefined, // From the `5.0.0` version
-  areFalse, // From the `5.0.0` version
-  areNull, // From the `5.0.0` version
-  areNumber, // From the `5.0.0` version
-  areRegExp, // From the `5.0.0` version
-  areString,
-  areSymbol, // From the `5.0.0` version
-  areTrue, // From the `5.0.0` version
-  areUndefined, // From the `5.0.0` version
-} from '@angular-package/type';
+### `is`
 
-// `guard` prefix functions.
-import { 
-  guardArray,
-  guardBigInt,
-  guardBoolean,
-  guardClass,
-  guardDate, // From the `5.0.0` version
-  guardDefined,
-  guardFalse,  // From the `5.0.0` version
-  guardFunction,
-  guardInstance,
-  guardKey,
-  guardNull,
-  guardNumber,
-  guardNumberBetween,  // From the `5.0.0` version
-  guardObject,
-  guardObjectKey,
-  guardObjectKeyIn,  // From the `5.0.0` version
-  guardObjectKeys,
-  guardObjectSomeKeys, // From the `5.0.0` version
-  guardPrimitive,
-  guardRegExp,  // From the `5.0.0` version
-  guardString,
-  guardStringLength,  // From the `5.0.0` version
-  guardSymbol,
-  guardTrue,  // From the `5.0.0` version
-  guardType,
-  guardUndefined,
-} from '@angular-package/type'; 
+Functions with the prefix **`is`**.
 
+```typescript
 // `is` prefix functions.
 import {
   isArray,
@@ -94,7 +54,13 @@ import {
   isType,
   isUndefined,
 } from '@angular-package/type';
+```
 
+### `isNot`
+
+Functions with the prefix **`isNot`**.
+
+```typescript
 // `isNot` prefix functions.
 import {
   isNotBoolean,
@@ -105,15 +71,92 @@ import {
   isNotString,
   isNotUndefined
 } from '@angular-package/type';
+```
 
+### `are`
+
+Functions with the prefix **`are`**.
+
+```typescript
+// `are` prefix functions.
+import {
+  // Function.
+  areBigInt, // From the `5.0.0` version
+  areBoolean, // From the `5.0.0` version
+  areDate, // From the `5.0.0` version
+  areDefined, // From the `5.0.0` version
+  areFalse, // From the `5.0.0` version
+  areNull, // From the `5.0.0` version
+  areNumber, // From the `5.0.0` version
+  areRegExp, // From the `5.0.0` version
+  areString,
+  areSymbol, // From the `5.0.0` version
+  areTrue, // From the `5.0.0` version
+  areUndefined, // From the `5.0.0` version
+} from '@angular-package/type';
+```
+
+### `guard`
+
+Functions with the prefix **`guard`**.
+
+```typescript
+// `guard` prefix functions.
+import { 
+  guardArray,
+  guardBigInt,
+  guardBoolean,
+  guardClass,
+  guardDate, // From the `5.0.0` version
+  guardDefined,
+  guardFalse,  // From the `5.0.0` version
+  guardFunction,
+  guardInstance,
+  guardKey,
+  guardNull,
+  guardNumber,
+  guardNumberBetween,  // From the `5.0.0` version
+  guardObject,
+  guardObjectKey,
+  guardObjectKeyIn,  // From the `5.0.0` version
+  guardObjectKeys,
+  guardObjectSomeKeys, // From the `5.0.0` version
+  guardPrimitive,
+  guardRegExp,  // From the `5.0.0` version
+  guardString,
+  guardStringLength,  // From the `5.0.0` version
+  guardSymbol,
+  guardTrue,  // From the `5.0.0` version
+  guardType,
+  guardUndefined,
+} from '@angular-package/type'; 
+```
+
+## Object
+
+```typescript
 // Objects.
-import { are, guard, is, isNot, type } from '@angular-package/type';
+import {
+  are,
+  guard,
+  is,
+  isNot,
+  type
+} from '@angular-package/type';
+```
 
+## Interface
+
+```typescript
 // Interfaces.
 import {
   MinMax
 } from '@angular-package/type';
+```
 
+## Type
+
+```typescript
 // Types.
 import {
   AnyBoolean,

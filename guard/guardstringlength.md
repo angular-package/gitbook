@@ -13,11 +13,12 @@ const guardStringLength = <
   Payload extends object = object
 >(
   value: Type,
-  length: MinMax<Min, Max> | Min | Max,
+  min?: Min,
+  max?: Max,
   callback?: ResultCallback<Type, MinMax<Min, Max> & Payload>,
   payload?: Payload
 ): value is StringOfLength<Min, Max, Type> =>
-  isStringLength(value, length, callback, payload);
+  isStringLength(value, min, max, callback, payload);
 ```
 {% endcode %}
 
@@ -29,11 +30,11 @@ A generic type variable `Obj` constrained by [`AnyString`](../types/anystring.md
 
 #### <mark style="color:green;">**`Min`**</mark>**`extends`**<mark style="color:green;">**`number`**</mark>
 
-A generic type variable `Min` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from optional `min` of the provided [`length`](guardstringlength.md#length-minmax-less-than-min-max-greater-than-or-min-or-max) indicates the [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardstringlength.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **minimum** length of the provided [`value`](guardstringlength.md#value-type) via the [return type](guardstringlength.md#return-type).
+A generic type variable `Min` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from optional [`min`](guardstringlength.md#min-max) indicates the [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardstringlength.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **minimum** length of the provided [`value`](guardstringlength.md#value-type) via the [return type](guardstringlength.md#return-type).
 
 #### <mark style="color:green;">**`Max`**</mark>**`extends`**<mark style="color:green;">**`number`**</mark>
 
-A generic type variable `Max` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from optional `max` of the provided [`length`](guardstringlength.md#length-minmax-less-than-min-max-greater-than-or-min-or-max) indicates the [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardstringlength.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **maximum** length of the provided [`value`](guardstringlength.md#value-type) via the [return type](guardstringlength.md#return-type).
+A generic type variable `Max` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from optional [`max`](guardstringlength.md#max-max) indicates the [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardstringlength.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **maximum** length of the provided [`value`](guardstringlength.md#value-type) via the [return type](guardstringlength.md#return-type).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -45,9 +46,13 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 The value of a generic type variable [`Type`](guardstringlength.md#typeextendsanystring) constrained by [`AnyString`](../types/anystring.md), by default of the type captured from itself to guard.
 
-#### `length: MinMax<Min, Max> | Min | Max`
+#### `min?: Max`
 
-An [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of optional minimum and a maximum length of the given [`value`](guardstringlength.md#value-type).
+The optional **minimum** length of generic type variable [`Min`](guardstringlength.md#minextendsnumber) for a given [`value`](guardstringlength.md#value-any).
+
+#### `max?: Max`
+
+The optional **maximum** length of generic type variable [`Max`](guardstringlength.md#maxextendsnumber) for a given [`value`](guardstringlength.md#value-any).
 
 #### `callback?: ResultCallback<Type, MinMax<Min, Max> & Payload>`
 
@@ -71,7 +76,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardstringlength.md#value-type) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of a [length](guardstringlength.md#length-minmax-less-than-min-max-greater-than-or-min-or-max) between the specified range.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

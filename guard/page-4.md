@@ -62,7 +62,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the [`value`](page-4.md#value-obj) is an instance of a given [`constructor`](page-4.md#constructor-constructor-less-than-obj-greater-than).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Usage example.

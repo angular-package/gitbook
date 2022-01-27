@@ -60,7 +60,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`value`](guardobjectsomekeys.md#keys-key) is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) with some or some groups of the given [`keys`](guardobjectsomekeys.md#keys-key).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

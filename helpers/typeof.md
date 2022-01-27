@@ -15,16 +15,17 @@ const typeOf = (value: any): string =>
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to obtain its class name.
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to obtain its [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) name.
 
 ### Returns
 
-The **return value** is the object prototype class name of the given [`value`](typeof.md#value-any).
+The **return value** is the [`object` class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) name of the given [`value`](typeof.md#value-any).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
 import { typeOf } from '@angular-package/type';
+
 
 ```

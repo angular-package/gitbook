@@ -8,7 +8,7 @@ The `forEach()` method executes a provided callback function once for each eleme
 The method uses [`forEach()`](../aredeterminer/foreach.md) method of [`areDeterminer()`](../aredeterminer/).
 {% endhint %}
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

@@ -51,7 +51,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the [`value`](guardboolean.md#value-type) is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) type or an instance of [`Boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

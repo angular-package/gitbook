@@ -58,7 +58,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the [`value`](guardprimitive.md#value-type) is the [`Primitive`](../types/primitive.md) type or the given `type` of [`Primitives`](../types/primitives.md).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

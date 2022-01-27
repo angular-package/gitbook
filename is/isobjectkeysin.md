@@ -43,9 +43,13 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of property keys to check if a given [`value`](isobjectkeysin.md#value-any) contains(or its prototype chain) all of them.
 
-#### `callback: ResultCallback<any, Payload>`
+#### `callback: ResultCallback<any, { keys: typeof keys } & Payload>`
 
 A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeysin.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeysin.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkeysin.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+
+{% hint style="info" %}
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeysin.md#callback-resultcallback-less-than-any-payload-greater-than) function consists of the [`keys`](isobjectkeysin.md#keys-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeysin.md#payload-payload) parameter of the core function.
+{% endhint %}
 
 #### `payload?: Payload`
 
@@ -55,11 +59,11 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### `value is Obj`
 
-The **return type** is a `boolean` as the result of its statement indicating the `value` is a generic type variable `Obj` by default equal to the `object`.
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](isobjectkeysin.md#value-any) is a generic type variable [`Obj`](isobjectkeysin.md#obj-object) by default equal to the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object).
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is an `object` that contains(or its prototype chain) given `keys`.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isobjectkeysin.md#value-any) is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that contains(or its prototype chain) given [`keys`](isobjectkeysin.md#keys-propertykey).
 
 ## Example usage
 

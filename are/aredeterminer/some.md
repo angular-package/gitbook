@@ -40,7 +40,7 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether **some** of the provided [`values`](./#...values-any) passed the test of the given [`checkFn`](./#checkfn-function).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

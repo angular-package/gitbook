@@ -1,6 +1,6 @@
 # every()
 
-### `areUndefined().every()`
+## `areUndefined().every()`
 
 Checks whether every provided [`value`](./#...values-any) of [`areUndefined()`](./) is [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
@@ -12,7 +12,7 @@ The method uses [`every()`](../aredeterminer/every.md) method of [`areDeterminer
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`values`](./#...values-any) of [`areUndefined()`](./) are [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

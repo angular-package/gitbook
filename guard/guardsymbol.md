@@ -44,7 +44,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol) indicating whether the [`value`](guardsymbol.md#value-symbol) is a [`symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

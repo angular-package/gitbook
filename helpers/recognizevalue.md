@@ -69,7 +69,7 @@ The **return type** is an interface of the operators and functions used to check
 
 The **return value** is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of types and instances recognized as `true` or all even those recognized as `false`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

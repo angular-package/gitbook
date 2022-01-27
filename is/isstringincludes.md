@@ -34,7 +34,7 @@ const isStringIncludes = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstringincludes.md#value-any) via the [return type](isstringincludes.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstringincludes.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` constrained by generic type [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstringincludes.md#value-any) via the [return type](isstringincludes.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstringincludes.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -48,7 +48,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `includes: string[]`
 
-An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of `string` as **words/sentences** to be **case-sensitive** searched for within the given [`value`](isstringincludes.md#value-any).
+An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) as **words/sentences** to be **case-sensitive** searched for within the given [`value`](isstringincludes.md#value-any).
 
 #### `callback: ResultCallback<any, { includes: typeof includes } & Payload>`
 
@@ -66,9 +66,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a `boolean` indicating whether the provided `value` is a `string` type or an instance of `String` that includes all of the specified words/sentences.
-
-The **return value** is a `boolean` indicating whether the provided `value` is a \[`string`]\[js-string] type or an instance of \[`String`]\[js-string] that includes all of the specified **words/sentences**.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isstringincludes.md#value-any) is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or an instance of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) that includes all of the specified **words/sentences**.
 
 ## Example usage
 

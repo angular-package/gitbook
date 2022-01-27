@@ -1,6 +1,6 @@
 # every()
 
-### `areRegExp().every()`
+## `areRegExp().every()`
 
 Checks whether every of the provided [`values`](./#...values-any) of [`areRegExp()`](./) is a regular expression of [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/RegExp).
 
