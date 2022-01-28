@@ -27,7 +27,7 @@ A generic type variable `Obj` indicates the type of [`value`](isobjectkeyin.md#v
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkeyin.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isobjectkeyin.md#payload-payload) optional parameter of the [`isObjectKeyIn()`](isobjectkeyin.md#isobjectkeyin) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkeyin.md#payloadextendsobject-object) function and [`payload`](isobjectkeyin.md#payload-payload) optional parameter of the [`isObjectKeyIn()`](isobjectkeyin.md#isobjectkeyin) function from which it captures its value.
 
 ### Parameters
 
@@ -41,7 +41,7 @@ A property key to check if a given [`value`](isobjectkeyin.md#value-any) contain
 
 #### `callback: ResultCallback<any, { key: typeof key } Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeyin.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeyin.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkeyin.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeyin.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeyin.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isobjectkeyin.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeyin.md#callback-resultcallback-less-than-any-key-typeof-key-payload-greater-than) function consists of the [`key`](isobjectkeyin.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeyin.md#payload-payload) parameter of the core function.

@@ -31,7 +31,7 @@ A generic type variable `Obj` indicates the type of the given [`value`](isobject
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkeysin.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isobjectkeysin.md#payload-payload) optional parameter of the [`isObjectKeysIn()`](isobjectkeysin.md#isobjectkeysin) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkeysin.md#callback-resultcallback-less-than-any-keys-typeof-keys-and-payload-greater-than) function and [`payload`](isobjectkeysin.md#payload-payload) optional parameter of the [`isObjectKeysIn()`](isobjectkeysin.md#isobjectkeysin) function from which it captures its value.
 
 ### Parameters
 

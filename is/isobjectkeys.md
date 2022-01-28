@@ -51,7 +51,7 @@ An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 
 #### `callback: ResultCallback<any, { keys: typeof keys } & Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeys.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](../types/resultcallback.md#payload-object) with optional properties from the provided [`payload`](isobjectkeys.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeys.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeys.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isobjectkeys.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeys.md#callback-resultcallback-less-than-any-keys-typeof-keys-and-payload-greater-than) function consists of the [`keys`](isobjectkeys.md#keys-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeys.md#payload-payload) parameter of the core function.
@@ -59,7 +59,7 @@ The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`c
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isobjectkeys.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isobjectkeys.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isobjectkeys.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isobjectkeys.md#callback-resultcallback-less-than-any-keys-typeof-keys-and-payload-greater-than) function.
 
 ### Return type
 
