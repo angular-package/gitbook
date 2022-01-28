@@ -29,7 +29,7 @@ const isBoolean = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyBoolean`**</mark>**`=`**<mark style="color:green;">**`boolean`**</mark>
 
-The `Type` generic type variable constrained by generic type [`AnyBoolean`](../types/anyboolean.md) by default of [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicates the type of the given [`value`](isboolean.md#value-any) via the [return type](isboolean.md#return-type).
+The `Type` generic type variable constrained by generic type [`AnyBoolean`](../types/anyboolean.md) by default of [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicates the given [`value`](isboolean.md#value-any) type via the return type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -43,7 +43,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isboolean.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isboolean.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isboolean.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isboolean.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isboolean.md#payloadextendsobject) with optional properties from the provided [`payload`](isboolean.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 

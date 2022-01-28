@@ -35,7 +35,7 @@ A generic type variable `Obj` indicates the type of [`value`](isobjectkey.md#val
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-key-typeof-key-and-payload-greater-than) function and [`payload`](isobjectkey.md#payload-payload) optional parameter of the [`isObjectKey()`](isobjectkey.md#isobjectkey) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isobjectkey.md#payload-payload) optional parameter of the [`isObjectKey()`](isobjectkey.md#isobjectkey) function from which it captures its value.
 
 ### Parameters
 
@@ -47,17 +47,17 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 A property key to check if a given [`value`](isobjectkey.md#value-any) contains.
 
-#### `callback: ResultCallback<any, { key: typeof key } & Payload>`
+#### `callback: ResultCallback<Obj, { key: typeof key } & Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkey.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkey.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isobjectkey.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkey.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkey.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkey.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-key-typeof-key-and-payload-greater-than) function consists of the [`key`](isobjectkey.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkey.md#payload-payload) parameter of the core function.
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-payload-greater-than) function consists of the [`key`](isobjectkey.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkey.md#payload-payload) parameter of the core function.
 {% endhint %}
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isobjectkey.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-key-typeof-key-and-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isobjectkey.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 

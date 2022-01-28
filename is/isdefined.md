@@ -19,11 +19,11 @@ const isDefined = <Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable indicates the captured type of the given [`value`](isdefined.md#value-type) except [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) via the [return type](isdefined.md#return-type) and the [`value`](../types/resultcallback.md#value-value) type of the supplied [`callback`](isdefined.md#callback-resultcallback-less-than-type-payload-greater-than) function.&#x20;
+A generic type variable indicates the captured type of the given [`value`](isdefined.md#value-type) via the return type except [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isdefined.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](isdefined.md#payload-payload) optional parameter of the [`isDefined()`](isdefined.md#isdefined) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isdefined.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isdefined.md#payload-payload) optional parameter of the [`isDefined()`](isdefined.md#isdefined) function from which it captures its value.
 
 ### Parameters
 
@@ -33,11 +33,11 @@ The value of a generic type variable [`Type`](isdefined.md#type), by default of 
 
 #### `callback: ResultCallback<Type, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isdefined.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isdefined.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isdefined.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isdefined.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isdefined.md#payloadextendsobject) with optional properties from the provided [`payload`](isdefined.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isdefined.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isdefined.md#callback-resultcallback-less-than-type-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isdefined.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isdefined.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 
@@ -79,4 +79,3 @@ isDefined('age', (result, value, payload) => {
   return result;
 }, { notDefined: false }); // Returns `true` as `value is string`
 ```
-
