@@ -22,7 +22,7 @@ const isString = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates the captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstring.md#value-any) via the return type and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstring.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function of [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstring.md#value-any) via the [return type](isstring.md#return-type).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 

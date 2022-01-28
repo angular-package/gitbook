@@ -19,7 +19,7 @@ const isDefined = <Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable indicates the captured type of the given [`value`](isdefined.md#value-type) via the return type except [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never).
+A generic type variable indicates the captured type of the given [`value`](isdefined.md#value-type) except [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), which changes to [`never`](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) via the [return type](isdefined.md#return-type) and the [`value`](../types/resultcallback.md#value-value) type of the supplied [`callback`](isdefined.md#callback-resultcallback-less-than-type-payload-greater-than) function.&#x20;
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -79,3 +79,4 @@ isDefined('age', (result, value, payload) => {
   return result;
 }, { notDefined: false }); // Returns `true` as `value is string`
 ```
+

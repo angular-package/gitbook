@@ -44,7 +44,7 @@ A property key to check if a given [`value`](isobjectkeyin.md#value-any) contain
 A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeyin.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeyin.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkeyin.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeyin.md#callback-resultcallback-less-than-any-payload-greater-than) function consists of the [`key`](isobjectkeyin.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeyin.md#payload-payload) parameter of the core function.
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeyin.md#callback-resultcallback-less-than-any-key-typeof-key-payload-greater-than) function consists of the [`key`](isobjectkeyin.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeyin.md#payload-payload) parameter of the core function.
 {% endhint %}
 
 #### `payload?: Payload`

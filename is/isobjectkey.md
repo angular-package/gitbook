@@ -47,12 +47,12 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 A property key to check if a given [`value`](isobjectkey.md#value-any) contains.
 
-#### `callback: ResultCallback<Obj, { key: typeof key } & Payload>`
+#### `callback: ResultCallback<any, { key: typeof key } & Payload>`
 
 A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkey.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkey.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkey.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkey.md#callback-resultcallback-less-than-any-payload-greater-than) function consists of the [`key`](isobjectkey.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkey.md#payload-payload) parameter of the core function.
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkey.md#callback-resultcallback-less-than-obj-key-typeof-key-and-payload-greater-than) function consists of the [`key`](isobjectkey.md#key-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkey.md#payload-payload) parameter of the core function.
 {% endhint %}
 
 #### `payload?: Payload`

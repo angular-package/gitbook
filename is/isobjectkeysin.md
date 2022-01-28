@@ -27,7 +27,7 @@ const isObjectKeysIn = <Obj = object, Payload extends object = object>(
 
 #### <mark style="color:green;">`Obj`</mark>`=`<mark style="color:green;">`object`</mark>
 
-A generic type variable `Obj` indicates the type of [`value`](isobjectkeysin.md#value-any) parameter by default [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) via the [return type](isobjectkeysin.md#return-type) `value is Obj`.
+A generic type variable `Obj` indicates the type of the given [`value`](isobjectkeysin.md#value-any) parameter by default [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) via the [return type](isobjectkeysin.md#return-type) `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -48,7 +48,7 @@ An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isobjectkeysin.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isobjectkeysin.md#payloadextendsobject) with optional properties from the provided [`payload`](isobjectkeysin.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeysin.md#callback-resultcallback-less-than-any-payload-greater-than) function consists of the [`keys`](isobjectkeysin.md#keys-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeysin.md#payload-payload) parameter of the core function.
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isobjectkeysin.md#callback-resultcallback-less-than-any-keys-typeof-keys-and-payload-greater-than) function consists of the [`keys`](isobjectkeysin.md#keys-propertykey) property given in parameter of the core function, and it can't be overwritten by the given [`payload`](isobjectkeysin.md#payload-payload) parameter of the core function.
 {% endhint %}
 
 #### `payload?: Payload`

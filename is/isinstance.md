@@ -10,7 +10,7 @@ const isInstance = <Obj, Payload extends object>(
   value: any,
   constructor: Constructor<Obj>,
   callback: ResultCallback<
-    Obj,
+    any,
     { ctor: typeof constructor } & Payload
   > = resultCallback,
   payload?: Payload
@@ -31,7 +31,7 @@ const isInstance = <Obj, Payload extends object>(
 
 #### <mark style="color:green;">`Obj`</mark>
 
-A generic type variable `Obj`, by default captured from the provided `constructor` indicates the type of generic type [`Constructor`](../types/constructor.md) and the type of [`value`](isinstance.md#value-any) parameter via the [return type](isinstance.md#return-type) `value is Obj`.
+A generic type variable `Obj`, by default captured from the provided [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) indicates the type of generic type [`Constructor`](../types/constructor.md) and the type of [`value`](isinstance.md#value-any) parameter via the [return type](isinstance.md#return-type) `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
@@ -41,18 +41,18 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to be an instance of a given `constructor`.
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to be an instance of a given [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
 #### `constructor: Constructor<Obj>`
 
 A [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) or [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) that specifies the type of [`Constructor`](../types/constructor.md).
 
-#### `callback: ResultCallback<{ ctor: typeof constructor } & Payload>`
+#### `callback: ResultCallback<any, { ctor: typeof constructor } & Payload>`
 
 A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isinstance.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isinstance.md#payloadextendsobject) with optional properties from the provided [`payload`](isinstance.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isinstance.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function consists of the [`ctor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) property of the value given in the [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) parameter of the core function, and it can't be overwritten by the given [`payload`](isinstance.md#payload-payload) parameter of the core function.
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](../types/resultcallback.md) function consists of the [`ctor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) property  given in the [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) parameter of the core function, and it can't be overwritten by the given [`payload`](isinstance.md#payload-payload) parameter of the core function.
 {% endhint %}
 
 #### `payload?: Payload`

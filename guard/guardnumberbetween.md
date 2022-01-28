@@ -2,7 +2,7 @@
 
 ## `guardNumberBetween()`
 
-Guards the value to be [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type or instance of [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between the specified range.
+Guards the value to be [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) between the specified range.
 
 {% code title="guard-number-between.func.ts" %}
 ```typescript
@@ -13,12 +13,11 @@ const guardNumberBetween = <
   Payload extends object = object
 >(
   value: Type,
-  min: Min,
-  max: Max,
-  callback?: ResultCallback<Type, { min: Min, max: Max } & Payload>,
+  range: MinMax<Min, Max> | Min | Max,
+  callback?: ResultCallback<Type, MinMax<Min, Max> & Payload>,
   payload?: Payload
 ): value is NumberBetween<Min, Max, Type> =>
-  isNumberBetween(value, min, max, callback, payload);
+  isNumberBetween(value, range, callback, payload);
 ```
 {% endcode %}
 
@@ -48,20 +47,16 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 The value of generic type variable [`Type`](guardnumberbetween.md#typeextendsanynumber) to guard.
 
-#### `min: Min`
+#### `range: MinMax<Min, Max>`
 
-The **minimum** range of generic type variable [`Min`](guardnumberbetween.md#minextendsnumber) for a given [`value`](guardnumberbetween.md#value-type).
+Optional minimum or maximum range of generic type [`MinMax`](../interfaces/minmax.md) of the given [`value`](guardnumberbetween.md#value-type).
 
-#### `max: Max`
-
-The **maximum** range of generic type variable [`Max`](guardnumberbetween.md#maxextendsnumber) for a given [`value`](guardnumberbetween.md#value-type).
-
-#### `callback?: ResultCallback<Type, { min: Min, max: Max } & Payload>`
+#### `callback?: ResultCallback<Type, MinMax<Min, Max> & Payload>`
 
 The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The `payload` parameter of the callback function consists of the `min` and `max` properties of the given [`min`](guardnumberbetween.md#min-min) and [`max`](guardnumberbetween.md#max-max) parameters, and they can't be overwritten by the given [`payload`](guardnumberbetween.md#payload-payload) parameter of the main function.
+The `payload` parameter of the callback function consists of the `min` and `max` properties of the given [`range`](guardnumberbetween.md#range-minmax-less-than-min-max-greater-than), and they can't be overwritten by the given [`payload`](guardnumberbetween.md#payload-payload) parameter of the main function.
 {% endhint %}
 
 #### `payload?: Payload`
@@ -84,21 +79,21 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 // Example usage.
 import { guardNumberBetween } from '@angular-package/type';
 
-guardNumberBetween(Infinity, 0, 0); // false, value is number
-guardNumberBetween(NaN, 0, 0); // false, value is number
-guardNumberBetween(new Number(Infinity), 0, 0); // false, value is Number
-guardNumberBetween(new Number(NaN), 0, 0); // false, value is Number
+guardNumberBetween(Infinity, {min: 0}); // false, value is number
+guardNumberBetween(NaN, {min: 0}); // false, value is number
+guardNumberBetween(new Number(Infinity), {min: 0}); // false, value is Number
+guardNumberBetween(new Number(NaN), {min: 0}); // false, value is Number
 
 // Minimum.
-guardNumberBetween(3, 3, 100); // true, value is number
-guardNumberBetween(new Number(3), 2, 100); // true, value is Number
-guardNumberBetween(3, 4, 100); // false, value is number
+guardNumberBetween(3, {min: 3 }); // true, value is number
+guardNumberBetween(new Number(3), {min: 2 }); // true, value is Number
+guardNumberBetween(3, {min: 4 }); // false, value is number
 
 // Maximum.
-guardNumberBetween(3, 0, 3); // true, value is number
-guardNumberBetween(3, 0, 2); // false, value is number
+guardNumberBetween(3, {max: 3 }); // true, value is number
+guardNumberBetween(3, {max: 2 }); // false, value is number
 
 // Minimum and Maximum.
-guardNumberBetween(3, 1, 3); // true, value is number
-guardNumberBetween(3, 4, 2); // false, value is number
+guardNumberBetween(3, {min: 1, max: 3 }); // true, value is number
+guardNumberBetween(3, {min: 4, max: 2 }); // false, value is number
 ```

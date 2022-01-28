@@ -24,7 +24,7 @@ const isObject = <Obj = object, Payload extends object = object>(
 
 #### <mark style="color:green;">`Obj`</mark>`=`<mark style="color:green;">`object`</mark>
 
-A generic type variable `Obj` indicates the type of [`value`](isobject.md#value-any) parameter via the [return type](isobject.md#return-type) `value is Obj`.
+A generic type variable `Obj` indicates the type of the given [`value`](isobject.md#value-any) parameter via the [return type](isobject.md#return-type) `value is Obj`, by default [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
