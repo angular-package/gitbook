@@ -25,7 +25,7 @@ A generic type variable `Type` constrained by generic type [`AnyBoolean`](../typ
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardboolean.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardboolean.md#payload-payload) optional parameter of the [`guardBoolean()`](guardboolean.md#guardboolean) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardboolean.md#callback-resultcallback-less-than-bigint-payload-greater-than) function and [`payload`](guardboolean.md#payload-payload) optional parameter of the [`guardBoolean()`](guardboolean.md#guardboolean) function from which it captures its value.
 
 ### Parameters
 
@@ -35,7 +35,7 @@ The value of generic type variable [`Type`](guardboolean.md#bigint) to guard.
 
 #### `callback?: ResultCallback<bigint, Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardboolean.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](guardboolean.md#value-type) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](guardboolean.md#payloadextendsobject-object) with optional properties from the provided [`payload`](guardboolean.md#payload-payload), to handle them before the [`result`](https://app.gitbook.com/s/HmRqpb9wXbHlBaTRCXZm/\~/changes/Lr9aXq3K5OcIzfbtvsgG/type/resultcallback#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 

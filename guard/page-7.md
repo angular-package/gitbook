@@ -18,25 +18,25 @@ const guardDefined = <Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `Type` indicates captured type of the given [`value`](page-7.md#value-array-less-than-type-greater-than) via the [return type](page-7.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](page-7.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` indicates captured type of the given [`value`](page-7.md#value-defined-less-than-type-greater-than) via the [return type](page-7.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](page-7.md#callback-resultcallback-less-than-defined-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](page-7.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](page-7.md#payload-payload) optional parameter of the [`guardDefined()`](page-7.md#guarddefined) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](page-7.md#callback-resultcallback-less-than-defined-less-than-type-greater-than-payload-greater-than) function and [`payload`](page-7.md#payload-payload) optional parameter of the [`guardDefined()`](page-7.md#guarddefined) function from which it captures its value.
 
 ### Parameters
 
 #### `value: Defined<Type>`
 
-The value of generic type [`Defined<Type>`](../types/defined.md), [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) undefined type captured from the provided `value` to guard against [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
+The value of generic type [`Defined<Type>`](../types/defined.md), [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) undefined type captured from itself to guard against [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined).
 
 #### `callback?: ResultCallback<Defined<Type>, Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](page-7.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](page-7.md#value-defined-less-than-type-greater-than) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](page-7.md#payloadextendsobject-object) with optional properties from the provided [`payload`](page-7.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](page-7.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](page-7.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](page-7.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](page-7.md#callback-resultcallback-less-than-defined-less-than-type-greater-than-payload-greater-than) function.
 
 ### Return type
 

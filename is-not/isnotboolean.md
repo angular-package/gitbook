@@ -27,7 +27,7 @@ Code on GitHub.
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `Type` indicates the captured type of the given [`value`](isnotboolean.md#value-array-less-than-type-greater-than) via the [return type](isnotboolean.md#return-type) `value is Never<AnyBoolean, Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotboolean.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` indicates the captured type of the given [`value`](isnotboolean.md#value-array-less-than-type-greater-than) via the [return type](isnotboolean.md#return-type) `value is Never<AnyBoolean, Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotboolean.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
