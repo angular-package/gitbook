@@ -6,7 +6,7 @@ Guards the value to be one of [`string`](https://developer.mozilla.org/en-US/doc
 
 {% code title="guard-key.func.ts" %}
 ```typescript
-const guardKey = <Key extends PropertyKey, Payload extends object>(
+const
   value: Key,
   callback?: ResultCallback<Key, Payload>,
   payload?: Payload

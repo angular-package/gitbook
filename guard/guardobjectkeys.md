@@ -31,7 +31,7 @@ A generic type variable `Key` constrained by the `keyof Obj`, by default of valu
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardobjectkeys.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardobjectkeys.md#payload-payload) optional parameter of the [`guardObject()`](guardobjectkeys.md#guardobject) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardobjectkeys.md#callback-resultcallback-less-than-obj-keys-typeof-keys-and-payload-greater-than) function and [`payload`](guardobjectkeys.md#payload-payload) optional parameter of the [`guardObjectKeys()`](guardobjectkeys.md#guardobjectkeys) function from which it captures its value.
 
 ### Parameters
 

@@ -4,8 +4,6 @@
 
 Guards the value to be the [`Primitive`](../types/primitive.md) type or the given [`type`](guardprimitive.md#type-primitives) of the [`Primitives`](../types/primitives.md).
 
-Use `guardPrimitive()` or `guard.primitive()` to guard the `value` to be the `Primitive` type or the given `type` of the `Primitives`.
-
 {% code title="guard-primitive.func.ts" %}
 ```typescript
 const guardPrimitive = <
@@ -24,7 +22,7 @@ const guardPrimitive = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`Primitive`**</mark>
 
-A generic type variable `Type` constrained by generic type [`Primitive`](../types/primitive.md) indicates captured type of the given [`value`](guardprimitive.md#value-type) via the [return type](guardprimitive.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardprimitive.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` constrained by generic type [`Primitive`](../types/primitive.md) indicates captured type of the given [`value`](guardprimitive.md#value-type) via the [return type](guardprimitive.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardprimitive.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -42,21 +40,21 @@ An optional specific type of [`Primitives`](../types/primitives.md) to check the
 
 #### `callback?: ResultCallback<Type, Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardprimitive.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](guardprimitive.md#value-type) that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardprimitive.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardprimitive.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardprimitive.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardprimitive.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardprimitive.md#callback-resultcallback-less-than-type-payload-greater-than) function.
 
 ### Return type
 
 #### `value is Type`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](guardprimitive.md#value-type) is [`Primitive`](../types/primitive.md), by default of type captured from the supplied [`value`](guardprimitive.md#value-obj).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) as the result of its statement indicating the [`value`](guardprimitive.md#value-type) is [`Primitive`](../types/primitive.md), by default of type captured from the supplied [`value`](guardprimitive.md#value-type).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the [`value`](guardprimitive.md#value-type) is the [`Primitive`](../types/primitive.md) type or the given `type` of [`Primitives`](../types/primitives.md).
+The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating whether the [`value`](guardprimitive.md#value-type) is the [`Primitive`](../types/primitive.md) type or the given [`type`](guardprimitive.md#type-primitives) of [`Primitives`](../types/primitives.md).
 
 ## Example usage
 

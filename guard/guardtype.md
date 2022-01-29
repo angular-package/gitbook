@@ -21,11 +21,11 @@ const guardType = <T extends Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`T`**</mark>**`extends`**<mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `T` constrained by generic type [`Type`](../types/type.md) indicates captured type of the supplied [`value`](guardtype.md#value-type) via the [return type](guardtype.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardtype.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `T` constrained by generic type [`Type`](../types/type.md) indicates captured type of the supplied [`value`](guardtype.md#value-type) via the [return type](guardtype.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardtype.md#callback-resultcallback-less-than-t-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardtype.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardtype.md#payload-payload) optional parameter of the [`guardType()`](guardtype.md#guardtype) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardtype.md#callback-resultcallback-less-than-t-payload-greater-than) function and [`payload`](guardtype.md#payload-payload) optional parameter of the [`guardType()`](guardtype.md#guardtype) function from which it captures its value.
 
 ### Parameters
 
@@ -39,7 +39,7 @@ The value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 #### `callback?: ResultCallback<T, Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardtype.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](guardtype.md#value-t) that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardtype.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 #### `payload?: Payload`
 

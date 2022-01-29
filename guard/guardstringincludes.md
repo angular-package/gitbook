@@ -25,13 +25,11 @@ const guardStringIncludes = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>
 
-A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](guardstringincludes.md#value-type) via the [return type](guardstringincludes.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardstringincludes.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
-
-A generic type variable `Type` guarded by `AnyString`, by default of value captured from the supplied `value` indicates the type of the `value` via the return type `value is Type`.
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](guardstringincludes.md#value-type) via the [return type](guardstringincludes.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardstringincludes.md#callback-resultcallback-less-than-type-includes-typeof-includes-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardstringincludes.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](guardstringincludes.md#payload-payload) optional parameter of the [`guardStringIncludes()`](guardstringincludes.md#guardstringincludes) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](guardstringincludes.md#callback-resultcallback-less-than-type-includes-typeof-includes-and-payload-greater-than) function and [`payload`](guardstringincludes.md#payload-payload) optional parameter of the [`guardStringIncludes()`](guardstringincludes.md#guardstringincludes) function from which it captures its value.
 
 ### Parameters
 
@@ -45,7 +43,7 @@ An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 
 #### `callback?: ResultCallback<Type, { includes: typeof includes } & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardstringincludes.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](guardstringincludes.md#value-type) that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardstringincludes.md#payloadextendsobject) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The **`payload`** parameter of given `callback` function consists of the **`includes`** property of the given [`includes`](guardstringincludes.md#includes-string), and it can't be overwritten by the given [`payload`](guardstringincludes.md#payload-payload) parameter of the main function.
@@ -53,7 +51,7 @@ The **`payload`** parameter of given `callback` function consists of the **`incl
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardstringincludes.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardstringincludes.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardstringincludes.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardstringincludes.md#callback-resultcallback-less-than-type-includes-typeof-includes-and-payload-greater-than) function.
 
 ### Return type
 
