@@ -175,13 +175,14 @@ import {
   Constructor,
   Defined,
   ForEachCallback,  // From the `5.0.0` version.
+  GenericObject, // From the `5.0.0` version.
   Never,
   NotUndefined,
   NumberBetween, // From the `4.2.0` version.
   Primitive,
   Primitives,
   ResultCallback, // From the `4.2.0` version
-  StringOfLength, // From the `4.2.0` version.
+  StringOfLength, // From the `4.2.0` version.`
   Type,
   Types,
   Undefined
