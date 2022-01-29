@@ -2,7 +2,7 @@
 
 ## `guardObjectKeyIn()`
 
-Guards the `value` to be an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of a generic type variable [`Obj`](guardobjectkeyin.md#objextendsobject) that contains(or its prototype chain) the given [`key`](guardobjectkeyin.md#key-key).
+Guards the [`value`](guardobjectkeyin.md#value-obj) to be an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of a generic type variable [`Obj`](guardobjectkeyin.md#objextendsobject) that contains(or its prototype chain) the given [`key`](guardobjectkeyin.md#key-key).
 
 {% code title="guard-object-key-in.func.ts" %}
 ```typescript
@@ -23,7 +23,7 @@ const guardObjectKeyIn = <
 
 #### <mark style="color:green;">**`Obj`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-A generic type variable `Obj` constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates captured [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type of the given [`value`](guardobjectkeyin.md#value-type) via the [return type](guardobjectkeyin.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardobjectkeyin.md#callback-resultcallback-less-than-bigint-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Obj` constrained by [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) indicates captured [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) type of the given [`value`](guardobjectkeyin.md#value-obj) via the [return type](guardobjectkeyin.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](guardobjectkeyin.md#callback-resultcallback-less-than-obj-key-typeof-key-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Key`**</mark>**`extends keyof`**<mark style="color:green;">**`Obj`**</mark>
 
@@ -41,19 +41,19 @@ An [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 #### `key: Key`
 
-A key of [`Obj`](guardobjectkeyin.md#objextendsobject) type, as the name of the property that the given [`value`](guardobjectkeyin.md#value-obj) contains(or its prototype chain).
+A key of generic type variable [`Key`](guardobjectkeyin.md#keyextends-keyofobj) as the property name that the given [`value`](guardobjectkeyin.md#value-obj) contains(or its prototype chain).
 
 #### `callback?: ResultCallback<Obj, { key: typeof key } & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardobjectkeyin.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](guardobjectkeyin.md#value-obj) that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardobjectkeyin.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses `resultCallback()` function.
 
 {% hint style="info" %}
-The `payload` parameter of the callback function consists of the `key` property given in the [`key`](guardobjectkeyin.md#key-key) parameter, and it can't be overwritten by the given [`payload`](guardobjectkeyin.md#payload-payload) parameter of the main function.
+The `payload` parameter of the callback function consists of the **`key`** property given in the [`key`](guardobjectkeyin.md#key-key) parameter, and it can't be overwritten by the given [`payload`](guardobjectkeyin.md#payload-payload) parameter of the main function.
 {% endhint %}
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardobjectkeyin.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardobjectkeyin.md#callback-resultcallback-less-than-bigint-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](guardobjectkeyin.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](guardobjectkeyin.md#callback-resultcallback-less-than-obj-key-typeof-key-and-payload-greater-than) function.
 
 ### Return type
 
