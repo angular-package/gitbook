@@ -13,7 +13,7 @@ const isRegExp = <Payload extends object>(
 ): value is RegExp =>
   callback(
     (typeOf(value) === 'regexp' || typeof value === 'object') &&
-    value instanceof RegExp,
+      value instanceof RegExp,
     value,
     payload
   );

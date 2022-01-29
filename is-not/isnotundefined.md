@@ -13,8 +13,8 @@ const isNotUndefined = <Type, Payload extends object = object>(
 ): value is Defined<Type> =>
   callback(
     typeOf(value) !== 'undefined' &&
-    typeof value !== 'undefined' &&
-    value !== undefined,
+      typeof value !== 'undefined' &&
+      value !== undefined,
     value,
     payload
   );

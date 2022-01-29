@@ -2,7 +2,7 @@
 
 ## `isNotDefined()`
 
-Checks if the `value` is not the type obtained from its [object class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'undefined'`, not an [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined) type and is not equal to [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+Checks if the [`value`](isnotdefined.md#value-type) is not the type obtained from its [object class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/toString#using\_tostring\_to\_detect\_object\_class) equal to `'undefined'`, not an [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined) type and is not equal to [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 {% code title="is-not-defined.func.ts" %}
 ```typescript
@@ -13,8 +13,8 @@ const isNotDefined = <Type, Payload extends object = object>(
 ): value is Undefined<Type> =>
   callback(
     typeOf(value) === 'undefined' &&
-    typeof value === 'undefined' &&
-    value === undefined,
+      typeof value === 'undefined' &&
+      value === undefined,
     value,
     payload
   );
@@ -25,11 +25,11 @@ const isNotDefined = <Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `Type` indicates the captured type of the given [`value`](isnotdefined.md#value-array-less-than-type-greater-than) via the [return type](isnotdefined.md#return-type) `value is Undefined<Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotdefined.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` indicates the captured type of the given [`value`](isnotdefined.md#value-type) via the [return type](isnotdefined.md#return-type) `value is Undefined<Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotdefined.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isnotdefined.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isnotdefined.md#payload-payload) optional parameter of the [`isNotDefined()`](isnotdefined.md#isnotboolean) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isnotdefined.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](isnotdefined.md#payload-payload) optional parameter of the [`isNotDefined()`](isnotdefined.md#isnotboolean) function from which it captures its value.
 
 ### Parameters
 
@@ -39,11 +39,11 @@ The `value` of generic type variable [`Type`](isnotdefined.md#type), by default 
 
 #### `callback: ResultCallback<Type, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isnotdefined.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isnotdefined.md#payloadextendsobject) with optional properties from the provided [`payload`](isnotdefined.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isnotdefined.md#value-type) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isnotdefined.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isnotdefined.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isnotdefined.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isnotdefined.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isnotdefined.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isnotdefined.md#callback-resultcallback-less-than-type-payload-greater-than) function.
 
 ### Return type
 

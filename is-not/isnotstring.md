@@ -13,8 +13,8 @@ const isNotString = <Type, Payload extends object = object>(
 ): value is Never<AnyString, Type> =>
   callback(
     typeOf(value) !== 'string' &&
-    typeof value !== 'string' &&
-    value instanceof String === false,
+      typeof value !== 'string' &&
+      value instanceof String === false,
     value,
     payload
   );

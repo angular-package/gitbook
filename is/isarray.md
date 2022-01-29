@@ -24,7 +24,7 @@ const isArray = <Type = any, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>**`=`**<mark style="color:green;">**`any`**</mark>
 
-The `Type` generic type variable indicates the [`array`](https://www.typescriptlang.org/docs/handbook/basic-types.html#array) element type, which by default is [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) of the given [`value`](isarray.md#value-any) via the [return type](isarray.md#return-type).
+The `Type` generic type variable indicates the [`array`](https://www.typescriptlang.org/docs/handbook/basic-types.html#array) element type of the given [`value`](isarray.md#value-any) via the [return type](isarray.md#return-type), by default is [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -38,7 +38,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isarray.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isarray.md#payloadextendsobject) with optional properties from the provided [`payload`](isarray.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isarray.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isarray.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isarray.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
@@ -69,7 +69,7 @@ isArray(ARRAY_NUMBER); // Returns `true` as `value is any[]`
 isArray<string>(ARRAY_STRING); // Returns `true` as `value is string[]`
 ```
 
-### Fake array
+### Fake `array`
 
 ```typescript
 // Fake array example.
@@ -89,7 +89,7 @@ typeof fakeArray, // "object"
 Array.isArray(fakeArray) // false
 ```
 
-### Callback and payload parameters
+### Parameters `callback` and `payload`
 
 ```typescript
 // Example usage with callback and payload.
@@ -106,5 +106,6 @@ isArray([1, 2, 3], (result, value, payload) => {
     }
   }
   return result;
-}, { transform: { 1: 'First', 2: 'Second', 3: 'Third'} }); // Returns `true` as `value is any[]`
+  // Returns `true` as `value is any[]`
+}, { transform: { 1: 'First', 2: 'Second', 3: 'Third'} }); 
 ```

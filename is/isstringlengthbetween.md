@@ -15,13 +15,20 @@ const isStringLengthBetween = <
   value: any,
   min: Min,
   max: Max,
-  callback: ResultCallback<any, { min: Min, max: Max } & Payload> = resultCallback,
+  callback: ResultCallback<
+    any,
+    { min: Min; max: Max } & Payload
+  > = resultCallback,
   payload?: Payload
 ): value is StringOfLength<Min, Max, Type> =>
   callback(
     isString(value)
-      ? (isNumberType(min) && min >= 0 ? value.valueOf().length >= min : false) &&
-        (isNumberType(max) && max >= 0 ? value.valueOf().length <= max : false)
+      ? (isNumberType(min) && min >= 0
+          ? value.valueOf().length >= min
+          : false) &&
+          (isNumberType(max) && max >= 0
+            ? value.valueOf().length <= max
+            : false)
       : false,
     value,
     { ...payload, min, max } as any
@@ -33,7 +40,7 @@ const isStringLengthBetween = <
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates captured [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstringlengthbetween.md#value-any) via the [return type](isstringlengthbetween.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstringlengthbetween.md#callback-resultcallback-less-than-any-min-min-max-max-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` constrained by [`AnyString`](../types/anystring.md) indicates [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type of the given [`value`](isstringlengthbetween.md#value-any) via the [return type](isstringlengthbetween.md#return-type) and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isstringlengthbetween.md#callback-resultcallback-less-than-any-min-min-max-max-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Min`**</mark>**`extends`**<mark style="color:green;">**`number`**</mark>
 
@@ -103,7 +110,7 @@ isStringLengthBetween(firstName, 14, 28);
 isStringLengthBetween(firstName, 13, 13 ); 
 ```
 
-### `string` instance
+### `String` instance
 
 ```typescript
 // Example usage.

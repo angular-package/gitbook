@@ -62,7 +62,7 @@ isFalse(new Boolean(true)); // Returns `false` as `value is false`
 isFalse(new Boolean(false)); // Returns `true` as `value is false`
 ```
 
-### Callback and payload parameters
+### Parameters `callback` and `payload`
 
 ```typescript
 // Callback and payload parameters example usage.

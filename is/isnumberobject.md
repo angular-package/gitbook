@@ -13,9 +13,9 @@ const isNumberObject = <Payload extends object>(
 ): value is Number =>
   callback(
     (typeOf(value) === 'number' || typeof value === 'object') &&
-    value instanceof Number &&
-    !Number.isNaN(value.valueOf()) &&
-    Number.isFinite(value.valueOf()),
+      value instanceof Number &&
+      !Number.isNaN(value.valueOf()) &&
+      Number.isFinite(value.valueOf()),
     value,
     payload
   );

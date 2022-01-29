@@ -16,21 +16,21 @@ const isPrimitive = <
   payload?: Payload
 ): value is Type =>
   isStringType(type)
-  ? {
-      bigint: isBigInt,
-      boolean: isBooleanType,
-      number: isNumberType,
-      null: isNull,
-      string: isStringType,
-      symbol: isSymbol,
-      undefined: isUndefined,
-    }[type](value, callback, payload)
-  : callback(
-      isNull(value) ||
-        (typeof value !== 'object' && typeof value !== 'function'),
-      value,
-      payload
-    );
+    ? {
+        bigint: isBigInt,
+        boolean: isBooleanType,
+        number: isNumberType,
+        null: isNull,
+        string: isStringType,
+        symbol: isSymbol,
+        undefined: isUndefined,
+      }[type](value, callback, payload)
+    : callback(
+        isNull(value) ||
+          (typeof value !== 'object' && typeof value !== 'function'),
+        value,
+        payload
+      );
 ```
 {% endcode %}
 
@@ -56,11 +56,11 @@ An optional value of the generic type [`Primitives`](../types/primitives.md) typ
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isprimitive.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isprimitive.md#payloadextendsobject) with optional properties from the provided [`payload`](isprimitive.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isprimitive.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isprimitive.md#payloadextendsobject-object) with optional properties from the provided [`payload`](isprimitive.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isprimitive.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isprimitive.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isprimitive.md#payloadextendsobject-object) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isprimitive.md#callback-resultcallback-less-than-any-payload-greater-than) function.
 
 ### Return type
 

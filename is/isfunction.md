@@ -67,7 +67,7 @@ isFunction(FUNC); // Returns `true` as `value is (x: number) => any`
 isFunction(() => 5); // Returns `true` as `value is () => 5`
 ```
 
-### Callback and payload parameters
+### Parameters `callback` and `payload`
 
 ```typescript
 // Example usage with callback and payload.

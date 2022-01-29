@@ -13,20 +13,20 @@ const isType = <T extends Type, Payload extends object = object>(
   payload?: Payload
 ): value is T =>
   isStringType(type)
-  ? {
-      bigint: isBigInt,
-      boolean: isBooleanType,
-      function: isFunction,
-      number: isNumberType,
-      object: isObject,
-      null: isNull,
-      string: isStringType,
-      symbol: isSymbol,
-      undefined: isUndefined,
-    }[type as Primitives](value, callback, payload)
-  : isNotNull(type)
-  ? isInstance(value, type, callback, payload)
-  : false;
+    ? {
+        bigint: isBigInt,
+        boolean: isBooleanType,
+        function: isFunction,
+        number: isNumberType,
+        object: isObject,
+        null: isNull,
+        string: isStringType,
+        symbol: isSymbol,
+        undefined: isUndefined,
+      }[type as Primitives](value, callback, payload)
+    : isNotNull(type)
+    ? isInstance(value, type, callback, payload)
+    : false;
 ```
 {% endcode %}
 
@@ -44,7 +44,7 @@ The `Payload` generic type variable constrained by [`object`](https://www.typesc
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check against the type of given [`type`](istype.md#type-types-less-than-t-greater-than) of [`Types`](../types/types.md).
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to check against the type of given [`type`](istype.md#type-types-less-than-t-greater-than).
 
 #### `type: Types<T>`
 
@@ -52,7 +52,7 @@ A value of the generic type [`Types`](../types/types.md) indicates against which
 
 #### `callback: ResultCallback<any, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](istype.md#payloadextendsobject-object) with optional properties from the provided [`payload`](istype.md#payload-payload), to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](istype.md#payloadextendsobject-object) with optional properties from the provided [`payload`](istype.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 

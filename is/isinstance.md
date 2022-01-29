@@ -10,7 +10,7 @@ const isInstance = <Obj, Payload extends object>(
   value: any,
   constructor: Constructor<Obj>,
   callback: ResultCallback<
-    Obj,
+    any,
     { ctor: typeof constructor } & Payload
   > = resultCallback,
   payload?: Payload
@@ -31,33 +31,33 @@ const isInstance = <Obj, Payload extends object>(
 
 #### <mark style="color:green;">`Obj`</mark>
 
-A generic type variable `Obj`, by default captured from the provided `constructor` indicates the type of generic type [`Constructor`](../types/constructor.md) and the type of [`value`](isinstance.md#value-any) parameter via the [return type](isinstance.md#return-type) `value is Obj`.
+A generic type variable `Obj`, by default captured from the provided [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than), indicates the type of generic type [`Constructor`](../types/constructor.md), and the type of [`value`](isinstance.md#value-any) parameter via the [return type](isinstance.md#return-type) `value is Obj`.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isinstance.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isinstance.md#payload-payload) optional parameter of the [`isInstance()`](isinstance.md#isinstance) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isinstance.md#callback-resultcallback-less-than-any-ctor-typeof-constructor-and-payload-greater-than) function and [`payload`](isinstance.md#payload-payload) optional parameter of the [`isInstance()`](isinstance.md#isinstance) function from which it captures its value.
 
 ### Parameters
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to be an instance of a given `constructor`.
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) type to be an instance of a given [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
 #### `constructor: Constructor<Obj>`
 
 A [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global\_attributes/class) or [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) that specifies the type of [`Constructor`](../types/constructor.md).
 
-#### `callback: ResultCallback<{ ctor: typeof constructor } & Payload>`
+#### `callback: ResultCallback<any, { ctor: typeof constructor } & Payload>`
 
 A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isinstance.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isinstance.md#payloadextendsobject) with optional properties from the provided [`payload`](isinstance.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
-The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](isinstance.md#callback-resultcallback-less-than-any-minmax-less-than-min-max-greater-than-and-payload-greater-than) function consists of the [`ctor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) property of the value given in the [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) parameter of the core function, and it can't be overwritten by the given [`payload`](isinstance.md#payload-payload) parameter of the core function.
+The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](../types/resultcallback.md) function consists of the [`ctor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) property  given in the [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than) parameter of the core function, and it can't be overwritten by the given [`payload`](isinstance.md#payload-payload) parameter of the core function.
 {% endhint %}
 
 #### `payload?: Payload`
 
-An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isinstance.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isinstance.md#callback-resultcallback-less-than-any-payload-greater-than) function.
+An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of the generic type variable [`Payload`](isinstance.md#payloadextendsobject) is assigned to the [`payload`](../types/resultcallback.md#payload-payload) of the given [`callback`](isinstance.md#callback-resultcallback-less-than-any-ctor-typeof-constructor-and-payload-greater-than) function.
 
 ### Return type
 
@@ -70,6 +70,8 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](isinstance.md#value-any) is an instance of a given [`constructor`](isinstance.md#constructor-constructor-less-than-obj-greater-than).
 
 ## Example usage
+
+### Basic usage
 
 ```typescript
 // Example usage.
@@ -86,28 +88,6 @@ isInstance(TWO, Some); // false
 isInstance(SOME, Some); // true
 isInstance<Some, object>(TWO, Two); // true and type error
 
-// Example usage with callback and payload.
-isInstance(TWO, Some, (result, value, payload) => {
-  value // Returns the provided `Two`
-  if (payload) {
-    payload.className // Returns `'Some'`
-    payload.ctor // Returns the provided `Some`
-  }
-  return result;
-}, { className: Some });
-
-// Function constructor.
-function functionConstructor(this: any, ...args: any[]): any {
-  if (args) {
-    args.forEach((arg, index: number) => this[index] = arg[index]);
-  }
-  return this;
-}
-
-const anyInstance: any = new (functionConstructor as any)('First name', 'Sur name', 27);
-
-isInstance(anyInstance, functionConstructor as any); // true
-
 isInstance(new Array(), Array), // Returns `true` as `value is Array`
 isInstance(new Boolean(), Boolean), // Returns `true` as `value is Boolean`
 isInstance(new Date(), Date), // Returns `true` as `value is Date`
@@ -121,11 +101,18 @@ isInstance(new Set(), Set), // Returns `true` as `value is Set`
 isInstance(new String(), String), // Returns `true` as `value is String`
 ```
 
-### Callback and payload parameters
+### Parameters `callback` and `payload`&#x20;
 
 ```typescript
 // Example usage with callback and payload.
 import { isInstance } from '@angular-package/type';
+
+// Classes.
+class Some { x = 127; }
+class Two { y = 'Lorem ipsum'; }
+
+const SOME = new Some();
+const TWO = new Two();
 
 isInstance(TWO, Some, (result, value, payload) => {
   value // Returns the provided `Two`

@@ -13,11 +13,12 @@ const isNotFunction = <Type, Payload extends object = object>(
 ): value is Never<Function, Type> =>
   callback(
     typeOf(value) !== 'function' &&
-    typeof value !== 'function' &&
-    value instanceof Function === false,
+      typeof value !== 'function' &&
+      value instanceof Function === false,
     value,
     payload
   );
+
 ```
 {% endcode %}
 
@@ -25,7 +26,7 @@ const isNotFunction = <Type, Payload extends object = object>(
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `Type` indicates the captured type of the given [`value`](isnotfunction.md#value-array-less-than-type-greater-than) via the [return type](isnotfunction.md#return-type) `value is Never<Function, Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotfunction.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` indicates the captured type of the given [`value`](isnotfunction.md#value-type) via the [return type](isnotfunction.md#return-type) `value is Never<Function, Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotfunction.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 

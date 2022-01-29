@@ -51,22 +51,42 @@ The **return value** is a [`boolean`](https://www.typescriptlang.org/docs/handbo
 
 ## Example usage
 
+### Key of `string`
+
 ```typescript
-// Example usage
+// Example string usage.
 import { isKey } from '@angular-package/type';
 
 const STRING = 'surname';
 const STRING_INSTANCE = new String(STRING);
 isKey(STRING); // true
 isKey(STRING_INSTANCE); // true
+```
+
+### Key of `number`
+
+```typescript
+// Example number usage.
+import { isKey } from '@angular-package/type';
 
 const NUMBER = 27;
 const NUMBER_INSTANCE = new Number(NUMBER);
 isKey(NUMBER); // true
 isKey(NUMBER_INSTANCE); // true
+```
+
+### Key of `symbol`
+
+```typescript
+// Example symbol usage.
+import { isKey } from '@angular-package/type';
+
+const STRING = 'surname';
+const NUMBER = 27;
 
 const SYMBOL_NUMBER: unique symbol = Symbol(NUMBER);
 const SYMBOL_STRING: unique symbol = Symbol(STRING);
+
 isKey(SYMBOL_NUMBER); // true
 isKey(SYMBOL_STRING); // true
 ```

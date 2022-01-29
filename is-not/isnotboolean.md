@@ -13,8 +13,8 @@ const isNotBoolean = <Type, Payload extends object = object>(
 ): value is Never<AnyBoolean, Type> =>
   callback(
     typeOf(value) !== 'boolean' &&
-    typeof value !== 'boolean' &&
-    value instanceof Boolean === false,
+      typeof value !== 'boolean' &&
+      value instanceof Boolean === false,
     value,
     payload
   );
@@ -27,11 +27,11 @@ Code on GitHub.
 
 #### <mark style="color:green;">**`Type`**</mark>
 
-A generic type variable `Type` indicates the captured type of the given [`value`](isnotboolean.md#value-array-less-than-type-greater-than) via the [return type](isnotboolean.md#return-type) `value is Never<AnyBoolean, Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotboolean.md#callback-resultcallback-less-than-array-less-than-type-greater-than-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
+A generic type variable `Type` indicates the captured type of the given [`value`](isnotboolean.md#value-array-less-than-type-greater-than) via the [return type](isnotboolean.md#return-type) `value is Never<AnyBoolean, Type>` and the [`value`](../types/resultcallback.md#value-value) parameter of the provided [`callback`](isnotboolean.md#callback-resultcallback-less-than-type-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type.
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
-The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isnotboolean.md#callback-resultcallback-less-than-any-payload-greater-than) function and [`payload`](isnotboolean.md#payload-payload) optional parameter of the [`isNotBoolean()`](isnotboolean.md#isnotboolean) function from which it captures its value.
+The `Payload` generic type variable constrained by [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) indicates the type of optional parameter [`payload`](../types/resultcallback.md#payload-payload) of the supplied [`callback`](isnotboolean.md#callback-resultcallback-less-than-type-payload-greater-than) function and [`payload`](isnotboolean.md#payload-payload) optional parameter of the [`isNotBoolean()`](isnotboolean.md#isnotboolean) function from which it captures its value.
 
 ### Parameters
 
@@ -41,7 +41,7 @@ The `value` of generic type variable [`Type`](isnotboolean.md#type), by default 
 
 #### `callback: ResultCallback<Type, Payload>`
 
-A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isnotboolean.md#value-any) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isnotboolean.md#payloadextendsobject) with optional properties from the provided [`payload`](isnotboolean.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+A callback `function` of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](isnotboolean.md#value-type) that has been checked, the [`result`](../types/resultcallback.md#result-boolean) of this check, and [`payload`](../types/resultcallback.md#payload-payload) of generic type variable [`Payload`](isnotboolean.md#payloadextendsobject) with optional properties from the provided [`payload`](isnotboolean.md#payload-payload), to handle them before the [`result`](../types/resultcallback.md#result-boolean) return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 #### `payload?: Payload`
 
