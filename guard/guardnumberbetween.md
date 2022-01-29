@@ -15,7 +15,7 @@ const guardNumberBetween = <
   value: Type,
   min: Min,
   max: Max,
-  callback?: ResultCallback<Type, { min: Min, max: Max } & Payload>,
+  callback?: ResultCallback<Type, { min: Min; max: Max } & Payload>,
   payload?: Payload
 ): value is NumberBetween<Min, Max, Type> =>
   isNumberBetween(value, min, max, callback, payload);
@@ -32,11 +32,11 @@ A generic type variable `Type` constrained by generic type [`AnyNumber`](../type
 
 #### <mark style="color:green;">**`Min`**</mark>**`extends`**<mark style="color:green;">**`number`**</mark>
 
-A generic type variable `Min` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from the supplied `min` indicates the [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardnumberbetween.md#callback-resultcallback-less-than-type-min-min-max-max-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **minimum** range of the provided [`value`](guardnumberbetween.md#value-type) via the [return type](guardnumberbetween.md#return-type).
+A generic type variable `Min` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from the supplied [`min`](guardnumberbetween.md#min-min) indicates the fixed shape [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardnumberbetween.md#callback-resultcallback-less-than-type-min-min-max-max-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **minimum** range of the provided [`value`](guardnumberbetween.md#value-type) via the [return type](guardnumberbetween.md#return-type).
 
 #### <mark style="color:green;">**`Max`**</mark>**`extends`**<mark style="color:green;">**`number`**</mark>
 
-A generic type variable `Max` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from the supplied `max` indicates the [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardnumberbetween.md#callback-resultcallback-less-than-type-min-min-max-max-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **maximum** range of the provided [`value`](guardnumberbetween.md#value-type) via the [return type](guardnumberbetween.md#return-type).
+A generic type variable `Max` constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) type, by default of value captured from the supplied [`max`](guardnumberbetween.md#max-max) indicates the fixed shape [`payload`](../types/resultcallback.md#payload-payload) parameter type of the provided [`callback`](guardnumberbetween.md#callback-resultcallback-less-than-type-min-min-max-max-and-payload-greater-than) function [`ResultCallback`](../types/resultcallback.md) type and the **maximum** range of the provided [`value`](guardnumberbetween.md#value-type) via the [return type](guardnumberbetween.md#return-type).
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>**`=`**<mark style="color:green;">**`object`**</mark>
 
@@ -58,7 +58,7 @@ The **maximum** range of generic type variable [`Max`](guardnumberbetween.md#max
 
 #### `callback?: ResultCallback<Type, { min: Min; max: Max } & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](guardnumberbetween.md#value-type) that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](guardnumberbetween.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](guardnumberbetween.md#callback-resultcallback-less-than-type-min-min-max-max-and-payload-greater-than) function consists of the **`min`** and **`max`** properties of the given [`min`](guardnumberbetween.md#min-min) and [`max`](guardnumberbetween.md#max-max) parameters, and they can't be overwritten by the given [`payload`](guardnumberbetween.md#payload-payload) parameter of the main function.

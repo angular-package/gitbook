@@ -4,6 +4,7 @@
 
 The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) contains prefixed with **is** functions and prefixed with **isNot** functions in property `not`.
 
+{% code title="is.object.ts" %}
 ```typescript
 const is: Is = Object.freeze({
   array: isArray,
@@ -36,6 +37,7 @@ const is: Is = Object.freeze({
   stringIncludes: isStringIncludes, // From the `5.0.0` version.
   stringIncludesSome: isStringIncludesSome, // From the `5.0.0` version.
   stringLength: isStringLength, // From the `4.2.0` version.
+  stringLengthBetween: isStringLengthBetween, // From the 5.0.0 version.
   stringObject: isStringObject,
   stringType: isStringType,
   symbol: isSymbol,
@@ -44,3 +46,4 @@ const is: Is = Object.freeze({
   undefined: isUndefined
 });
 ```
+{% endcode %}

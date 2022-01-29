@@ -2,7 +2,7 @@
 
 ## `type {}`
 
-A frozen [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that consists of [`is`](../is/is-is.md), [`are`](are-are.md), and [`guard`](../guard/guard-guard.md) objects.
+A frozen [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that consists of [`is`](broken-reference), [`are`](are-are.md), and [`guard`](../guard/guard-guard.md) objects.
 
 {% code title="type.object.ts" %}
 ```typescript
@@ -28,7 +28,7 @@ The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **is** functions.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

@@ -2,7 +2,7 @@
 
 ## `guardObjectKey()`
 
-Guards the value to be an `object` of generic type variable [`Obj`](check-guardobjectkey.md#objextendsobject) that contains the given [`key`](check-guardobjectkey.md#key-key).
+Guards the value to be an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) of generic type variable [`Obj`](check-guardobjectkey.md#objextendsobject) that contains the given [`key`](check-guardobjectkey.md#key-key).
 
 {% code title="guard-object-key.func.ts" %}
 ```typescript
@@ -43,13 +43,11 @@ An [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 #### `key: Key`
 
-``
-
-A key of [`Obj`](check-guardobjectkey.md#objextendsobject) type as the name of the property that the given [`value`](check-guardobjectkey.md#value-obj) contains.
+A key of generic type variable [`Key`](check-guardobjectkey.md#keyextends-keyofobj) as the property name that the given [`value`](check-guardobjectkey.md#value-obj) contains.
 
 #### `callback?: ResultCallback<Obj, { key: typeof key } & Payload>`
 
-The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the `value` that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](check-guardobjectkey.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
+The optional callback [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) of [`ResultCallback`](../types/resultcallback.md) type with parameters, the [`value`](check-guardobjectkey.md#value-obj) that has been checked, the `result` of this check, and `payload` of generic type variable [`Payload`](check-guardobjectkey.md#payloadextendsobject-object) with optional properties from the provided `payload`, to handle them before the `result` return. By default, it uses [`resultCallback()`](../helper/resultcallback.md) function.
 
 {% hint style="info" %}
 The [`payload`](../types/resultcallback.md#payload-payload) parameter of the [`callback`](check-guardobjectkey.md#callback-resultcallback-less-than-obj-key-typeof-key-and-payload-greater-than) function consists of the **`key`** property given in the [`key`](check-guardobjectkey.md#key-key) parameter, and it can't be overwritten by the given [`payload`](check-guardobjectkey.md#payload-payload) parameter of the main function.

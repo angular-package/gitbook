@@ -4,6 +4,7 @@
 
 The object contains prefixed with **guard** functions.
 
+{% code title="guard-is.object.ts" %}
 ```typescript
 const guardIs: GuardIs = Object.freeze({
   array: guardArray,
@@ -23,14 +24,19 @@ const guardIs: GuardIs = Object.freeze({
   objectKey: guardObjectKey,
   objectKeyIn: guardObjectKeyIn,
   objectKeys: guardObjectKeys,
+  objectKeysIn: guardObjectKeysIn,
   objectSomeKeys: guardObjectSomeKeys,
   primitive: guardPrimitive,
   regexp: guardRegExp,
   string: guardString,
+  stringIncludes: guardStringIncludes,
+  stringIncludesSome: guardStringIncludesSome,
   stringLength: guardStringLength,
+  stringLengthBetween: guardStringLengthBetween,
   symbol: guardSymbol,
   true: guardTrue,
   type: guardType,
   undefined: guardUndefined
 });
 ```
+{% endcode %}

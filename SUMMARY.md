@@ -161,7 +161,6 @@
 * [are: Are {}](object/are-are.md)
 * [guard: Guard {}](guard/guard-guard.md)
 * [guardIs: GuardIs {}](guard/guardis-guardis.md)
-* [is: Is {}](is/is-is.md)
 * [is: Is {}](object/is-is.md)
 * [isNot: IsNot {}](object/isnot-isnot.md)
 * [type {}](object/type.md)

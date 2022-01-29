@@ -4,6 +4,7 @@
 
 Method decorator to check the type and return `undefined` if it's not the same as expected.
 
+{% code title="is-param.decorator.ts" %}
 ```typescript
 function isParam(...param: Array<string>): MethodDecorator {
   return (target: Function | object, key: string | symbol, descriptor: any): any => {
@@ -43,6 +44,7 @@ function isParam(...param: Array<string>): MethodDecorator {
   };
 }
 ```
+{% endcode %}
 
 ### Example usage
 

@@ -4,6 +4,7 @@
 
 The [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of **isNot** functions.
 
+{% code title="is-not.object.ts" %}
 ```typescript
 const isNot: IsNot = Object.freeze({
   boolean: isNotBoolean,
@@ -15,3 +16,4 @@ const isNot: IsNot = Object.freeze({
   undefined: isNotUndefined
 });
 ```
+{% endcode %}
