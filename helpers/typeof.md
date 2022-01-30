@@ -11,6 +11,8 @@ const typeOf = (value: any): string =>
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/lib/type-of.func.ts" %}
+
 ### Parameters
 
 #### `value: any`

@@ -1,5 +1,7 @@
 # Public API
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/public-api.ts" %}
+
 ## Function
 
 ### Helper

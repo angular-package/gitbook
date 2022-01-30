@@ -67,3 +67,5 @@ interface OfRecognized {
 }
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/recognize/type/of-recognized.type.ts" %}

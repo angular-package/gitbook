@@ -42,3 +42,5 @@ const RECOGNIZE_INSTANCES = [
 ];
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/recognize/src/recognize-instances.const.ts" %}

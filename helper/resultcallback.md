@@ -8,6 +8,8 @@ Default function to handle `callback` parameter of functions.
 const resultCallback = (result: boolean): boolean => result;
 ```
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/lib/result-callback.func.ts" %}
+
 ### Parameters
 
 #### `result: boolean`

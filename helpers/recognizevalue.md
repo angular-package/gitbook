@@ -45,6 +45,8 @@ const recognizeValue = (
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/recognize/src/recognize-value.func.ts" %}
+
 ### Parameters
 
 #### `value: any`
