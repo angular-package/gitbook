@@ -25,6 +25,8 @@ const isBoolean = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-boolean.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyBoolean`**</mark>**`=`**<mark style="color:green;">**`boolean`**</mark>

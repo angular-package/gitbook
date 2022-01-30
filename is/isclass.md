@@ -22,6 +22,8 @@ const isClass = <Class = Function, Payload extends object = object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-class.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Class`**</mark>**`=`**<mark style="color:green;">**`Function`**</mark>

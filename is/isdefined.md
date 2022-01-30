@@ -15,6 +15,8 @@ const isDefined = <Type, Payload extends object = object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-defined.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Type`**</mark>

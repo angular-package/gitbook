@@ -26,6 +26,8 @@ const isNumber = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-number.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Type`</mark>`extends`<mark style="color:green;">`AnyNumber`</mark>`=`<mark style="color:green;">`number`</mark>

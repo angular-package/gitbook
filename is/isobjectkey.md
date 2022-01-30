@@ -27,6 +27,8 @@ const isObjectKey = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-object-key.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Obj`</mark>`extends`<mark style="color:green;">`object`</mark>

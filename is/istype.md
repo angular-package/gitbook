@@ -30,6 +30,8 @@ const isType = <T extends Type, Payload extends object = object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-type.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`T`**</mark>**`extends`**<mark style="color:green;">**`Type`**</mark>

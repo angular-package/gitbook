@@ -15,6 +15,8 @@ const isStringType = <Payload extends object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-string-type.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>

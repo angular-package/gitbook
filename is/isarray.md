@@ -20,6 +20,8 @@ const isArray = <Type = any, Payload extends object = object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-array.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Type`**</mark>**`=`**<mark style="color:green;">**`any`**</mark>

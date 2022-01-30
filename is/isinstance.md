@@ -27,6 +27,8 @@ const isInstance = <Obj, Payload extends object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-instance.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Obj`</mark>

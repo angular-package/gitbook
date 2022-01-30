@@ -23,6 +23,8 @@ const isFunction = <Payload extends object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-function.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Payload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>

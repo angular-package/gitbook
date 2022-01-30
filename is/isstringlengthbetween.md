@@ -36,6 +36,8 @@ const isStringLengthBetween = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-string-length-between.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`AnyString`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
