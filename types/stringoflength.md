@@ -14,6 +14,8 @@ type StringOfLength<
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/string-of-length.type.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Min`</mark>`extends`<mark style="color:green;">`number`</mark>

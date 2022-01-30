@@ -17,7 +17,7 @@ const guardNumber = <
 ```
 {% endcode %}
 
-Code on [**GitHub**](https://github.com/angular-package/type/blob/5.0.x/src/guard/lib/guard-number.func.ts).
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-number.func.ts" %}
 
 ### Generic type variables
 

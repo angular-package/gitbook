@@ -14,6 +14,8 @@ const guardRegExp = <Type extends RegExp, Payload extends object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-regexp.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Type`**</mark>**`extends`**<mark style="color:green;">**`RegExp`**</mark>

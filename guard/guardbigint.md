@@ -17,6 +17,8 @@ const guardBigInt = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-big-int.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`BigInt`**</mark>**`extends`**<mark style="color:green;">**`bigint`**</mark>

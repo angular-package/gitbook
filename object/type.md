@@ -14,6 +14,8 @@ const type = Object.freeze({
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/lib/type.object.ts" %}
+
 ### Properties
 
 #### `are`

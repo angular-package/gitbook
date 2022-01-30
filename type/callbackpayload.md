@@ -14,6 +14,8 @@ type CallbackPayload<Payload = object> = GenericObject & {
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/callback-payload.type.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Payload`</mark>`=`<mark style="color:green;">`object`</mark>

@@ -14,7 +14,7 @@ const guardFunction = <Type extends Function, Payload extends object>(
 ```
 {% endcode %}
 
-Code on [**GitHub**](https://github.com/angular-package/type/blob/5.0.x/src/guard/lib/guard-function.func.ts).
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-function.func.ts" %}
 
 ### Generic type variables
 

@@ -9,3 +9,6 @@ A [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#numbe
 type AnyNumber = number | Number;
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/any-number.type.ts" %}
+

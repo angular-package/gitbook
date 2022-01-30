@@ -10,6 +10,8 @@ type Types<Obj> = Constructor<Obj> | 'function' | 'object' | Primitives;
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/types.type.ts" %}
+
 ### Generic type variables
 
 #### `Obj`

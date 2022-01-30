@@ -46,7 +46,9 @@ function isParam(...param: Array<string>): MethodDecorator {
 ```
 {% endcode %}
 
-### Example usage
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is-param.decorator.ts" %}
+
+## Example usage
 
 ```typescript
 // Example  usage

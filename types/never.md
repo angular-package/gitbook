@@ -10,6 +10,8 @@ type Never<Not, Type> = Type extends Not ? never : Type;
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/never.type.ts" %}
+
 ### Generic type variables
 
 #### `Not`

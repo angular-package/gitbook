@@ -19,6 +19,8 @@ const guardObjectKeysIn = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-object-keys-in.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Obj`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>

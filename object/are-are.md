@@ -22,3 +22,5 @@ const are: Are = Object.freeze({
 });
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/are/lib/are.object.ts" %}

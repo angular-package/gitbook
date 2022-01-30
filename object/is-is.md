@@ -47,3 +47,5 @@ const is: Is = Object.freeze({
 });
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/lib/is.object.ts" %}

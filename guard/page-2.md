@@ -17,6 +17,8 @@ const guardClass = <
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-class.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`Class`**</mark>**`extends`**<mark style="color:green;">**`Function`**</mark>

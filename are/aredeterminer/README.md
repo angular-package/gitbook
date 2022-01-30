@@ -46,6 +46,8 @@ const areDeterminer = <CommonPayload extends object>(
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/are/lib/are-determiner.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`CommonPayload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>

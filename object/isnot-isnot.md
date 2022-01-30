@@ -17,3 +17,5 @@ const isNot: IsNot = Object.freeze({
 });
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/not/lib/is-not.object.ts" %}

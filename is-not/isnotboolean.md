@@ -21,7 +21,7 @@ const isNotBoolean = <Type, Payload extends object = object>(
 ```
 {% endcode %}
 
-Code on GitHub.
+{% embed url="https://github.com/angular-package/type/blob/main/src/is/not/lib/is-not-boolean.func.ts" %}
 
 ### Generic type variables
 

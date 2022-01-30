@@ -9,3 +9,5 @@ A [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#bool
 type AnyBoolean = Exclude<boolean | Boolean, true | false>;
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/any-boolean.type.ts" %}

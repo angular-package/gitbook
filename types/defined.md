@@ -10,6 +10,8 @@ type Defined<Type> = Type extends undefined ? never : Type;
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/defined.type.ts" %}
+
 ### Generic type variables
 
 #### `Type`

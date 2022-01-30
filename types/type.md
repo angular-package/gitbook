@@ -9,3 +9,5 @@ The main types consist of [`Function`](https://developer.mozilla.org/en-US/docs/
 type Type = Function | object | Primitive;
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/type.type.ts" %}

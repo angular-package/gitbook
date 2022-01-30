@@ -7,3 +7,6 @@ A [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#strin
 ```typescript
 type AnyString = string | String;
 ```
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/any-number.type.ts" %}
+

@@ -40,3 +40,5 @@ const guardIs: GuardIs = Object.freeze({
 });
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-is.object.ts" %}

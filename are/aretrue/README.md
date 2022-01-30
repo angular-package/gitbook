@@ -11,6 +11,8 @@ const areTrue = <CommonPayload extends object>(...values: any[]) =>
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/are/lib/are-true.func.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">**`CommonPayload`**</mark>**`extends`**<mark style="color:green;">**`object`**</mark>

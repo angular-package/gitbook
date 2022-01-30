@@ -14,6 +14,8 @@ type ResultCallback<Value = any, Payload = object> = (
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/result-callback.type.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Value`</mark>`=`<mark style="color:green;">`any`</mark>

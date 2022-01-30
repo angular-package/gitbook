@@ -16,3 +16,5 @@ type Primitives =
   | 'undefined';
 ```
 {% endcode %}
+
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/primitives.type.ts" %}

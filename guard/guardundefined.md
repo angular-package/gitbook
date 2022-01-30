@@ -14,7 +14,7 @@ const guardUndefined = <Payload extends object>(
 ```
 {% endcode %}
 
-{% embed url="https://github.com/angular-package/type/blob/5.0.x/src/guard/lib/guard-undefined.func.ts" %}
+{% embed url="https://github.com/angular-package/type/blob/main/src/guard/lib/guard-undefined.func.ts" %}
 
 ### Generic type variables
 

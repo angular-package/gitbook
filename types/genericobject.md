@@ -12,6 +12,8 @@ type GenericObject<Value = any> = {
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/generic-object.type.ts" %}
+
 ### Generic type variables
 
 #### <mark style="color:green;">`Value`</mark>`=`<mark style="color:green;">`any`</mark>

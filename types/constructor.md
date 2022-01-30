@@ -10,6 +10,8 @@ type Constructor<Type> = new (...args: any[]) => Type;
 ```
 {% endcode %}
 
+{% embed url="https://github.com/angular-package/type/blob/main/src/type/constructor.type.ts" %}
+
 ### Generic type variables
 
 #### `Type`
