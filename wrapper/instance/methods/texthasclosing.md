@@ -20,9 +20,9 @@ public textHasClosing(text: string): boolean {
 
 ### Parameters
 
-| Name: type     | Description                                                                                                                              |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `text: string` | The text of a `string` to test against the existence of the [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars. |
+| Name: type     | Description                                                                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `text: string` | The text of a `string` to test against the existence of the [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars. |
 
 ### Returns
 

@@ -1,8 +1,8 @@
 # ★ wrap()
 
-### `Wrapper.prototype.wrap()`
+## `Wrapper.prototype.wrap()`
 
-The method wraps the primitive value of a specified [`Wrapper`](../../wrapper.md) object by its [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars, or the given `opening` and `closing` chars.
+The method wraps the primitive value of a specified [`Wrapper`](../../wrapper.md) object by its [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars, or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -18,18 +18,31 @@ public wrap<
 ```
 {% endcode %}
 
+### Generic type variables
+
+#### <mark style="color:green;">`CustomOpening`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`Opening`</mark>
+
+
+
+#### <mark style="color:green;">`CustomClosing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`Closing`</mark>
+
+
+
 ### Parameters
 
-| Name: type               | Description                                                                                                                                  |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opening: CustomOpening` | Optional opening chars of a generic type variable `CustomOpening` to wrap the primitive value of the [`Wrapper`](../../wrapper.md) instance. |
-| `closing: CustomClosing` | Optional closing chars of a generic type variable `CustomClosing` to wrap the primitive value of the [`Wrapper`](../../wrapper.md) instance. |
+#### `opening: CustomOpening`
+
+Optional opening chars of a generic type variable [`CustomOpening`](wrap.md#customopening-extends-string-opening) to wrap the primitive value of the [`Wrapper`](../../wrapper.md) instance.
+
+#### `closing: CustomClosing`
+
+Optional closing chars of a generic type variable [`CustomClosing`](wrap.md#customclosing-extends-string-closing) to wrap the primitive value of the [`Wrapper`](../../wrapper.md) instance.
 
 ### Returns
 
-The **return value** is a primitive value wrapped by the given `opening` and `closing` chars or from the [`Wrapper`](../../wrapper.md) instance.
+The **return value** is a primitive value wrapped by the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars or from the [`Wrapper`](../../wrapper.md) instance.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

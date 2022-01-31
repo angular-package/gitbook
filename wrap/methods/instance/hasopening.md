@@ -1,0 +1,51 @@
+# hasOpening()
+
+## `Wrap.prototype.hasOpening()`
+
+Checks whether the primitive value of a specified object has the [opening](../../accessors/#wrap.prototype.opening) chars or given opening chars. An empty [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+
+{% code title="wrap.class.ts" %}
+```typescript
+public hasOpening(opening?: string): boolean {
+  return (
+    this.#opening.length >= 1 &&
+    (typeof opening === 'string' ? this.#opening === opening : true)
+  );
+}
+```
+{% endcode %}
+
+### Parameters
+
+#### `opening?: string`
+
+Optional opening chars of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to check if the primitive value contains them at the beginning.
+
+### Returns
+
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the primitive value has the opening chars.
+
+## Example usage
+
+```typescript
+// Example usage.
+import { Wrap } from '@angular-package/wrapper';
+
+// Returns true.
+new Wrap(`[`, `]`, 'quote').hasOpening();
+
+// Returns true.
+new Wrap(`[`, `]`, 'quote').hasOpening('[');
+
+// Returns false.
+new Wrap(`[`, `]`, 'quote').hasOpening('');
+
+// Returns false.
+new Wrap(``, `]`, 'quote').hasOpening();
+
+// Returns false.
+new Wrap(``, `]`, 'quote').hasOpening('');
+
+// Returns false.
+new Wrap(``, `]`, 'quote').hasOpening('[');
+```

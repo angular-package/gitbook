@@ -1,8 +1,10 @@
 # Generic type variables
 
-### `Wrap<`<mark style="color:green;">`Opening`</mark>`, ...>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `Wrap<`<mark style="color:green;">`Opening`</mark>`, ...>` <a href="#wrap-opening" id="wrap-opening"></a>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `opening` indicates the opening type of a new [`Wrap`](wrap.md) instance.
+#### <mark style="color:green;">`Opening`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
+
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `opening` indicates the opening type of a new [`Wrap`](info/) instance.
 
 ```typescript
 class Wrap<
@@ -20,11 +22,11 @@ class Wrap<
 }
 ```
 
+## `Wrap<...,`<mark style="color:green;">`Text`</mark>`, ...>`
 
+#### <mark style="color:green;">`Text`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">` `` `</mark>
 
-### `Wrap<...,`<mark style="color:green;">`Text`</mark>`, ...>`
-
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `text` indicates the text type of a new [`Wrap`](wrap.md) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `text` indicates the text type of a new [`Wrap`](info/) instance.
 
 {% hint style="info" %}
 The constructor `text` parameter is optional, and if not provided, the default value of the generic type variable Text is not captured, but it's an empty string from the declaration.
@@ -46,11 +48,11 @@ class Wrap<
 }
 ```
 
+## `Wrap<...,`<mark style="color:green;">`Closing`</mark>`>` <a href="#wrap-closing" id="wrap-closing"></a>
 
+#### <mark style="color:green;">`Closing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
 
-### `Wrap<...,`<mark style="color:green;">`Closing`</mark>`>` <a href="#wrap-closing" id="wrap-closing"></a>
-
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `closing` indicates the closing type of a new [`Wrap`](wrap.md) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `closing` indicates the closing type of a new [`Wrap`](info/) instance.
 
 ```typescript
 class Wrap<
