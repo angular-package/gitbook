@@ -1,8 +1,8 @@
 # hasOpening()
 
-## `Wrap.prototype.hasOpening()`
+### `Wrap.prototype.hasOpening()`
 
-Checks whether the primitive value of a specified object has the [opening](../accessors/#wrap.prototype.opening) chars or given opening chars. An empty [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+Checks whether the primitive value of a specified object has the [opening](../accessors/#wrap.prototype.opening) chars or given opening chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -17,15 +17,15 @@ public hasOpening(opening?: string): boolean {
 
 ### Parameters
 
-#### `opening?: string`
-
-Optional opening chars of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to check if the primitive value contains them at the beginning.
+| Name: type         | Description                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| `opening?: string` | Optional opening chars of a `string` type to check if the primitive value contains them at the beginning. |
 
 ### Returns
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the primitive value has the opening chars.
 
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.

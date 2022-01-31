@@ -1,6 +1,6 @@
 # Code
 
-{% embed url="https://github.com/angular-package/wrapper/blob/main/src/lib/wrap.class.ts" %}
+Click the [**link**](https://github.com/angular-package/wrapper/blob/main/src/lib/wrap.class.ts) to see code on the GitHub.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -296,4 +296,3 @@ export class Wrap<
 
 ```
 {% endcode %}
-

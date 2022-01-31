@@ -1,6 +1,6 @@
 # #closing
 
-## `#closing:`<mark style="color:green;">`Closing`</mark>
+### `#closing:`<mark style="color:green;">`Closing`</mark>
 
 Private property of the closing chars of a generic type variable [`Closing`](../../generic-type-variables.md#wrap-closing).
 

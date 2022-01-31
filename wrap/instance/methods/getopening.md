@@ -1,6 +1,6 @@
 # getOpening()
 
-## `Wrap.prototype.getOpening()`
+### `Wrap.prototype.getOpening()`
 
 Gets the [opening](../../../library/basic-concepts.md#opening) chars of the wrap by returning the [`#opening`](../properties/#opening-opening) property of a specified object.
 
@@ -16,7 +16,7 @@ public getOpening(): Opening {
 
 The **return value** is opening chars of a generic type variable [`Opening`](../../generic-type-variables.md#wrap-opening).
 
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.
