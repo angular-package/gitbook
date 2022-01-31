@@ -1,6 +1,6 @@
 # Code
 
-Click the [**link**](https://github.com/angular-package/wrapper/blob/main/src/lib/wrapper.class.ts) to see code on the GitHub.
+{% embed url="https://github.com/angular-package/wrapper/blob/main/src/lib/wrapper.class.ts" %}
 
 {% code title="wrapper.class.ts" %}
 ```typescript

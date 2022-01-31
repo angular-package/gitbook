@@ -1,6 +1,6 @@
 # ★ replaceText()
 
-### `Wrap.prototype.replaceText()`
+## `Wrap.prototype.replaceText()`
 
 Returns the primitive value with replaced [`text`](../accessors/text.md).
 
@@ -14,21 +14,29 @@ public replaceText<ReplaceText extends string = ''>(
 ```
 {% endcode %}
 
-| Generic type variables                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong><code>ReplaceText extends string</code></strong></p><p>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>text</code> indicates the <code>ReplaceText</code> type on template of the return type.</p> |
+### Generic type variables
+
+#### <mark style="color:green;">**`ReplaceText`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`''`**</mark>
+
+A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`text`](replacetext.md#text-replacetext) indicates the `ReplaceText` type on template of the return type.
 
 ### Parameters
 
-| Name: type          | Description                                                                                                             |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `text: ReplaceText` | The text of a generic type variable `ReplaceText` to replace the [`text`](../accessors/text.md) in the primitive value. |
+#### `text: ReplaceText`
+
+The text of a generic type variable [`ReplaceText`](replacetext.md#replacetext-extends-string) to replace the [`text`](../accessors/text.md) in the primitive value.
+
+### Return type
+
+#### `${Opening}${ReplaceText}${Closing}`
+
+The **return type** is the [template literal](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html) of generic type variables.&#x20;
 
 ### Returns
 
-The **return value** is the primitive value with replaced [`text`](../accessors/text.md) of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), `ReplaceText` and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${Opening}${ReplaceText}${Closing}`.
+The **return value** is the primitive value with replaced [`text`](../accessors/text.md) of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`ReplaceText`](replacetext.md#replacetext-extends-string) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${Opening}${ReplaceText}${Closing}`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
