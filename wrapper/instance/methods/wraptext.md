@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.wrapText()`
 
-The method returns the primitive value of the [`Wrapper`](broken-reference) object with [`text`](../../wrap/accessors/#wrap.prototype.text) wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) chars.
+The method returns the primitive value of the [`Wrapper`](broken-reference) object with [`text`](../../../wrap/accessors/#wrap.prototype.text) wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -32,15 +32,15 @@ asdasdasd
 
 #### `opening: TextOpening`
 
-The opening chars of a generic type variable [`TextOpening`](wraptext.md#textopening-extends-string) to wrap the [`text`](../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../description.md) instance.
+The opening chars of a generic type variable [`TextOpening`](wraptext.md#textopening-extends-string) to wrap the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
 
 #### `closing: TextClosing`
 
-The closing chars of a generic type variable [`TextClosing`](wraptext.md#textclosing-extends-string) to wrap the [`text`](../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../description.md) instance.
+The closing chars of a generic type variable [`TextClosing`](wraptext.md#textclosing-extends-string) to wrap the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
 
 ### Returns
 
-The **return value** is the primitive value with text wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) characters of generic type [`Wrapped`](../../type/wrapped.md).
+The **return value** is the primitive value with text wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) characters of generic type [`Wrapped`](../../../type/wrapped.md).
 
 ## Example usage
 

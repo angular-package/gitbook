@@ -2,7 +2,7 @@
 
 ## `Wrap()`
 
-Creates a new [`Wrap`](description.md) instance of the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text) to wrap.
+Creates a new [`Wrap`](description.md) instance of the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text) to wrap.&#x20;
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -19,11 +19,11 @@ constructor(opening: Opening, closing: Closing, text: Text = '' as Text) {
 
 #### `opening: Opening`
 
-Opening characters of the generic type variable [`Opening`](generic-type-variables.md#wrap-opening) placed before the given [`text`](constructor.md#text-text).
+Opening characters of the generic type variable [`Opening`](generic-type-variables.md#wrap-opening) placed before the given [`text`](constructor.md#text-text). An empty [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) indicates that for the [`hasOpening()`](methods/instance/hasopening.md#wrap.prototype.hasopening) and [`isWrapped()`](methods/instance/iswrapped.md) methods, the [`opening`](accessors/opening.md) chars are [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined), returning `false`.
 
 #### `closing: Closing`
 
-Closing characters of the generic type variable [`Closing`](generic-type-variables.md#wrap-closing) placed after the given [`text`](constructor.md#text-text).
+Closing characters of the generic type variable [`Closing`](generic-type-variables.md#wrap-closing) placed after the given [`text`](constructor.md#text-text). An empty [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) indicates that for the [`hasClosing()`](methods/instance/hasclosing.md) and [`isWrapped()`](methods/instance/iswrapped.md) methods, the [`closing`](accessors/closing.md) chars are [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined), returning `false`.
 
 #### `text: Text = ''`
 

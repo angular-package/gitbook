@@ -34,7 +34,7 @@ The **return type** is [template literal](https://www.typescriptlang.org/docs/ha
 
 ### Returns
 
-The **return value** is the [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) with replaced [`closing`](../../accessors/closing.md) chars of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`ReplaceClosing`](replaceclosing.md#replaceclosingextendsstring) on the template `${Opening}${Text}${ReplaceClosing}`.
+The **return value** is the [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) with replaced [`closing`](../../accessors/closing.md) chars of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`ReplaceClosing`](replaceclosing.md#replaceclosingextendsstring) on the template.
 
 ## Example usage
 

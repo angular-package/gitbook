@@ -1,6 +1,6 @@
 # Description
 
-The [`Wrap`](description.md) object represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) text wrapped by the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) chars. It is designed to preserve the names of the opening, text, and closing chars and is based on the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) object.
+The [`Wrap`](description.md) object is based on the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) object and represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) primitive value of the [text](../library/basic-concepts.md#wrap-content) wrapped by the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) chars. It is designed to preserve the type names of the supplied opening, text, and closing chars by using the generic type variables.
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects" %}
 
@@ -42,8 +42,6 @@ The [`Wrap`](description.md) object represents the [immutable](https://developer
 | [toString()](methods/instance/tostring.md)             | Gets the [wrap](../library/basic-concepts.md#wrap), the primitive value of a specified [`Wrap`](description.md) object.                                                                                                                                                                                     |
 | [valueOf()](methods/instance/valueof.md)               | Returns the [wrap](../library/basic-concepts.md#wrap), [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of a specified [`Wrap`](description.md) object.                                                                                  |
 
-
-
 ## Static
 
 ### Methods
@@ -53,4 +51,3 @@ The [`Wrap`](description.md) object represents the [immutable](https://developer
 | [hasClosing()](methods/static/hasclosing.md) | Checks whether the `text` has given `closing` chars at the **end**.                                                                       |
 | [hasOpening()](methods/static/hasopening.md) | Checks whether the `text` has `opening` chars at the **beginning**.                                                                       |
 | [isWrap()](methods/static/iswrap.md)         | The method checks whether the `value` of any type is the [`Wrap`](description.md) instance of any or given `opening` and `closing` chars. |
-

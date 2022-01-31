@@ -34,7 +34,7 @@ The **return type** is the [template literal](https://www.typescriptlang.org/doc
 
 ### Returns
 
-The **return value** is the [primitive value](valueof.md) with replaced [`opening`](../../accessors/opening.md) chars of a generic type variables in order [`ReplaceOpening`](replaceopening.md#replaceopeningextendsstring), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${ReplaceOpening}${Text}${Closing}`.
+The **return value** is the [primitive value](valueof.md) with replaced [`opening`](../../accessors/opening.md) chars of a generic type variables in order [`ReplaceOpening`](replaceopening.md#replaceopeningextendsstring), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
 
 ## Example usage
 
