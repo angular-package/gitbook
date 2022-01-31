@@ -17,7 +17,7 @@
 
 * [Basic concepts](library/basic-concepts.md)
 
-## Wrap
+## Wrap {}
 
 * [Code](wrap/code.md)
 * [Wrap {}](wrap/wrap.md)
@@ -53,7 +53,7 @@
     * [isWrap()](wrap/static/methods/iswrap.md)
 * [Usage](wrap/usage.md)
 
-## Wrapper
+## Wrapper {}
 
 * [Code](wrapper/code.md)
 * [Wrapper {}](wrapper/wrapper.md)
