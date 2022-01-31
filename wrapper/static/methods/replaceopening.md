@@ -1,8 +1,8 @@
 # replaceOpening()
 
-### `Wrapper.replaceOpening()`
+## `Wrapper.replaceOpening()`
 
-Replaces the opening chars in a given `text` with a given replacement value at the beginning of the **text**.
+Replaces the [`opening`](replaceopening.md#opening-string) chars in a given [`text`](replaceopening.md#text-text) with a given [replacement value](replaceopening.md#replacevalue-string) at the beginning of the **text**.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,18 +20,23 @@ public static replaceOpening(
 
 ### Parameters
 
-| Name: type          | Description                                                                                             |
-| ------------------- | ------------------------------------------------------------------------------------------------------- |
-| `value: any`        | The **value** of any type to test against the instance of [`Wrapper`](../../wrapper.md).                |
-| `opening?: Opening` | Optional **opening** chars of a generic type variable `Opening` to check if the given `value` contains. |
-| `closing?: Closing` | Optional **closing** chars of a generic type variable `Closing` to check if the given `value` contains. |
-| `text?: Text`       | An optional **text** of generic type variable `Text` to check if the given `value` contains.            |
+#### `text: string`
+
+The text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type in which the given [`opening`](replaceopening.md#opening-string) chars are replaced by a given [replacement value](replaceopening.md#replacevalue-string).
+
+#### `opening: string`
+
+The opening chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to replace by a given [replacement value](replaceopening.md#replacevalue-string) at the beginning of the given [`text`](replaceopening.md#text-string).
+
+#### `replaceValue: string`
+
+Replacement value for the given [`opening`](replaceopening.md#opening-string) characters in the given [`text`](replaceopening.md#text-string).
 
 ### Returns
 
 The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with a replaced **opening** chars by a given replacement value.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

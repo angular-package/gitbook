@@ -1,8 +1,8 @@
 # define()
 
-## `Wrapper.define()`
+### `Wrapper.define()`
 
-Defines a new [`Wrapper`](../../wrapper.md) instance with the provided [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
+Defines a new [`Wrapper`](../../wrapper.md) instance with the provided `opening`, `closing` chars, and optional `text`.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,39 +20,25 @@ public static define<
 ```
 {% endcode %}
 
-### Generic type variables
-
-#### <mark style="color:green;">**`Opening`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
-
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided `opening` indicates the type of the opening in the [`Wrapper`](broken-reference) via return type.
-
-#### <mark style="color:green;">**`Closing`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
-
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided `closing` indicates the type of the closing in the [`Wrapper`](broken-reference) via return type.
-
-#### <mark style="color:green;">**`Text`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`''`**</mark>
-
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided `text` indicates the type of the text in the [`Wrapper`](broken-reference) via return type.
+| Generic type variables                                                                                                                                                                                                                                                                                                                                                                                                       | Name |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| <p><strong><code>Opening extends string</code></strong></p><p>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>opening</code> indicates the type of the opening in the <a href="broken-reference"><code>Wrapper</code></a> via return type.</p>                   |      |
+| <p><strong><code>Closing extends string</code></strong></p><p>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>closing</code> indicates the type of the closing in the <a href="broken-reference"><code>Wrapper</code></a> via return type.</p>                   |      |
+| <p><strong><code>Text extends string</code></strong><br><strong><code></code></strong>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>text</code> indicates the type of the text in the <a href="broken-reference"><code>Wrapper</code></a> via return type.</p> |      |
 
 ### Parameters
 
-#### `opening: Opening`
-
-The **opening** chars of generic type variable [`Opening`](define.md#openingextendsstring) for new [`Wrapper`](../../wrapper.md) instance.
-
-#### `closing: Closing`
-
-The **closing** chars of generic type variable [`Closing`](define.md#closingextendsstring) for new [`Wrapper`](../../wrapper.md) instance.
-
-#### `text?: Text`
-
-An optional **text** of generic type variable [`Text`](define.md#textextendsstring) for new [`Wrapper`](../../wrapper.md) instance.
+| Name: type         | Description                                                                                              |
+| ------------------ | -------------------------------------------------------------------------------------------------------- |
+| `opening: Opening` | The **opening** chars of generic type variable `Opening` for new [`Wrapper`](../../wrapper.md) instance. |
+| `closing: Closing` | The **closing** chars of generic type variable `Closing` for new [`Wrapper`](../../wrapper.md) instance. |
+| `text?: Text`      | An optional **text** of generic type variable `Text` for new [`Wrapper`](../../wrapper.md) instance.     |
 
 ### Returns
 
 The **return value** is the [`Wrapper`](../../wrapper.md) instance of given `opening`, `closing` chars, and optional `text`.
 
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.
@@ -70,3 +56,4 @@ Wrapper.define('!', '!');
 // of type Wrapper<"\"", "This is quoted text", "\"">
 Wrapper.define('"', '"', 'This is quoted text');
 ```
+

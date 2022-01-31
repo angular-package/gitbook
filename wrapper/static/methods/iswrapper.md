@@ -1,8 +1,8 @@
 # isWrapper()
 
-## `Wrapper.isWrapper()`
+### `Wrapper.isWrapper()`
 
-The method checks if the value of any type is an instance of the [`Wrapper`](../../wrapper.md) of any, or given [`opening`](iswrapper.md#opening-opening), [`closing`](iswrapper.md#closing-closing) chars, and [`text`](iswrapper.md#text-text).
+The method checks if the value of any type is an instance of the [`Wrapper`](../../wrapper.md) of any, or given `opening`, `closing` chars, and `text`.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -25,49 +25,30 @@ public static isWrapper<
 ```
 {% endcode %}
 
-### Generic type variables
-
-#### <mark style="color:green;">**`Opening`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
-
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`opening`](iswrapper.md#opening-opening) indicates the type of the opening in the [`Wrapper`](../../wrapper.md) via [return type](iswrapper.md#return-type).
-
-#### <mark style="color:green;">**`Closing`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
-
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`closing`](iswrapper.md#closing-closing) indicates the type of the closing in the [`Wrapper`](../../wrapper.md) via [return type](iswrapper.md#return-type).
-
-#### <mark style="color:green;">**`Text`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`''`**</mark>
-
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`text`](iswrapper.md#text-text) indicates the type of the text in the [`Wrapper`](../../wrapper.md) via [return type](iswrapper.md#return-type).
+| Generic type variables                                                                                                                                                                                                                                                                                                                                                                                                       | Name |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| <p><strong><code>Opening extends string</code></strong></p><p>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>opening</code> indicates the type of the opening in the <a href="../../wrapper.md"><code>Wrapper</code></a> via return type.</p>                   |      |
+| <p><strong><code>Closing extends string</code></strong></p><p>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>closing</code> indicates the type of the closing in the <a href="../../wrapper.md"><code>Wrapper</code></a> via return type.</p>                   |      |
+| <p><strong><code>Text extends string</code></strong><br><strong><code></code></strong>A generic type variable constrained by the <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#string"><code>string</code></a>, by default of the value captured from the provided <code>text</code> indicates the type of the text in the <a href="../../wrapper.md"><code>Wrapper</code></a> via return type.</p> |      |
 
 ### Parameters
 
-#### `value: any`
+| Name: type          | Description                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| `value: any`        | The **value** of any type to test against the instance of [`Wrapper`](../../wrapper.md).                |
+| `opening?: Opening` | Optional **opening** chars of a generic type variable `Opening` to check if the given `value` contains. |
+| `closing?: Closing` | Optional **closing** chars of a generic type variable `Closing` to check if the given `value` contains. |
+| `text?: Text`       | An optional **text** of generic type variable `Text` to check if the given `value` contains.            |
 
-The **value** of any type to test against the instance of [`Wrapper`](../../wrapper.md).
+#### Returns
 
-#### `opening?: Opening`
+| Return type                                                                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><strong><code>value is Wrapper&#x3C;Opening, Text, Closing></code></strong></p><p>The return type <strong></strong> indicates the <code>value</code> is the <a href="../../wrapper.md"><code>Wrapper</code></a> instance.</p> |
 
-Optional **opening** chars of a generic type variable [`Opening`](iswrapper.md#openingextendsstring) to check if the given [`value`](iswrapper.md#value-any) contains.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the value is an instance of [`Wrapper`](../../wrapper.md) of any, or the given `opening`, `closing` chars, and `text`.
 
-#### `closing?: Closing`
-
-Optional **closing** chars of a generic type variable [`Closing`](iswrapper.md#closingextendsstring) to check if the given [`value`](iswrapper.md#value-any) contains.
-
-#### `text?: Text`
-
-An optional **text** of generic type variable [`Text`](iswrapper.md#textextendsstring) to check if the given [`value`](iswrapper.md#value-any) contains.
-
-### Return type
-
-**`value is Wrapper<Opening, Text, Closing>`**
-
-The **return type** indicates the [`value`](iswrapper.md#value-any) is the [`Wrapper`](../../wrapper.md) instance.
-
-### Returns
-
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the value is an instance of [`Wrapper`](../../wrapper.md) of any, or the given [`opening`](iswrapper.md#opening-opening), [`closing`](iswrapper.md#closing-closing) chars, and [`text`](iswrapper.md#text-text).
-
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.

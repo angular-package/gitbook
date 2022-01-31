@@ -1,8 +1,8 @@
 # Wrapper() constructor
 
-## `Wrapper()`
+### `Wrapper()`
 
-Creates a new [`Wrapper`](wrapper.md) instance with the [`opening`](wrapper-constructor.md#opening-opening) and [`closing`](wrapper-constructor.md#closing-closing) chars and optional [`text`](wrapper-constructor.md#text-text).
+Creates a new [`Wrapper`](wrapper.md) instance with the **opening** and **closing** chars and optional **text**.
 
 {% code title="wrapper.class.ts" %}
 ```typescript

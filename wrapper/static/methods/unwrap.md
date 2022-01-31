@@ -1,6 +1,6 @@
 # unwrap()
 
-### `Wrapper.unwrap()`
+## `Wrapper.unwrap()`
 
 The method returns the **text** without the given `opening` and `closing` chars.
 
@@ -18,17 +18,23 @@ public static unwrap(text: string, opening = '', closing = ''): string {
 
 ### Parameters
 
-| Name: type        | Description                                                                                                                                                                          |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `text: string`    | The **text** of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) from which given `opening` and `closing` chars are removed. |
-| `opening: string` | The **opening** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given `text`.                 |
-| `closing: string` | The **closing** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given `text`.                 |
+`text: string`
+
+The **text** of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) from which given `opening` and `closing` chars are removed.
+
+`opening: string`
+
+The **opening** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given `text`.
+
+`closing: string`
+
+The **closing** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given `text`.
 
 ### Returns
 
 The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the given **opening** and **closing** chars.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

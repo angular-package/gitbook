@@ -1,6 +1,6 @@
 # toArray()
 
-## `Wrapper.prototype.toArray()`
+### `Wrapper.prototype.toArray()`
 
 Returns an `array` consisting of the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars, [`text`](../../../wrap/instance/accessors/#wrap.prototype.text), and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars.
 
@@ -16,7 +16,7 @@ public toArray(): readonly [Opening, Text, Closing] {
 
 The **return value** is a **read-only** `array` consisting of the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars, [`text`](../../../wrap/instance/accessors/#wrap.prototype.text), and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars.
 
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.

@@ -1,8 +1,8 @@
 # ★ wrapOn()
 
-## `Wrapper.prototype.wrapOn()`
+### `Wrapper.prototype.wrapOn()`
 
-Wraps given [`text`](wrapon.md#text-customtext) with the wrap, the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening), and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) object.
+Wraps given `text` with the wrap, the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening), and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) object.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -14,29 +14,17 @@ public wrapOn<CustomText extends string = ''>(
 ```
 {% endcode %}
 
-### Generic type variables
-
-#### <mark style="color:green;">`CustomText`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`''`</mark>
-
-
-
 ### Parameters
 
-#### `text: CustomText`
-
-The text of generic type variable [`CustomText`](wrapon.md#customtext-extends-string) to wrap by the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) instance.
-
-### Return type
-
-#### `Wrapped<Opening, CustomText, Closing>`
-
-The **return type** is generic type [`Wrapped`](../../../type/wrapped.md) that takes generic type variables [`Opening`](../../generic-type-variables.md#wrap-opening), [`CustomText`](wrapon.md#customtextextendsstring) and [`Closing`](../../generic-type-variables.md#wrap-closing).
+| Name: type         | Description                                                                                                                                                                                                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `text: CustomText` | The text of generic type variable `CustomText` to wrap by the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) instance. |
 
 ### Returns
 
-The **return value** is the text wrapped by the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) object of the generic type [`Wrapped`](../../../type/wrapped.md).
+The **return value** is the text wrapped by the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/instance/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) object of the generic type `Wrapped`.
 
-## Example usage
+### Example usage
 
 ```typescript
 // Example usage.
