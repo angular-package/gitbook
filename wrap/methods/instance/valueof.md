@@ -2,7 +2,9 @@
 
 ### `Wrap.prototype.valueOf()`
 
-Returns the [wrap](../../../library/basic-concepts.md#wrap), primitive value of a specified [`Wrap`](../../description.md) object.
+Returns the [wrap](../../../library/basic-concepts.md#wrap), [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of a specified [`Wrap`](../../description.md) object.
+
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf" %}
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -12,11 +14,17 @@ public valueOf(): `${Opening}${Text}${Closing}` {
 ```
 {% endcode %}
 
+### Return type
+
+#### `${Opening}${Text}${Closing}`
+
+The **return type** is the [template literal](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html) of generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing).
+
 ### Returns
 
 The **return value** is the wrap of generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than), and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${Opening}${Text}${Closing}`.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.

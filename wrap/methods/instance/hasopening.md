@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.hasOpening()`
 
-Checks whether the primitive value of a specified object has the [opening](../../accessors/#wrap.prototype.opening) chars or given opening chars. An empty [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+Checks whether the [primitive value](valueof.md) of a specified object has the [`opening`](../../accessors/opening.md) chars or given [`opening`](hasopening.md#opening-string) chars. An empty [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -19,11 +19,11 @@ public hasOpening(opening?: string): boolean {
 
 #### `opening?: string`
 
-Optional opening chars of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to check if the primitive value contains them at the beginning.
+Optional opening chars of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to check if the primitive value contains them at the **beginning**.
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the primitive value has the opening chars.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the primitive value has the [`opening`](../../accessors/opening.md) chars or given [`opening`](hasopening.md#opening-string) chars.
 
 ## Example usage
 
@@ -34,14 +34,21 @@ import { Wrap } from '@angular-package/wrapper';
 // Returns true.
 new Wrap(`[`, `]`, 'quote').hasOpening();
 
+// Returns false.
+new Wrap(``, `]`, 'quote').hasOpening();
+```
+
+### Given `closing` chars
+
+```typescript
+// Example usage of given opening chars.
+import { Wrap } from '@angular-package/wrapper';
+
 // Returns true.
 new Wrap(`[`, `]`, 'quote').hasOpening('[');
 
 // Returns false.
 new Wrap(`[`, `]`, 'quote').hasOpening('');
-
-// Returns false.
-new Wrap(``, `]`, 'quote').hasOpening();
 
 // Returns false.
 new Wrap(``, `]`, 'quote').hasOpening('');

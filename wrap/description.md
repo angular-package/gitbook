@@ -1,6 +1,10 @@
 # Description
 
-The [`Wrap`](description.md) object represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) text wrapped by the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) chars. It is designed to preserve the names of the opening, text and closing.
+The [`Wrap`](description.md) object represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) text wrapped by the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) chars. It is designed to preserve the names of the opening, text, and closing chars and is based on the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) object.
+
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects" %}
+
+{% embed url="https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html" %}
 
 ## Instance
 
@@ -13,8 +17,6 @@ The [`Wrap`](description.md) object represents the [immutable](https://developer
 | [text](accessors/text.md)                                 | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the text of the [`Wrap`](description.md) by returning the [`#text`](properties/text.md) property of a specified object.                                                                                                                 |
 | [\[Symbol.toStringTag\]](accessors/symbol.tostringtag.md) | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of [`toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol/toStringTag) of Symbol, changes the default object tag to `wrap` for an instance of the [`Wrap`](description.md). |
 
-
-
 ### Properties
 
 |                                   |                                                                                                                                 |
@@ -23,24 +25,24 @@ The [`Wrap`](description.md) object represents the [immutable](https://developer
 | [#opening](properties/opening.md) | Private property of the opening chars of a generic type variable [`Opening`](generic-type-variables.md#wrap-opening).           |
 | [#text](properties/text.md)       | Private property of text of a generic type variable [`Text`](generic-type-variables.md#wrap-less-than...-text-...greater-than). |
 
-
-
 ### Methods
 
-|                                                        |                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [getClosing()](methods/instance/getclosing.md)         | Gets the [closing](../library/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](properties/#closing-closing) property of a specified object.                                                                                                               |
-| [getOpening()](methods/instance/getopening.md)         | Gets the [opening](../library/basic-concepts.md#opening) chars of the wrap by returning the [`#opening`](properties/#opening-opening) property of a specified object.                                                                                                               |
-| [getText()](methods/instance/gettext.md)               | Gets the text of the wrap by returning the [`#text`](properties/#text-text) property of a specified object, without the [opening](accessors/#wrap.prototype.opening) and [closing](accessors/#wrap.prototype.closing) chars of the [`Wrap`](description.md).                        |
-| [hasClosing()](methods/instance/hasclosing.md)         | Checks whether the primitive value of a specified object has the [closing](accessors/#wrap.prototype.closing) chars or given closing chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined). |
-| [hasOpening()](methods/instance/hasopening.md)         | Checks whether the primitive value of a specified object has the [opening](accessors/#wrap.prototype.opening) chars or given opening chars. An empty `string` indicates [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined). |
-| [hasText()](methods/instance/hastext.md)               | The method checks whether the [text](accessors/#wrap.prototype.text) of a specified [`Wrap`](description.md) object is defined, which means it's a `string` of at least one char and optionally equal to the given `text`.                                                          |
-| [isWrapped()](methods/instance/iswrapped.md)           | The method checks whether the primitive value of the specified object is wrapped by the [opening](accessors/#wrap.prototype.opening) and [closing](accessors/#wrap.prototype.closing) chars of an instance or given opening and closing chars.                                      |
-| [replaceClosing()](methods/instance/replaceclosing.md) | Returns the primitive value with **replaced** **closing** chars.                                                                                                                                                                                                                    |
-| [replaceOpening()](methods/instance/replaceopening.md) | Returns the primitive value with **replaced** **opening** chars.                                                                                                                                                                                                                    |
-| [replaceText()](methods/instance/replacetext.md)       | Returns the primitive value with replaced [`text`](accessors/text.md).                                                                                                                                                                                                              |
-| [toString()](methods/instance/tostring.md)             | Gets the [wrap](../library/basic-concepts.md#wrap), the primitive value of a specified [`Wrap`](description.md) object.                                                                                                                                                             |
-| [valueOf()](methods/instance/valueof.md)               | Returns the [wrap](../library/basic-concepts.md#wrap), primitive value of a specified [`Wrap`](description.md) object.                                                                                                                                                              |
+|                                                        |                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [getClosing()](methods/instance/getclosing.md)         | Gets the [closing](../library/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](properties/closing.md) property of a specified object.                                                                                                                                             |
+| [getOpening()](methods/instance/getopening.md)         | Gets the [opening](../library/basic-concepts.md#opening) chars of the wrap by returning the [`#opening`](properties/opening.md) property of a specified object.                                                                                                                                             |
+| [getText()](methods/instance/gettext.md)               | Gets the text of the wrap by returning the [`#text`](properties/text.md) property of a specified object, without the [opening](accessors/opening.md) and [closing](accessors/closing.md) chars of the [`Wrap`](description.md).                                                                             |
+| [hasClosing()](methods/instance/hasclosing.md)         | Checks whether the [primitive value](methods/instance/valueof.md) of a specified object has the [`closing`](accessors/closing.md) chars or given `closing` chars.                                                                                                                                           |
+| [hasOpening()](methods/instance/hasopening.md)         | Checks whether the [primitive value](methods/instance/valueof.md) of a specified object has the [`opening`](accessors/opening.md) chars or given `opening` chars.                                                                                                                                           |
+| [hasText()](methods/instance/hastext.md)               | The method checks whether the [`text`](accessors/text.md) of a specified [`Wrap`](description.md) object is defined, which means it's a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of at least one char and optionally equal to the given `text`. |
+| [isWrapped()](methods/instance/iswrapped.md)           | The method checks whether the [primitive value](methods/instance/valueof.md) of the specified object is wrapped by the [opening](accessors/opening.md) and [closing](accessors/closing.md) chars of an instance or given `opening` and `closing` chars.                                                     |
+| [replaceClosing()](methods/instance/replaceclosing.md) | Returns the [primitive value](methods/instance/valueof.md) with **replaced** [`closing`](accessors/closing.md) chars.                                                                                                                                                                                       |
+| [replaceOpening()](methods/instance/replaceopening.md) | Returns the [primitive value](methods/instance/valueof.md) with **replaced** [`opening`](accessors/opening.md) chars.                                                                                                                                                                                       |
+| [replaceText()](methods/instance/replacetext.md)       | Returns the [primitive value](methods/instance/valueof.md) with replaced [`text`](accessors/text.md).                                                                                                                                                                                                       |
+| [toString()](methods/instance/tostring.md)             | Gets the [wrap](../library/basic-concepts.md#wrap), the primitive value of a specified [`Wrap`](description.md) object.                                                                                                                                                                                     |
+| [valueOf()](methods/instance/valueof.md)               | Returns the [wrap](../library/basic-concepts.md#wrap), [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of a specified [`Wrap`](description.md) object.                                                                                  |
+
+
 
 ## Static
 
@@ -51,3 +53,4 @@ The [`Wrap`](description.md) object represents the [immutable](https://developer
 | [hasClosing()](methods/static/hasclosing.md) | Checks whether the `text` has given `closing` chars at the **end**.                                                                       |
 | [hasOpening()](methods/static/hasopening.md) | Checks whether the `text` has `opening` chars at the **beginning**.                                                                       |
 | [isWrap()](methods/static/iswrap.md)         | The method checks whether the `value` of any type is the [`Wrap`](description.md) instance of any or given `opening` and `closing` chars. |
+

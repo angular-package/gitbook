@@ -29,7 +29,7 @@ class Wrap<
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `text` indicates the text type of a new [`Wrap`](description.md) instance.
 
 {% hint style="info" %}
-The constructor `text` parameter is optional, and if not provided, the default value of the generic type variable Text is not captured, but it's an empty string from the declaration.
+The constructor **`text`** parameter is optional, and if not provided, the default value of the generic type variable `Text` is not captured, but it's an empty string from the declaration.
 {% endhint %}
 
 ```typescript
