@@ -22,7 +22,11 @@ public wrapText<
 
 #### <mark style="color:green;">`TextOpening`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`''`</mark>
 
+asdasd
+
 #### <mark style="color:green;">`TextClosing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`''`</mark>
+
+asdasdasd
 
 ### Parameters
 

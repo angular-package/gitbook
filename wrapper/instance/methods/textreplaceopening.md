@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.textReplaceOpening()`
 
-Replaces the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars of the [`Wrapper`](../../wrapper.md) object in the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) object with the given `closing` chars.
+Replaces the [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars of the [`Wrapper`](../../wrapper.md) object in the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) object with the given [`opening`](textreplaceopening.md#opening-string) chars.
 
 {% hint style="info" %}
 The replacement succeeds if the opening characters exist at the beginning of the text.
@@ -18,15 +18,15 @@ public textReplaceOpening(opening: string): string {
 
 ### Parameters
 
-| Name: type        | Description                                                                                                                                                                                                                                   |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opening: string` | The **opening** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to replace in the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text)(part of the primitive value). |
+#### `opening: string`
+
+The **opening** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to replace in the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text)(part of the primitive value).
 
 ### Returns
 
 The **return value** is the [`text`](../../../wrap/instance/accessors/#wrap.prototype.text) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`opening`](../../../wrap/instance/accessors/#wrap.prototype.opening) chars.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
