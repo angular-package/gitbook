@@ -6,6 +6,7 @@
 
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `opening` indicates the opening type of a new [`Wrap`](description.md) instance.
 
+{% code title="wrap.class.ts" %}
 ```typescript
 class Wrap<
   Opening extends string = string, // <--- Declare generic type variable Opening.
@@ -21,6 +22,7 @@ class Wrap<
   ...
 }
 ```
+{% endcode %}
 
 ## `Wrap<...,`<mark style="color:green;">`Text`</mark>`, ...>`
 
@@ -29,11 +31,11 @@ class Wrap<
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `text` indicates the text type of a new [`Wrap`](description.md) instance.
 
 {% hint style="info" %}
-The constructor **`text`** parameter is optional, and if not provided, the default value of the generic type variable `Text` is not captured, but it's an empty string from the declaration.
+The constructor **`text`** parameter is optional, and if not provided, the default value of the generic type variable `Text` is not captured, but it's an empty string from the declaration.class Wrap<
 {% endhint %}
 
+{% code title="wrap.class.ts" %}
 ```typescript
-class Wrap<
   Opening extends string = string,
   Text extends string = ``, // <--- Declare generic type variable Text.
   Closing extends string = string
@@ -47,6 +49,7 @@ class Wrap<
   ...
 }
 ```
+{% endcode %}
 
 ## `Wrap<...,`<mark style="color:green;">`Closing`</mark>`>` <a href="#wrap-closing" id="wrap-closing"></a>
 
@@ -54,6 +57,7 @@ class Wrap<
 
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `closing` indicates the closing type of a new [`Wrap`](description.md) instance.
 
+{% code title="wrap.class.ts" %}
 ```typescript
 class Wrap<
   Opening extends string = string,
@@ -69,3 +73,4 @@ class Wrap<
   ...
 }
 ```
+{% endcode %}
