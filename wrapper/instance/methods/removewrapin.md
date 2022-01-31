@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.removeWrapIn()`
 
-Returns given [`text`](removewrapin.md#text-string) without the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) object.
+Returns given [`text`](removewrapin.md#text-string) without the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../description.md) object.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,7 +20,7 @@ public removeWrapIn(text: string): string {
 
 #### `text: string`
 
-The **text** of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to unwrap with the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../wrapper.md) object.
+The **text** of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to unwrap with the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../description.md) object.
 
 ### Returns
 

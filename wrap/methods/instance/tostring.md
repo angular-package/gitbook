@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.toString()`
 
-Gets the [wrap](../../../library/basic-concepts.md#wrap), the primitive value of a specified [`Wrap`](../../info/) object.
+Gets the [wrap](../../../library/basic-concepts.md#wrap), the primitive value of a specified [`Wrap`](../../description.md) object.
 
 {% code title="wrap.class.ts" %}
 ```typescript

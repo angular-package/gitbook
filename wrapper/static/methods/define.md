@@ -2,7 +2,7 @@
 
 ## `Wrapper.define()`
 
-Defines a new [`Wrapper`](../../wrapper.md) instance with the provided [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
+Defines a new [`Wrapper`](../../description.md) instance with the provided [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -38,19 +38,19 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 #### `opening: Opening`
 
-The **opening** chars of generic type variable [`Opening`](define.md#openingextendsstring) for new [`Wrapper`](../../wrapper.md) instance.
+The **opening** chars of generic type variable [`Opening`](define.md#openingextendsstring) for new [`Wrapper`](../../description.md) instance.
 
 #### `closing: Closing`
 
-The **closing** chars of generic type variable [`Closing`](define.md#closingextendsstring) for new [`Wrapper`](../../wrapper.md) instance.
+The **closing** chars of generic type variable [`Closing`](define.md#closingextendsstring) for new [`Wrapper`](../../description.md) instance.
 
 #### `text?: Text`
 
-An optional **text** of generic type variable [`Text`](define.md#textextendsstring) for new [`Wrapper`](../../wrapper.md) instance.
+An optional **text** of generic type variable [`Text`](define.md#textextendsstring) for new [`Wrapper`](../../description.md) instance.
 
 ### Returns
 
-The **return value** is the [`Wrapper`](../../wrapper.md) instance of given `opening`, `closing` chars, and optional `text`.
+The **return value** is the [`Wrapper`](../../description.md) instance of given `opening`, `closing` chars, and optional `text`.
 
 ## Example usage
 

@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.valueOf()`
 
-Returns the [wrap](../../../library/basic-concepts.md#wrap), primitive value of a specified [`Wrap`](../../info/) object.
+Returns the [wrap](../../../library/basic-concepts.md#wrap), primitive value of a specified [`Wrap`](../../description.md) object.
 
 {% code title="wrap.class.ts" %}
 ```typescript

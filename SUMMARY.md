@@ -19,8 +19,8 @@
 
 ## Wrap {}
 
-* [Info](wrap/info/README.md)
-  * [Source](wrap/info/source.md)
+* [Description](wrap/description.md)
+* [Source](wrap/source.md)
 * [Generic type variables](wrap/generic-type-variables.md)
 * [★ Constructor](wrap/constructor.md)
 * [Accessors](wrap/accessors/README.md)
@@ -32,7 +32,6 @@
   * [#closing](wrap/properties/closing.md)
   * [#opening](wrap/properties/opening.md)
   * [#text](wrap/properties/text.md)
-* [Instance](wrap/instance.md)
 * [Methods](wrap/methods/README.md)
   * [Static](wrap/methods/static/README.md)
     * [hasClosing()](wrap/methods/static/hasclosing.md)
@@ -55,8 +54,8 @@
 
 ## Wrapper {}
 
+* [Description](wrapper/description.md)
 * [Source](wrapper/source.md)
-* [Wrapper {}](wrapper/wrapper.md)
 * [Generic type variables](wrapper/generic-type-variables.md)
 * [Constructor](wrapper/constructor.md)
 * [Instance](wrapper/instance/README.md)

@@ -2,7 +2,7 @@
 
 ## Private
 
-|                        | Description                                                                                                                        |
+|                        |                                                                                                                                    |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | [#closing](closing.md) | Private property of the closing chars of a generic type variable [`Closing`](../generic-type-variables.md#wrap-closing).           |
 | [#opening](opening.md) | Private property of the opening chars of a generic type variable [`Opening`](../generic-type-variables.md#wrap-opening).           |

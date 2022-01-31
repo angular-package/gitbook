@@ -6,7 +6,7 @@ The method does not yet exist.
 
 ### `Wrapper.prototype.textHasClosing()`
 
-Checks if the provided `text` has the closing of specified [`Wrapper`](../../wrapper.md) object at the end of the text.
+Checks if the provided `text` has the closing of specified [`Wrapper`](../../description.md) object at the end of the text.
 
 {% code title="wrapper.class.ts" %}
 ```typescript

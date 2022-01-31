@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.replaceOpeningIn()`
 
-Replaces the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) chars of the [`Wrapper`](../../wrapper.md) object in the given [`text`](replaceopeningin.md#text-string) with a given replacement [value](replaceopeningin.md#replacevalue-string).
+Replaces the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) chars of the [`Wrapper`](../../description.md) object in the given [`text`](replaceopeningin.md#text-string) with a given replacement [value](replaceopeningin.md#replacevalue-string).
 
 {% hint style="info" %}
 The replacement succeeds if the opening characters exist at the beginning of the text.

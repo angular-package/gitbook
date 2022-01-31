@@ -21,11 +21,11 @@ public unwrapText(
 
 #### `opening: string`
 
-Optional opening chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) instance.
+Optional opening chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
 
 #### `closing: string`
 
-Optional closing chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **end** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) instance.
+Optional closing chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **end** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
 
 ### Returns
 

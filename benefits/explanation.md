@@ -2,7 +2,7 @@
 
 ### Partial primitive value with the exact return type
 
-This example explains what **partial primitive value** and the **exact return type** means in the [`Wrap`](../wrap/info/) `string` object.
+This example explains what **partial primitive value** and the **exact return type** means in the [`Wrap`](../wrap/description.md) `string` object.
 
 ```typescript
 // Example usage.
@@ -29,11 +29,11 @@ quoteTag.content;
 
 ```
 
-To create primitive value of [`Wrap`](../wrap/info/) object there is the need to provide three parameters in order `opening`, `closing`, and optional `content`. They are stored in separate private properties which are accessible with the help of accessors, and because of this, access to **parts of the primitive value** is achieved. More, each parameter is of a generic type variable that detects the type of given value, and because of this, the **exact return type** of **primitive value** and its **parts** is achieved.
+To create primitive value of [`Wrap`](../wrap/description.md) object there is the need to provide three parameters in order `opening`, `closing`, and optional `content`. They are stored in separate private properties which are accessible with the help of accessors, and because of this, access to **parts of the primitive value** is achieved. More, each parameter is of a generic type variable that detects the type of given value, and because of this, the **exact return type** of **primitive value** and its **parts** is achieved.
 
 #### Immutability
 
-All the parts that make up the primitive value of the [`Wrap`](../wrap/info/) object are **immutable** because they are accessible only by the `get` accessors. There is no possibility to change any part of the primitive value of the `quoteTag` object and any try to change e.g. `opening` results in the error message "_Cannot assign to 'opening' because it is a read-only property_".&#x20;
+All the parts that make up the primitive value of the [`Wrap`](../wrap/description.md) object are **immutable** because they are accessible only by the `get` accessors. There is no possibility to change any part of the primitive value of the `quoteTag` object and any try to change e.g. `opening` results in the error message "_Cannot assign to 'opening' because it is a read-only property_".&#x20;
 
 ```typescript
 

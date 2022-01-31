@@ -32,11 +32,11 @@ asdasdasd
 
 #### `opening: TextOpening`
 
-The opening chars of a generic type variable [`TextOpening`](wraptext.md#textopening-extends-string) to wrap the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) instance.
+The opening chars of a generic type variable [`TextOpening`](wraptext.md#textopening-extends-string) to wrap the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
 
 #### `closing: TextClosing`
 
-The closing chars of a generic type variable [`TextClosing`](wraptext.md#textclosing-extends-string) to wrap the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../wrapper.md) instance.
+The closing chars of a generic type variable [`TextClosing`](wraptext.md#textclosing-extends-string) to wrap the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
 
 ### Returns
 

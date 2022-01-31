@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.wrap()`
 
-The method wraps the primitive value of a specified [`Wrapper`](../../wrapper.md) object by its [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars, or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
+The method wraps the primitive value of a specified [`Wrapper`](../../description.md) object by its [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars, or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -32,15 +32,15 @@ public wrap<
 
 #### `opening: CustomOpening`
 
-Optional opening chars of a generic type variable [`CustomOpening`](wrap.md#customopening-extends-string-opening) to wrap the primitive value of the [`Wrapper`](../../wrapper.md) instance.
+Optional opening chars of a generic type variable [`CustomOpening`](wrap.md#customopening-extends-string-opening) to wrap the primitive value of the [`Wrapper`](../../description.md) instance.
 
 #### `closing: CustomClosing`
 
-Optional closing chars of a generic type variable [`CustomClosing`](wrap.md#customclosing-extends-string-closing) to wrap the primitive value of the [`Wrapper`](../../wrapper.md) instance.
+Optional closing chars of a generic type variable [`CustomClosing`](wrap.md#customclosing-extends-string-closing) to wrap the primitive value of the [`Wrapper`](../../description.md) instance.
 
 ### Returns
 
-The **return value** is a primitive value wrapped by the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars or from the [`Wrapper`](../../wrapper.md) instance.
+The **return value** is a primitive value wrapped by the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars or from the [`Wrapper`](../../description.md) instance.
 
 ## Example usage
 

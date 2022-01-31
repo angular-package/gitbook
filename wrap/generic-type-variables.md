@@ -4,7 +4,7 @@
 
 #### <mark style="color:green;">`Opening`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `opening` indicates the opening type of a new [`Wrap`](info/) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `opening` indicates the opening type of a new [`Wrap`](description.md) instance.
 
 ```typescript
 class Wrap<
@@ -26,7 +26,7 @@ class Wrap<
 
 #### <mark style="color:green;">`Text`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">` `` `</mark>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `text` indicates the text type of a new [`Wrap`](info/) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `text` indicates the text type of a new [`Wrap`](description.md) instance.
 
 {% hint style="info" %}
 The constructor `text` parameter is optional, and if not provided, the default value of the generic type variable Text is not captured, but it's an empty string from the declaration.
@@ -52,7 +52,7 @@ class Wrap<
 
 #### <mark style="color:green;">`Closing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `closing` indicates the closing type of a new [`Wrap`](info/) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided `closing` indicates the closing type of a new [`Wrap`](description.md) instance.
 
 ```typescript
 class Wrap<
