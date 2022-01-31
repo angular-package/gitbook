@@ -2,7 +2,7 @@
 
 ## `Wrapper()`
 
-Creates a new [`Wrapper`](description.md) instance with the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text).
+Creates a new [`Wrapper`](overview.md) instance with the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text).
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -28,7 +28,7 @@ Optional **text** of a generic type variable [`Text`](generic-type-variables.md#
 
 ### Returns
 
-The **return value** is a new instance of [`Wrapper`](description.md).
+The **return value** is a new instance of [`Wrapper`](overview.md).
 
 ## Example usage
 

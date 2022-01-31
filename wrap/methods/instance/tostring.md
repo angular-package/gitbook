@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.toString()`
 
-Gets the [wrap](../../../library/basic-concepts.md#wrap), the [primitive value](valueof.md) of a specified [`Wrap`](../../description.md) object.
+Gets the [wrap](../../../library/basic-concepts.md#wrap), the [primitive value](valueof.md) of a specified [`Wrap`](../../overview.md) object.
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString" %}
 

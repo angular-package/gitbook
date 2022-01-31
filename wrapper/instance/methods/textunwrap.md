@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.textUnwrap()`
 
-The method returns the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) object without its [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars or the given [`opening`](textunwrap.md#opening-string) and [`closing`](textunwrap.md#closing-string) chars.
+The method returns the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) object without its [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars or the given [`opening`](textunwrap.md#opening-string) and [`closing`](textunwrap.md#closing-string) chars.
 
 {% hint style="info" %}
 The default values for the `opening` and `closing` parameters are taken from the `Wrapper` object.
@@ -23,15 +23,15 @@ public textUnwrap(
 
 #### `opening: string`
 
-Optional **opening** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
+Optional **opening** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) instance.
 
 #### `closing: string`
 
-Optional **closing** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **end** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) instance.
+Optional **closing** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **end** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) instance.
 
 ### Returns
 
-The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../description.md) object or given `opening` and `closing` chars.
+The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../overview.md) object or given `opening` and `closing` chars.
 
 ## Example usage
 

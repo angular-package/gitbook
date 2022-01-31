@@ -1,7 +1,5 @@
 # Accessors
 
-## Public
-
 |                                                                                                                                                |                                                                                                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ​[\[Symbol.toStringTag\]](https://app.gitbook.com/s/fKPxHpkGbNljEvVlRVgz/c/JULYvW5NSbPwI2RD5MLX/wrapper/instance-accessors#symbol.tostringtag) | The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of `toStringTag`, changes the default tag to `'wrapper'` in the [`Wrapper`](broken-reference) instance. |

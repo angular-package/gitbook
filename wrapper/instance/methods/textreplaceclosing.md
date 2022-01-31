@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.textReplaceClosing()`
 
-Replaces the [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../description.md) object in the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../description.md) object with the given [`closing`](textreplaceclosing.md#closing-string) chars.
+Replaces the [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../overview.md) object in the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) object with the given [`closing`](textreplaceclosing.md#closing-string) chars.
 
 {% hint style="info" %}
 The replacement succeeds if the closing characters exist at the end of the text.

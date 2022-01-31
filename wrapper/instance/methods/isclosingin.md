@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.isClosingIn()`
 
-Determines whether the provided [`text`](isclosingin.md#text-string) has the [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the specified [`Wrapper`](../../description.md) object at the **end**.
+Determines whether the provided [`text`](isclosingin.md#text-string) has the [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the specified [`Wrapper`](../../overview.md) object at the **end**.
 
 {% code title="wrapper.class.ts" %}
 ```typescript

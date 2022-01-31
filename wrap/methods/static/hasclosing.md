@@ -2,7 +2,7 @@
 
 ## `Wrap.hasClosing()`
 
-Checks whether the [`text`](hasclosing.md#text-string) has given [`closing`](hasclosing.md#closing-closing) chars at the **end**.
+Checks whether the [`text`](hasclosing.md#text-string) has given [`closing`](hasclosing.md#closing-string) chars at the **end**.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -22,7 +22,7 @@ public static hasClosing(text: string, closing: string): boolean {
 
 #### `text: string`
 
-The text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, to check whether it contains given [`closing`](hasclosing.md#closing-closing) chars.
+The text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, to check whether it contains given [`closing`](hasclosing.md#closing-string) chars.
 
 #### `closing: string`
 
@@ -30,7 +30,7 @@ The closing chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/Jav
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`text`](hasclosing.md#text-string) contains [`closing`](hasclosing.md#closing-closing) chars at the **end**.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [`text`](hasclosing.md#text-string) contains [`closing`](hasclosing.md#closing-string) chars at the **end**.
 
 ## Example usage
 

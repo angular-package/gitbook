@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.hasText()`
 
-The method checks whether the [`text`](../../accessors/text.md) of a specified [`Wrap`](../../description.md) object is defined, which means it's a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of at least one char and optionally equal to the given [`text`](hastext.md#text-string).
+The method checks whether the [`text`](../../accessors/text.md) of a specified [`Wrap`](../../overview.md) object is defined, which means it's a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) of at least one char and optionally equal to the given [`text`](hastext.md#text-string).
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -19,7 +19,7 @@ public hasText(text?: string): boolean {
 
 #### `text`?`: string`
 
-Optional text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to check whether it's equal to the [`text`](../../accessors/text.md) of the [`Wrap`](../../description.md) object.
+Optional text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to check whether it's equal to the [`text`](../../accessors/text.md) of the [`Wrap`](../../overview.md) object.
 
 ### Returns
 

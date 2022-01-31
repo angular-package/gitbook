@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.getText()`
 
-Gets the text of the wrap by returning the [`#text`](../../properties/text.md) property of a specified object, without the [opening](../../accessors/opening.md) and [closing](../../accessors/closing.md) chars of the [`Wrap`](../../description.md).
+Gets the text of the wrap by returning the [`#text`](../../properties/text.md) property of a specified object, without the [opening](../../accessors/opening.md) and [closing](../../accessors/closing.md) chars of the [`Wrap`](../../overview.md).
 
 {% code title="wrap.class.ts" %}
 ```typescript

@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.isOpeningIn()`
 
-Checks whether the provided [`text`](isopeningin.md#text-string) has the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) chars of a specified [`Wrapper`](../../description.md) object at the **beginning**.
+Checks whether the provided [`text`](isopeningin.md#text-string) has the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) chars of a specified [`Wrapper`](../../overview.md) object at the **beginning**.
 
 {% code title="wrapper.class.ts" %}
 ```typescript

@@ -2,7 +2,7 @@
 
 ## `Wrap.isWrap()`
 
-The method checks whether the [`value`](iswrap.md#value-any) of any type is the [`Wrap`](../../description.md) instance of any or given [`opening`](iswrap.md#opening-opening) and [`closing`](iswrap.md#closing-closing) chars.
+The method checks whether the [`value`](iswrap.md#value-any) of any type is the [`Wrap`](../../overview.md) instance of any or given [`opening`](iswrap.md#opening-opening) and [`closing`](iswrap.md#closing-closing) chars.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -29,21 +29,21 @@ public static isWrap<
 
 #### <mark style="color:green;">**`Opening`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`opening`](iswrap.md#opening-opening) indicates the `Opening` type of the [`Wrap`](../../description.md) instance the [return type](iswrap.md#return-type).
+A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`opening`](iswrap.md#opening-opening) indicates the `Opening` type of the [`Wrap`](../../overview.md) instance the [return type](iswrap.md#return-type).
 
 #### <mark style="color:green;">**`Closing`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`closing`](iswrap.md#closing-closing) indicates the `Closing` type of the [`Wrap`](../../description.md) instance via [return type](iswrap.md#return-type).
+A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`closing`](iswrap.md#closing-closing) indicates the `Closing` type of the [`Wrap`](../../overview.md) instance via [return type](iswrap.md#return-type).
 
 #### <mark style="color:green;">**`Text`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**` `` `**</mark>
 
-A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`text`](iswrap.md#text-text) indicates the `Text` type of the [`Wrap`](../../description.md) instance via [return type](iswrap.md#return-type).
+A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`text`](iswrap.md#text-text) indicates the `Text` type of the [`Wrap`](../../overview.md) instance via [return type](iswrap.md#return-type).
 
 ### Parameters
 
 #### `value: any`
 
-The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to test against the [`Wrap`](../../description.md) instance of any or given [`opening`](iswrap.md#opening-opening) and [`closing`](iswrap.md#closing-closing).
+The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to test against the [`Wrap`](../../overview.md) instance of any or given [`opening`](iswrap.md#opening-opening) and [`closing`](iswrap.md#closing-closing).
 
 #### `opening?: Opening`
 
@@ -61,7 +61,7 @@ An optional text of a generic type variable [`Text`](iswrap.md#textextendsstring
 
 **`value is Wrap<Opening, Text, Closing>`**
 
-The return type is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](iswrap.md#value-any) parameter is an instance of [`Wrap`](../../description.md) that takes a generic type variable [`Opening`](iswrap.md#openingextendsstring-string) [`Text`](iswrap.md#textextendsstring) and [`Closing`](iswrap.md#closingextendsstring-string).
+The return type is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](iswrap.md#value-any) parameter is an instance of [`Wrap`](../../overview.md) that takes a generic type variable [`Opening`](iswrap.md#openingextendsstring-string) [`Text`](iswrap.md#textextendsstring) and [`Closing`](iswrap.md#closingextendsstring-string).
 
 ### Returns
 

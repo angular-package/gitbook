@@ -19,7 +19,7 @@
 
 ## Wrap {}
 
-* [Description](wrap/description.md)
+* [Overview](wrap/overview.md)
 * [Generic type variables](wrap/generic-type-variables.md)
 * [★ Constructor](wrap/constructor.md)
 * [Accessors](wrap/accessors/README.md)
@@ -53,7 +53,7 @@
 
 ## Wrapper {}
 
-* [Description](wrapper/description.md)
+* [Overview](wrapper/overview.md)
 * [Generic type variables](wrapper/generic-type-variables.md)
 * [Constructor](wrapper/constructor.md)
 * [Accessors](wrapper/instance/accessors/README.md)
