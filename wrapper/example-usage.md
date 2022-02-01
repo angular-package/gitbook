@@ -1,6 +1,4 @@
-# Example usage
-
-## `HtmlWrap`
+# Usage
 
 Let's create a new `HtmlWrap` object extending it with the `Wrapper` to make an immutable `<span>` tag.
 
@@ -19,7 +17,7 @@ class HtmlWrap extends Wrapper<`<`, `>`> {
 new HtmlWrap().wrap(`span`);
 ```
 
-## `OfType`
+
 
 Create a  new object `OfType` to make an immutable string indicating of type `: Opening`.
 
