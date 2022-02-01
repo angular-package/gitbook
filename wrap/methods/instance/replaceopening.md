@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.replaceOpening()`
 
-Returns the [primitive value](valueof.md) with **replaced** [`opening`](../../accessors/opening.md) chars.
+Returns the [primitive value](valueof.md) with replaced [`opening`](../../accessors/opening.md) chars.
 
 {% code title="wrap.class.ts" %}
 ```typescript

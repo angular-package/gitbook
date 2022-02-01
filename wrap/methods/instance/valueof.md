@@ -2,7 +2,7 @@
 
 ### `Wrap.prototype.valueOf()`
 
-Returns the [wrap](../../../library/basic-concepts.md#wrap), [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of a specified [`Wrap`](../../overview.md) object.
+Returns the [wrap](../../../library/basic-concepts.md#wrap), [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of a specified [`Wrap`](broken-reference) object.
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf" %}
 
