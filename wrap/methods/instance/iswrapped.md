@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.isWrapped()`
 
-The method checks whether the [primitive value](valueof.md) of the specified object is wrapped by the [opening](../../accessors/opening.md) and [closing](../../accessors/closing.md) chars of an instance or given [`opening`](iswrapped.md#opening-string-this.opening) and [`closing`](iswrapped.md#closing-string-this.closing) chars.
+The method checks whether the [primitive value](valueof.md) of the specified object is wrapped by the [opening](../../accessors/opening.md) and [closing](../../accessors/closing.md) chars of an instance or given [`opening`](iswrapped.md#opening-string-this.-opening) and [`closing`](iswrapped.md#closing-string-this.-closing) chars.
 
 {% hint style="info" %}
 If given `opening` or `closing` chars in the constructor are the **empty** `string`, the method returns **`false`**.
@@ -31,7 +31,7 @@ Optional closing chars of a [`string`](https://developer.mozilla.org/en-US/docs/
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the object has both [`opening`](../../accessors/opening.md) and [`closing`](../../accessors/closing.md) chars or given [`opening`](iswrapped.md#opening-string-this.opening) and [`closing`](iswrapped.md#closing-string-this.closing) chars.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the object has both [`opening`](../../accessors/opening.md) and [`closing`](../../accessors/closing.md) chars or given [`opening`](iswrapped.md#opening-string-this.-opening) and [`closing`](iswrapped.md#closing-string-this.-closing) chars.
 
 ## Example usage
 

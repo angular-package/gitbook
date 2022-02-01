@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.toString()`
 
-Gets the [wrap](../../../library/basic-concepts.md#wrap), the [primitive value](valueof.md) of a specified [`Wrap`](broken-reference) object.
+Gets the [wrap](../../../getting-started/basic-concepts.md#wrap), the [primitive value](valueof.md) of a specified [`Wrap`](broken-reference) object.
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString" %}
 
@@ -22,7 +22,7 @@ The **return type** is the [template literal](https://www.typescriptlang.org/doc
 
 ### Returns
 
-The **return value** is the wrap of generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than), and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${Opening}${Content}${Closing}`.
+The **return value** is the wrap of generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than), and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
 
 ## Example usage
 

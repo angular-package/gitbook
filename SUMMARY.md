@@ -12,10 +12,7 @@
 * [Installation](getting-started/installation/README.md)
   * [npm](https://www.npmjs.com/package/@angular-package/wrapper)
 * [Public API](getting-started/public-api.md)
-
-## Library
-
-* [Basic concepts](library/basic-concepts.md)
+* [Basic concepts](getting-started/basic-concepts.md)
 
 ## Wrap {}
 

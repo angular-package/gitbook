@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.opening`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [opening](../../library/basic-concepts.md#opening) of the wrap by returning the [`#opening`](../properties/opening.md) property of the specified object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [opening](../../getting-started/basic-concepts.md#opening) of the wrap by returning the [`#opening`](../properties/opening.md) property of the specified object.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -20,7 +20,7 @@ The **return type** is the generic type variable [`Opening`](../generic-type-var
 
 ### Returns
 
-The **return value** is the [opening](../../library/basic-concepts.md#opening) of the wrap of a generic type variable [`Opening`](../generic-type-variables.md#wrap-opening).
+The **return value** is the [opening](../../getting-started/basic-concepts.md#opening) of the wrap of a generic type variable [`Opening`](../generic-type-variables.md#wrap-opening).
 
 ## Example usage
 

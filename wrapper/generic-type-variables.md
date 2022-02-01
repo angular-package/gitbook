@@ -30,7 +30,7 @@ class Wrapper<
 
 #### <mark style="color:green;">**`Text`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`''`**</mark>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value captured from the provided [`text`](constructor.md#text-text) indicates the text type of a new [`Wrapper`](overview.md) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value captured from the provided [`text`](constructor.md#text-text) indicates the text type of a new [`Wrapper`](broken-reference) instance.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -56,7 +56,7 @@ class Wrapper<
 
 #### <mark style="color:green;">**`Closing`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value captured from the provided [`closing`](constructor.md#closing-closing) indicates the closing type of a new [`Wrapper`](overview.md) instance.
+​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value captured from the provided [`closing`](constructor.md#closing-closing) indicates the closing type of a new [`Wrapper`](broken-reference) instance.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
