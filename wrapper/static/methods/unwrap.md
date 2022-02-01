@@ -2,7 +2,7 @@
 
 ## `Wrapper.unwrap()`
 
-The method returns the **text** without the given `opening` and `closing` chars.
+The method returns the given [`text`](unwrap.md#text-string) without the given [`opening`](unwrap.md#opening-string) and [`closing`](unwrap.md#closing-string) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -18,21 +18,21 @@ public static unwrap(text: string, opening = '', closing = ''): string {
 
 ### Parameters
 
-`text: string`
+#### `text: string`
 
-The **text** of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) from which given `opening` and `closing` chars are removed.
+The **text** of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) from which given [`opening`](unwrap.md#opening-string) and [`closing`](unwrap.md#closing-string) chars are removed.
 
-`opening: string`
+#### `opening: string`
 
-The **opening** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given `text`.
+The **opening** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given [`text`](unwrap.md#text-string).
 
-`closing: string`
+#### `closing: string`
 
-The **closing** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given `text`.
+The **closing** chars of the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) to be removed in the given [`text`](unwrap.md#text-string).
 
 ### Returns
 
-The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the given **opening** and **closing** chars.
+The **return value** is the given [`text`](unwrap.md#text-string) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the given [`opening`](unwrap.md#opening-string) and [`closing`](unwrap.md#closing-string) chars or unchanged [`text`](unwrap.md#text-string) if it does not contain the given [`opening`](unwrap.md#opening-string) and [`closing`](unwrap.md#closing-string) chars.
 
 ## Example usage
 
@@ -41,4 +41,11 @@ The **return value** is the text of [`string`](https://developer.mozilla.org/en-
 import { Wrapper } from '@angular-package/wrapper';
 
 const quote = new Wrapper('[', ']', 'quote');
+
+// Returns quote of string.
+Wrapper.unwrap(quote.valueOf(), '[', ']');
+
+// Returns [quote] of string.
+Wrapper.unwrap(quote.valueOf(), '[[', ']]');
 ```
+
