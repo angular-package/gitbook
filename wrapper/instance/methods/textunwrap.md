@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.textUnwrap()`
 
-The method returns the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) object without its [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars or the given [`opening`](textunwrap.md#opening-string) and [`closing`](textunwrap.md#closing-string) chars.
+The method returns the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) object without its [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars or the given [`opening`](textunwrap.md#opening-string) and [`closing`](textunwrap.md#closing-string) chars.
 
 {% hint style="info" %}
 The default values for the `opening` and `closing` parameters are taken from the `Wrapper` object.

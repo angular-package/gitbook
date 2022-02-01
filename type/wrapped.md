@@ -18,16 +18,22 @@ export type Wrapped<
 
 #### <mark style="color:green;">`Opening`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`''`</mark>
 
+asdasdasdasd
+
 #### <mark style="color:green;">`Text`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`''`</mark>
 
+asdasdasd
+
 #### <mark style="color:green;">`Closing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`''`</mark>
+
+asdasdasdasd
 
 ### Return type
 
 #### `${Opening}${Text}${Closing}`
 
-\-
+asdasdasd
 
 ### Returns
 
-\-
+asdasdasd
