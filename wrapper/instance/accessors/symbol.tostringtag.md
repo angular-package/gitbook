@@ -2,12 +2,12 @@
 
 ## `[Symbol.toStringTag]`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor, with the help of `toStringTag`, changes the default tag to `'wrapper'` in the [`Wrapper`](../../../wrap/overview.md#wrapper) instance. It can be read by the [`typeOf()`](https://type.angular-package.dev/v/type-draft/helper/typeof) function of [`@angular-package/type`](https://type.angular-package.dev).
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor [`toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol/toStringTag) of the [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol) changes the default tag `String` of the instance to the custom tag `Wrapper`. It can be read by the [`typeOf()`](https://type.angular-package.dev/v/type-draft/helper/typeof) function of [`@angular-package/type`](https://type.angular-package.dev).
 
 {% code title="wrapper.class.ts" %}
 ```typescript
 public get [Symbol.toStringTag](): string {
-  return 'wrapper';
+  return 'Wrapper';
 }
 ```
 {% endcode %}
@@ -17,6 +17,13 @@ public get [Symbol.toStringTag](): string {
 ```typescript
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
+import { typeOf } from '@angular-package/type';
 
+const quote = new Wrapper('[', ']', 'quote');
 
+// Returns [object Wrapper].
+Object.prototype.toString.call(quote);
+
+// Returns wrapper.
+typeOf(quote);
 ```

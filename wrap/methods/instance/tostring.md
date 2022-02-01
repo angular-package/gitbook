@@ -22,7 +22,7 @@ The **return type** is the [template literal](https://www.typescriptlang.org/doc
 
 ### Returns
 
-The **return value** is the wrap of generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than), and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
+The **return value** is the wrap of generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than), and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template `${Opening}${Content}${Closing}`.
 
 ## Example usage
 

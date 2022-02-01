@@ -2,7 +2,7 @@
 
 ## `Wrapper.define()`
 
-Defines a new [`Wrapper`](broken-reference) instance with the provided [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
+Defines a new [`Wrapper`](../../overview.md) instance with the provided [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -38,25 +38,25 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 #### `opening: Opening`
 
-The **opening** chars of generic type variable [`Opening`](define.md#openingextendsstring) for new [`Wrapper`](broken-reference) instance.
+The **opening** chars of generic type variable [`Opening`](define.md#openingextendsstring) for new [`Wrapper`](../../overview.md) instance.
 
 #### `closing: Closing`
 
-The **closing** chars of generic type variable [`Closing`](define.md#closingextendsstring) for new [`Wrapper`](broken-reference) instance.
+The **closing** chars of generic type variable [`Closing`](define.md#closingextendsstring) for new [`Wrapper`](../../overview.md) instance.
 
 #### `text?: Text`
 
-An optional **text** of generic type variable [`Text`](define.md#textextendsstring) for new [`Wrapper`](broken-reference) instance.
+An optional **text** of generic type variable [`Text`](define.md#textextendsstring) for new [`Wrapper`](../../overview.md) instance.
 
 ### Return type
 
 #### `Wrapper<Opening, Text, Closing>`
 
-The **return type** is the [`Wrapper`](broken-reference) object that takes generic type variables [`Opening`](define.md#openingextendsstring), [`Text`](define.md#textextendsstring), and [`Closing`](define.md#closingextendsstring).
+The return type is the [`Wrapper`](broken-reference) object that takes generic type variables [`Opening`](define.md#openingextendsstring), [`Text`](define.md#textextendsstring), and [`Closing`](define.md#closingextendsstring).
 
 ### Returns
 
-The **return value** is the [`Wrapper`](broken-reference) instance of given [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
+The **return value** is the [`Wrapper`](../../overview.md) instance of given [`opening`](define.md#opening-opening), [`closing`](define.md#closing-closing) chars, and optional [`text`](define.md#text-text).
 
 ## Example usage
 
