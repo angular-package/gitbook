@@ -31,11 +31,12 @@ class Wrap<
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided [`text`](constructor.md#text-text) indicates the text type of a new [`Wrap`](broken-reference) instance.
 
 {% hint style="info" %}
-The constructor **`text`** parameter is optional, and if not provided, the default value of the generic type variable `Text` is not captured, but it's an empty string from the declaration.class Wrap<
+The constructor **`text`** parameter is optional, and if not provided, the default value of the generic type variable [`Text`](generic-type-variables.md#wrap-less-than...-text-...greater-than) is not captured, but it's an empty [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) from the declaration.
 {% endhint %}
 
 {% code title="wrap.class.ts" %}
 ```typescript
+class Wrap<
   Opening extends string = string,
   Text extends string = ``, // <--- Declare generic type variable Text.
   Closing extends string = string
@@ -55,7 +56,7 @@ The constructor **`text`** parameter is optional, and if not provided, the defau
 
 #### <mark style="color:green;">`Closing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
 
-​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided [`closing`](constructor.md#closing-closing) indicates the closing type of a new [`Wrap`](broken-reference) instance.
+​A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value **captured** from the provided [`closing`](constructor.md#closing-closing) indicates the closing type of a new [`Wrap`](broken-reference) instance.
 
 {% code title="wrap.class.ts" %}
 ```typescript

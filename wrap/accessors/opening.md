@@ -12,6 +12,12 @@ public get opening(): Opening {
 ```
 {% endcode %}
 
+### Return type
+
+#### <mark style="color:green;">`Opening`</mark>
+
+The **return type** is the generic type variable [`Opening`](../generic-type-variables.md#wrap-opening) declared in the [`Wrap`](broken-reference) class.
+
 ### Returns
 
 The **return value** is the [opening](../../library/basic-concepts.md#opening) of the wrap of a generic type variable [`Opening`](../generic-type-variables.md#wrap-opening).

@@ -2,7 +2,7 @@
 
 ## Wrap {}
 
-The [`Wrap`](overview.md) object is based on the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) object and represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) primitive value of the [text](../library/basic-concepts.md#wrap-content) wrapped by the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) chars. It is designed to preserve the type names of the supplied opening, text, and closing chars by using the generic type variables.
+The [`Wrap`](overview.md) object is based on the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) object and represents the [immutable](https://developer.mozilla.org/en-US/docs/Glossary/Immutable) [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of the [text](../library/basic-concepts.md#wrap-content) wrapped by the [opening](../library/basic-concepts.md#opening) and [closing](../library/basic-concepts.md#closing) chars. It is designed to preserve the type names of the supplied opening, text, and closing chars by using the generic type variables.
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects" %}
 

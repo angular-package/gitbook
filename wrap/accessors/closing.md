@@ -12,6 +12,12 @@ public get closing(): Closing {
 ```
 {% endcode %}
 
+### Return type
+
+#### <mark style="color:green;">`Closing`</mark>
+
+The **return type** is the generic type variable [`Closing`](../generic-type-variables.md#wrap-closing) declared in the [`Wrap`](broken-reference) class.
+
 ### Returns
 
 The **return value** is [closing](../../library/basic-concepts.md#closing) of the wrap of a generic type variable [`Closing`](../generic-type-variables.md#wrap-closing).

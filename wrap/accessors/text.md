@@ -12,6 +12,12 @@ public get text(): Text {
 ```
 {% endcode %}
 
+### Return type
+
+#### <mark style="color:green;">`Text`</mark>
+
+The **return type** is the generic type variable [`Text`](../generic-type-variables.md#wrap-less-than...-text-...greater-than) declared in the [`Wrap`](broken-reference) class.
+
 ### Returns
 
 The **return value** is the text of a generic type variable [`Text`](../generic-type-variables.md#wrap-less-than...-text-...greater-than).

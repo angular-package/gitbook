@@ -8,6 +8,12 @@ description: The static methods of `Wrap` the string object.
 
 ### Public
 
+|                                                                                                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="static/hasclosing.md">hasClosing()</a><br>Checks whether the <a href="static/hasclosing.md#text-string"><code>text</code></a> has given <a href="static/hasclosing.md#closing-string"><code>closing</code></a> chars at the <strong>end</strong>.</p>       |
+| <p><a href="static/hasopening.md">hasOpening()</a><br>Checks whether the <a href="static/hasopening.md#text-string"><code>text</code></a> has given <a href="static/hasopening.md#opening-string"><code>opening</code></a> chars at the <strong>beginning</strong>.</p> |
+| <p><a href="static/iswrap.md">isWrap()</a><br>The method checks whether the <code>value</code> of any type is the <a href="../overview.md"><code>Wrap</code></a> instance of any or given <code>opening</code> and <code>closing</code> chars.</p>                      |
+
 |                                      |                                                                                                                                                      |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [hasClosing()](static/hasclosing.md) | Checks whether the [`text`](static/hasclosing.md#text-string) has given [`closing`](static/hasclosing.md#closing-string) chars at the **end**.       |
