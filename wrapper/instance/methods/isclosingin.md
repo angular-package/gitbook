@@ -28,15 +28,15 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
 
-const quote = new Wrapper('{{', '}}', 'This is a long text');
+const longText = new Wrapper('{{', '}}', 'This is a long text');
 const text = `Lorem ipsum and more`;
 
 // Returns true.
-quote.isClosingIn(`${text}${quote.closing}`);
+longText.isClosingIn(`${text}${longText.closing}`);
 
 // Returns false.
-quote.isClosingIn(text);
+longText.isClosingIn(text);
 
 // Returns false.
-quote.isClosingIn(`${quote.closing}${text}`);
+longText.isClosingIn(`${longText.closing}${text}`);
 ```

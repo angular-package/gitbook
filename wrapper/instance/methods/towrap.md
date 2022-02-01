@@ -1,8 +1,8 @@
 # toWrap()
 
-### `Wrapper.prototype.toWrap()`
+## `Wrapper.prototype.toWrap()`
 
-Returns the [`Wrap`](../../../wrap/overview.md) instance consists of the [`text`](../../../wrap/accessors/#wrap.prototype.text), [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../overview.md) object.
+Returns the [`Wrap`](broken-reference) instance consists of the [`text`](../../../wrap/accessors/text.md), [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -14,19 +14,22 @@ public toWrap(): Wrap<Opening, Text, Closing> {
 
 ### Return type
 
-#### `Wrap<Opening, Text, Closing>`
+#### `Wrap<`<mark style="color:green;">`Opening`</mark>`,`<mark style="color:green;">`Text`</mark>`,`<mark style="color:green;">`Closing`</mark>`>`
 
-The return type is the [`Wrap`](broken-reference) object that takes generic type variables [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrapper-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing).
+The **return type** is the [`Wrap`](broken-reference) object that takes generic type variables [`Opening`](../../generic-type-variables.md#wrap-opening), [`Text`](../../generic-type-variables.md#wrapper-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing).
 
 ### Returns
 
-The **return value** is an instance of [`Wrap`](../../../wrap/overview.md) consisting of the [`text`](../../../wrap/accessors/#wrap.prototype.text), [`opening`](../../../wrap/accessors/#wrap.prototype.opening), and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../overview.md) object.
+The **return value** is an instance of [`Wrap`](broken-reference) consisting of the [`text`](../../../wrap/accessors/text.md), [`opening`](../../../wrap/accessors/opening.md), and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
 
+const longText = new Wrapper('{', '}', '{This is a long text}');
 
+// Returns Wrap {'{{This is a long text}}'}.
+longText.toWrap();
 ```

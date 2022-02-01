@@ -23,15 +23,15 @@ public textUnwrap(
 
 #### `opening: string`
 
-Optional **opening** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) instance.
+Optional **opening** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
 
 #### `closing: string`
 
-Optional **closing** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **end** of the [`text`](../../../wrap/accessors/#wrap.prototype.text) of the [`Wrapper`](../../overview.md) instance.
+Optional **closing** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to remove from the **end** of the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
 
 ### Returns
 
-The **return value** is the text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars of the [`Wrapper`](../../overview.md) object or given `opening` and `closing` chars.
+The **return value** is the [`text`](../../../wrap/accessors/text.md) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type without the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object or given [`opening`](textunwrap.md#opening-string) and [`closing`](textunwrap.md#closing-string) chars.
 
 ## Example usage
 
@@ -39,5 +39,26 @@ The **return value** is the text of [`string`](https://developer.mozilla.org/en-
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
 
+const longText = new Wrapper('{', '}', '{This is a long text}');
 
+// Returns {{This is a long text}}.
+longText.valueOf();
+
+// Returns This is a long text.
+longText.textUnwrap();
+
+// Returns {This is a long text}.
+longText.textUnwrap('', '');
+
+// Returns This is a long text}.
+longText.textUnwrap('{', '');
+
+// Returns This is a long text.
+longText.textUnwrap('{', undefined);
+
+// Returns {This is a long text.
+longText.textUnwrap('', '}');
+
+// Returns This is a long text.
+longText.textUnwrap(undefined, '}');
 ```

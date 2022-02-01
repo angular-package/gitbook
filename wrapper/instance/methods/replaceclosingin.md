@@ -36,13 +36,12 @@ The **return value** is the given text of [`string`](https://developer.mozilla.o
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
 
-const quote = new Wrapper('{{', '}}', 'This is a long text');
-
+const longText = new Wrapper('{{', '}}', 'This is a long text');
 const text = `Lorem ipsum and more`;
 
 // Returns Lorem ipsum and more??.
-quote.replaceClosingIn(`${text}${quote.closing}`, '??');
+longText.replaceClosingIn(`${text}${longText.closing}`, '??');
 
 // Returns }}Lorem ipsum and more.
-quote.replaceClosingIn(`${quote.closing}${text}`, '??');
+longText.replaceClosingIn(`${longText.closing}${text}`, '??');
 ```

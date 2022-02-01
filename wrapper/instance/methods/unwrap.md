@@ -1,8 +1,8 @@
 # unwrap()
 
-### `Wrapper.prototype.unwrap()`
+## `Wrapper.prototype.unwrap()`
 
-Returns the [`text`](../../../wrap/accessors/#wrap.prototype.text) without the [`opening`](../../../wrap/accessors/#wrap.prototype.opening) and [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars.
+Returns the [`text`](../../../wrap/accessors/text.md) without the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -14,13 +14,16 @@ public unwrap(): Text {
 
 ### Returns
 
-The **return value** is the [`text`](../../../wrap/accessors/#wrap.prototype.text) of a generic type variable [`Text`](../../generic-type-variables.md#wrapper-less-than...-text-...greater-than).
+The **return value** is the [`text`](../../../wrap/accessors/text.md) of a generic type variable [`Text`](../../generic-type-variables.md#wrapper-less-than...-text-...greater-than).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.wrapper
 import { Wrapper } from '@angular-package/wrapper';
 
+const longText = new Wrapper('{', '}', '{This is a long text}');
 
+// Returns {This is a long text}.
+longText.unwrap();
 ```

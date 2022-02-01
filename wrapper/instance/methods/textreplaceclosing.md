@@ -24,7 +24,7 @@ The **closing** chars of [`string`](https://developer.mozilla.org/en-US/docs/Web
 
 ### Returns
 
-The **return value** is the [`text`](../../../wrap/accessors/#wrap.prototype.text) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`closing`](../../../wrap/accessors/#wrap.prototype.closing) chars.
+The **return value** is the [`text`](../../../wrap/accessors/#wrap.prototype.text) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`closing`](../../../wrap/accessors/closing.md) chars.
 
 ## Example usage
 
@@ -32,4 +32,14 @@ The **return value** is the [`text`](../../../wrap/accessors/#wrap.prototype.tex
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
 
+const longText = new Wrapper('{', '}', '{This is a long text}');
+
+// Returns {{This is a long text}}.
+longText.valueOf();
+
+// Returns {This is a long text.
+longText.textReplaceClosing('');
+
+// Returns {This is a long text}}.
+longText.textReplaceClosing('}}');
 ```

@@ -36,12 +36,12 @@ The **return value** is the given [`text`](replaceopeningin.md#text-string) of [
 // Example usage.
 import { Wrapper } from '@angular-package/wrapper';
 
-const quote = new Wrapper('{{', '}}', 'This is a long text');
+const longText = new Wrapper('{{', '}}', 'This is a long text');
 const text = `Lorem ipsum and more`;
 
 // Returns 1. Lorem ipsum and more.
-quote.replaceOpeningIn(`${quote.opening}${text}`, '1. ');
+longText.replaceOpeningIn(`${longText.opening}${text}`, '1. ');
 
 // Returns Lorem ipsum and more{{.
-quote.replaceOpeningIn(`${text}${quote.opening}`, '??');
+longText.replaceOpeningIn(`${text}${longText.opening}`, '??');
 ```
