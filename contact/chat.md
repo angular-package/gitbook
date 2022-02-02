@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/chat-cover-original-blurred.png
+coverY: 581.5403225806452
+---
+
 # ⋯ Chat
 
 ## Discord

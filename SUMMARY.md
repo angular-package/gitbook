@@ -90,6 +90,8 @@
 ## Change log
 
 * [Keep a changelog](change-log/keep-a-changelog.md)
+* [CHANGELOG.md](https://github.com/angular-package/wrapper/blob/main/CHANGELOG.md)
+* [v1.0.0](change-log/v1.0.0.md)
 
 ## GIT
 

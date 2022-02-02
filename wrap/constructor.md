@@ -2,7 +2,7 @@
 
 ## `Wrap()`
 
-Creates a new [`Wrap`](overview.md) instance of the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text) to wrap.&#x20;
+Creates a new [`Wrap`](broken-reference) instance of the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text) to wrap.&#x20;
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -31,7 +31,7 @@ An optional text placed between the given [`opening`](constructor.md#opening-ope
 
 ### Returns
 
-The **return value** is a new instance of [`Wrap`](overview.md) with the [primitive value](methods/instance/valueof.md) of the provided [`opening`](constructor.md#opening-opening), [`closing`](constructor.md#closing-closing), and the optional [`text`](constructor.md#text-text).
+The **return value** is a new instance of [`Wrap`](broken-reference) with the [primitive value](methods/instance/valueof.md) of the provided [`opening`](constructor.md#opening-opening), [`closing`](constructor.md#closing-closing), and the optional [`text`](constructor.md#text-text).
 
 ## Example usage
 

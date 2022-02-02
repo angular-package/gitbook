@@ -2,7 +2,7 @@
 
 ## `Wrapper()`
 
-Creates a new [`Wrapper`](overview.md) instance with the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text).
+Creates a new [`Wrapper`](broken-reference) instance with the [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars and optional [`text`](constructor.md#text-text).
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -14,15 +14,15 @@ constructor(opening: Opening, closing: Closing, text: Text = '' as Text) {
 
 ### Parameters
 
-#### `opening: Opening`
+#### `opening:`[<mark style="color:green;">`Opening`</mark>](generic-type-variables.md#wrap-opening)
 
 The **opening** chars of a generic type variable [`Opening`](generic-type-variables.md#wrap-opening) placed before the given [`text`](constructor.md#text-text).
 
-#### `closing: Closing`
+#### `closing:`[<mark style="color:green;">`Closing`</mark>](generic-type-variables.md#closingextendsstring-string)
 
 The **closing** chars of a generic type variable [`Closing`](generic-type-variables.md#wrap-closing) placed after the given [`text`](constructor.md#text-text).
 
-#### `text: Text`
+#### `text:`[<mark style="color:green;">`Text`</mark>](generic-type-variables.md#wrapper-less-than...-text-...greater-than)
 
 Optional **text** of a generic type variable [`Text`](generic-type-variables.md#wrapper-less-than...-text-...greater-than) to wrap by given [`opening`](constructor.md#opening-opening) and [`closing`](constructor.md#closing-closing) chars.
 
