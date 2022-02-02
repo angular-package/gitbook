@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/wrap-cover-lens.png
+coverY: 357.69354838709677
+---
+
 # Overview
 
 ## Wrap {}
