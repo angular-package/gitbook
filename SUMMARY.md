@@ -41,6 +41,7 @@
 
 ## Principles
 
+* [Classes](principles/classes.md)
 * [String Wrapper Objects](principles/string-wrapper-objects.md)
 
 ## Design processes
