@@ -11,6 +11,34 @@
 
 {% embed url="https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-ordering.md" %}
 
+```typescript
+class MemberOrdering {
+
+  public static get publicStaticGetAccessor(): void { return ; }
+  public static set publicStaticGetAccessor(value: any) {  }
+
+  protected static get protectedStaticGetAccessor(): void { return; }
+  protected static set protectedStaticGetAccessor(value: any) {  }
+
+  private static get privateStaticGetAccessor(): void { return; }
+  private static set privateStaticGetAccessor(value: any) { }
+
+  public static publicStaticProperty: void;
+  protected static protectedStaticProperty: void;
+  private static privateStaticProperty: void;
+
+  public publicProperty: any;
+  protected protectedProperty: any;
+  private privateProperty: any;
+
+  constructor() {}
+
+  public publicMethod(): any { }
+  protected protectedMethod(): any { }
+  private privateMethod(): any { }
+}
+```
+
 ## String Wrapper Object
 
 ### The primitive value
