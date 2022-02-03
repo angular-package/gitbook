@@ -7,6 +7,10 @@
 3. The object **should** contain only **crucial** [**functionalities**](../definitions/functionality-noun.md) to achieve **ease**-**extensibility**.
 4. **Method names** **must** be [**consistent**](../definitions/consistent-adjective.md) and [**intuitive**](../definitions/intuitive-adjective.md).
 
+### Class member ordering
+
+{% embed url="https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-ordering.md" %}
+
 ## String Wrapper Object
 
 ### The primitive value
