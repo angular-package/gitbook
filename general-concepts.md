@@ -16,7 +16,11 @@ The element starred as most **useful**.
 
 It's to **check** the provided value to be the same as **expected**.
 
-### **Guards**
+### Type guard (constrain)
+
+Constrains the parameter type to not let input unexpected value in the code editor.
+
+### **Guard**
 
 It's a **combination** of both above, **constrains** the type of the parameter in the **code editor**, and checks its provided argument.
 
@@ -41,3 +45,7 @@ Having the ability to know or understand things without any proof or evidence. E
 ### General
 
 Relating to the main or major parts of something rather than the details. E.g. some of the accessor names don't indicate the specific role in the object.
+
+{% embed url="https://docs.angular-package.dev/v/designing/definitions" %}
+More definitions
+{% endembed %}
