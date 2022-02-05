@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/type-introduction-cover.jpg
+coverY: 565.0454545454546
+---
+
 # Introduction
 
 The `type` package's purpose is to determine the type of single or multiple values and guard single values. It also contains common types that can be useful for other packages.
