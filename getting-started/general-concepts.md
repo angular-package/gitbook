@@ -12,7 +12,11 @@ The element starred as most **useful**.
 
 It's to **check** the provided value to be the same as **expected**.
 
-### **Guards**
+### Type guard (constrain)
+
+Constrains the parameter type to not let input unexpected value in the code editor.
+
+### **Guard**
 
 It's a **combination** of both above, **constrains** the type of the parameter in the **code editor**, and checks its provided argument.
 
@@ -30,3 +34,6 @@ Returns a value from an object.
 
 Adds or updates an element with a specified key and a value to an object and returns an object.
 
+{% embed url="https://docs.angular-package.dev/v/designing/definitions" %}
+More definitions
+{% endembed %}
