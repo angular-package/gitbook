@@ -12,6 +12,10 @@ public get [Symbol.toStringTag](): string {
 ```
 {% endcode %}
 
+### Return type
+
+#### <mark style="color:green;"></mark>[<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;"></mark>
+
 ## Example usage
 
 ```typescript

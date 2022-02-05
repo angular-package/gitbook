@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.toWrap()`
 
-Returns the [`Wrap`](broken-reference) instance consists of the [`text`](../../../wrap/accessors/text.md), [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
+Returns the [`Wrap`](broken-reference) instance consists of the [`text`](../../../wrap/accessors/instance/text.md), [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,7 +20,7 @@ The **return type** is the [`Wrap`](broken-reference) object that takes generic 
 
 ### Returns
 
-The **return value** is an instance of [`Wrap`](broken-reference) consisting of the [`text`](../../../wrap/accessors/text.md), [`opening`](../../../wrap/accessors/opening.md), and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
+The **return value** is an instance of [`Wrap`](broken-reference) consisting of the [`text`](../../../wrap/accessors/instance/text.md), [`opening`](../../../wrap/accessors/instance/opening.md), and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
 ## Example usage
 

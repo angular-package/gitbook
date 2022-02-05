@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.replaceOpening()`
 
-Returns the [primitive value](valueof.md) with replaced [`opening`](../../accessors/opening.md) chars.
+Returns the [primitive value](valueof.md) with replaced [`opening`](../../accessors/instance/opening.md) chars.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -24,7 +24,7 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 #### `opening: ReplaceOpening`
 
-The opening chars of a generic type variable [`ReplaceOpening`](replaceopening.md#replaceopeningextendsstring) to replace the [`opening`](../../accessors/opening.md) chars in the [primitive value](valueof.md).
+The opening chars of a generic type variable [`ReplaceOpening`](replaceopening.md#replaceopeningextendsstring) to replace the [`opening`](../../accessors/instance/opening.md) chars in the [primitive value](valueof.md).
 
 ### Return type
 
@@ -34,7 +34,7 @@ The **return type** is the [template literal](https://www.typescriptlang.org/doc
 
 ### Returns
 
-The **return value** is the [primitive value](valueof.md) with replaced [`opening`](../../accessors/opening.md) chars of a generic type variables in order [`ReplaceOpening`](replaceopening.md#replaceopeningextendsstring), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
+The **return value** is the [primitive value](valueof.md) with replaced [`opening`](../../accessors/instance/opening.md) chars of a generic type variables in order [`ReplaceOpening`](replaceopening.md#replaceopeningextendsstring), [`Text`](../../generic-type-variables.md#wrap-less-than...-text-...greater-than) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
 
 ## Example usage
 

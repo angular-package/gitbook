@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.unwrapText()`
 
-The method returns the [primitive value](../../../wrap/methods/instance/valueof.md) of a specified [`Wrapper`](broken-reference) object with [`text`](../../../wrap/accessors/text.md) unwrapped from the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) instance or given [`opening`](unwraptext.md#opening-string) and [`closing`](unwraptext.md#closing-string) chars.
+The method returns the [primitive value](../../../wrap/methods/instance/valueof.md) of a specified [`Wrapper`](broken-reference) object with [`text`](../../../wrap/accessors/instance/text.md) unwrapped from the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) instance or given [`opening`](unwraptext.md#opening-string) and [`closing`](unwraptext.md#closing-string) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -21,15 +21,15 @@ public unwrapText(
 
 #### `opening: string`
 
-Optional opening chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
+Optional opening chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **beginning** of the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) instance.
 
 #### `closing: string`
 
-Optional closing chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **end** of the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
+Optional closing chars of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type to remove from the **end** of the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) instance.
 
 ### Returns
 
-The **return value** is the [primitive value](../../../wrap/methods/instance/valueof.md) of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type with [`text`](../../../wrap/accessors/text.md) unwrapped from the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object or the given [`opening`](unwraptext.md#opening-string) and [`closing`](unwraptext.md#closing-string) chars.
+The **return value** is the [primitive value](../../../wrap/methods/instance/valueof.md) of [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) type with [`text`](../../../wrap/accessors/instance/text.md) unwrapped from the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) object or the given [`opening`](unwraptext.md#opening-string) and [`closing`](unwraptext.md#closing-string) chars.
 
 ## Example usage
 

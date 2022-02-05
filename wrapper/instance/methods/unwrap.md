@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.unwrap()`
 
-Returns the [`text`](../../../wrap/accessors/text.md) without the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars.
+Returns the [`text`](../../../wrap/accessors/instance/text.md) without the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -14,7 +14,7 @@ public unwrap(): Text {
 
 ### Returns
 
-The **return value** is the [`text`](../../../wrap/accessors/text.md) of a generic type variable [`Text`](../../generic-type-variables.md#wrapper-less-than...-text-...greater-than).
+The **return value** is the [`text`](../../../wrap/accessors/instance/text.md) of a generic type variable [`Text`](../../generic-type-variables.md#wrapper-less-than...-text-...greater-than).
 
 ## Example usage
 

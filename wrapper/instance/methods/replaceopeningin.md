@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.replaceOpeningIn()`
 
-Replaces the [`opening`](../../../wrap/accessors/opening.md) chars of the [`Wrapper`](broken-reference) object in the given [`text`](replaceopeningin.md#text-string) with a given [replacement value](replaceopeningin.md#replacevalue-string).
+Replaces the [`opening`](../../../wrap/accessors/instance/opening.md) chars of the [`Wrapper`](broken-reference) object in the given [`text`](replaceopeningin.md#text-string) with a given [replacement value](replaceopeningin.md#replacevalue-string).
 
 {% hint style="info" %}
 The replacement succeeds if the opening characters exist at the beginning of the text.
@@ -20,15 +20,15 @@ public replaceOpeningIn(text: string, replaceValue: string): string {
 
 #### `text: string`
 
-The text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type in which the [`opening`](../../../wrap/accessors/opening.md) chars are replaced by given [replacement value](replaceopeningin.md#replacevalue-string).
+The text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type in which the [`opening`](../../../wrap/accessors/instance/opening.md) chars are replaced by given [replacement value](replaceopeningin.md#replacevalue-string).
 
 #### `replaceValue: string`
 
-The value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type as a replacement for the [`opening`](../../../wrap/accessors/opening.md) chars at the **beginning** of the given [`text`](replaceopeningin.md#text-string).
+The value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type as a replacement for the [`opening`](../../../wrap/accessors/instance/opening.md) chars at the **beginning** of the given [`text`](replaceopeningin.md#text-string).
 
 ### Returns
 
-The **return value** is the given [`text`](replaceopeningin.md#text-string) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`opening`](../../../wrap/accessors/opening.md) chars by given [replacement value](replaceopeningin.md#replacevalue-string).
+The **return value** is the given [`text`](replaceopeningin.md#text-string) of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`opening`](../../../wrap/accessors/instance/opening.md) chars by given [replacement value](replaceopeningin.md#replacevalue-string).
 
 ## Example usage
 

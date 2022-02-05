@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.textWrap()`
 
-The method returns the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) object wrapped by the given [`opening`](textwrap.md#opening-textopening) and [`closing`](textwrap.md#closing-textclosing) chars.
+The method returns the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) object wrapped by the given [`opening`](textwrap.md#opening-textopening) and [`closing`](textwrap.md#closing-textclosing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -29,11 +29,11 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 #### `opening: TextOpening`
 
-The **opening** chars of a generic type variable [`TextOpening`](textwrap.md#textopeningextendsstring) to wrap the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
+The **opening** chars of a generic type variable [`TextOpening`](textwrap.md#textopeningextendsstring) to wrap the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) instance.
 
 #### `closing: TextClosing`
 
-The **closing** chars of a generic type variable [`TextClosing`](textwrap.md#textclosingextendsstring) to wrap the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
+The **closing** chars of a generic type variable [`TextClosing`](textwrap.md#textclosingextendsstring) to wrap the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) instance.
 
 ### Return type
 
@@ -43,7 +43,7 @@ The **return type** is generic type [`Wrapped`](../../../type/wrapped.md) that t
 
 ### Returns
 
-The **return value** is the [`text`](../../../wrap/accessors/text.md) wrapped by given [`opening`](textwrap.md#opening-textopening) and [`closing`](textwrap.md#closing-textclosing) chars of generic type [`Wrapped`](../../../type/wrapped.md).
+The **return value** is the [`text`](../../../wrap/accessors/instance/text.md) wrapped by given [`opening`](textwrap.md#opening-textopening) and [`closing`](textwrap.md#closing-textclosing) chars of generic type [`Wrapped`](../../../type/wrapped.md).
 
 ## Example usage
 

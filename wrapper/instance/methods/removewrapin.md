@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.removeWrapIn()`
 
-Returns given [`text`](removewrapin.md#text-string) without the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
+Returns given [`text`](removewrapin.md#text-string) without the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,11 +20,11 @@ public removeWrapIn(text: string): string {
 
 #### `text: string`
 
-The **text** of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to unwrap from the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
+The **text** of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type to unwrap from the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
 ### Returns
 
-The **return value** is the **text** of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type unwrapped from the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) object.
+The **return value** is the **text** of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type unwrapped from the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) object.
 
 ## Example usage
 

@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.replaceText()`
 
-Returns the [primitive value](valueof.md) with replaced [`text`](../../accessors/text.md).
+Returns the [primitive value](valueof.md) with replaced [`text`](../../accessors/instance/text.md).
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -24,7 +24,7 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 #### `text: ReplaceText`
 
-The text of a generic type variable [`ReplaceText`](replacetext.md#replacetext-extends-string) to replace the [`text`](../../accessors/text.md) in the [primitive value](valueof.md).
+The text of a generic type variable [`ReplaceText`](replacetext.md#replacetext-extends-string) to replace the [`text`](../../accessors/instance/text.md) in the [primitive value](valueof.md).
 
 ### Return type
 
@@ -34,7 +34,7 @@ The **return type** is the [template literal](https://www.typescriptlang.org/doc
 
 ### Returns
 
-The **return value** is the [primitive value](valueof.md) with replaced [`text`](../../accessors/text.md) of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`ReplaceText`](replacetext.md#replacetextextendsstring) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
+The **return value** is the [primitive value](valueof.md) with replaced [`text`](../../accessors/instance/text.md) of a generic type variables in order [`Opening`](../../generic-type-variables.md#wrap-opening), [`ReplaceText`](replacetext.md#replacetextextendsstring) and [`Closing`](../../generic-type-variables.md#wrap-closing) on the template.
 
 ## Example usage
 
