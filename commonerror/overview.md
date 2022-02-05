@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/error-common-cover.jpg
+coverY: 561.625366568915
+---
+
 # Overview
 
 ## CommonError {}
