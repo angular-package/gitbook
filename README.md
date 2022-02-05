@@ -1,6 +1,6 @@
 ---
 cover: .gitbook/assets/type-introduction-cover.jpg
-coverY: 231.09090909090918
+coverY: -334.65395894428144
 ---
 
 # Introduction
