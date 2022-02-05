@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.replaceClosingIn()`
 
-Replaces the [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](../../overview.md) object in the given [`text`](replaceclosingin.md#text-string) with a given [replacement value](replaceclosingin.md#replacevalue-string).
+Replaces the [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](../../overview.md) object in the given [`text`](replaceclosingin.md#text-string) with a given [replacement value](replaceclosingin.md#replacevalue-string).
 
 {% hint style="info" %}
 The replacement succeeds if the closing characters exist at the end of the text.
@@ -20,15 +20,15 @@ public replaceClosingIn(text: string, replaceValue: string): string {
 
 #### `text: string`
 
-The **text** of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type in which the [`closing`](../../../wrap/accessors/instance/closing.md) chars are replaced by given [replacement value](replaceclosingin.md#replacevalue-string).
+The **text** of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type in which the [`closing`](../../../wrap/accessors/closing.md) chars are replaced by given [replacement value](replaceclosingin.md#replacevalue-string).
 
 #### `replaceValue: string`
 
-The value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type as a replacement for the [`closing`](../../../wrap/accessors/instance/closing.md) chars at the **end** of the given [`text`](replaceclosingin.md#text-string).
+The value of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type as a replacement for the [`closing`](../../../wrap/accessors/closing.md) chars at the **end** of the given [`text`](replaceclosingin.md#text-string).
 
 ### Returns
 
-The **return value** is the given text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`closing`](../../../wrap/accessors/instance/closing.md) chars by given [replacement value](replaceclosingin.md#replacevalue-string).
+The **return value** is the given text of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with replaced [`closing`](../../../wrap/accessors/closing.md) chars by given [replacement value](replaceclosingin.md#replacevalue-string).
 
 ## Example usage
 

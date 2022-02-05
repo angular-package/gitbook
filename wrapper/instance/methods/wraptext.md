@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.wrapText()`
 
-The method returns the [primitive value](../../../wrap/methods/instance/valueof.md) of the [`Wrapper`](broken-reference) object with [`text`](../../../wrap/accessors/instance/text.md) wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) chars.
+The method returns the [primitive value](../../../wrap/methods/instance/valueof.md) of the [`Wrapper`](broken-reference) object with [`text`](../../../wrap/accessors/text.md) wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -32,11 +32,11 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 #### `opening:`[<mark style="color:green;">`TextOpening`</mark>](wraptext.md#textopeningextendsstring)<mark style="color:green;">``</mark>
 
-The opening chars of a generic type variable [`TextOpening`](wraptext.md#textopeningextendsstring) to wrap the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) instance.
+The opening chars of a generic type variable [`TextOpening`](wraptext.md#textopeningextendsstring) to wrap the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
 
 #### `closing:`[<mark style="color:green;">`TextClosing`</mark>](wraptext.md#textclosingextendsstring)<mark style="color:green;">``</mark>
 
-The closing chars of a generic type variable [`TextClosing`](wraptext.md#textclosingextendsstring) to wrap the [`text`](../../../wrap/accessors/instance/text.md) of the [`Wrapper`](broken-reference) instance.
+The closing chars of a generic type variable [`TextClosing`](wraptext.md#textclosingextendsstring) to wrap the [`text`](../../../wrap/accessors/text.md) of the [`Wrapper`](broken-reference) instance.
 
 ### Return type
 
@@ -46,7 +46,7 @@ The return type is the generic type [`Wrapped`](../../../type/wrapped.md) that t
 
 ### Returns
 
-The **return value** is the [primitive value](../../../wrap/methods/instance/valueof.md) with [`text`](../../../wrap/accessors/instance/text.md) wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) characters of generic type [`Wrapped`](../../../type/wrapped.md).
+The **return value** is the [primitive value](../../../wrap/methods/instance/valueof.md) with [`text`](../../../wrap/accessors/text.md) wrapped by given [`opening`](wraptext.md#opening-textopening) and [`closing`](wraptext.md#closing-textclosing) characters of generic type [`Wrapped`](../../../type/wrapped.md).
 
 ## Example usage
 

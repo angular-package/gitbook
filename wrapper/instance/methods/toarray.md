@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.toArray()`
 
-Returns an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) consisting of the [`opening`](../../../wrap/accessors/instance/opening.md) chars, [`text`](../../../wrap/accessors/instance/text.md), and [`closing`](../../../wrap/accessors/instance/closing.md) chars.
+Returns an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) consisting of the [`opening`](../../../wrap/accessors/opening.md) chars, [`text`](../../../wrap/accessors/text.md), and [`closing`](../../../wrap/accessors/closing.md) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -20,7 +20,7 @@ The **return type** is a **read-only** [`array`](https://developer.mozilla.org/e
 
 ### Returns
 
-The **return value** is a **read-only** [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) consisting of the [`opening`](../../../wrap/accessors/instance/opening.md) chars, [`text`](../../../wrap/accessors/instance/text.md), and [`closing`](../../../wrap/accessors/instance/closing.md) chars.
+The **return value** is a **read-only** [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) consisting of the [`opening`](../../../wrap/accessors/opening.md) chars, [`text`](../../../wrap/accessors/text.md), and [`closing`](../../../wrap/accessors/closing.md) chars.
 
 ## Example usage
 

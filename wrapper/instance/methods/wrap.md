@@ -2,7 +2,7 @@
 
 ## `Wrapper.prototype.wrap()`
 
-The method wraps the [primitive value](../../../wrap/methods/instance/valueof.md) of a specified [`Wrapper`](broken-reference) object by its [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars, or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
+The method wraps the [primitive value](../../../wrap/methods/instance/valueof.md) of a specified [`Wrapper`](broken-reference) object by its [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars, or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
 
 {% code title="wrapper.class.ts" %}
 ```typescript
@@ -46,7 +46,7 @@ The **return type** is the generic type [`Wrapped`](../../../type/wrapped.md) th
 
 ### Returns
 
-The **return value** is a [primitive value](../../../wrap/methods/instance/valueof.md) wrapped by the [`opening`](../../../wrap/accessors/instance/opening.md) and [`closing`](../../../wrap/accessors/instance/closing.md) chars of the [`Wrapper`](broken-reference) instance or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
+The **return value** is a [primitive value](../../../wrap/methods/instance/valueof.md) wrapped by the [`opening`](../../../wrap/accessors/opening.md) and [`closing`](../../../wrap/accessors/closing.md) chars of the [`Wrapper`](broken-reference) instance or the given [`opening`](wrap.md#opening-customopening) and [`closing`](wrap.md#closing-customclosing) chars.
 
 ## Example usage
 

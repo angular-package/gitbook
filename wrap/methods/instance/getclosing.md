@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.getClosing()`
 
-Gets the [closing](../../../getting-started/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](../../properties/instance/closing.md) property of a specified object.
+Gets the [closing](../../../getting-started/basic-concepts.md#closing) chars of the wrap by returning the [`#closing`](../../properties/closing.md) property of a specified object.
 
 {% code title="wrap.class.ts" %}
 ```typescript
@@ -14,7 +14,7 @@ public getClosing(): Closing {
 
 ### Returns
 
-The **return value** is [`closing`](../../accessors/instance/closing.md) chars of a generic type variable [`Closing`](../../generic-type-variables.md#wrap-closing).
+The **return value** is [`closing`](../../accessors/closing.md) chars of a generic type variable [`Closing`](../../generic-type-variables.md#wrap-closing).
 
 ## Example usage
 

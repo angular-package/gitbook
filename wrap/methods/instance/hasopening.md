@@ -2,7 +2,7 @@
 
 ## `Wrap.prototype.hasOpening()`
 
-Checks whether the [primitive value](valueof.md) of a specified object has the [`opening`](../../accessors/instance/opening.md) chars or given [`opening`](hasopening.md#opening-string) chars.
+Checks whether the [primitive value](valueof.md) of a specified object has the [`opening`](../../accessors/opening.md) chars or given [`opening`](hasopening.md#opening-string) chars.
 
 {% hint style="info" %}
 If given `opening` chars in the constructor are the **empty** `string`, the method returns **`false`**.
@@ -27,7 +27,7 @@ Optional opening chars of a [`string`](https://developer.mozilla.org/en-US/docs/
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [primitive value](valueof.md) has the [`opening`](../../accessors/instance/opening.md) chars or given [`opening`](hasopening.md#opening-string) chars.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the [primitive value](valueof.md) has the [`opening`](../../accessors/opening.md) chars or given [`opening`](hasopening.md#opening-string) chars.
 
 ## Example usage
 
