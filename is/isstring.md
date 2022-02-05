@@ -1,6 +1,6 @@
 ---
 cover: ../.gitbook/assets/type-isstring-cover.jpg
-coverY: 297.3181818181818
+coverY: -94.74853372434018
 ---
 
 # ★ isString()
