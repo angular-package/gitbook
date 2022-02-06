@@ -9,12 +9,3 @@ A privately stored possible solution to the described [problem](../../../getting
 #fix: string;
 ```
 {% endcode %}
-
-## Example usage
-
-```typescript
-// Example usage.
-import { CommonError } from '@angular-package/error'; 
-
-
-```

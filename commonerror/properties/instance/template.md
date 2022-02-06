@@ -9,12 +9,3 @@ A [string-type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
 #template: string;
 ```
 {% endcode %}
-
-## Example usage
-
-```typescript
-// Example usage.
-import { CommonError } from '@angular-package/error'; 
-
-
-```

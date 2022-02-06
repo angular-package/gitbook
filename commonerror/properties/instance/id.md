@@ -9,12 +9,3 @@ A privately stored unique [identification](../../../getting-started/basic-concep
 #id?: Id;
 ```
 {% endcode %}
-
-## Example usage
-
-```typescript
-// Example usage.
-import { CommonError } from '@angular-package/error'; 
-
-
-```

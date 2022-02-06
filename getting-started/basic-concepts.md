@@ -4,7 +4,7 @@ description: Explanation of terms specific to wrapper.
 
 # Basic concepts
 
-### Expected type
+### Type
 
 ### Fix
 

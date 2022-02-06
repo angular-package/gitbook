@@ -15,9 +15,9 @@ abstract class CommonError<
   protected constructor(
     problem: string,
     fix: string,
-    optional?: { expectedType?: string; min?: number; max?: number },
     id?: Id, // <--- Capture generic type variable Id.
-    template = CommonError.template
+    template = CommonError.template,
+    additional?: { max?: number; min?: number; type?: string }
   ) { ... }
   ...
 }

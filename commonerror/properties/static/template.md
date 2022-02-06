@@ -16,5 +16,18 @@ public static template = `Problem{id}: {problem} => Fix: {fix}`;
 // Example usage.
 import { CommonError } from '@angular-package/error'; 
 
+// Change the template.
+CommonError.template = `Problem({id}): {problem} => Fix: {fix}`;
 
+// Extend the `CommonError` class.
+class TestError extends CommonError {}
+
+// Returns
+// Error: Problem(AE:427): The `age` parameter is wrong. => Fix: Provided `age`
+// must be different type. 
+new TestError(
+  'The `age` parameter is wrong.', // Problem
+  'Provided `age` must be different type. ', // Fix
+  'AE:427' // Identification
+);
 ```

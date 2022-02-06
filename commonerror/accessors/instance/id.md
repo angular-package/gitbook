@@ -28,6 +28,9 @@ The **return value** is the error [identification](../../../getting-started/basi
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
+// Extend the `CommonError` class.
+class TestError extends CommonError {}
 
+// Returns "(AE:427)".
+new TestError('problem', 'Fix accessor.', '(AE:427)').id;
 ```
-

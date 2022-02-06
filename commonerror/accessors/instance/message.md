@@ -26,6 +26,9 @@ The **return value** is the error [message](../../../getting-started/basic-conce
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
+// Extend the `CommonError` class.
+class TestError extends CommonError {}
 
+// Returns "Problem(AE:427): Problem accessor. => Fix: Fix accessor.".
+new TestError('Problem accessor.', 'Fix accessor.', '(AE:427)').message
 ```
-

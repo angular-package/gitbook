@@ -9,12 +9,3 @@ A privately stored [problem](../../../getting-started/basic-concepts.md#problem)
 #fix: string;
 ```
 {% endcode %}
-
-## Example usage
-
-```typescript
-// Example usage.
-import { CommonError } from '@angular-package/error'; 
-
-
-```

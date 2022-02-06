@@ -36,7 +36,6 @@
   * [Static](commonerror/methods/static/README.md)
     * [defineMessage()](commonerror/methods/static/definemessage.md)
     * [isError()](commonerror/methods/static/iserror.md)
-* [Example usage](commonerror/example-usage.md)
 
 ## Error {}
 

@@ -30,5 +30,9 @@ The **return value** is the fix of a [`string`](https://developer.mozilla.org/en
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
+// Extend the `CommonError` class.
+class TestError extends CommonError {}
 
+// Returns "Fix accessor."
+new TestError('problem', 'Fix accessor.', '(AE:427)').fix;
 ```

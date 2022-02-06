@@ -2,7 +2,7 @@
 
 ## isError()
 
-Checks whether the value of any type is a `this` instance of any or the given identification.
+Checks whether the [`value`](iserror.md#value-any) of any type is a `this` instance of any or the given [identification](iserror.md#id-id).
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -51,5 +51,22 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
+class TestError<Id extends string> extends CommonError<Id> {
+  public static isError<Id extends string>(
+    value: any,
+    id?: Id
+  ): value is TestError<Id> {
+    return super.isError(value, id);
+  }
+}
 
+const testError = new TestError(
+  'Problem accessor.',
+  'Fix accessor.',
+  '(AE:427)',
+  '{problem} {fix} {id}'
+);
+
+// Returns "true".
+TestError.isError(testError, '(AE:427)');
 ```

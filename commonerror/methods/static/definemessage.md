@@ -2,7 +2,7 @@
 
 ## `CommonError.defineMessage()`
 
-The static "tag" method builds from the given [`values`](definemessage.md#...values-any) the error message of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type on the template.
+The static "[tag](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template\_literals)" method builds from the given [`values`](definemessage.md#...values-any) the error message of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type on the template.
 
 {% code title="common-error.class.ts" %}
 ```typescript
