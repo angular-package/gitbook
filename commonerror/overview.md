@@ -9,6 +9,8 @@ coverY: 308.9626099706744
 
 ​The `CommonError` abstract object to throw an identified error with a solution to the described problem.
 
+Link to GitHub.
+
 ## Static
 
 ### Properties

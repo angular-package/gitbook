@@ -40,14 +40,24 @@
 ## Error {}
 
 * [Overview](error/overview.md)
+* [Generic type variables](error/generic-type-variables.md)
+* [Constructor](error/constructor.md)
+* [Accessors](error/accessors/README.md)
+  * [Instance](error/accessors/instance.md)
+* [Methods](error/methods/README.md)
+  * [Static](error/methods/static/README.md)
+    * [define()](error/methods/static/define.md)
+    * [isError()](error/methods/static/iserror.md)
 
 ## RangeError {}
 
 * [Overview](rangeerror/overview.md)
+* [Generic type variables](rangeerror/generic-type-variables.md)
 
 ## TypeError {}
 
 * [Overview](typeerror/overview.md)
+* [Generic type variables](typeerror/generic-type-variables.md)
 
 ## ValidationError {}
 

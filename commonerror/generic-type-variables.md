@@ -12,7 +12,7 @@ abstract class CommonError<
   Id extends string = string // <--- Declare generic type variable Id.
 > extends Error {
   ...
-  protected constructor(
+  constructor(
     problem: string,
     fix: string,
     id?: Id, // <--- Capture generic type variable Id.
