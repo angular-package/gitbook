@@ -1,8 +1,14 @@
-# template
+---
+description: >-
+  A template of the error message of string type with the replaceable
+  `{problem}`, `{fix}` and optional `{id}`, `{max}`, `{min}`, `{type}` tags.
+---
+
+# static template
 
 ## `CommonError.template`
 
-A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../../constructor.md#problem), [`{fix}`](../../constructor.md#fix) and optional [`{id}`](../../constructor.md#id), [`{max}`](../../constructor.md#max), [`{min}`](../../constructor.md#min), [`{type}`](../../constructor.md#type) tags. By default, it's set to `Problem{id}: {problem} => Fix: {fix}`.
+A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../constructor.md#problem), [`{fix}`](../constructor.md#fix) and optional [`{id}`](../constructor.md#id), [`{max}`](../constructor.md#max), [`{min}`](../constructor.md#min), [`{type}`](../constructor.md#type) tags. By default, it's set to `Problem{id}: {problem} => Fix: {fix}`.
 
 {% code title="common-error.class.ts" %}
 ```typescript

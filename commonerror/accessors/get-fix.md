@@ -2,11 +2,11 @@
 description: The solution to the described error problem.
 ---
 
-# fix
+# get fix()
 
 ## `CommonError.prototype.fix`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains a possible solution to the described [problem](problem.md) by returning the [`#fix`](../../properties/instance/fix.md) property of a specified object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains a possible solution to the described [problem](get-problem.md) by returning the [`#fix`](../properties/fix.md) property of a specified object.
 
 {% code title="common-error.class.ts" %}
 ```typescript

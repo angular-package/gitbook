@@ -1,8 +1,8 @@
 # Constructor
 
-## `CommonError()`
+## `Error()`
 
-Creates the `Error` instance that represents an error with the described problem and its solution, optionally marked with an explicit identification.
+Creates the `Error` instance that represents an error with the message built of the described [problem](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optionally marked with an explicit [identification](constructor.md#id-id) on the given or stored [template](constructor.md#template-string-error.template).
 
 {% code title="error.class.ts" %}
 ```typescript
@@ -33,4 +33,4 @@ Optional unique identification to the given [`problem`](constructor.md#problem-s
 
 #### template: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) = <mark style="color:green;">Error</mark>.template
 
-A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags. By default, the value is equal to the static property [`template`](../commonerror/properties/static/template.md).
+A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags. By default, the value is equal to the static property [`template`](../commonerror/properties/static-template.md).

@@ -1,8 +1,8 @@
-# template
+# get template()
 
 ## `CommonError.prototype.template`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [template](../../../getting-started/basic-concepts.md#template) of the error message by returning the [`#template`](../../properties/instance/template.md) property of a specified object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [template](../../getting-started/basic-concepts.md#template) of the error message by returning the [`#template`](../properties/template.md) property of a specified object.
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -18,7 +18,7 @@ public get template(): string {
 
 ### Returns
 
-The **return value** is the [template](../../../getting-started/basic-concepts.md#template) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+The **return value** is the [template](../../getting-started/basic-concepts.md#template) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 ## Example usage
 

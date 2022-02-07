@@ -1,8 +1,8 @@
-# problem
+# get problem()
 
 ## `CommonError.prototype.problem`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [problem](../../../getting-started/basic-concepts.md#problem) by returning the [`#problem`](../../properties/instance/problem.md) property of a specified object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor gets the [problem](../../getting-started/basic-concepts.md#problem) by returning the [`#problem`](../properties/problem.md) property of a specified object.
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -18,7 +18,7 @@ public get problem(): string {
 
 ### Returns
 
-The **return value** is the [problem](../../../getting-started/basic-concepts.md#problem) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+The **return value** is the [problem](../../getting-started/basic-concepts.md#problem) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 ## Example usage
 
