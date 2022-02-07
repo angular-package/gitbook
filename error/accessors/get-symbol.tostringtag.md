@@ -1,7 +1,5 @@
 ---
-description: >-
-  The get accessor, with the help of toStringTag, changes the default tag to
-  'Error' for an instance of Error.
+description: The name of the `Error` object class.
 ---
 
 # get \[Symbol.toStringTag]\()
@@ -31,6 +29,8 @@ The **return value** is the word `Error` of a [`string`](https://developer.mozil
 ```typescript
 // Example usage.
 import { Error } from '@angular-package/error';
+import { typeOf } from '@angular-package/type';
 
-
+// Returns "error".
+typeOf(new Error('problem', 'fix solution'));
 ```

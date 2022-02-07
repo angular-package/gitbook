@@ -16,4 +16,6 @@ description: Explanation of terms specific to wrapper.
 
 ### Problem
 
+### Range
+
 ### Template

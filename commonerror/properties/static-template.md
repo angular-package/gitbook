@@ -8,13 +8,43 @@ description: >-
 
 ## `CommonError.template`
 
-A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../constructor.md#problem), [`{fix}`](../constructor.md#fix) and optional [`{id}`](../constructor.md#id), [`{max}`](../constructor.md#max), [`{min}`](../constructor.md#min), [`{type}`](../constructor.md#type) tags. By default, it's set to `Problem{id}: {problem} => Fix: {fix}`.
+A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../v-constructor.md#problem), [`{fix}`](../v-constructor.md#fix) and optional [`{id}`](static-template.md#id), [`{max}`](static-template.md#max), [`{min}`](static-template.md#min), [`{type}`](static-template.md#type) tags.
+
+By default, it's set to `Problem{id}: {problem} => Fix: {fix}`.
 
 {% code title="common-error.class.ts" %}
 ```typescript
 public static template = `Problem{id}: {problem} => Fix: {fix}`;
 ```
 {% endcode %}
+
+### Tags
+
+Replaceable tags on the [`template`](static-template.md#template-string-commonerror.template).
+
+#### `{fix}`
+
+Replaceable by the given required [`fix`](../v-constructor.md#fix-string) parameter.
+
+#### `{id}`
+
+Replaceable by the given [`id`](../v-constructor.md#id-id) parameter.
+
+#### `{max}`
+
+Replaceable by the property `max` of the given [`additional`](../v-constructor.md#additional-min-number-max-number-type-string) parameter.
+
+#### `{min}`
+
+Replaceable by the property `min` of the given [`additional`](../v-constructor.md#additional-min-number-max-number-type-string) parameter.
+
+#### `{problem}`
+
+Replaceable by the given required [`problem`](../v-constructor.md#problem-string) parameter.
+
+#### `{type}`
+
+Replaceable by the property `type` of the given [`additional`](../v-constructor.md#additional-min-number-max-number-type-string) parameter.
 
 ## Example usage
 

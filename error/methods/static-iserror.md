@@ -1,7 +1,5 @@
 ---
-description: >-
-  Checks whether the value of any type is an instance of `Error` of any or the
-  given identification.
+description: Checks whether the value of any type is an instance of `Error`.
 ---
 
 # static isError()
@@ -48,3 +46,10 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](static-iserror.md#value-any) is an instance of [`Error`](broken-reference) of any or the given [`id`](static-iserror.md#id-id).
 
 ## Example usage
+
+```typescript
+// Example usage.
+import { Error } from '@angular-package/error';
+
+Error.isError();
+```

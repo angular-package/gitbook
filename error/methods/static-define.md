@@ -1,7 +1,5 @@
 ---
-description: >-
-  Defines the `Error` instance with the given required problem, fix and optional
-  id and template.
+description: Defines the `Error` instance.
 ---
 
 # static define()
@@ -63,5 +61,5 @@ The **return value** is a new instance of the [`Error`](broken-reference) with t
 // Example usage.
 import { Error } from '@angular-package/error';
 
-
+Error.define();
 ```

@@ -1,8 +1,8 @@
-# isError()
+# static isError()
 
-## isError()
+## `CommonError.isError()`
 
-Checks whether the [`value`](iserror.md#value-any) of any type is a `this` instance of any or the given [identification](iserror.md#id-id).
+Checks whether the [`value`](static-iserror.md#value-any) of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type is a `this` instance of any or the given [identification](static-iserror.md#id-id).
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -31,19 +31,19 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the `this` instance.
 
-#### id?: [<mark style="color:green;">Id</mark>](iserror.md#id-extends-string)<mark style="color:green;"></mark>
+#### id?: [<mark style="color:green;">Id</mark>](static-iserror.md#id-extends-string)<mark style="color:green;"></mark>
 
-Optional identification of generic type variable [`Id`](iserror.md#id-extends-string) to check whether the given [`value`](iserror.md#value-any) contains.
+Optional identification of generic type variable [`Id`](static-iserror.md#id-extends-string) to check whether the given [`value`](static-iserror.md#value-any) contains.
 
 ### Return type
 
 #### value is CommonError\<Id>
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../../generic-type-variables.md#wrap-opening).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](static-iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](iserror.md#value-any) is a `this` instance of any or the given [`id`](iserror.md#id-id).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](static-iserror.md#value-any) is a `this` instance of any or the given [`id`](static-iserror.md#id-id).
 
 ## Example usage
 

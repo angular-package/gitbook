@@ -14,7 +14,7 @@ public get id(): Id | undefined {
 
 ### Return type
 
-#### <mark style="color:green;"></mark>[<mark style="color:green;">Id</mark>](../generic-type-variables.md#wrap-opening) | [<mark style="color:green;">undefined</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined)<mark style="color:green;"></mark>
+#### <mark style="color:green;"></mark>[<mark style="color:green;">Id</mark>](../generic-type-variables.md#wrap-opening) | [<mark style="color:green;">undefined</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)<mark style="color:green;"></mark>
 
 The **return type** is the generic type variable [`Id`](../generic-type-variables.md#wrap-opening) or [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined).
 
