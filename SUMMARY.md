@@ -85,7 +85,7 @@
 * [Overview](validationerror/overview.md)
 * [Generic type variables](validationerror/generic-type-variables.md)
 * [Constructor](validationerror/constructor.md)
-* [Accessors](validationerror/accessors/README.md)
+* [Accessors](validationerror/accessors.md)
   * [get \[Symbol.toStringTag\]()](validationerror/accessors/get-symbol.tostringtag.md)
 * [Properties](validationerror/properties.md)
 * [Methods](validationerror/methods/README.md)
