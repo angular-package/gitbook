@@ -1,8 +1,8 @@
-# v: Constructor
+# Constructor
 
 ## `CommonError()`
 
-Creates an error instance with the [message](accessors/get-message.md) built from the given [problem](accessors/get-problem.md), its [solution](accessors/get-fix.md), optional [type](v-constructor.md#additional-min-number-max-number-type-string), [range](v-constructor.md#additional-min-number-max-number-type-string), an explicit [identification](v-constructor.md#id-id) on the supplied or stored [template](v-constructor.md#template-string-commonerror.template).
+Creates an error instance with the [message](accessors/get-message.md) built from the given [problem](accessors/get-problem.md), its [solution](accessors/get-fix.md), optional [type](constructor.md#additional-min-number-max-number-type-string), [range](constructor.md#additional-min-number-max-number-type-string), an explicit [identification](constructor.md#id-id) on the supplied or stored [template](constructor.md#template-string-commonerror.template).
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -32,23 +32,23 @@ Description of the problem of a [`string`](https://developer.mozilla.org/en-US/d
 
 #### fix: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;"></mark>
 
-A solution to the given [`problem`](v-constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+A solution to the given [`problem`](constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 #### id?: [<mark style="color:green;">Id</mark>](generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
 
-Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](v-constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#wrap-opening).
+Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#wrap-opening).
 
 #### template: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) = <mark style="color:green;">CommonError</mark>.template
 
-A template of error message with the replaceable [`{problem}`](v-constructor.md#problem), [`{fix}`](v-constructor.md#fix) and optional [`{id}`](v-constructor.md#id), [`{max}`](v-constructor.md#max), [`{min}`](v-constructor.md#min) and [`{type}`](v-constructor.md#type) tags. By default, the value is equal to the static property [`template`](properties/static-template.md).
+A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags. By default, the value is equal to the static property [`template`](properties/static-template.md).
 
 #### additional: { min?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number); max?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number); <mark style="color:green;"></mark> type?: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String); }
 
 An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of optional `min`, `max`, and `type` properties to define the error [`message`](accessors/get-message.md).&#x20;
 
-`max`   - The maximum number replaceable on the given [`template`](v-constructor.md#template-string-commonerror.template) as [`{max}`](properties/static-template.md#max) tag.\
-`min`   - The minimum number is replaceable on the given [`template`](v-constructor.md#template-string-commonerror.template) as [`{min}`](properties/static-template.md#min) tag.\
-`type` - The type indicates the expected type that isn't throwing an error or the not expected type that is throwing an error replaceable on the given [`template`](v-constructor.md#template-string-commonerror.template) as [`{type}`](properties/static-template.md#type) tag.
+`max`   - The maximum number replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{max}`](properties/static-template.md#max) tag.\
+`min`   - The minimum number is replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{min}`](properties/static-template.md#min) tag.\
+`type` - The type indicates the expected type that isn't throwing an error or the not expected type that is throwing an error replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{type}`](properties/static-template.md#type) tag.
 
 ## Example usage
 

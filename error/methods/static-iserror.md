@@ -51,5 +51,18 @@ The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/W
 // Example usage.
 import { Error } from '@angular-package/error';
 
-Error.isError();
+// Define error.
+const err = Error.define('Wrong type', 'Change the type', 'TE:201');
+
+// Returns true.
+Error.isError(err);
+
+// Returns true.
+Error.isError(err, 'TE:201');
+
+// Returns false.
+Error.isError(err, 'TE:202');
+
+// Returns false.
+Error.isError(new Array());
 ```

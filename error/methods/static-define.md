@@ -61,5 +61,6 @@ The **return value** is a new instance of the [`Error`](broken-reference) with t
 // Example usage.
 import { Error } from '@angular-package/error';
 
-Error.define();
+// Returns "Error: ProblemTE:201: Wrong type => Fix: Change the type".
+Error.define('Wrong type', 'Change the type', 'TE:201');
 ```

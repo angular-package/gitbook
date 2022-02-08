@@ -30,5 +30,6 @@ The **return value** is the error instance name of [`string`](https://developer.
 // Example usage.
 import { Error } from '@angular-package/error';
 
-
+// Returns "Error".
+new Error('Wrong type', 'Change the type', 'TE:201').name;
 ```

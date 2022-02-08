@@ -2,7 +2,7 @@
 
 ## `Error()`
 
-The `Error` object is an extension of the [`CommonError`](broken-reference) class and is thrown when a runtime error occurs with a [message](../commonerror/accessors/get-message.md) built from a [solution](constructor.md#fix-string) to the described [problem](constructor.md#problem-string) but with additional [identification](constructor.md#id-id), on the [template](constructor.md#template-string-error.template).
+Creates the `Error` instance with the message built from the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional explicit [identification](constructor.md#id-id) on the given or stored [`template`](constructor.md#template-string-error.template).
 
 {% code title="error.class.ts" %}
 ```typescript
@@ -21,7 +21,7 @@ constructor(
 
 #### problem: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;"></mark>
 
-Description of the problem of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+Description of the [problem](../getting-started/basic-concepts.md#problem) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 #### fix: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;"></mark>
 
@@ -29,7 +29,7 @@ A solution to the given [`problem`](constructor.md#problem-string) of a [`string
 
 #### id?: [<mark style="color:green;">Id</mark>](../commonerror/generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
 
-Optional unique identification to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](../commonerror/generic-type-variables.md#wrap-opening).
+Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](../commonerror/generic-type-variables.md#wrap-opening).
 
 #### template: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) = <mark style="color:green;">Error</mark>.template
 
@@ -41,5 +41,6 @@ A template of error message with the replaceable [`{problem}`](constructor.md#pr
 // Example usage.
 import { Error } from '@angular-package/error';
 
-
+// Returns "Error: ProblemTE:201: Wrong type => Fix: Change the type".
+new Error('Wrong type', 'Change the type', 'TE:201');
 ```
