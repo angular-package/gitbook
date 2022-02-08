@@ -1,3 +1,7 @@
+---
+description: The `get` accessor obtains the minimum range
+---
+
 # get min()
 
 ## `RangeError.prototype.min`

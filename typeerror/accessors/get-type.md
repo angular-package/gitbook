@@ -1,3 +1,7 @@
+---
+description: The `get` accessor obtains the type
+---
+
 # get type()
 
 ## ​`TypeError.prototype.type`

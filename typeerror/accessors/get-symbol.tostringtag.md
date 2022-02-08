@@ -1,3 +1,7 @@
+---
+description: Changes the default tag to 'TypeError' for an instance
+---
+
 # get \[Symbol.toStringTag]\()
 
 ## `[Symbol.toStringTag]()`

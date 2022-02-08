@@ -1,3 +1,7 @@
+---
+description: The `get` accessor obtains the range of minimum and maximum
+---
+
 # get range()
 
 ## ​`RangeError.prototype.range`

@@ -1,3 +1,7 @@
+---
+description: The `get` accessor obtains the maximum range
+---
+
 # get max()
 
 ## `RangeError.prototype.max`

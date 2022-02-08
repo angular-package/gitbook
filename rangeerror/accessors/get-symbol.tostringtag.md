@@ -1,3 +1,7 @@
+---
+description: Changes the default tag to 'RangeError' for an instance
+---
+
 # get \[Symbol.toStringTag]\()
 
 ## `[Symbol.toStringTag]()`

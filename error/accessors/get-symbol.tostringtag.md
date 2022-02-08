@@ -1,5 +1,5 @@
 ---
-description: The name of the `Error` object class.
+description: Changes the default tag to 'RangeError' for an instance
 ---
 
 # get \[Symbol.toStringTag]\()

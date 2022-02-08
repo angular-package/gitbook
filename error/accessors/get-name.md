@@ -1,5 +1,5 @@
 ---
-description: Error name of a string type, set to `Error` that is being thrown.
+description: The `get` accessor obtains error name
 ---
 
 # get name()
