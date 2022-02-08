@@ -47,8 +47,6 @@ The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/d
 
 #### max?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
 
-The optional maximum range that causes an error to be thrown(or not thrown) to check whether the given [`value`](static-israngeerror.md#value-any) contains.
-
 The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown) to check whether the given [`value`](static-israngeerror.md#value-any) contains.
 
 ### Return type

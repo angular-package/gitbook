@@ -6,7 +6,7 @@ description: Defines the `RangeError` instance.
 
 ## `RangeError.define()`
 
-Defines the [`RangeError`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`max`](static-define.md#max-number), [`min`](static-define.md#min-number) on the given or stored [`template`](static-define.md#template-error.template).
+Defines the [`RangeError`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`max`](static-define.md#max-number), [`min`](static-define.md#min-number) on the given or stored [`template`](static-define.md#template-rangeerror.template).
 
 {% code title="range-error.class.ts" %}
 ```typescript
@@ -63,7 +63,7 @@ The **return type** is the [`RangeError`](broken-reference) object that takes ge
 
 ### Returns
 
-The **return value** is a new instance of the [`RangeError`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`min`](static-define.md#min-number), [`max`](static-define.md#max-number) on the given or stored [`template`](static-define.md#template-error.template).
+The **return value** is a new instance of the [`RangeError`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`min`](static-define.md#min-number), [`max`](static-define.md#max-number) on the given or stored [`template`](static-define.md#template-rangeerror.template).
 
 ## Example usage
 

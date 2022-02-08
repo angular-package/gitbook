@@ -2,9 +2,7 @@
 
 ## `RangeError()`
 
-Creates the `Error` instance that represents an error with the message built of the described [problem](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optionally marked with an explicit [identification](constructor.md#id-id) on the given or stored [template](constructor.md#template-string-error.template).
-
-Creates the `RangeError` instance with the message built from the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional explicit [identification](constructor.md#id-id) on the given or stored [`template`](constructor.md#template-string-error.template).
+Creates the [`RangeError`](broken-reference) instance that represents range error with the [message](../commonerror/accessors/get-message.md) built of the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional [`min`](constructor.md#min-number)/[`max`](constructor.md#max-number) range, and an explicit [identification](constructor.md#id-id) on the given or stored error message [template](constructor.md#template-string-error.template).
 
 {% code title="error.class.ts" %}
 ```typescript
@@ -35,19 +33,19 @@ A solution to the given [`problem`](constructor.md#problem-string) of a [`string
 
 #### id?: [<mark style="color:green;">Id</mark>](../commonerror/generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
 
-Optional unique identification to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](../commonerror/generic-type-variables.md#wrap-opening).
+Optional unique identification to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md).
 
 #### min?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
 
-The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that isn't throwing(or is throwing) an error.
+The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
 
 #### max?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
 
-The optional maximum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that isn't throwing(or is throwing) an error.
+The optional maximum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
 
-#### template: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) = <mark style="color:green;">Error</mark>.template
+#### template: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) = <mark style="color:green;">RangError</mark>.template
 
-A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../commonerror/constructor.md#problem), [`{fix}`](../commonerror/constructor.md#fix) and optional [`{id}`](../commonerror/properties/static-template.md#id), [`{max}`](../commonerror/properties/static-template.md#max), [`{min}`](../commonerror/properties/static-template.md#min), [`{type}`](../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`RangeError.template`](properties/static-template.md).
+A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../commonerror/properties/static-template.md#problem), [`{fix}`](../commonerror/properties/static-template.md#fix) and optional [`{id}`](../commonerror/properties/static-template.md#id), [`{max}`](../commonerror/properties/static-template.md#max), [`{min}`](../commonerror/properties/static-template.md#min), [`{type}`](../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`RangeError.template`](properties/static-template.md).
 
 ## Example usage
 
@@ -55,6 +53,7 @@ A template of the error message of [`string`](https://developer.mozilla.org/en-U
 // Example usage.
 import { RangeError } from '@angular-package/error';
 
-
-
+// Returns
+// RangeError: ProblemTE:201: Wrong age, must be between 9 and 27 => Fix: Change the value
+RangeError.define('Wrong age,', 'Change the value', 'TE:201', 9, 27);
 ```
