@@ -26,7 +26,7 @@ public static define<Id extends string>(
 
 #### <mark style="color:green;">Id</mark> extends [<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
-A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided optional [`id`](static-define.md#id-id) indicates the [identification](../../getting-started/basic-concepts.md#identification) type of a new [`Error`](broken-reference) instance.
+A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided optional [`id`](static-define.md#id-id) indicates the [identification](../../getting-started/basic-concepts.md#identification) type of a new [`TypeError`](broken-reference) instance.
 
 ### Parameters
 
@@ -48,7 +48,7 @@ The optional type that causes an error to be thrown(or not thrown).
 
 #### template = <mark style="color:green;">TypeError</mark>.template
 
-A template of error message with the replaceable [`{problem}`](static-define.md#problem), [`{fix}`](static-define.md#fix) and optional [`{id}`](static-define.md#id), [`{max}`](static-define.md#max), [`{min}`](static-define.md#min) and [`{type}`](static-define.md#type) tags. By default, the value is equal to the static property [`template`](../../commonerror/properties/static-template.md).
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) and [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`TypeError.template`](../properties/static-template.md).
 
 ### Return type
 
