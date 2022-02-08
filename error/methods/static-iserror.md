@@ -33,7 +33,7 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.ht
 
 #### id?: [<mark style="color:green;">Id</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
 
-Optional unique [identification](../../getting-started/basic-concepts.md#identification) to the given [`problem`](static-iserror.md#problem-string) of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
+Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](static-iserror.md#id-extends-string) that the given [`value`](static-iserror.md#value-any) contains.
 
 ### Return type
 

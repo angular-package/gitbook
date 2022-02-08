@@ -6,7 +6,7 @@ description: Defines the `Error` instance.
 
 ## `Error.define()`
 
-Defines the `Error` instance with the message built of the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the [`template`](static-define.md#template-error.template).
+Defines the [`Error`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built of the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the given or stored [`template`](static-define.md#template-error.template).
 
 {% code title="error.class.ts" %}
 ```typescript
@@ -39,7 +39,7 @@ A solution to the given [`problem`](static-define.md#problem-string) of a [`stri
 
 #### id?: [<mark style="color:green;">Id</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
 
-Optional unique [identification](../../getting-started/basic-concepts.md#identification) to the given [`problem`](static-define.md#problem-string) of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
+Optional unique [identification](../../getting-started/basic-concepts.md#identification) to the given [`problem`](static-define.md#problem-string) of generic type variable [`Id`](static-define.md#id-extends-string).
 
 #### template = <mark style="color:green;">Error</mark>.template
 
@@ -53,7 +53,7 @@ The **return type** is the [`Error`](broken-reference) object that takes generic
 
 ### Returns
 
-The **return value** is a new instance of the [`Error`](broken-reference) with the message built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the [`template`](static-define.md#template-error.template).
+The **return value** is a new instance of the [`Error`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the [`template`](static-define.md#template-error.template).
 
 ## Example usage
 

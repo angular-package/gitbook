@@ -61,9 +61,8 @@
   * [#max?](rangeerror/properties/max.md)
   * [#min?](rangeerror/properties/min.md)
 * [Methods](rangeerror/methods/README.md)
-  * [↓ Static](rangeerror/methods/static.md)
-  * [Page 4](rangeerror/methods/page-4.md)
-  * [Page 1](rangeerror/methods/page-1.md)
+  * [static define()](rangeerror/methods/static-define.md)
+  * [static isRangeError()](rangeerror/methods/static-israngeerror.md)
 
 ## TypeError {}
 

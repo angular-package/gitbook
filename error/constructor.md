@@ -2,7 +2,7 @@
 
 ## `Error()`
 
-Creates the `Error` instance with the message built from the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional explicit [identification](constructor.md#id-id) on the given or stored [`template`](constructor.md#template-string-error.template).
+Creates the [`Error`](broken-reference) instance with the [message](../commonerror/accessors/get-message.md) built from the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional explicit [identification](constructor.md#id-id) on the given or stored [`template`](constructor.md#template-string-error.template).
 
 {% code title="error.class.ts" %}
 ```typescript
