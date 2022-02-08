@@ -86,11 +86,11 @@
 * [Generic type variables](validationerror/generic-type-variables.md)
 * [Constructor](validationerror/constructor.md)
 * [Accessors](validationerror/accessors.md)
+  * [get name()](validationerror/accessors/get-name.md)
   * [get \[Symbol.toStringTag\]()](validationerror/accessors/get-symbol.tostringtag.md)
-* [Properties](validationerror/properties.md)
 * [Methods](validationerror/methods/README.md)
-  * [Static](validationerror/methods/static.md)
-  * [Instance](validationerror/methods/instance.md)
+  * [static define()](validationerror/methods/static-define.md)
+  * [static isValidationError()](validationerror/methods/static-isvalidationerror.md)
 
 ## Change log
 

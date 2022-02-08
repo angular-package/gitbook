@@ -1,2 +1,12 @@
+---
+description: The `ValidationError` object methods
+---
+
 # Methods
 
+## Static
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>public static <a href="static-define.md"><strong>define()</strong></a><strong></strong><br><strong></strong>Defines the <a href="broken-reference"><code>ValidationError</code></a> instance with the <a href="../../commonerror/accessors/get-message.md">message</a> built of the given required <a href="static-define.md#problem-string"><code>problem</code></a>, <a href="static-define.md#fix-string"><code>fix</code></a> and optional <a href="static-define.md#id-id"><code>id</code></a> on the supplied or stored <a href="static-define.md#template-validationerror.template"><code>template</code></a>.</p> |
+| <p>public static <a href="static-isvalidationerror.md"><strong>isValidationError()</strong></a><strong></strong><br><strong></strong>Checks whether the <a href="static-isvalidationerror.md#value-any"><code>value</code></a> of any type is the <a href="broken-reference"><code>ValidationError</code></a> instance of any or the given <a href="static-isvalidationerror.md#id-id">identification</a>.</p>                                                                                                                                                                                                               |

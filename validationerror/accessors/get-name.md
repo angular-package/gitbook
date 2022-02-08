@@ -4,14 +4,14 @@ description: The `get` accessor obtains error name
 
 # get name()
 
-## `TypeError.prototype.name`
+## `ValidationError.prototype.name`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains error name of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, set to `'TypeError'` that is being thrown.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains error name of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, set to `'ValidationError'` that is being thrown.
 
 {% code title="type-error.class.ts" %}
 ```typescript
 public get name(): string {
-  return 'TypeError';
+  return 'ValidationError';
 }
 ```
 {% endcode %}
@@ -28,8 +28,8 @@ The **return value** is the error instance name of [`string`](https://developer.
 
 ```typescript
 // Example usage.
-import { TypeError } from '@angular-package/error';
+import { ValidationError } from '@angular-package/error';
 
-// Returns "TypeError".
-new TypeError('problem', 'Fix accessor.').name;
+// Returns "ValidationError".
+new ValidationError('problem', 'Fix accessor.').name;
 ```
