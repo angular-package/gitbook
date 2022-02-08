@@ -69,8 +69,16 @@
 * [Overview](typeerror/overview.md)
 * [Generic type variables](typeerror/generic-type-variables.md)
 * [Constructor](typeerror/constructor.md)
-* [Accessors](typeerror/accessors.md)
-* [Methods](typeerror/methods.md)
+* [Accessors](typeerror/accessors/README.md)
+  * [get name()](typeerror/accessors/get-name.md)
+  * [get type()](typeerror/accessors/get-type.md)
+  * [get \[Symbol.toStringTag\]()](typeerror/accessors/get-symbol.tostringtag.md)
+* [Properties](typeerror/properties/README.md)
+  * [static template](typeerror/properties/static-template.md)
+  * [#type?](typeerror/properties/type.md)
+* [Methods](typeerror/methods/README.md)
+  * [static define()](typeerror/methods/static-define.md)
+  * [static isTypeError()](typeerror/methods/static-istypeerror.md)
 
 ## ValidationError {}
 

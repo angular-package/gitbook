@@ -4,15 +4,15 @@ description: A template of the error message
 
 # static template
 
-## `RangeError.template`
+## `TypeError.template`
 
 A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min), [`{type}`](../../commonerror/properties/static-template.md#type) tags.
 
-By default, it's set to `Problem{id}: {problem} must be between {min} and {max} => Fix: {fix}`.
+By default, it's set to `Problem{id}: {problem} => Fix: {fix} must be of the {type}`.
 
-{% code title="range-error.class.ts" %}
+{% code title="type-error.class.ts" %}
 ```typescript
-public static template = `Problem{id}: {problem} must be between {min} and {max} => Fix: {fix}`;
+public static template = `Problem{id}: {problem} => Fix: {fix} must be of the {type}`;
 ```
 {% endcode %}
 
@@ -20,18 +20,17 @@ public static template = `Problem{id}: {problem} must be between {min} and {max}
 
 ```typescript
 // Example usage.
-import { RangeError } from '@angular-package/error'; 
+import { TypeError } from '@angular-package/error'; 
 
 // Change the template.
-RangeError.template = `Problem({id}): {problem} => Fix: {fix}`;
+TypeError.template = `Problem({id}): {problem} => Fix: {fix}`;
 
 // Returns
-// RangeError: Problem(AE:427): The `age` parameter is 455  => Fix: Provided `age` must more than 9 and less than 27
+// TypeError: Problem(AE:427): The `age` parameter is wrong. => Fix: Provided `age` must be different type. 
 new RangeError(
-  'The `age` parameter is 455', // Problem
-  'Provided `age` must more than', // Fix
+  'The `age` parameter is wrong.', // Problem
+  'Provided `age` must be different type. ', // Fix
   'AE:427', // Identification
-  9,  // Minimum
-  27 // Maximum range
+  'string',  // Type
 );
 ```

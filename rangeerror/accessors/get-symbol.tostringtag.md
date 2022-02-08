@@ -26,7 +26,7 @@ The **return value** is the word `'RangeError'` of a [`string`](https://develope
 
 ```typescript
 // Example usage.
-import { Error } from '@angular-package/error';
+import { RangeError } from '@angular-package/error';
 import { typeOf } from '@angular-package/type';
 
 // Returns "rangeerror".

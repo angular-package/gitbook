@@ -1,3 +1,7 @@
+---
+description: The `RangeError` object methods
+---
+
 # Methods
 
 ## Static

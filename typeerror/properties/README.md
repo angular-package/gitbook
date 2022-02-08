@@ -1,5 +1,5 @@
 ---
-description: The `RangeError` object properties
+description: The `TypeError` object properties
 ---
 
 # Properties
@@ -16,8 +16,6 @@ description: The `RangeError` object properties
 
 ### Private
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong></strong><a href="max.md"><strong>#max?: </strong><mark style="color:green;"><strong>number</strong></mark></a><br>Private property of the <a href="../../getting-started/basic-concepts.md#range">maximum range</a> of a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"><code>number</code></a> type that causes an error to be thrown(or not thrown).</p> |
-| <p><strong></strong><a href="min.md"><strong>#min?: </strong><mark style="color:green;"><strong>number</strong></mark></a><br>Private property of the <a href="../../getting-started/basic-concepts.md#range">minimum range</a> of a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"><code>number</code></a> type that causes an error to be thrown(or not thrown).</p> |
-
+|                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <p><strong></strong><a href="type.md"><strong>#type?: </strong><mark style="color:green;"><strong>string</strong></mark></a><br>Private <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string-type</a> property of the type that causes an error to be thrown(or not thrown).</p> |

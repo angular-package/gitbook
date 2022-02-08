@@ -1,0 +1,12 @@
+---
+description: The `TypeError` object methods
+---
+
+# Methods
+
+## Static
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>public static <a href="static-define.md"><strong>define()</strong></a><strong></strong><br><strong></strong>Defines the <a href="broken-reference"><code>TypeError</code></a> instance with the <a href="../../commonerror/accessors/get-message.md">message</a> built of the given required <a href="./#problem-string"><code>problem</code></a>, <a href="./#fix-string"><code>fix</code></a> and optional <a href="./#id-id"><code>id</code></a> and <a href="./#type-string"><code>type</code></a> on the given or stored <a href="../properties/static-template.md"><code>template</code></a>.</p> |
+| <p>public static <a href="static-istypeerror.md"><strong>isTypeError()</strong></a><strong></strong><br><strong></strong>Checks whether the <a href="./#value-any"><code>value</code></a> of <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#any"><code>any</code></a> type is an instance of <a href="broken-reference"><code>TypeError</code></a> of any or the given <a href="./#type-string"><code>type</code></a> and <a href="./#id-id">identification</a>.</p>                                                                                                               |

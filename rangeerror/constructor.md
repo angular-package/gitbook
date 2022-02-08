@@ -1,3 +1,7 @@
+---
+description: The `RangeError` object constructor
+---
+
 # Constructor
 
 ## `RangeError()`

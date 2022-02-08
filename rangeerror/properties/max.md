@@ -1,3 +1,7 @@
+---
+description: Private property of the maximum range
+---
+
 # #max?
 
 ## `#max?`
