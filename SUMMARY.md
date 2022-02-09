@@ -46,6 +46,11 @@
 
 ## Design processes
 
+* [Preserve the type](design-processes/preserve-the-type.md)
+* [Check the type](design-processes/check-the-type/README.md)
+  * [Recognize value](design-processes/check-the-type/recognize-value.md)
+  * [Precise check](design-processes/check-the-type/precise-check.md)
+  * [Callback](design-processes/check-the-type/callback.md)
 * [String Wrapper Objects](design-processes/string-wrapper-objects/README.md)
   * [Methods usage analysis](design-processes/string-wrapper-objects/methods-usage-analysis.md)
   * [Relevant questions](design-processes/string-wrapper-objects/relevant-questions.md)
@@ -59,15 +64,16 @@
       * [hasOpening()](design-processes/string-wrapper-objects/wrap/methods/hasopening.md)
       * [isWrapped()](design-processes/string-wrapper-objects/wrap/methods/iswrapped.md)
   * [Wrapper](design-processes/string-wrapper-objects/wrapper.md)
-* [Check the type](design-processes/check-the-type/README.md)
-  * [Recognize value](design-processes/check-the-type/recognize-value.md)
-  * [Precise check](design-processes/check-the-type/precise-check.md)
-  * [Callback](design-processes/check-the-type/callback.md)
 
 ## Benefits
 
 * [String Wrapper Object](benefits/string-wrapper-object/README.md)
   * [Explanation](benefits/string-wrapper-object/explanation.md)
+
+## Contact
+
+* [⋯ Chat](contact/chat.md)
+* [@ Email](contact/email.md)
 
 ## Other
 
