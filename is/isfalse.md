@@ -1,3 +1,7 @@
+---
+description: Checks if any value is a `boolean` type or an instance of `Boolean`.
+---
+
 # ★ isFalse()
 
 ## `isFalse()`
@@ -77,5 +81,9 @@ isFalse(new Boolean(false), (result, value, payload) => {
     payload.age // Returns `27`
   }
   return result;
-}, { age: 27 }); // Returns `true` as `value is false`
+}, { age: 27 }); // Returns `true` as `value is false
 ```
+
+## StackBlitz
+
+{% embed url="https://stackblitz.com/edit/typescript-kppsh9?file=index.ts" %}
