@@ -119,7 +119,7 @@ const captureAgeFromArray = <Age extends number>(age: Age[]) => {
 };
 
 // Define constant to provide to the function.
-const fromArray = [4, 5, 'firstName'];
+const fromArray = [4, 5];
 
 // number[] <---- Not Captured.
 captureAgeFromArray(fromArray);
@@ -129,8 +129,9 @@ const fromArrayAge = [9, age];
 
 // number[] <---- Not Captured.
 captureAgeFromArray(fromArrayAge);
-
 ```
+
+{% embed url="https://www.typescriptlang.org/play?jsx=0&target=7#code/PTAECYHYFgCgGMD2A7AzgF1AQwOYFNQBeCSAbjjhFAGEAnPLdAgMwFdl50BLFUdRUPCwAHdK3p8AFgVwEuyKTNq0sATwB0cJGkxDR4vAEF8AMVqIAtoeVqioADzGCeAB5NkAE1ShkrCwCM8WgA+AApZAC5QJwBtAF0ASiJg0ABvOFBQejFaBVlyWABfAsowABE8ZnkCbQwsZEx+UGFzADcuDwIm9GlQNg5uFE0EFAw+8ysbVTsYgBYAGlAAVjiS2CpfAKD4hwBafd3QADlETGoRHLwPYb1LpzNLaxVVUOYJp7UEtaoKquQa0boeqNAQtRDtTp8AQ9FjsTg8ZA3QHjR5TJwzACci1kqwo6zAm0CtB29gOhxOZwuBmuWip9Hu7ymr0ZzycXyAA" %}
 
 <mark style="color:green;">Successful</mark> capture from an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) by using the function with the generic type variable `Age`.
 
