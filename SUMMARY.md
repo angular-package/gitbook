@@ -75,7 +75,7 @@
 * [⋯ Chat](contact/chat.md)
 * [@ Email](contact/email.md)
 
-## Other
+## Donate
 
-* [@ Contact](other/contact.md)
-* [฿ Donate](other/thb-donate.md)
+* [฿ Cryptocurrency](donate/thb-cryptocurrency.md)
+* [$ Fiat](donate/usd-fiat.md)
