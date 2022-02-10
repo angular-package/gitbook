@@ -70,7 +70,7 @@
 
 * [Overview](typeerror/overview.md)
 * [Generic type variables](typeerror/generic-type-variables.md)
-* [Constructor](typeerror/constructor.md)
+* [v: Constructor](typeerror/v-constructor.md)
 * [Accessors](typeerror/accessors/README.md)
   * [get name()](typeerror/accessors/get-name.md)
   * [get type()](typeerror/accessors/get-type.md)
