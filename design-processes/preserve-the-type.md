@@ -4,7 +4,7 @@
 
 Typescript generic type variables preserve the captured type of the given value resulting in having the exact type of this value. The following examples examine the generic type variables usage in different ways.&#x20;
 
-First, let's see how the type is captured by simply assigning value to the constant.
+First, let's see how the type is captured by simply assigning value to the constant and local variable.
 
 ## Assigning
 
@@ -16,6 +16,9 @@ First, let's see how the type is captured by simply assigning value to the const
 */
 // 1n
 const age = 1n;
+
+// bigint
+let localAge = 1n;
 
 // bigint
 const moreAge: bigint = 2n;
@@ -79,7 +82,9 @@ const objectFirstName = { firstName };
 
 ### Conclusion
 
-We can see that the value type is **not** captured in the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) or [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object), and now let's see what the generic type variables can capture by using the [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Function).
+The variable declared by the [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) statement does not capture any exact type, obviously because it can be changed and by [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statement captures the exact type, because it cannot be changed.
+
+We can see that the value type is **not** captured in the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) or [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object), even though the value is constant, so let's see what the generic type variables can capture by using the function.
 
 ## Capturing
 
