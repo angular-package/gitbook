@@ -2,7 +2,7 @@
 description: >-
   A string-type privately stored template of the error message that contains
   replaceable required `{fix}`, `{problem}` and optional `{id}`, `{max}`,
-  `{min}`, `{type}` tags.
+  `{min}`, `{type}` tags
 ---
 
 # #template

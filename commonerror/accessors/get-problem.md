@@ -1,3 +1,7 @@
+---
+description: The get accessor gets the problem
+---
+
 # get problem()
 
 ## `CommonError.prototype.problem`

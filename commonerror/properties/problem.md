@@ -1,5 +1,5 @@
 ---
-description: A privately stored problem of a string type.
+description: A privately stored problem
 ---
 
 # #problem

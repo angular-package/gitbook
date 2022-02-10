@@ -1,7 +1,5 @@
 ---
-description: >-
-  A privately stored possible solution to the described problem of a string
-  type.
+description: A privately stored possible solution to the described problem
 ---
 
 # #fix

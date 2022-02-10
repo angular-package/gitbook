@@ -1,7 +1,5 @@
 ---
-description: >-
-  A privately stored unique identification to the described problem of generic
-  type variable `Id`.
+description: A privately stored unique identification to the described problem
 ---
 
 # #id?

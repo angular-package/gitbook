@@ -1,5 +1,5 @@
 ---
-description: A template of the error message of string type with the replaceable tags.
+description: A template of the error message of string type with the replaceable tags
 ---
 
 # static template

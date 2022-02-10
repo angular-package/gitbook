@@ -1,3 +1,7 @@
+---
+description: The get accessor gets the error message
+---
+
 # get message()
 
 ## `CommonError.prototype.message`

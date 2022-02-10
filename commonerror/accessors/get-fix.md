@@ -1,5 +1,5 @@
 ---
-description: The solution to the described error problem.
+description: The get accessor obtains a possible solution to the described problem
 ---
 
 # get fix()

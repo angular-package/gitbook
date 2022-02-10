@@ -1,3 +1,7 @@
+---
+description: The get accessor gets the error identification
+---
+
 # get id()
 
 ## `CommonError.prototype.id`

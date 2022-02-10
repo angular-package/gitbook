@@ -1,3 +1,7 @@
+---
+description: The get accessor gets the template of the error message
+---
+
 # get template()
 
 ## `CommonError.prototype.template`
