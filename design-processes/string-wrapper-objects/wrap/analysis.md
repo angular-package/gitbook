@@ -6,7 +6,7 @@ description: Examine other naming possibilities
 
 The selected names appear [**intuitive**](../../../definitions/intuitive-adjective.md), simple, and understandable, but they have alternatives. The following analysis using the Html tag `<span>` as an example should clarify the choice.
 
-## <<mark style="background-color:orange;">span</mark>>
+## <<mark style="color:green;background-color:green;">span</mark>>
 
 ### Alternatives
 
@@ -52,7 +52,7 @@ I selected to wrap the **text** because it's not only the word, [phrase](../../.
 
 > _"Phrases can consist of a single word or a complete sentence."_ - Wikipedia
 
-## <mark style="background-color:orange;"><</mark>span>
+## <mark style="color:green;background-color:green;"><</mark>span>
 
 ### Alternatives
 
@@ -122,9 +122,9 @@ A decision is made, the word '**opening**' is selected to describe the char '`<`
 >
 > Merriam-Webster
 
-Prefix **refers** more to the **word** than the **text** that's why the choice '**opening**' seems safe. Crucial is to have in mind, a different tag can consist of more than one char e.g. {{variable}}.
+Prefix **refers** more to the **word** than the **text** that's why the choice '**opening**' seems safe. Crucial is to have in mind, a different tag can consist of more than one char e.g. \{{variable\}}.
 
-## \<span<mark style="background-color:orange;">></mark>
+## \<span<mark style="color:green;background-color:green;">></mark>
 
 ### Alternatives
 
