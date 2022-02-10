@@ -35,11 +35,11 @@ A generic type variable constrained by the [`string`](https://developer.mozilla.
 
 #### <mark style="color:green;">`Min`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`<mark style="color:green;">`undefined`</mark>
 
-
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`min`](static-define.md#min-number) via the [return type](static-define.md#return-type).
 
 #### <mark style="color:green;">`Max`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`<mark style="color:green;">`undefined`</mark>`=`<mark style="color:green;">`undefined`</mark>
 
-
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`max`](static-define.md#max-number) via the [return type](static-define.md#return-type).
 
 ### Parameters
 
@@ -53,15 +53,15 @@ A solution to the given [`problem`](static-define.md#problem-string) of a [`stri
 
 #### `id?:`[<mark style="color:green;">`Id`</mark>](../../error/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-Optional unique [identification](../../getting-started/basic-concepts.md#identification) to the given [`problem`](static-define.md#problem-string) of generic type variable [`Id`](static-define.md#id-extends-string).
+Optional unique [identification](../../getting-started/basic-concepts.md#identification) to the given [`problem`](static-define.md#problem-string) of generic type variable [`Id`](static-define.md#idextendsstring).
 
-#### `min?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;">``</mark>
+#### `min?:`[<mark style="color:green;">`Min`</mark>](static-define.md#minextendsnumber-or-undefined-undefined)
 
-The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
+The optional minimum range of generic type variable [`Min`](static-define.md#minextendsnumber-or-undefined-undefined) that causes an error to be thrown(or not thrown).
 
-#### `max?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;">``</mark>
+#### `max?:`[<mark style="color:green;">`Max`</mark>](static-define.md#maxextendsnumber-or-undefined-undefined)
 
-The optional maximum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
+The optional maximum range of generic type variable [`Max`](static-define.md#maxextendsnumber-or-undefined-undefined) that causes an error to be thrown(or not thrown).
 
 #### `template =`<mark style="color:green;">`RangeError`</mark>`.template`
 
@@ -69,9 +69,9 @@ A template of error message with the replaceable [`{problem}`](../../commonerror
 
 ### Return type
 
-#### `RangeError<`[<mark style="color:green;">`Id`</mark>](static-define.md#id-extends-string)`>`
+#### `RangeError<`[<mark style="color:green;">`Id`</mark>](static-define.md#idextendsstring)`,`[<mark style="color:green;">`Min`</mark>](static-define.md#minextendsnumber-or-undefined-undefined)`,`[<mark style="color:green;">`Max`</mark>](static-define.md#maxextendsnumber-or-undefined-undefined)`>`
 
-The **return type** is the [`RangeError`](broken-reference) object that takes generic type variable [`Id`](static-define.md#id-extends-string).
+The **return type** is the [`RangeError`](broken-reference) object that takes generic type variable [`Id`](static-define.md#idextendsstring) as identification, [`Min`](static-define.md#minextendsnumber-or-undefined-undefined) as minimum range and [`Max`](static-define.md#maxextendsnumber-or-undefined-undefined) as maximum range.
 
 ### Returns
 

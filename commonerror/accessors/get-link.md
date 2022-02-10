@@ -37,6 +37,8 @@ import { CommonError } from '@angular-package/error';
 // Extend the `CommonError` class.
 class TestError extends CommonError {}
 
-// Returns "(AE:427)".
-new TestError('problem', 'Fix accessor.', '(AE:427)').link;
+// Returns "http://duckduckgo.com".
+new TestError('problem', 'Fix accessor.', '(AE:427)', undefined, {
+  link: 'http://duckduckgo.com',
+}).link;
 ```

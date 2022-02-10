@@ -11,13 +11,14 @@ constructor(
   fix: string,
   id?: Id,
   template = CommonError.template,
-  additional?: { min?: number; max?: number; type?: string }
+  additional?: { link?: string; max?: number; min?: number; type?: string }
 ) {
   super(
     CommonError.defineMessage`${problem}${fix}${id}${template}${additional}`
   );
   this.#fix = fix;
   this.#id = id;
+  this.#link = additional?.link;
   this.#problem = problem;
   this.#template = template;
 }
