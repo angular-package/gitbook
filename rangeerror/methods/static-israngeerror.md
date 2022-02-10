@@ -10,12 +10,16 @@ Checks whether the [`value`](static-israngeerror.md#value-any) of [`any`](https:
 
 {% code title="range-error.class.ts" %}
 ```typescript
-public static isRangeError<Id extends string>(
+public static isRangeError<
+  Id extends string,
+  Min extends number | undefined = undefined,
+  Max extends number | undefined = undefined
+>(
   value: any,
   id?: Id,
-  min?: number,
-  max?: number
-): value is RangeError<Id> {
+  min?: Min,
+  max?: Max
+): value is RangeError<Id, Min, Max> {
   return (
     super.isError(value, id) &&
     (typeof min === 'number' ? (value as any).min === min : true) &&
@@ -27,7 +31,7 @@ public static isRangeError<Id extends string>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">Id</mark> extends [<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
+#### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)``
 
 A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided optional [`id`](static-israngeerror.md#id-id) indicates the [identification](../../getting-started/basic-concepts.md#identification) type of the [`RangeError`](broken-reference) via [return type](static-israngeerror.md#return-type).
 
@@ -51,7 +55,7 @@ The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/d
 
 ### Return type
 
-#### value is RangeError<<mark style="color:green;">Id</mark>>
+#### `value is RangeError<`<mark style="color:green;">`Id`</mark>`>`
 
 The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) resulting from its statement indicating the [`value`](static-israngeerror.md#value-any) is the [`RangeError`](broken-reference) object that takes the generic type variable [`Id`](static-israngeerror.md#id-extends-string).
 
@@ -83,4 +87,3 @@ RangeError.isRangeError(err, 'TE:202', 9, 27);
 // Returns false.
 RangeError.isRangeError(new Array());
 ```
-

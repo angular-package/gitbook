@@ -10,14 +10,18 @@ Defines the [`RangeError`](broken-reference) instance with the [message](../../c
 
 {% code title="range-error.class.ts" %}
 ```typescript
-public static define<Id extends string>(
+public static define<
+  Id extends string,
+  Min extends number | undefined = undefined,
+  Max extends number | undefined = undefined
+>(
   problem: string,
   fix: string,
   id?: Id,
-  min?: number,
-  max?: number,
+  min?: Min,
+  max?: Max,
   template = RangeError.template
-): RangeError<Id> {
+): RangeError<Id, Min, Max> {
   return new this(problem, fix, id, min, max, template);
 }
 ```
@@ -25,9 +29,17 @@ public static define<Id extends string>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">Id</mark> extends [<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
+#### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided optional [`id`](static-define.md#id-id) indicates the [identification](../../getting-started/basic-concepts.md#identification) type of a new [`RangeError`](broken-reference) instance.
+
+#### <mark style="color:green;">`Min`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`<mark style="color:green;">`undefined`</mark>
+
+
+
+#### <mark style="color:green;">`Max`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`<mark style="color:green;">`undefined`</mark>`=`<mark style="color:green;">`undefined`</mark>
+
+
 
 ### Parameters
 
@@ -57,7 +69,7 @@ A template of error message with the replaceable [`{problem}`](../../commonerror
 
 ### Return type
 
-#### RangeError<<mark style="color:green;">Id</mark>>
+#### `RangeError<`<mark style="color:green;">`Id`</mark>`>`
 
 The **return type** is the [`RangeError`](broken-reference) object that takes generic type variable [`Id`](static-define.md#id-extends-string).
 

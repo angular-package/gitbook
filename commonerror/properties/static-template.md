@@ -1,14 +1,12 @@
 ---
-description: >-
-  A template of the error message of string type with the replaceable
-  `{problem}`, `{fix}` and optional `{id}`, `{max}`, `{min}`, `{type}` tags.
+description: A template of the error message of string type with the replaceable tags.
 ---
 
 # static template
 
 ## `CommonError.template`
 
-A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../constructor.md#problem), [`{fix}`](../constructor.md#fix) and optional [`{id}`](static-template.md#id), [`{max}`](static-template.md#max), [`{min}`](static-template.md#min), [`{type}`](static-template.md#type) tags.
+A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../constructor.md#problem), [`{fix}`](../constructor.md#fix) and optional [`{id}`](static-template.md#id), [`{link}`](static-template.md#link), [`{max}`](static-template.md#max), [`{min}`](static-template.md#min), [`{type}`](static-template.md#type) tags.
 
 By default, it's set to `Problem{id}: {problem} => Fix: {fix}`.
 
@@ -29,6 +27,10 @@ Replaceable by the given required [`fix`](../constructor.md#fix-string) paramete
 #### `{id}`
 
 Replaceable by the given [`id`](../constructor.md#id-id) parameter.
+
+#### `{link}`
+
+Replaceable by the property `link` of the given [`additional`](../constructor.md#additional-min-number-max-number-type-string) parameter.
 
 #### `{max}`
 

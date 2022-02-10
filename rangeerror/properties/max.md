@@ -6,10 +6,14 @@ description: Private property of the maximum range
 
 ## `#max?`
 
-Private property of the [maximum range](../../getting-started/basic-concepts.md#range) of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
+Private property of the [maximum range](../../getting-started/basic-concepts.md#range) of generic type variable [`Max`](../generic-type-variables.md#wrap-opening-2) that causes an error to be thrown(or not thrown).
 
 {% code title="range-error.class.ts" %}
 ```typescript
-#max?: number;
+#max?: Max;
 ```
 {% endcode %}
+
+### Return type
+
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#wrap-opening-2)<mark style="color:green;">``</mark>

@@ -18,7 +18,7 @@ public get name(): string {
 
 ### Return type
 
-#### <mark style="color:green;"></mark>[<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;"></mark>
+#### <mark style="color:green;"></mark>[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 ### Returns
 
