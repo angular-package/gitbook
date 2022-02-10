@@ -84,7 +84,7 @@ const objectFirstName = { firstName };
 
 The variable declared by the [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) statement does not capture any exact type, obviously because it can be changed and by [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statement captures the exact type, because it cannot be changed.
 
-We can see that the value type is **not** captured in the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) or [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object), even though the value is constant, so let's see what the generic type variables can capture by using the function.
+We can see that the value type is **not** captured in the [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) or [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object), even though the value is constant, so let's see what the generic type variables can capture by using the [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Function).
 
 ## Capturing
 
