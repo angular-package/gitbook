@@ -51,7 +51,7 @@
 
 * [Overview](rangeerror/overview.md)
 * [Generic type variables](rangeerror/generic-type-variables.md)
-* [v: Constructor](rangeerror/constructor.md)
+* [Constructor](rangeerror/constructor.md)
 * [Accessors](rangeerror/accessors/README.md)
   * [get max()](rangeerror/accessors/get-max.md)
   * [get min()](rangeerror/accessors/get-min.md)
@@ -79,8 +79,8 @@
   * [static template](typeerror/properties/static-template.md)
   * [#type?](typeerror/properties/type.md)
 * [Methods](typeerror/methods/README.md)
-  * [static define()](typeerror/methods/static-define.md)
-  * [static isTypeError()](typeerror/methods/static-istypeerror.md)
+  * [v: static define()](typeerror/methods/v-static-define.md)
+  * [v: static isTypeError()](typeerror/methods/v-static-istypeerror.md)
 
 ## ValidationError {}
 
