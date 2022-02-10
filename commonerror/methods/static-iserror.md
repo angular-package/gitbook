@@ -21,17 +21,17 @@ protected static isError<Id extends string>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) indicates the&#x20;
 
 ### Parameters
 
-#### `value:` [<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)<mark style="color:green;">``</mark>
+#### `value:` [<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the `this` instance.
 
-#### `id?:` [<mark style="color:green;">`Id`</mark>](static-iserror.md#id-extends-string)<mark style="color:green;">``</mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](static-iserror.md#id-extends-string)<mark style="color:green;">``</mark>
 
 Optional identification of generic type variable [`Id`](static-iserror.md#id-extends-string) to check whether the given [`value`](static-iserror.md#value-any) contains.
 

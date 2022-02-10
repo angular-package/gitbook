@@ -26,8 +26,6 @@ The **return type** is a [`string`](https://www.typescriptlang.org/docs/handbook
 
 The **return value** is the link of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type or [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
-The **return value** is the error [identification](../../getting-started/basic-concepts.md#identification) of the generic type variable [`Id`](../generic-type-variables.md#wrap-opening) or [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
-
 ## Example usage
 
 ```typescript

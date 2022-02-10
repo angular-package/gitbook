@@ -31,15 +31,15 @@ A generic type variable constrained by the [`string`](https://developer.mozilla.
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the [`Error`](broken-reference) instance.
 
-#### `id?:`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](static-iserror.md#idextendsstring)<mark style="color:green;">``</mark>
 
-Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](static-iserror.md#id-extends-string) that the given [`value`](static-iserror.md#value-any) contains.
+Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](static-iserror.md#idextendsstring) that the given [`value`](static-iserror.md#value-any) contains.
 
 ### Return type
 
-#### `value is Error<`[<mark style="color:green;">`Id`</mark>](static-iserror.md#id-extends-string)`>`
+#### `value is Error<`[<mark style="color:green;">`Id`</mark>](static-iserror.md#idextendsstring)`>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) resulting from its statement indicating the [`value`](static-iserror.md#value-any) is the [`Error`](broken-reference) object that takes the generic type variable [`Id`](static-iserror.md#id-extends-string).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) resulting from its statement indicating the [`value`](static-iserror.md#value-any) is the [`Error`](broken-reference) object that takes the generic type variable [`Id`](static-iserror.md#idextendsstring).
 
 ### Returns
 

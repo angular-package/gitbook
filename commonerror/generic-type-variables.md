@@ -1,6 +1,6 @@
 # Generic type variables
 
-## `CommonError<`<mark style="color:green;">`Id`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `CommonError<`<mark style="color:green;background-color:green;">`Id`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
 
 #### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)`=`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;">``</mark>
 
@@ -17,7 +17,7 @@ abstract class CommonError<
     fix: string,
     id?: Id, // <--- Capture generic type variable Id.
     template = CommonError.template,
-    additional?: { max?: number; min?: number; type?: string }
+    additional?: { link?: string; max?: number; min?: number; type?: string }
   ) { ... }
   ...
 }

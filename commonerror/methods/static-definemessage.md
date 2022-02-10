@@ -36,7 +36,7 @@ protected static defineMessage(
 
 #### `...values:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)`[]`
 
-A rest parameter of expressions in order the `problem`, `fix`, `id`, `template` and `additional`.
+A rest parameter of expressions in order `${problem}`, `${fix}`, `${id}`, `${template}` and `${additional}`.
 
 ### Returns
 

@@ -2,11 +2,11 @@
 description: The `TypeError` object constructor
 ---
 
-# v: Constructor
+# Constructor
 
 ## `TypeError()`
 
-Creates a [`TypeError`](broken-reference) instance that represents type error with the [message](../commonerror/accessors/get-message.md) built of the given described [problem](v-constructor.md#problem-string) and its [solution](v-constructor.md#fix-string), optional [type](v-constructor.md#type-string), and an explicit [identification](v-constructor.md#id-id) on the supplied or stored error message [template](v-constructor.md#template-string-typeerror.template).
+Creates a [`TypeError`](broken-reference) instance that represents type error with the [message](../commonerror/accessors/get-message.md) built of the given described [problem](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional [type](constructor.md#type-string), and an explicit [identification](constructor.md#id-id) on the supplied or stored error message [template](constructor.md#template-string-typeerror.template).
 
 {% code title="type-error.class.ts" %}
 ```typescript
@@ -31,11 +31,11 @@ Description of the [problem](../getting-started/basic-concepts.md#problem) of a 
 
 #### `fix:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
-A solution to the given [`problem`](v-constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+A solution to the given [`problem`](constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 #### `id?:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md)<mark style="color:green;">``</mark>
 
-Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](v-constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md).
+Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md).
 
 #### `type?:`[<mark style="color:green;">`Type`</mark>](generic-type-variables.md#wrap-opening-1)
 

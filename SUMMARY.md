@@ -51,7 +51,7 @@
 
 * [Overview](rangeerror/overview.md)
 * [Generic type variables](rangeerror/generic-type-variables.md)
-* [Constructor](rangeerror/constructor.md)
+* [v: Constructor](rangeerror/v-constructor.md)
 * [Accessors](rangeerror/accessors/README.md)
   * [get max()](rangeerror/accessors/get-max.md)
   * [get min()](rangeerror/accessors/get-min.md)
@@ -70,7 +70,7 @@
 
 * [Overview](typeerror/overview.md)
 * [Generic type variables](typeerror/generic-type-variables.md)
-* [v: Constructor](typeerror/v-constructor.md)
+* [Constructor](typeerror/constructor.md)
 * [Accessors](typeerror/accessors/README.md)
   * [get name()](typeerror/accessors/get-name.md)
   * [get type()](typeerror/accessors/get-type.md)

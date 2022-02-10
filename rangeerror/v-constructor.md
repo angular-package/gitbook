@@ -2,11 +2,11 @@
 description: The `RangeError` object constructor
 ---
 
-# Constructor
+# v: Constructor
 
 ## `RangeError()`
 
-Creates the [`RangeError`](broken-reference) instance that represents range error with the [message](../commonerror/accessors/get-message.md) built of the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional [`min`](constructor.md#min-number)/[`max`](constructor.md#max-number) range, and an explicit [identification](constructor.md#id-id) on the given or stored error message [template](constructor.md#template-string-error.template).
+Creates the [`RangeError`](broken-reference) instance that represents range error with the [message](../commonerror/accessors/get-message.md) built of the given described [`problem`](v-constructor.md#problem-string) and its [solution](v-constructor.md#fix-string), optional [`min`](v-constructor.md#min-number)/[`max`](v-constructor.md#max-number) range, and an explicit [identification](v-constructor.md#id-id) on the given or stored error message [template](v-constructor.md#template-string-rangerror.template).
 
 {% code title="error.class.ts" %}
 ```typescript
@@ -33,19 +33,19 @@ Description of the problem of a [`string`](https://developer.mozilla.org/en-US/d
 
 #### `fix:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
-A solution to the given [`problem`](constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+A solution to the given [`problem`](v-constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
-#### `id?:`[<mark style="color:green;">`Id`</mark>](../commonerror/generic-type-variables.md#wrap-opening)
+#### `id?:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md#wrap-opening)
 
-Optional unique identification to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md).
+Optional unique identification to the given [`problem`](v-constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#wrap-opening).
 
-#### `min?:`[<mark style="color:green;">`Min`</mark>](generic-type-variables.md#minextendsnumber-or-undefined-undefined)<mark style="color:green;">``</mark>
+#### `min?:`[<mark style="color:green;">`Min`</mark>](generic-type-variables.md#wrap-opening-1)<mark style="color:green;">``</mark>
 
-The optional minimum range of generic type variable [`Min`](generic-type-variables.md#minextendsnumber-or-undefined-undefined) that causes an error to be thrown(or not thrown).
+The optional minimum range of generic type variable [`Min`](generic-type-variables.md#wrap-opening-1) that causes an error to be thrown(or not thrown).
 
-#### `max?:`[<mark style="color:green;">`Max`</mark>](generic-type-variables.md#maxextendsnumber-or-undefined-undefined)<mark style="color:green;">``</mark>
+#### `max?:`[<mark style="color:green;">`Max`</mark>](generic-type-variables.md#wrap-opening-2)<mark style="color:green;">``</mark>
 
-The optional maximum range of generic type variable [`Max`](generic-type-variables.md#maxextendsnumber-or-undefined-undefined) that causes an error to be thrown(or not thrown).
+The optional maximum range of generic type variable [`Max`](generic-type-variables.md#wrap-opening-2) that causes an error to be thrown(or not thrown).
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`RangError`</mark>`.template`
 

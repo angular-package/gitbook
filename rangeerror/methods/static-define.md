@@ -6,7 +6,7 @@ description: Defines the `RangeError` instance.
 
 ## `RangeError.define()`
 
-Defines the [`RangeError`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`max`](static-define.md#max-number), [`min`](static-define.md#min-number) on the given or stored [`template`](static-define.md#template-rangeerror.template).
+Defines the [`RangeError`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`max`](static-define.md#max-max), [`min`](static-define.md#min-min) on the given or stored [`template`](static-define.md#template-rangeerror.template).
 
 {% code title="range-error.class.ts" %}
 ```typescript
@@ -35,17 +35,17 @@ A generic type variable constrained by the [`string`](https://developer.mozilla.
 
 #### <mark style="color:green;">`Min`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`<mark style="color:green;">`undefined`</mark>
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`min`](static-define.md#min-number) via the [return type](static-define.md#return-type).
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`min`](static-define.md#min-min) via the [return type](static-define.md#return-type).
 
 #### <mark style="color:green;">`Max`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`<mark style="color:green;">`undefined`</mark>`=`<mark style="color:green;">`undefined`</mark>
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`max`](static-define.md#max-number) via the [return type](static-define.md#return-type).
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`max`](static-define.md#max-max) via the [return type](static-define.md#return-type).
 
 ### Parameters
 
 #### `problem:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
-Description of the [problem](../../getting-started/basic-concepts.md#problem) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+Description of the [problem](static-define.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 #### `fix:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
@@ -75,7 +75,7 @@ The **return type** is the [`RangeError`](broken-reference) object that takes ge
 
 ### Returns
 
-The **return value** is a new instance of the [`RangeError`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`min`](static-define.md#min-number), [`max`](static-define.md#max-number) on the given or stored [`template`](static-define.md#template-rangeerror.template).
+The **return value** is a new instance of the [`RangeError`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id), [`min`](static-define.md#min-min), [`max`](static-define.md#max-max) on the given or stored [`template`](static-define.md#template-rangeerror.template).
 
 ## Example usage
 
