@@ -77,7 +77,7 @@ class RangeError<
     fix: string,
     id?: Id,
     min?: Min,
-    max?: Max, // <--- Declare generic type variable Max.
+    max?: Max, // <--- Capture generic type variable Max.
     template = RangeError.template
   ) { ... }
   ...

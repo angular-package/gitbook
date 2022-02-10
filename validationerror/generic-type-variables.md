@@ -19,7 +19,7 @@ class ValidationError<
   constructor(
     problem: string,
     fix: string,
-    id?: Id,   // <--- Captureval generic type variable Id.
+    id?: Id,   // <--- Capture generic type variable Id.
     template = ValidationError.template
   ) { ... }
   ...

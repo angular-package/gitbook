@@ -46,7 +46,7 @@ class TypeError<
     problem: string,
     fix: string,
     id?: Id,
-    type?: Type,  // <--- Declare generic type variable Type.
+    type?: Type,  // <--- Capture generic type variable Type.
     template = TypeError.template
   ) { ... }
   ...
