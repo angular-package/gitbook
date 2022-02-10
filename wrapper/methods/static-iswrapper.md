@@ -27,33 +27,33 @@ public static isWrapper<
 
 ### Generic type variables
 
-#### <mark style="color:green;">**`Opening`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
+#### <mark style="color:green;">**`Opening`**</mark>**`extends`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`opening`](static-iswrapper.md#opening-opening) indicates the type of the opening in the [`Wrapper`](broken-reference) via [return type](static-iswrapper.md#return-type).
 
-#### <mark style="color:green;">**`Closing`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
+#### <mark style="color:green;">**`Closing`**</mark>**`extends`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`closing`](static-iswrapper.md#closing-closing) indicates the type of the closing in the [`Wrapper`](broken-reference) via [return type](static-iswrapper.md#return-type).
 
-#### <mark style="color:green;">**`Text`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`string`**</mark>
+#### <mark style="color:green;">**`Text`**</mark>**`extends`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)**`=`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`text`](static-iswrapper.md#text-text) indicates the type of the text in the [`Wrapper`](broken-reference) via [return type](static-iswrapper.md#return-type).
 
 ### Parameters
 
-#### `value: any`
+#### `value:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)
 
 The **value** of any type to test against the instance of [`Wrapper`](broken-reference).
 
-#### `opening?: Opening`
+#### `opening?:`[<mark style="color:green;">`Opening`</mark>](static-iswrapper.md#openingextendsstring)<mark style="color:green;">``</mark>
 
 Optional **opening** chars of a generic type variable [`Opening`](static-iswrapper.md#openingextendsstring) to check if the given [`value`](static-iswrapper.md#value-any) contains.
 
-#### `closing?: Closing`
+#### `closing?:`[<mark style="color:green;">`Closing`</mark>](static-iswrapper.md#closingextendsstring)<mark style="color:green;">``</mark>
 
 Optional **closing** chars of a generic type variable [`Closing`](static-iswrapper.md#closingextendsstring) to check if the given [`value`](static-iswrapper.md#value-any) contains.
 
-#### `text?: Text`
+#### `text?:`[<mark style="color:green;">`Text`</mark>](static-iswrapper.md#textextendsstring-string)<mark style="color:green;">``</mark>
 
 An optional **text** of generic type variable [`Text`](static-iswrapper.md#textextendsstring-string) to check if the given [`value`](static-iswrapper.md#value-any) contains.
 

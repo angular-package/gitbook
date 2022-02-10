@@ -36,15 +36,15 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 ### Parameters
 
-#### `opening:`<mark style="color:green;">`Opening`</mark>
+#### `opening:`[<mark style="color:green;">`Opening`</mark>](static-define.md#openingextendsstring)<mark style="color:green;">``</mark>
 
 The **opening** chars of generic type variable [`Opening`](static-define.md#openingextendsstring) for new [`Wrapper`](broken-reference) instance.
 
-#### `closing:`<mark style="color:green;">`Closing`</mark>
+#### `closing:`[<mark style="color:green;">`Closing`</mark>](static-define.md#closingextendsstring)<mark style="color:green;">``</mark>
 
 The **closing** chars of generic type variable [`Closing`](static-define.md#closingextendsstring) for new [`Wrapper`](broken-reference) instance.
 
-#### `text?:`<mark style="color:green;">`Text`</mark>
+#### `text?:`[<mark style="color:green;">`Text`</mark>](static-define.md#textextendsstring)<mark style="color:green;">``</mark>
 
 An optional **text** of generic type variable [`Text`](static-define.md#textextendsstring) for new [`Wrapper`](broken-reference) instance.
 
