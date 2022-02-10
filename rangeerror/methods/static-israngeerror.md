@@ -37,19 +37,19 @@ A generic type variable constrained by the [`string`](https://developer.mozilla.
 
 ### Parameters
 
-#### value: [<mark style="color:green;">any</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)<mark style="color:green;"></mark>
+#### `value:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)<mark style="color:green;">``</mark>
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the [`RangeError`](broken-reference) instance.
 
-#### id?: [<mark style="color:green;">Id</mark>](../../error/generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](../../error/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
 Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](static-israngeerror.md#id-extends-string) to check whether the given [`value`](static-israngeerror.md#value-any) contains.
 
-#### min?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
+#### `min?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;">``</mark>
 
 The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown) to check whether the given [`value`](static-israngeerror.md#value-any) contains.
 
-#### max?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
+#### `max?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;">``</mark>
 
 The optional minimum range of a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown) to check whether the given [`value`](static-israngeerror.md#value-any) contains.
 

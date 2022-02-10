@@ -14,7 +14,7 @@ public get problem(): string {
 
 ### Return type
 
-#### <mark style="color:green;"></mark>[<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;"></mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;">``</mark>
 
 ### Returns
 
@@ -32,3 +32,4 @@ class TestError extends CommonError {}
 // Returns "Problem accessor."
 new TestError('Problem accessor.', 'Fix accessor.', '(AE:427)').problem;
 ```
+

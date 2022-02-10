@@ -21,23 +21,23 @@ protected static isError<Id extends string>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">Id</mark> extends [<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;"></mark>
+#### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;">``</mark>
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) indicates the&#x20;
 
 ### Parameters
 
-#### value: <mark style="color:green;">any</mark>
+#### `value:` [<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)<mark style="color:green;">``</mark>
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the `this` instance.
 
-#### id?: [<mark style="color:green;">Id</mark>](static-iserror.md#id-extends-string)<mark style="color:green;"></mark>
+#### `id?:` [<mark style="color:green;">`Id`</mark>](static-iserror.md#id-extends-string)<mark style="color:green;">``</mark>
 
 Optional identification of generic type variable [`Id`](static-iserror.md#id-extends-string) to check whether the given [`value`](static-iserror.md#value-any) contains.
 
 ### Return type
 
-#### value is CommonError\<Id>
+#### `value is`[<mark style="color:green;">`CommonError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)`>`
 
 The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](static-iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
 

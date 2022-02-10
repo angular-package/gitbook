@@ -18,7 +18,7 @@ public get fix(): string {
 
 ### Return type
 
-#### <mark style="color:green;"></mark>[<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;"></mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
 ### Returns
 

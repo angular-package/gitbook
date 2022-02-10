@@ -30,11 +30,11 @@ protected static defineMessage(
 
 ### Parameters
 
-#### templateStringsArray: <mark style="color:green;">TemplateStringsArray</mark>
+#### `templateStringsArray:`<mark style="color:green;">`TemplateStringsArray`</mark>
 
 \-
 
-#### ...values: [<mark style="color:green;">any</mark>](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)\[]
+#### `...values:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)`[]`
 
 A rest parameter of expressions in order the `problem`, `fix`, `id`, `template` and `additional`.
 

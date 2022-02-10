@@ -21,23 +21,23 @@ public static isError<Id extends string>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">Id</mark> extends [<mark style="color:green;">string</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
+#### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)``
 
 A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided optional [`id`](static-iserror.md#id-id) indicates the [identification](../../getting-started/basic-concepts.md#identification) type of the [`Error`](broken-reference) via [return type](static-iserror.md#return-type).
 
 ### Parameters
 
-#### value: [<mark style="color:green;">any</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)<mark style="color:green;"></mark>
+#### `value:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)<mark style="color:green;">``</mark>
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the [`Error`](broken-reference) instance.
 
-#### id?: [<mark style="color:green;">Id</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;"></mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
 Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](static-iserror.md#id-extends-string) that the given [`value`](static-iserror.md#value-any) contains.
 
 ### Return type
 
-#### value is Error<<mark style="color:green;">Id</mark>>
+#### `value is Error<`[<mark style="color:green;">`Id`</mark>](static-iserror.md#id-extends-string)`>`
 
 The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) resulting from its statement indicating the [`value`](static-iserror.md#value-any) is the [`Error`](broken-reference) object that takes the generic type variable [`Id`](static-iserror.md#id-extends-string).
 
