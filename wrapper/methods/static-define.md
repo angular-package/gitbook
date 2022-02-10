@@ -22,29 +22,29 @@ public static define<
 
 ### Generic type variables
 
-#### <mark style="color:green;">**`Opening`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
+#### <mark style="color:green;">**`Opening`**</mark>**`extends`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`opening`](static-define.md#opening-opening) indicates the type of the opening in the [`Wrapper`](broken-reference) via [return type](static-define.md#return-type).
 
-#### <mark style="color:green;">**`Closing`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>
+#### <mark style="color:green;">**`Closing`**</mark>**`extends`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;">**``**</mark>
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`closing`](static-define.md#closing-closing) indicates the type of the closing in the [`Wrapper`](broken-reference) via [return type](static-define.md#return-type).
 
-#### <mark style="color:green;">**`Text`**</mark>**`extends`**<mark style="color:green;">**`string`**</mark>**`=`**<mark style="color:green;">**`''`**</mark>
+#### <mark style="color:green;">**`Text`**</mark>**`extends`**[<mark style="color:green;">**`string`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)**`=`**<mark style="color:green;">**`''`**</mark>
 
 A generic type variable constrained by the [`string`](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), by default of the value captured from the provided [`text`](static-define.md#text-text) indicates the type of the text in the [`Wrapper`](broken-reference) via [return type](static-define.md#return-type).
 
 ### Parameters
 
-#### `opening: Opening`
+#### `opening:`<mark style="color:green;">`Opening`</mark>
 
 The **opening** chars of generic type variable [`Opening`](static-define.md#openingextendsstring) for new [`Wrapper`](broken-reference) instance.
 
-#### `closing: Closing`
+#### `closing:`<mark style="color:green;">`Closing`</mark>
 
 The **closing** chars of generic type variable [`Closing`](static-define.md#closingextendsstring) for new [`Wrapper`](broken-reference) instance.
 
-#### `text?: Text`
+#### `text?:`<mark style="color:green;">`Text`</mark>
 
 An optional **text** of generic type variable [`Text`](static-define.md#textextendsstring) for new [`Wrapper`](broken-reference) instance.
 
