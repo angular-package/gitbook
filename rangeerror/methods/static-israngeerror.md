@@ -37,11 +37,11 @@ A generic type variable constrained by the [`string`](https://developer.mozilla.
 
 #### <mark style="color:green;">`Min`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`<mark style="color:green;">`undefined`</mark>
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`min`](static-israngeerror.md#min-number) via the [return type](static-israngeerror.md#return-type).
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`min`](static-israngeerror.md#min-min) via the [return type](static-israngeerror.md#return-type).
 
 #### <mark style="color:green;">`Max`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`<mark style="color:green;">`undefined`</mark>`=`<mark style="color:green;">`undefined`</mark>
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`max`](static-israngeerror.md#max-number) via the [return type](static-israngeerror.md#return-type).
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number) and [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined), by default of the value equal to [`undefined`](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined) indicates the captured type of the supplied [`max`](static-israngeerror.md#max-max) via the [return type](static-israngeerror.md#return-type).
 
 ### Parameters
 
@@ -69,7 +69,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](static-israngeerror.md#value-any) is an instance of [`RangeError`](broken-reference) of any or the given optional [`min`](static-israngeerror.md#min-number), [`max`](static-israngeerror.md#max-number) and [`id`](static-israngeerror.md#id-id) properties.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](static-israngeerror.md#value-any) is an instance of [`RangeError`](broken-reference) of any or the given optional [`min`](static-israngeerror.md#min-min), [`max`](static-israngeerror.md#max-max) and [`id`](static-israngeerror.md#id-id) properties.
 
 ## Example usage
 
