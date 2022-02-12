@@ -1,7 +1,5 @@
 ---
-description: >-
-  The `Error` object is an extension of the `CommonError` class and is thrown
-  when a runtime error occurs.
+description: The `Error` object
 ---
 
 # Overview

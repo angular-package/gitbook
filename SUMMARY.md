@@ -38,8 +38,8 @@
 ## CommonErrors {}
 
 * [Overview](commonerrors/overview.md)
-* [v: Generic type variables](commonerrors/v-generic-type-variables.md)
-* [v: Constructor](commonerrors/v-constructor.md)
+* [Generic type variables](commonerrors/generic-type-variables.md)
+* [Constructor](commonerrors/constructor.md)
 * [Accessors](commonerrors/accessors/README.md)
   * [get errors()](commonerrors/accessors/get-errors.md)
 * [Properties](commonerrors/properties/README.md)
@@ -69,9 +69,9 @@
 * [Overview](errors/overview.md)
 * [Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
-* [Accessors](errors/accessors.md)
-* [Properties](errors/properties.md)
-* [Methods](errors/methods.md)
+* [Methods](errors/methods/README.md)
+  * [set()](errors/methods/set.md)
+  * [toObject()](errors/methods/toobject.md)
 
 ## RangeError {}
 
@@ -94,7 +94,7 @@
 
 ## RangeErrors {}
 
-* [Page 2](rangeerrors/page-2.md)
+* [Overview](rangeerrors/overview.md)
 * [Page 1](rangeerrors/page-1.md)
 
 ## TypeError {}

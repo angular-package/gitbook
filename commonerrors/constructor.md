@@ -2,7 +2,7 @@
 description: The `CommonErrors` constructor
 ---
 
-# v: Constructor
+# Constructor
 
 ## `CommonErrors()`
 
@@ -18,9 +18,9 @@ constructor(...id: Id[]) {
 
 ### Parameters
 
-#### `...id:`[<mark style="color:green;">`Id`</mark>](v-generic-type-variables.md#wrap-opening)`[]`
+#### `...id:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md#wrap-opening)`[]`
 
-A [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest\_parameters) of generic type variable [`Id`](v-generic-type-variables.md#wrap-opening) indicates [unique identification](../getting-started/basic-concepts.md#unique-identification) numbers under which the errors are stored in the object.
+A [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest\_parameters) of generic type variable [`Id`](generic-type-variables.md#wrap-opening) indicates [unique identification](../getting-started/basic-concepts.md#unique-identification) numbers under which the errors are stored in the object.
 
 ## Example usage
 

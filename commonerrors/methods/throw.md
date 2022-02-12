@@ -2,7 +2,7 @@
 
 ## `CommonErrors.prototype.throw()`
 
-Throws an error of the given [`id`](throw.md#id-errorid) if the unique id was provided in the [constructor](../v-constructor.md).
+Throws an error of the given [`id`](throw.md#id-errorid) if the unique id was provided in the [constructor](../constructor.md).
 
 {% code title="common-errors.class.ts" %}
 ```typescript
@@ -16,9 +16,9 @@ public throw<ErrorId extends Id>(id: ErrorId): void {
 
 ### Generic type variables
 
-#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../v-generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#wrap-opening) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
@@ -34,7 +34,51 @@ The unique identification of a generic type variable [`ErrorId`](throw.md#errori
 
 ```typescript
 // Example usage.
-import { } from '@angular-package/error';
+import { CommonErrors } from '@angular-package/error';
+
+// Define new `TestClass` to add error to the map storage.
+export class TestClass<Id extends string> extends CommonErrors<Id> {
+  public get errors(): Map<Id, any> {
+    return super.errors;
+  }
+  public set<ErrorId extends Id>(
+    problem: string,
+    fix: string,
+    id: ErrorId
+  ): this {
+    this.errors.set(id, new Error(problem, fix, id));
+    return this;
+  }
+}
+
+// Initialize the `TestClass`.
+const generalErrors = new TestClass('EG: 4332', 'EG: 4331', 'EG: 4330');
+
+// Set the errors.
+generalErrors
+  .set(
+    'Bad parameter type, detected number',
+    'Provide proper type, the `string`',
+    'EG: 4330'
+  )
+  .set(
+    'Detected numbers',
+    'Provide only letters',
+    'EG: 4331'
+  );
 
 
+try {
+  // Throw the specified EG: 4330 error.
+  generalErrors.throw('EG: 4330');
+} catch (e) {
+  if (e instanceof Error) {
+    e.fix; // Provide proper type, the `string`
+    e.message; // ProblemEG: 4330: Bad parameter type, detected number => Fix: Provide proper type, the `string`
+    e.name; // Error
+    e.problem; // Bad parameter type, detected number
+    e.template; // Problem{id}: {problem} => Fix: {fix}
+    e.id; // EG: 4330
+  }
+}
 ```
