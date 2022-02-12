@@ -26,6 +26,10 @@ A generic type variable `ErrorId` constrained by the generic type variable [`Id`
 
 The unique identification of a generic type variable [`ErrorId`](throw.md#erroridextendsid) to remove the error from the object.
 
+### Return type
+
+#### <mark style="color:green;">`this`</mark>
+
 ## Example usage
 
 ```typescript

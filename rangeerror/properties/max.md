@@ -14,6 +14,6 @@ Private property of the [maximum range](../../getting-started/basic-concepts.md#
 ```
 {% endcode %}
 
-### Return type
+### Type
 
 #### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#wrap-opening-2)<mark style="color:green;">``</mark>

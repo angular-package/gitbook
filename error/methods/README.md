@@ -4,8 +4,6 @@ description: Methods of the `Error` object.
 
 # Methods
 
-## Static
-
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p>public static <a href="static-define.md"><strong>define()</strong></a><br>Defines the <a href="broken-reference"><code>Error</code></a> instance with the <a href="../../commonerror/accessors/get-message.md">message</a> built of the given required <a href="static-define.md#problem-string"><code>problem</code></a>, <a href="static-define.md#fix-string"><code>fix</code></a> and optional <a href="static-define.md#id-id"><code>id</code></a> on the <a href="static-define.md#template-error.template"><code>template</code></a>.</p> |

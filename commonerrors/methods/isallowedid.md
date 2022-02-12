@@ -2,7 +2,7 @@
 
 ## `CommonErrors.prototype.isAllowedId()`
 
-Checks whether the given identification number was provided in the constructor.
+Checks whether the given [identification](../../getting-started/basic-concepts.md#unique-identification) number was provided in the [constructor](../v-constructor.md).
 
 {% code title="common-errors.class.ts" %}
 ```typescript
@@ -24,6 +24,10 @@ A generic type variable `ErrorId` constrained by the generic type variable [`Id`
 
 The error identification number of generic type variable [`ErrorId`](isallowedid.md#erroridextendsid) to test for its presence in the object.
 
+### Return type
+
+#### <mark style="color:green;">`this`</mark>
+
 ## Example usage
 
 ```typescript
@@ -32,4 +36,3 @@ import { } from '@angular-package/error';
 
 
 ```
-

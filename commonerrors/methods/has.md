@@ -24,6 +24,10 @@ A generic type variable `ErrorId` constrained by the generic type variable [`Id`
 
 The error identification number of generic type variable [`ErrorId`](has.md#erroridextendsid) to test for the presence of the error in the object.
 
+### Return type
+
+#### <mark style="color:green;">`this`</mark>
+
 ## Example usage
 
 ```typescript
@@ -32,4 +36,3 @@ import { } from '@angular-package/error';
 
 
 ```
-

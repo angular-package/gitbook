@@ -4,10 +4,6 @@ description: The `RangeError` object accessors
 
 # Accessors
 
-## Instance
-
-### Public
-
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p>public get <a href="get-max.md"><strong>max(): </strong><mark style="color:green;"><strong>Max</strong></mark><strong> | </strong><mark style="color:green;"><strong>undefined</strong></mark></a><br>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get"><code>get</code></a> accessor obtains the maximum range of generic type variable <a href="../generic-type-variables.md#wrap-opening-2"><code>Max</code></a> that causes an error to be thrown(or not thrown), if set, otherwise returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined"><code>undefined</code></a>.</p> |
