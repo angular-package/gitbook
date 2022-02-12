@@ -2,20 +2,23 @@
 
 ## `CommonErrors.prototype.throw()`
 
-Deletes the error of a specified `id` from the object
+Throws an error of the given [`id`](throw.md#id-errorid) if the unique id was provided in the [constructor](../v-constructor.md).
 
 {% code title="common-errors.class.ts" %}
 ```typescript
-public delete<ErrorId extends Id>(id: ErrorId): this {
-  this.#errors.delete(id);
-  return this;
+public throw<ErrorId extends Id>(id: ErrorId): void {
+  if (this.isAllowedId(id)) {
+    throw this.errors.get(id);
+  }
 }
 ```
 {% endcode %}
 
 ### Generic type variables
 
-#### <mark style="color:green;">`ErrorId`</mark>`extends`<mark style="color:green;">`Id`</mark>
+#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../v-generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
@@ -25,3 +28,9 @@ The unique identification of a generic type variable [`ErrorId`](throw.md#errori
 
 ## Example usage
 
+```typescript
+// Example usage.
+import { } from '@angular-package/error';
+
+
+```

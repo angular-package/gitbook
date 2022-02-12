@@ -9,7 +9,28 @@ import {
   Error,
   Errors,
   RangeError,
+  RangeErrors,
   TypeError,
-  ValidationError
+  TypeErrors,
+  ValidationError,
+  ValidationErrors
 } from '@angular-package/error';
 ```
+
+``[`CommonError`](broken-reference)``
+
+``[`Error`](broken-reference)``
+
+``[`Errors`](broken-reference)``
+
+``[`RangeError`](broken-reference)``
+
+``[`RangeErrors`](broken-reference)``
+
+``[`TypeError`](broken-reference)``
+
+TypeErrors
+
+ValidationError
+
+ValidationErrors

@@ -39,7 +39,7 @@
 
 * [Overview](commonerrors/overview.md)
 * [v: Generic type variables](commonerrors/v-generic-type-variables.md)
-* [Constructor](commonerrors/constructor.md)
+* [v: Constructor](commonerrors/v-constructor.md)
 * [Accessors](commonerrors/accessors.md)
 * [Properties](commonerrors/properties.md)
 * [Methods](commonerrors/methods/README.md)
@@ -147,6 +147,12 @@
 
 * [⋯ Chat](contact/chat.md)
 * [@ Email](contact/email.md)
+
+## Social
+
+* [Gettr](https://gettr.com/user/angularpackage)
+* [Twitter](https://twitter.com/angularpackage)
+* [YouTube](https://www.youtube.com/channel/UC\_AfUapk36KbBoROeA8a\_lg/featured)
 
 ## Donate
 

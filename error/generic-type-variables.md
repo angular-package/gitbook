@@ -6,7 +6,7 @@
 
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided [`id`](constructor.md#id-id) indicates the [identification](../getting-started/basic-concepts.md#identification) type of a new [`Error`](broken-reference) instance.
 
-{% code title="common-error.class.ts" %}
+{% code title="error.class.ts" %}
 ```typescript
 class Error<
   Id extends string  // <--- Declare generic type variable Id.
