@@ -13,3 +13,7 @@ A privately stored link redirects to read more about the thrown error.
 #link?: string;
 ```
 {% endcode %}
+
+### Type
+
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>

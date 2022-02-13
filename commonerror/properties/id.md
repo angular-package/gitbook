@@ -13,3 +13,7 @@ A privately stored unique [identification](../../getting-started/basic-concepts.
 #id?: Id;
 ```
 {% endcode %}
+
+### Type
+
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
