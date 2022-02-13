@@ -4,7 +4,7 @@ description: The method returns the JSON object of set errors
 
 # toObject()
 
-## `RangeErrors.prototype.toObject()`
+## `TypeErrors.prototype.toObject()`
 
 The method returns the [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/JSON) object of set errors, where the key is a [unique identification](../../getting-started/basic-concepts.md#unique-identification).
 

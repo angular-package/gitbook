@@ -1,24 +1,25 @@
 ---
-description: Sets the `TypeError` object under the given `id`
+description: Sets the `ValidationError` object under the given `id`
 ---
 
-# set()
+# v: set()
 
-## `TypeErrors.prototype.set()`
+## `ValidationErrors.prototype.set()`
 
-Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`min`](set.md#min-number), [`max`](set.md#max-number) on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`RangeError`](broken-reference) object with the message built from the given required [`problem`](v-set.md#problem-string), [`fix`](v-set.md#fix-string), [`id`](v-set.md#id-errorid) and optional [`min`](v-set.md#min-number), [`max`](v-set.md#max-number) on the given or stored [`template`](v-set.md#template-errors.template) under the given [`id`](v-set.md#id-errorid).
 
-{% code title="type-errors.class.ts" %}
+Sets the [`ValidationError`](broken-reference) object with the message built from the given required `problem`, `fix`, `id` on the given or stored `template` under the given `id`.
+
+{% code title="range-errors.class.ts" %}
 ```typescript
 public set<ErrorId extends Id>(
   problem: string,
   fix: string,
   id: ErrorId,
-  type?: string,
-  template = TypeErrors.template
+  template = Errors.template
 ): this {
   this.isAllowedId(id) &&
-    this.errors.set(id, new TypeError(problem, fix, id, type, template));
+    this.errors.set(id, new Error(problem, fix, id, template));
   return this;
 }
 ```
@@ -38,19 +39,11 @@ Description of the problem of a [`string`](https://developer.mozilla.org/en-US/d
 
 #### `fix:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
-A solution to the given [`problem`](set.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+A solution to the given [`problem`](v-set.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
-#### `id:`[<mark style="color:green;">`ErrorId`</mark>](set.md#erroridextendsid)<mark style="color:green;">``</mark>
+#### `id:`[<mark style="color:green;">`ErrorId`</mark>](v-set.md#erroridextendsid)<mark style="color:green;">``</mark>
 
-The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`ErrorId`](set.md#erroridextendsid).
-
-#### min?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
-
-The optional minimum range of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
-
-#### max?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
-
-The optional maximum range of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
+The unique identification to the given [`problem`](v-set.md#problem-string) of generic type variable [`ErrorId`](v-set.md#erroridextendsid).
 
 #### `template =`<mark style="color:green;">`RangeErrors`</mark>`.template`
 
@@ -64,7 +57,7 @@ A template of error message with the replaceable [`{problem}`](../../commonerror
 
 ```typescript
 // Example usage.
-import { RangeErrors } from '@angular-package/error';
+import { ValidationErrors } from '@angular-package/error';
 
 // Define range errors.
 const rangeErrors = new RangeErrors('RE: 4332', 'RE: 4331', 'RE: 4330');
