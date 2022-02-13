@@ -15,7 +15,7 @@
 ## CommonError {}
 
 * [Overview](commonerror/overview.md)
-* [v: Generic type variables](commonerror/v-generic-type-variables.md)
+* [v: Generic type variables](commonerror/generic-type-variables.md)
 * [Constructor](commonerror/constructor.md)
 * [Accessors](commonerror/accessors/README.md)
   * [get fix()](commonerror/accessors/get-fix.md)
@@ -67,7 +67,7 @@
 ## Errors {}
 
 * [Overview](errors/overview.md)
-* [Generic type variables](errors/generic-type-variables.md)
+* [3: Generic type variables](errors/3-generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
   * [2: set()](errors/methods/set.md)
@@ -77,7 +77,7 @@
 ## RangeError {}
 
 * [Overview](rangeerror/overview.md)
-* [Generic type variables](rangeerror/generic-type-variables.md)
+* [4: Generic type variables](rangeerror/4-generic-type-variables.md)
 * [Constructor](rangeerror/constructor.md)
 * [Accessors](rangeerror/accessors/README.md)
   * [get max()](rangeerror/accessors/get-max.md)

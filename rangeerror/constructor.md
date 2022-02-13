@@ -2,7 +2,7 @@
 description: The `RangeError` object constructor
 ---
 
-# v: Constructor
+# Constructor
 
 ## `RangeError()`
 
@@ -35,17 +35,17 @@ Description of the problem of a [`string`](https://developer.mozilla.org/en-US/d
 
 A solution to the given [`problem`](constructor.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
-#### `id?:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md#wrap-opening)
+#### `id?:`[<mark style="color:green;">`Id`</mark>](4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than)
 
-Optional unique identification to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#wrap-opening).
+Optional unique identification to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than).
 
-#### `min?:`[<mark style="color:green;">`Min`</mark>](generic-type-variables.md#wrap-opening-1)<mark style="color:green;">``</mark>
+#### `min?:`[<mark style="color:green;">`Min`</mark>](4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-1)<mark style="color:green;">``</mark>
 
-The optional minimum range of generic type variable [`Min`](generic-type-variables.md#wrap-opening-1) that causes an error to be thrown(or not thrown).
+The optional minimum range of generic type variable [`Min`](4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-1) that causes an error to be thrown(or not thrown).
 
-#### `max?:`[<mark style="color:green;">`Max`</mark>](generic-type-variables.md#wrap-opening-2)<mark style="color:green;">``</mark>
+#### `max?:`[<mark style="color:green;">`Max`</mark>](4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-2)<mark style="color:green;">``</mark>
 
-The optional maximum range of generic type variable [`Max`](generic-type-variables.md#wrap-opening-2) that causes an error to be thrown(or not thrown).
+The optional maximum range of generic type variable [`Max`](4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-2) that causes an error to be thrown(or not thrown).
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`RangError`</mark>`.template`
 

@@ -29,7 +29,7 @@ A solution to the given [`problem`](constructor.md#problem-string) of a [`string
 
 #### `id?:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md#wrap-opening)
 
-Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#wrap-opening).
+Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](constructor.md#problem-string) of generic type variable [`Id`](../commonerror/generic-type-variables.md#commonerror-less-than-id-greater-than).
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`Error`</mark>`.template`
 

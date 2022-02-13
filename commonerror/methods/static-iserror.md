@@ -39,13 +39,13 @@ The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.ht
 
 #### `id?:`[<mark style="color:green;">`Id`</mark>](static-iserror.md#id-extends-string)<mark style="color:green;">``</mark>
 
-Optional identification of generic type variable [`Id`](static-iserror.md#id-extends-string) to check whether the given [`value`](static-iserror.md#value-any) contains.
+Optional identification of generic type variable [`Id`](static-iserror.md#idextendsstring) to check whether the given [`value`](static-iserror.md#value-any) contains.
 
 ### Return type
 
-#### `value is`[<mark style="color:green;">`CommonError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)`>`
+#### `value is`[<mark style="color:green;">`CommonError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)`>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](static-iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](static-iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../generic-type-variables.md#commonerror-less-than-id-greater-than).
 
 ### Returns
 
