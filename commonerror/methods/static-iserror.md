@@ -1,3 +1,9 @@
+---
+description: >-
+  Checks whether the value of any type is a this instance of any or the given
+  identification
+---
+
 # static isError()
 
 ## `CommonError.isError()`
@@ -27,7 +33,7 @@ A generic type variable constrained by the [`string`](https://www.typescriptlang
 
 ### Parameters
 
-#### `value:` [<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)
+#### `value:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the `this` instance.
 

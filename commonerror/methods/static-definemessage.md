@@ -1,3 +1,7 @@
+---
+description: The static "tag" method builds from the given values the error message
+---
+
 # static defineMessage()
 
 ## `CommonError.defineMessage()`
