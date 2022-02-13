@@ -27,7 +27,7 @@ public set<ErrorId extends Id>(
 
 #### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../../commonerrors/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#wrap-opening) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../v-generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
@@ -41,11 +41,11 @@ A solution to the given [`problem`](set.md#problem-string) of a [`string`](https
 
 #### `id:`[<mark style="color:green;">`ErrorId`</mark>](set.md#erroridextendsid)<mark style="color:green;">``</mark>
 
-The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
+The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening).
 
-#### `template =`<mark style="color:green;">`Errors`</mark>`.template`
+#### `template =`[<mark style="color:green;">`Errors`</mark>](broken-reference)`.template`
 
-A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) and [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`Errors.template`](../../commonerror/properties/static-template.md#commonerror.template).
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) and [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property `Errors.template`.
 
 ### Return type
 

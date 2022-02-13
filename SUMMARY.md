@@ -67,11 +67,12 @@
 ## Errors {}
 
 * [Overview](errors/overview.md)
-* [Generic type variables](errors/generic-type-variables.md)
+* [v: Generic type variables](errors/v-generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
   * [set()](errors/methods/set.md)
   * [toObject()](errors/methods/toobject.md)
+* [Example usage](errors/example-usage.md)
 
 ## RangeError {}
 
@@ -95,7 +96,12 @@
 ## RangeErrors {}
 
 * [Overview](rangeerrors/overview.md)
-* [Page 1](rangeerrors/page-1.md)
+* [v: Generic type variables](rangeerrors/v-generic-type-variables.md)
+* [v: Constructor](rangeerrors/v-constructor.md)
+* [Methods](rangeerrors/methods/README.md)
+  * [set()](rangeerrors/methods/set.md)
+  * [toObject()](rangeerrors/methods/toobject.md)
+* [Example usage](rangeerrors/example-usage.md)
 
 ## TypeError {}
 
