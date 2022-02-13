@@ -15,7 +15,7 @@
 ## CommonError {}
 
 * [Overview](commonerror/overview.md)
-* [Generic type variables](commonerror/generic-type-variables.md)
+* [v: Generic type variables](commonerror/v-generic-type-variables.md)
 * [Constructor](commonerror/constructor.md)
 * [Accessors](commonerror/accessors/README.md)
   * [get fix()](commonerror/accessors/get-fix.md)

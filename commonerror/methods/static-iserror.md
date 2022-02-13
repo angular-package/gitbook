@@ -43,9 +43,9 @@ Optional identification of generic type variable [`Id`](static-iserror.md#id-ext
 
 ### Return type
 
-#### `value is`[<mark style="color:green;">`CommonError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)`>`
+#### `value is`[<mark style="color:green;">`CommonError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)`>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](static-iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) indicating the [`value`](static-iserror.md#value-any) is the [`CommonError`](broken-reference) object that takes generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening).
 
 ### Returns
 
