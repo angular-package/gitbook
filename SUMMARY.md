@@ -67,7 +67,7 @@
 ## Errors {}
 
 * [Overview](errors/overview.md)
-* [v: Generic type variables](errors/v-generic-type-variables.md)
+* [Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
   * [set()](errors/methods/set.md)
@@ -96,8 +96,8 @@
 ## RangeErrors {}
 
 * [Overview](rangeerrors/overview.md)
-* [v: Generic type variables](rangeerrors/v-generic-type-variables.md)
-* [v: Constructor](rangeerrors/v-constructor.md)
+* [Generic type variables](rangeerrors/generic-type-variables.md)
+* [Constructor](rangeerrors/constructor.md)
 * [Methods](rangeerrors/methods/README.md)
   * [set()](rangeerrors/methods/set.md)
   * [toObject()](rangeerrors/methods/toobject.md)
@@ -122,6 +122,11 @@
 ## TypeErrors {}
 
 * [Overview](typeerrors/overview.md)
+* [Generic type variables](typeerrors/generic-type-variables.md)
+* [Constructor](typeerrors/constructor.md)
+* [Methods](typeerrors/methods/README.md)
+  * [set()](typeerrors/methods/set.md)
+  * [toObject()](typeerrors/methods/toobject.md)
 
 ## ValidationError {}
 
