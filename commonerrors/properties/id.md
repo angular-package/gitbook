@@ -6,7 +6,7 @@ description: The collection of unique allowed identification numbers
 
 ## `#id?`
 
-The collection of unique allowed [identification](../../getting-started/basic-concepts.md#unique-identification) numbers of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
+The collection of unique allowed [identification](../../getting-started/basic-concepts.md#unique-identification) numbers of generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening).
 
 {% code title="common-errors.class.ts" %}
 ```typescript
@@ -16,4 +16,4 @@ The collection of unique allowed [identification](../../getting-started/basic-co
 
 ### Type
 
-#### `Set<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)`>`
+#### `Set<`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)`>`

@@ -4,7 +4,7 @@ description: The `TypeError` object generic type variables
 
 # Generic type variables
 
-## `TypeError<`<mark style="color:green;background-color:green;">`Id`</mark>`,Type>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `TypeError<`<mark style="color:green;background-color:green;">`Id`</mark>`,Type>`
 
 #### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)`=`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)<mark style="color:green;">``</mark>
 
@@ -29,7 +29,7 @@ class TypeError<
 ```
 {% endcode %}
 
-## `TypeError<Id,`<mark style="color:green;background-color:green;">`Type`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `TypeError<Id,`<mark style="color:green;background-color:green;">`Type`</mark>`>`
 
 #### <mark style="color:green;">`Type`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)<mark style="color:green;">``</mark>
 

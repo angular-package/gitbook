@@ -38,7 +38,7 @@
 ## CommonErrors {}
 
 * [Overview](commonerrors/overview.md)
-* [Generic type variables](commonerrors/generic-type-variables.md)
+* [v: Generic type variables](commonerrors/v-generic-type-variables.md)
 * [Constructor](commonerrors/constructor.md)
 * [Accessors](commonerrors/accessors/README.md)
   * [get errors()](commonerrors/accessors/get-errors.md)

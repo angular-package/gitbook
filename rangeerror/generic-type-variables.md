@@ -4,7 +4,7 @@ description: The `RangeError` object generic type variables
 
 # Generic type variables
 
-## `RangeError<`<mark style="color:green;background-color:green;">`Id`</mark>`,Min,Max>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `RangeError<`<mark style="color:green;background-color:green;">`Id`</mark>`,Min,Max>`
 
 #### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
@@ -31,7 +31,7 @@ class RangeError<
 ```
 {% endcode %}
 
-## `RangeError<Id,`<mark style="color:green;background-color:green;">`Min`</mark>`,Max>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `RangeError<Id,`<mark style="color:green;background-color:green;">`Min`</mark>`,Max>`
 
 #### <mark style="color:green;">`Min`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)<mark style="color:green;">``</mark>
 
@@ -58,7 +58,7 @@ class RangeError<
 ```
 {% endcode %}
 
-## `RangeError<Id,Min,`<mark style="color:green;background-color:green;">`Max`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `RangeError<Id,Min,`<mark style="color:green;background-color:green;">`Max`</mark>`>`
 
 #### <mark style="color:green;">`Max`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`|`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)`=`[<mark style="color:green;">`undefined`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)<mark style="color:green;">``</mark>
 

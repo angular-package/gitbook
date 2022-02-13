@@ -4,7 +4,7 @@ description: The `TypeErrors` object generic type variables
 
 # Generic type variables
 
-## `TypeErrors<`<mark style="color:green;background-color:green;">`Id`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `TypeErrors<`<mark style="color:green;background-color:green;">`Id`</mark>`>`
 
 #### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
