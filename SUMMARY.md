@@ -70,7 +70,7 @@
 * [Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
-  * [2: set()](errors/methods/2-set.md)
+  * [2: set()](errors/methods/set.md)
   * [toObject()](errors/methods/toobject.md)
 * [Example usage](errors/example-usage.md)
 
@@ -143,11 +143,11 @@
 ## ValidationErrors {}
 
 * [Overview](validationerrors/overview.md)
-* [Generic type variables](validationerrors/generic-type-variables.md)
-* [Constructor](validationerrors/constructor.md)
-* [Methods](validationerrors/methods/README.md)
-  * [set()](validationerrors/methods/set.md)
-  * [toObject()](validationerrors/methods/toobject.md)
+* [Generic type variables](validationerrors/v-generic-type-variables.md)
+* [Constructor](validationerrors/v-constructor.md)
+* [Methods](validationerrors/v-methods/README.md)
+  * [set()](validationerrors/v-methods/v-set.md)
+  * [toObject()](validationerrors/v-methods/v-toobject.md)
 
 ## Change log
 
@@ -163,16 +163,17 @@
 
 * [MIT](https://github.com/angular-package/wrapper/blob/master/LICENSE)
 
-## Contact
-
-* [⋯ Chat](contact/chat.md)
-* [@ Email](contact/email.md)
-
 ## Social
 
 * [Gettr](https://gettr.com/user/angularpackage)
 * [Twitter](https://twitter.com/angularpackage)
 * [YouTube](https://www.youtube.com/channel/UC\_AfUapk36KbBoROeA8a\_lg/featured)
+
+## Contact
+
+* [⋯ Chat](contact/chat.md)
+* [@ Email](contact/email.md)
+* [✆ Phone](contact/phone.md)
 
 ## Donate
 

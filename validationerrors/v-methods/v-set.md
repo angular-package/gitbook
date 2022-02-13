@@ -6,7 +6,7 @@ description: Sets the `ValidationError` object under the given `id`
 
 ## `ValidationErrors.prototype.set()`
 
-Sets the [`ValidationError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) on the given or stored [`template`](set.md#template-rangeerrors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`ValidationError`](broken-reference) object with the message built from the given required [`problem`](v-set.md#problem-string), [`fix`](v-set.md#fix-string), [`id`](v-set.md#id-errorid) on the given or stored [`template`](v-set.md#template-rangeerrors.template) under the given [`id`](v-set.md#id-errorid).
 
 {% code title="validation-errors.class.ts" %}
 ```typescript
@@ -27,7 +27,7 @@ public set<ErrorId extends Id>(
 
 #### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#wrap-opening) of the [`ValidationErrors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening) of the [`ValidationErrors`](broken-reference) object indicates the type picked from the [`Id`](../v-generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
@@ -37,11 +37,11 @@ Description of the problem of a [`string`](https://developer.mozilla.org/en-US/d
 
 #### `fix:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
-A solution to the given [`problem`](set.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+A solution to the given [`problem`](v-set.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
-#### `id:`[<mark style="color:green;">`ErrorId`</mark>](set.md#erroridextendsid)<mark style="color:green;">``</mark>
+#### `id:`[<mark style="color:green;">`ErrorId`</mark>](v-set.md#erroridextendsid)<mark style="color:green;">``</mark>
 
-The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`ErrorId`](set.md#erroridextendsid).
+The unique identification to the given [`problem`](v-set.md#problem-string) of generic type variable [`ErrorId`](v-set.md#erroridextendsid).
 
 #### `template =`<mark style="color:green;">`ValidationErrors`</mark>`.template`
 
