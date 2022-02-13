@@ -1,12 +1,12 @@
 ---
-description: A privately stored unique identification to the described problem
+description: A privately stored unique identification of the described problem
 ---
 
 # #id?
 
 ## `#id?`
 
-A privately stored unique [identification](../../getting-started/basic-concepts.md#identification) to the described [problem](../../getting-started/basic-concepts.md#problem) of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
+Optional privately stored unique [identification](../../getting-started/basic-concepts.md#identification) of the described [problem](../../getting-started/basic-concepts.md#problem) of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
 
 {% code title="common-error.class.ts" %}
 ```typescript

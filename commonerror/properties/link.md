@@ -1,12 +1,14 @@
 ---
-description: A privately stored link redirects to read more about the thrown error
+description: >-
+  The optional privately stored link redirects to read more about the thrown
+  error
 ---
 
 # #link?
 
 ## `#link?`
 
-A privately stored link redirects to read more about the thrown error.
+The optional privately stored link redirects to read more about the thrown error of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
 {% code title="common-error.class.ts" %}
 ```typescript
