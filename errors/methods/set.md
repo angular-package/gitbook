@@ -45,7 +45,7 @@ The unique identification to the given [`problem`](set.md#problem-string) of gen
 
 #### `template =`[<mark style="color:green;">`Errors`</mark>](broken-reference)`.template`
 
-A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix), [`{id}`](../../commonerror/properties/static-template.md#id), and optional [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min), [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property `Errors.template`.
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix), [`{id}`](../../commonerror/properties/static-template.md#id) tags. By default, the value is equal to the static property `Errors.template`.
 
 ### Return type
 

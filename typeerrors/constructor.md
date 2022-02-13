@@ -1,5 +1,5 @@
 ---
-description: The `RangeErrors` constructor
+description: The `TypeErrors` constructor
 ---
 
 # Constructor

@@ -6,7 +6,7 @@ description: Sets the `TypeError` object under the given `id`
 
 ## `TypeErrors.prototype.set()`
 
-Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`min`](set.md#min-number), [`max`](set.md#max-number) on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional `type` on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
 
 {% code title="type-errors.class.ts" %}
 ```typescript
@@ -44,17 +44,13 @@ A solution to the given [`problem`](set.md#problem-string) of a [`string`](https
 
 The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`ErrorId`](set.md#erroridextendsid).
 
-#### min?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
+#### type?: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;"></mark>
 
-The optional minimum range of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
-
-#### max?: [<mark style="color:green;">number</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;"></mark>
-
-The optional maximum range of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type that causes an error to be thrown(or not thrown).
+The optional type of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type that causes an error to be thrown(or not thrown).
 
 #### `template =`<mark style="color:green;">`RangeErrors`</mark>`.template`
 
-A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix),[`{id}`](../../commonerror/properties/static-template.md#id), and optional  [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min), [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property `RangeErrors.template`.
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix),[`{id}`](../../commonerror/properties/static-template.md#id), and optional [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property `TypeErrors.template`.
 
 ### Return type
 
