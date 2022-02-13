@@ -1,10 +1,10 @@
 ---
-description: The `TypeErrors` object generic type variables
+description: The `ValidationErrors` object generic type variables
 ---
 
 # Generic type variables
 
-## `TypeErrors<`<mark style="color:green;background-color:green;">`Id`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `ValidationErrors<`<mark style="color:green;background-color:green;">`Id`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
 
 #### <mark style="color:green;">`Id`</mark>`extends`[<mark style="color:green;">`string`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#string)
 
@@ -12,7 +12,7 @@ description: The `TypeErrors` object generic type variables
 
 {% code title="type-errors.class.ts" %}
 ```typescript
-class TypeErrors<
+class ValidationErrors<
   Id extends string // <--- Declare generic type variable Id.
 > extends CommonErrors<Id> {
   constructor(

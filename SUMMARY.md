@@ -70,7 +70,7 @@
 * [Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
-  * [set()](errors/methods/set.md)
+  * [2: set()](errors/methods/2-set.md)
   * [toObject()](errors/methods/toobject.md)
 * [Example usage](errors/example-usage.md)
 
@@ -143,11 +143,11 @@
 ## ValidationErrors {}
 
 * [Overview](validationerrors/overview.md)
-* [v: Generic type variables](validationerrors/v-generic-type-variables.md)
-* [v: Constructor](validationerrors/v-constructor.md)
-* [v: Methods](validationerrors/v-methods/README.md)
-  * [v: set()](validationerrors/v-methods/v-set.md)
-  * [v: toObject()](validationerrors/v-methods/v-toobject.md)
+* [Generic type variables](validationerrors/generic-type-variables.md)
+* [Constructor](validationerrors/constructor.md)
+* [Methods](validationerrors/methods/README.md)
+  * [set()](validationerrors/methods/set.md)
+  * [toObject()](validationerrors/methods/toobject.md)
 
 ## Change log
 

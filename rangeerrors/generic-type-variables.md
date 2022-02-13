@@ -14,7 +14,7 @@ description: The `RangeErrors` object generic type variables
 ```typescript
 class RangeErrors<
   Id extends string // <--- Declare generic type variable Id.
-> {
+> extends CommonErrors<Id> {
   constructor(
     ...id: Id[] // <--- Capture generic type variable Id.
   ) {

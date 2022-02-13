@@ -6,10 +6,6 @@ description: The get accessor obtains a possible solution to the described probl
 
 ## `CommonError.prototype.fix`
 
-|                                                                                          |
-| ---------------------------------------------------------------------------------------- |
-| **public get** [**fix()**](get-fix.md)**: **<mark style="color:green;">**string**</mark> |
-
 The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains a possible [solution](../../getting-started/basic-concepts.md#fix) to the described [problem](get-problem.md) by returning the [`#fix`](../properties/fix.md) property of a specified object.
 
 {% code title="common-error.class.ts" %}

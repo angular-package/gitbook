@@ -6,7 +6,7 @@ description: Sets the `TypeError` object under the given `id`
 
 ## `TypeErrors.prototype.set()`
 
-Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional `type` on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`type`](set.md#type-string) on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
 
 {% code title="type-errors.class.ts" %}
 ```typescript
@@ -28,7 +28,7 @@ public set<ErrorId extends Id>(
 
 #### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../../rangeerrors/generic-type-variables.md#wrap-opening) of the [`RangeErrors`](broken-reference) object indicates the type picked from the [`Id`](../../rangeerrors/generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../../rangeerrors/generic-type-variables.md#wrap-opening) of the [`TypeErrors`](broken-reference) object indicates the type picked from the [`Id`](../../rangeerrors/generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
@@ -44,11 +44,11 @@ A solution to the given [`problem`](set.md#problem-string) of a [`string`](https
 
 The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`ErrorId`](set.md#erroridextendsid).
 
-#### type?: [<mark style="color:green;">string</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;"></mark>
+#### `type?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
 The optional type of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type that causes an error to be thrown(or not thrown).
 
-#### `template =`<mark style="color:green;">`RangeErrors`</mark>`.template`
+#### `template =`<mark style="color:green;">`TypeErrors`</mark>`.template`
 
 A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix),[`{id}`](../../commonerror/properties/static-template.md#id), and optional [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property `TypeErrors.template`.
 
@@ -60,13 +60,13 @@ A template of error message with the replaceable [`{problem}`](../../commonerror
 
 ```typescript
 // Example usage.
-import { RangeErrors } from '@angular-package/error';
+import { TypeErrors } from '@angular-package/error';
 
-// Define range errors.
-const rangeErrors = new RangeErrors('RE: 4332', 'RE: 4331', 'RE: 4330');
+// Define type errors.
+const typeErrors = new RangeErrors('RE: 4332', 'RE: 4331', 'RE: 4330');
 
-// Set the `RangeError` objects under the given identification numbers.
-rangeErrors
+// Set the `TypeErrors` objects under the given identification numbers.
+typeErrors
   .set(
     'Age is 99',
     'Age must be',

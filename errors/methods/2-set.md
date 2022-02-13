@@ -2,11 +2,11 @@
 description: Sets the `Error` object under the given `id`
 ---
 
-# set()
+# 2: set()
 
 ## `Errors.prototype.set()`
 
-Sets the [`Error`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`Error`](broken-reference) object with the message built from the given required [`problem`](2-set.md#problem-string), [`fix`](2-set.md#fix-string), [`id`](2-set.md#id-errorid) on the given or stored [`template`](2-set.md#template-errors.template) under the given [`id`](2-set.md#id-errorid).
 
 {% code title="errors.class.ts" %}
 ```typescript
@@ -37,11 +37,11 @@ Description of the problem of a [`string`](https://developer.mozilla.org/en-US/d
 
 #### `fix:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
 
-A solution to the given [`problem`](set.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+A solution to the given [`problem`](2-set.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
-#### `id:`[<mark style="color:green;">`ErrorId`</mark>](set.md#erroridextendsid)<mark style="color:green;">``</mark>
+#### `id:`[<mark style="color:green;">`ErrorId`</mark>](2-set.md#erroridextendsid)<mark style="color:green;">``</mark>
 
-The unique identification to the given [`problem`](set.md#problem-string) of generic type variable [`ErrorId`](set.md#erroridextendsid).
+The unique identification to the given [`problem`](2-set.md#problem-string) of generic type variable [`ErrorId`](2-set.md#erroridextendsid).
 
 #### `template =`[<mark style="color:green;">`Errors`</mark>](broken-reference)`.template`
 

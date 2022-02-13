@@ -8,9 +8,9 @@ description: The method returns the JSON object of set errors
 
 The method returns the [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/JSON) object of set errors, where the key is a [unique identification](../../getting-started/basic-concepts.md#unique-identification).
 
-{% code title="range-errors.class.ts" %}
+{% code title="type-errors.class.ts" %}
 ```typescript
-public toObject(): { [Key in Id]: RangeError<Id> } {
+public toObject(): { [Key in Id]: TypeError<Id> } {
   return Object.fromEntries(this.errors.entries()) as any;
 }
 ```
@@ -18,9 +18,9 @@ public toObject(): { [Key in Id]: RangeError<Id> } {
 
 ### Return type
 
-#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)`]:` [<mark style="color:green;">`RangeError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)`> }`
+#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)`]:`[<mark style="color:green;">`TypeError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)`> }`
 
-The **return type** is an object of the [`RangeError`](broken-reference) objects in the keys of generic type variable [`Id`](../../rangeerrors/generic-type-variables.md#wrap-opening).
+The **return type** is an object of the [`TypeError`](broken-reference) objects in the keys of generic type variable [`Id`](../generic-type-variables.md#wrap-opening).
 
 ### Returns
 
@@ -30,7 +30,7 @@ The **return value** is an [`object`](https://developer.mozilla.org/en-US/docs/W
 
 ```typescript
 // Example usage.
-import { RangeErrors } from '@angular-package/error';
+import { TypeErrors } from '@angular-package/error';
 
 
 ```
