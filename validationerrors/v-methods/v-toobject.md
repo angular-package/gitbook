@@ -18,9 +18,9 @@ public toObject(): { [Key in Id]: ValidationError<Id> } {
 
 ### Return type
 
-#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)`]:`[<mark style="color:green;">`ValidationError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#wrap-opening)`> }`
+#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../7-generic-type-variables.md#validationerrors-less-than-id-greater-than)`]:`[<mark style="color:green;">`ValidationError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../7-generic-type-variables.md#validationerrors-less-than-id-greater-than)`> }`
 
-The **return type** is an object of the [`ValidationError`](broken-reference) objects in the keys of generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening).
+The **return type** is an object of the [`ValidationError`](broken-reference) objects in the keys of generic type variable [`Id`](../7-generic-type-variables.md#validationerrors-less-than-id-greater-than).
 
 ### Returns
 

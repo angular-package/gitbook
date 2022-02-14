@@ -2,7 +2,7 @@
 description: The `RangeError` object generic type variables
 ---
 
-# Generic type variables
+# 4: Generic type variables
 
 ## `RangeError<`<mark style="color:green;background-color:green;">`Id`</mark>`,Min,Max>`
 

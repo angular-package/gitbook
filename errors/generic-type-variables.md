@@ -2,7 +2,7 @@
 description: The `Errors` generic type variables
 ---
 
-# Generic type variables
+# 3: Generic type variables
 
 ## `Errors<`<mark style="color:green;background-color:green;">`Id`</mark>`>`
 

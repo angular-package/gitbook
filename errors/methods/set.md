@@ -27,7 +27,7 @@ public set<ErrorId extends Id>(
 
 #### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../../commonerrors/v-generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../3-generic-type-variables.md#errors-less-than-id-greater-than) of the [`Errors`](broken-reference) object indicates the type picked from the [`Id`](../3-generic-type-variables.md#errors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#errors-less-than-id-greater-than) of the [`Errors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#errors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 

@@ -18,9 +18,9 @@ public toObject(): { [Key in Id]: Error<Id> } {
 
 ### Return type
 
-#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../3-generic-type-variables.md#errors-less-than-id-greater-than)`]: Error<`[<mark style="color:green;">`Id`</mark>](../3-generic-type-variables.md#errors-less-than-id-greater-than)`> }`
+#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#errors-less-than-id-greater-than)`]: Error<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#errors-less-than-id-greater-than)`> }`
 
-The **return type** is an object of the [`Error`](broken-reference) objects in the keys of generic type variable [`Id`](../3-generic-type-variables.md#errors-less-than-id-greater-than).
+The **return type** is an object of the [`Error`](broken-reference) objects in the keys of generic type variable [`Id`](../generic-type-variables.md#errors-less-than-id-greater-than).
 
 ### Returns
 

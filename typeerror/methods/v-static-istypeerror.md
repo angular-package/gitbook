@@ -38,9 +38,9 @@ A generic type variable constrained by the [`string`](https://developer.mozilla.
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the [`TypeError`](broken-reference) instance.
 
-#### `id?:`[<mark style="color:green;">`Id`</mark>](../../error/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](v-static-istypeerror.md#idextendsstring)<mark style="color:green;">``</mark>
 
-Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](v-static-istypeerror.md#id-extends-string) to check whether the given [`value`](v-static-istypeerror.md#value-any) contains.
+Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](v-static-istypeerror.md#idextendsstring) to check whether the given [`value`](v-static-istypeerror.md#value-any) contains.
 
 #### `type?:`[<mark style="color:green;">`Type`</mark>](v-static-istypeerror.md#typeextendsstring-or-undefined-undefined)<mark style="color:green;">``</mark>
 

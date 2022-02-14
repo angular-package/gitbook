@@ -67,7 +67,7 @@
 ## Errors {}
 
 * [Overview](errors/overview.md)
-* [3: Generic type variables](errors/3-generic-type-variables.md)
+* [3: Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
   * [2: set()](errors/methods/set.md)
@@ -77,7 +77,7 @@
 ## RangeError {}
 
 * [Overview](rangeerror/overview.md)
-* [4: Generic type variables](rangeerror/4-generic-type-variables.md)
+* [4: Generic type variables](rangeerror/generic-type-variables.md)
 * [Constructor](rangeerror/constructor.md)
 * [Accessors](rangeerror/accessors/README.md)
   * [get max()](rangeerror/accessors/get-max.md)
@@ -96,7 +96,7 @@
 ## RangeErrors {}
 
 * [Overview](rangeerrors/overview.md)
-* [Generic type variables](rangeerrors/generic-type-variables.md)
+* [5: Generic type variables](rangeerrors/5-generic-type-variables.md)
 * [Constructor](rangeerrors/constructor.md)
 * [Methods](rangeerrors/methods/README.md)
   * [set()](rangeerrors/methods/set.md)
@@ -122,7 +122,7 @@
 ## TypeErrors {}
 
 * [Overview](typeerrors/overview.md)
-* [Generic type variables](typeerrors/generic-type-variables.md)
+* [6: Generic type variables](typeerrors/6-generic-type-variables.md)
 * [Constructor](typeerrors/constructor.md)
 * [Methods](typeerrors/methods/README.md)
   * [set()](typeerrors/methods/set.md)
@@ -143,7 +143,7 @@
 ## ValidationErrors {}
 
 * [Overview](validationerrors/overview.md)
-* [Generic type variables](validationerrors/v-generic-type-variables.md)
+* [7: Generic type variables](validationerrors/7-generic-type-variables.md)
 * [Constructor](validationerrors/v-constructor.md)
 * [Methods](validationerrors/v-methods/README.md)
   * [set()](validationerrors/v-methods/v-set.md)

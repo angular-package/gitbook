@@ -49,7 +49,7 @@ A generic type variable constrained by the [`number`](https://www.typescriptlang
 
 The value of [`any`](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) type to check against the [`RangeError`](broken-reference) instance.
 
-#### `id?:`[<mark style="color:green;">`Id`</mark>](../../error/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](static-israngeerror.md#idextendsstring)<mark style="color:green;">``</mark>
 
 Optional unique [identification](../../getting-started/basic-concepts.md#identification) of generic type variable [`Id`](static-israngeerror.md#idextendsstring) to check whether the given [`value`](static-israngeerror.md#value-any) contains.
 

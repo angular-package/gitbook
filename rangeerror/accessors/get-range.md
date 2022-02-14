@@ -21,7 +21,7 @@ public get range(): { min?: Min; max?: Max } {
 
 ### Return type
 
-#### `{ min?:`[<mark style="color:green;">`Min`</mark>](../4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-1)`; max?:`[<mark style="color:green;">`Max`</mark>](../4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-2)`}`
+#### `{ min?:`[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-1)`; max?:`[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-2)`}`
 
 The **return type** is the [`object`](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) that consists of the `min` and `max` properties, indicating the error range.
 
@@ -29,8 +29,8 @@ The **return type** is the [`object`](https://www.typescriptlang.org/docs/handbo
 
 The **return value** is an [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) that consists of the [minimum](get-min.md) range under the `min` property and the [maximum](get-max.md) under the `max` property.
 
-`min` - The minimum range of generic type variable [`Min`](../4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-1) of the [`RangeError`](broken-reference) instance.\
-`max` - The maximum range of generic type variable [`Max`](../4-generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-2) of the [`RangeError`](broken-reference) instance.
+`min` - The minimum range of generic type variable [`Min`](../generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-1) of the [`RangeError`](broken-reference) instance.\
+`max` - The maximum range of generic type variable [`Max`](../generic-type-variables.md#rangeerror-less-than-id-min-max-greater-than-2) of the [`RangeError`](broken-reference) instance.
 
 ## Example usage
 

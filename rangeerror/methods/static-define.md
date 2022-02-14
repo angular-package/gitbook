@@ -51,7 +51,7 @@ Description of the [problem](static-define.md#problem-string) of a [`string`](ht
 
 A solution to the given [`problem`](static-define.md#problem-string) of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
 
-#### `id?:`[<mark style="color:green;">`Id`</mark>](../../error/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+#### `id?:`[<mark style="color:green;">`Id`</mark>](static-define.md#idextendsstring)<mark style="color:green;">``</mark>
 
 Optional unique [identification](../../getting-started/basic-concepts.md#identification) to the given [`problem`](static-define.md#problem-string) of generic type variable [`Id`](static-define.md#idextendsstring).
 

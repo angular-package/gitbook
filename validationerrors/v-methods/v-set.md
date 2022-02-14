@@ -6,7 +6,7 @@ description: Sets the `ValidationError` object under the given `id`
 
 ## `ValidationErrors.prototype.set()`
 
-Sets the [`ValidationError`](broken-reference) object with the message built from the given required [`problem`](v-set.md#problem-string), [`fix`](v-set.md#fix-string), [`id`](v-set.md#id-errorid) on the given or stored [`template`](v-set.md#template-rangeerrors.template) under the given [`id`](v-set.md#id-errorid).
+Sets the [`ValidationError`](broken-reference) object with the message built from the given required [`problem`](v-set.md#problem-string), [`fix`](v-set.md#fix-string), [`id`](v-set.md#id-errorid) on the given or stored [`template`](v-set.md#template-validationerrors.template) under the given [`id`](v-set.md#id-errorid).
 
 {% code title="validation-errors.class.ts" %}
 ```typescript
@@ -25,9 +25,9 @@ public set<ErrorId extends Id>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../../rangeerrors/5-generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../v-generic-type-variables.md#wrap-opening) of the [`ValidationErrors`](broken-reference) object indicates the type picked from the [`Id`](../v-generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../7-generic-type-variables.md#wrap-opening) of the [`ValidationErrors`](broken-reference) object indicates the type picked from the [`Id`](../7-generic-type-variables.md#wrap-opening) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
