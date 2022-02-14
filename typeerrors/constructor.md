@@ -18,9 +18,9 @@ constructor(...id: Id[]) {
 
 ### Parameters
 
-#### `...id:`[<mark style="color:green;">`Id`</mark>](6-generic-type-variables.md#typeerrors-less-than-id-greater-than)`[]`
+#### `...id:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md#typeerrors-less-than-id-greater-than)`[]`
 
-A [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest\_parameters) of generic type variable [`Id`](6-generic-type-variables.md#typeerrors-less-than-id-greater-than) indicates [unique identification](../getting-started/basic-concepts.md#unique-identification) numbers under which the [`TypeError`](broken-reference) objects are stored.
+A [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest\_parameters) of generic type variable [`Id`](generic-type-variables.md#typeerrors-less-than-id-greater-than) indicates [unique identification](../getting-started/basic-concepts.md#unique-identification) numbers under which the [`TypeError`](broken-reference) objects are stored.
 
 ## Example usage
 

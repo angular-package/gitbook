@@ -2,7 +2,7 @@
 
 ## `CommonError()`
 
-Creates an error instance with the [message](accessors/get-message.md) built from the given [problem](accessors/get-problem.md), its [solution](accessors/get-fix.md), optional [type](constructor.md#additional-min-number-max-number-type-string), [range](constructor.md#additional-min-number-max-number-type-string), an explicit [identification](constructor.md#id-id) on the supplied or stored [template](constructor.md#template-string-commonerror.template).
+Creates an error instance with the [message](accessors/get-message.md) built from the given [problem](constructor.md#problem-string), its [solution](constructor.md#fix-string), optional [type](constructor.md#additional-link-string-min-number-max-number-type-string), [range](constructor.md#additional-link-string-min-number-max-number-type-string), an explicit [identification](constructor.md#id-id) on the supplied or stored [template](constructor.md#template-string-commonerror.template).
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -43,7 +43,7 @@ Optional unique [identification](../getting-started/basic-concepts.md#identifica
 
 A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags. By default, the value is equal to the static property [`template`](properties/static-template.md).
 
-#### `additional: { link?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`; min?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)`; max?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)`; type?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`}`
+#### `additional: {link?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`; min?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)`; max?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)`; type?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`}`
 
 An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of optional `link`, `min`, `max`, and `type` properties to define the error [`message`](accessors/get-message.md).&#x20;
 

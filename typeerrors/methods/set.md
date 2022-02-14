@@ -6,7 +6,7 @@ description: Sets the `TypeError` object under the given `id`
 
 ## `TypeErrors.prototype.set()`
 
-Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`type`](set.md#type-string) on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`TypeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`type`](set.md#type-string) on the given or stored [`template`](set.md#template-typeerrors.template) under the given [`id`](set.md#id-errorid).
 
 {% code title="type-errors.class.ts" %}
 ```typescript
@@ -26,9 +26,9 @@ public set<ErrorId extends Id>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../6-generic-type-variables.md#typeerrors-less-than-id-greater-than)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#typeerrors-less-than-id-greater-than)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../6-generic-type-variables.md#typeerrors-less-than-id-greater-than) of the [`TypeErrors`](broken-reference) object indicates the type picked from the [`Id`](../6-generic-type-variables.md#typeerrors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#typeerrors-less-than-id-greater-than) of the [`TypeErrors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#typeerrors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 

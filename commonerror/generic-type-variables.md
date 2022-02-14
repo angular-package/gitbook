@@ -1,4 +1,8 @@
-# v: Generic type variables
+---
+description: The `CommonError` object generic type variables
+---
+
+# Generic type variables
 
 ## `CommonError<`<mark style="color:green;background-color:green;">`Id`</mark>`>`
 

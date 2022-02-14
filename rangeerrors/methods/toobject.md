@@ -18,9 +18,9 @@ public toObject(): { [Key in Id]: RangeError<Id> } {
 
 ### Return type
 
-#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../5-generic-type-variables.md#rangeerrors-less-than-id-greater-than)`]:` [<mark style="color:green;">`RangeError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../5-generic-type-variables.md#rangeerrors-less-than-id-greater-than)`> }`
+#### `{ [`<mark style="color:green;">`Key`</mark>`in`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#rangeerrors-less-than-id-greater-than)`]:` [<mark style="color:green;">`RangeError`</mark>](broken-reference)`<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#rangeerrors-less-than-id-greater-than)`> }`
 
-The **return type** is an object of the [`RangeError`](broken-reference) objects in the keys of generic type variable [`Id`](../5-generic-type-variables.md#rangeerrors-less-than-id-greater-than).
+The **return type** is an object of the [`RangeError`](broken-reference) objects in the keys of generic type variable [`Id`](../generic-type-variables.md#rangeerrors-less-than-id-greater-than).
 
 ### Returns
 

@@ -6,7 +6,7 @@ description: Sets the `RangeError` object under the given `id`
 
 ## `RangeErrors.prototype.set()`
 
-Sets the [`RangeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`min`](set.md#min-number), [`max`](set.md#max-number) on the given or stored [`template`](set.md#template-errors.template) under the given [`id`](set.md#id-errorid).
+Sets the [`RangeError`](broken-reference) object with the message built from the given required [`problem`](set.md#problem-string), [`fix`](set.md#fix-string), [`id`](set.md#id-errorid) and optional [`min`](set.md#min-number), [`max`](set.md#max-number) on the given or stored [`template`](set.md#template-rangeerrors.template) under the given [`id`](set.md#id-errorid).
 
 {% code title="range-errors.class.ts" %}
 ```typescript
@@ -25,9 +25,9 @@ public set<ErrorId extends Id>(
 
 ### Generic type variables
 
-#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../5-generic-type-variables.md#rangeerrors-less-than-id-greater-than)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#rangeerrors-less-than-id-greater-than)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../5-generic-type-variables.md#rangeerrors-less-than-id-greater-than) of the [`RangeErrors`](broken-reference) object indicates the type picked from the [`Id`](../5-generic-type-variables.md#rangeerrors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#rangeerrors-less-than-id-greater-than) of the [`RangeErrors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#rangeerrors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 
@@ -53,7 +53,7 @@ The optional maximum range of [`number`](https://developer.mozilla.org/en-US/doc
 
 #### `template =`<mark style="color:green;">`RangeErrors`</mark>`.template`
 
-A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix),[`{id}`](../../commonerror/properties/static-template.md#id), and optional  [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min), [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property `RangeErrors.template`.
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix),[`{id}`](../../commonerror/properties/static-template.md#id), and optional  [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) tags. By default, the value is equal to the static property `RangeErrors.template`.
 
 ### Return type
 

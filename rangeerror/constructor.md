@@ -6,7 +6,7 @@ description: The `RangeError` object constructor
 
 ## `RangeError()`
 
-Creates the [`RangeError`](broken-reference) instance that represents range error with the [message](../commonerror/accessors/get-message.md) built of the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional [`min`](constructor.md#min-number)/[`max`](constructor.md#max-number) range, and an explicit [identification](constructor.md#id-id) on the given or stored error message [template](constructor.md#template-string-rangerror.template).
+Creates the [`RangeError`](broken-reference) instance that represents range error with the [message](../commonerror/accessors/get-message.md) built of the given described [`problem`](constructor.md#problem-string) and its [solution](constructor.md#fix-string), optional [`min`](constructor.md#min-min)/[`max`](constructor.md#max-max) range, and an explicit [identification](constructor.md#id-id) on the given or stored error message [template](constructor.md#template-string-rangerror.template).
 
 {% code title="error.class.ts" %}
 ```typescript

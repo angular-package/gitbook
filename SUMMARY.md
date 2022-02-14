@@ -15,7 +15,7 @@
 ## CommonError {}
 
 * [Overview](commonerror/overview.md)
-* [v: Generic type variables](commonerror/generic-type-variables.md)
+* [Generic type variables](commonerror/generic-type-variables.md)
 * [Constructor](commonerror/constructor.md)
 * [Accessors](commonerror/accessors/README.md)
   * [get fix()](commonerror/accessors/get-fix.md)
@@ -38,7 +38,7 @@
 ## CommonErrors {}
 
 * [Overview](commonerrors/overview.md)
-* [v: Generic type variables](commonerrors/v-generic-type-variables.md)
+* [Generic type variables](commonerrors/generic-type-variables.md)
 * [Constructor](commonerrors/constructor.md)
 * [Accessors](commonerrors/accessors/README.md)
   * [get errors()](commonerrors/accessors/get-errors.md)
@@ -67,17 +67,17 @@
 ## Errors {}
 
 * [Overview](errors/overview.md)
-* [3: Generic type variables](errors/generic-type-variables.md)
+* [Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
-  * [2: set()](errors/methods/set.md)
+  * [set()](errors/methods/set.md)
   * [toObject()](errors/methods/toobject.md)
 * [Example usage](errors/example-usage.md)
 
 ## RangeError {}
 
 * [Overview](rangeerror/overview.md)
-* [4: Generic type variables](rangeerror/generic-type-variables.md)
+* [Generic type variables](rangeerror/generic-type-variables.md)
 * [Constructor](rangeerror/constructor.md)
 * [Accessors](rangeerror/accessors/README.md)
   * [get max()](rangeerror/accessors/get-max.md)
@@ -96,7 +96,7 @@
 ## RangeErrors {}
 
 * [Overview](rangeerrors/overview.md)
-* [5: Generic type variables](rangeerrors/5-generic-type-variables.md)
+* [Generic type variables](rangeerrors/generic-type-variables.md)
 * [Constructor](rangeerrors/constructor.md)
 * [Methods](rangeerrors/methods/README.md)
   * [set()](rangeerrors/methods/set.md)
@@ -116,13 +116,13 @@
   * [static template](typeerror/properties/static-template.md)
   * [#type?](typeerror/properties/type.md)
 * [Methods](typeerror/methods/README.md)
-  * [v: static define()](typeerror/methods/v-static-define.md)
-  * [v: static isTypeError()](typeerror/methods/v-static-istypeerror.md)
+  * [static define()](typeerror/methods/static-define.md)
+  * [static isTypeError()](typeerror/methods/static-istypeerror.md)
 
 ## TypeErrors {}
 
 * [Overview](typeerrors/overview.md)
-* [6: Generic type variables](typeerrors/6-generic-type-variables.md)
+* [Generic type variables](typeerrors/generic-type-variables.md)
 * [Constructor](typeerrors/constructor.md)
 * [Methods](typeerrors/methods/README.md)
   * [set()](typeerrors/methods/set.md)
@@ -143,7 +143,7 @@
 ## ValidationErrors {}
 
 * [Overview](validationerrors/overview.md)
-* [7: Generic type variables](validationerrors/7-generic-type-variables.md)
+* [Generic type variables](validationerrors/generic-type-variables.md)
 * [Constructor](validationerrors/v-constructor.md)
 * [Methods](validationerrors/v-methods/README.md)
   * [set()](validationerrors/v-methods/v-set.md)

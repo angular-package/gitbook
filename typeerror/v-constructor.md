@@ -35,15 +35,15 @@ A solution to the given [`problem`](v-constructor.md#problem-string) of a [`stri
 
 #### `id?:`[<mark style="color:green;">`Id`</mark>](generic-type-variables.md#wrap-opening)<mark style="color:green;">``</mark>
 
-Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](v-constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#wrap-opening).
+Optional unique [identification](../getting-started/basic-concepts.md#identification) to the given [`problem`](v-constructor.md#problem-string) of generic type variable [`Id`](generic-type-variables.md#typeerror-less-than-id-type-greater-than).
 
 #### `type?:`[<mark style="color:green;">`Type`</mark>](generic-type-variables.md#wrap-opening-1)
 
-The optional type of generic type variable [`Type`](generic-type-variables.md#wrap-opening-1) that causes an error to be thrown(or not thrown).
+The optional type of generic type variable [`Type`](generic-type-variables.md#typeerror-less-than-id-type-greater-than-1) that causes an error to be thrown(or not thrown).
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`TypeError`</mark>`.template`
 
-Optional template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../commonerror/properties/static-template.md#problem), [`{fix}`](../commonerror/properties/static-template.md#fix) and optional [`{id}`](../commonerror/properties/static-template.md#id), [`{max}`](../commonerror/properties/static-template.md#max), [`{min}`](../commonerror/properties/static-template.md#min), [`{type}`](../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`TypeError.template`](properties/static-template.md).
+Optional template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../commonerror/properties/static-template.md#problem), [`{fix}`](../commonerror/properties/static-template.md#fix) and optional [`{id}`](../commonerror/properties/static-template.md#id), [`{type}`](../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`TypeError.template`](properties/static-template.md).
 
 ## Example usage
 

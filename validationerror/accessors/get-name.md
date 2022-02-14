@@ -8,7 +8,7 @@ description: The `get` accessor obtains error name
 
 The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains error name of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, set to `'ValidationError'` that is being thrown.
 
-{% code title="type-error.class.ts" %}
+{% code title="validation-error.class.ts" %}
 ```typescript
 public get name(): string {
   return 'ValidationError';

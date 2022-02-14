@@ -6,7 +6,7 @@ description: Defines the `ValidationError` instance
 
 ## `ValidationError.define()`
 
-Defines the [`ValidationError`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built of the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the supplied or stored [`template`](static-define.md#template-typeerror.template).
+Defines the [`ValidationError`](broken-reference) instance with the [message](../../commonerror/accessors/get-message.md) built of the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the supplied or stored [`template`](static-define.md#template-validationerror.template).
 
 {% code title="validation-error.class.ts" %}
 ```typescript
@@ -55,7 +55,7 @@ The **return type** is the [`ValidationError`](broken-reference) object that tak
 
 ### Returns
 
-The **return value** is a new instance of the [`ValidationError`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the given or stored [`template`](static-define.md#template-typeerror.template).
+The **return value** is a new instance of the [`ValidationError`](broken-reference) with the [message](../../commonerror/accessors/get-message.md) built from the given required [`problem`](static-define.md#problem-string), [`fix`](static-define.md#fix-string) and optional [`id`](static-define.md#id-id) on the given or stored [`template`](static-define.md#template-validationerror.template).
 
 ## Example usage
 

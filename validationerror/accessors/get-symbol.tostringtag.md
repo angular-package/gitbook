@@ -10,7 +10,7 @@ The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fu
 
 It can be read by the [`typeOf()`](https://docs.angular-package.dev/v/type/helper/typeof) function of [`@angular-package/type`](https://docs.angular-package.dev/v/type/).
 
-{% code title="type-error.class.ts" %}
+{% code title="validation-error.class.ts" %}
 ```typescript
 public get [Symbol.toStringTag](): string {
   return 'TypeError';
