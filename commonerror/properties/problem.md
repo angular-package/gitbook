@@ -10,6 +10,10 @@ A privately stored [problem](../../getting-started/basic-concepts.md#problem) of
 
 {% code title="common-error.class.ts" %}
 ```typescript
-#fix: string;
+#problem: string;
 ```
 {% endcode %}
+
+### Type
+
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)<mark style="color:green;">``</mark>
