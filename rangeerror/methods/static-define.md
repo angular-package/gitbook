@@ -65,7 +65,7 @@ The optional maximum range of generic type variable [`Max`](static-define.md#max
 
 #### `template =`<mark style="color:green;">`RangeError`</mark>`.template`
 
-A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) and [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`RangeError.template`](../properties/static-template.md).
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) tags. By default, the value is equal to the static property [`RangeError.template`](../properties/static-template.md).
 
 ### Return type
 
@@ -83,6 +83,7 @@ The **return value** is a new instance of the [`RangeError`](broken-reference) w
 // Example usage.
 import { RangeError } from '@angular-package/error';
 
-// Returns "RangeError: ProblemTE:201: Wrong age, must be between 9 and 27 => Fix: Change the value".
-RangeError.define('Wrong age,', 'Change the value', 'TE:201', 9, 27);
+// Returns
+// RangeError: ProblemTE:201: Wrong age => Fix: The value must be between 9 and 27
+RangeError.define('Wrong age', 'The value must be', 'TE:201', 9, 27);
 ```

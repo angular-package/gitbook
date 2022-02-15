@@ -1,6 +1,8 @@
-# Example usage
+---
+description: The `Errors` object example usage
+---
 
-### `set()`
+# Example usage
 
 ```typescript
 // Example usage.
@@ -8,7 +10,11 @@ import { Errors } from '@angular-package/error';
 
 // Define general errors.
 const generalErrors = new Errors('(GE:021)', '(GE:022)', '(GE:027)');
+```
 
+### `set()`
+
+```typescript
 // Set the `Error` objects under the given identification numbers.
 generalErrors
   .set('Bad parameter', 'Provide the `install` parameter', '(GE:021)')

@@ -47,14 +47,16 @@ generalErrors
 // Returns:
 /*
 Returns
-{EG: 4330: Error: ProblemEG: 4330: Bad parameter type, detected number => Fix: Provide proper type, the `strin…, EG: 4331: Error: ProblemEG: 4331: Detected numbers => Fix: Provide only letters
-    at Errors.set (http://loc…}
-of type
-{
+  {
+    EG: 4330: ...,
+    EG: 4331: ...
+  }
+  of type
+  {
     "EG: 4332": Error<"EG: 4332">;
     "EG: 4331": Error<"EG: 4331">;
     "EG: 4330": Error<"EG: 4330">;
-}
+  }
 */
 generalErrors.getErrors();
 ```

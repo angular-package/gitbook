@@ -49,7 +49,7 @@ The optional maximum range of generic type variable [`Max`](generic-type-variabl
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`RangError`</mark>`.template`
 
-Optional template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../commonerror/properties/static-template.md#problem), [`{fix}`](../commonerror/properties/static-template.md#fix) and optional [`{id}`](../commonerror/properties/static-template.md#id), [`{max}`](../commonerror/properties/static-template.md#max), [`{min}`](../commonerror/properties/static-template.md#min), [`{type}`](../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`RangeError.template`](properties/static-template.md).
+Optional template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../commonerror/properties/static-template.md#problem), [`{fix}`](../commonerror/properties/static-template.md#fix) and optional [`{id}`](../commonerror/properties/static-template.md#id), [`{max}`](../commonerror/properties/static-template.md#max), [`{min}`](../commonerror/properties/static-template.md#min) tags. By default, the value is equal to the static property [`RangeError.template`](properties/static-template.md).
 
 ## Example usage
 
@@ -57,7 +57,15 @@ Optional template of the error message of [`string`](https://developer.mozilla.o
 // Example usage.
 import { RangeError } from '@angular-package/error';
 
-// Returns
-// RangeError: ProblemTE:201: Wrong age, must be between 9 and 27 => Fix: Change the value
-RangeError.define('Wrong age,', 'Change the value', 'TE:201', 9, 27);
+/*
+  Returns
+  RangeError: Problem(AE:427): The `age` parameter is too big, got 455 => Fix: Set the `age` parameter of the `setAge()` method between 9 and 27
+*/
+new RangeError(
+  'The `age` parameter is too big, got 455', // Problem
+  'Set the `age` parameter of the `setAge()` method', // Fix
+  '(AE:427)', // Identification
+  9,  // Minimum
+  27 // Maximum range
+);
 ```

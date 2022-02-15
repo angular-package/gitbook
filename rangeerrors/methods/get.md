@@ -45,20 +45,20 @@ The **return value** is the [`RangeError`](broken-reference) instance of the giv
 import { RangeErrors } from '@angular-package/error';
 
 // Define range errors.
-const rangeErrors = new RangeErrors('RE: 4332', 'RE: 4331', 'RE: 4330');
+const rangeErrors = new RangeErrors('(RE: 4332)', '(RE: 4331)', '(RE: 4330)');
 
 // Set the `RangeError` objects under the given identification numbers.
 rangeErrors
   .set(
     'Age is 99',
     'Age must be',
-    'RE: 4330',
+    '(RE: 4330)',
     9,
     27
   )
-  .set('Detected numbers', 'Provide only letters', 'RE: 4331');
+  .set('Height can not be 11000', 'Height', '(RE: 4331)', 1, 1000);
 
-// Returns RangeError: ProblemRE: 4330: Age is 99 must be between 9 and 27 => Fix: Age must be
+// Returns RangeError: Problem(RE: 4330): Age is 99 => Fix: Age must be must be between 9 and 27
 // of type RangeError<"EG: 4330", undefined, undefined> | undefined.
 rangeErrors.get('RE: 4330');
 ```
