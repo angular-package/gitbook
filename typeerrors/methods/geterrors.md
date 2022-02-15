@@ -46,16 +46,16 @@ typeErrors
   .set('Detected numbers', 'Provide only letters', '(TE: 4331)', 'number');
 
 /*
-Returns {
-  (TE: 4330): ...,
-  (TE: 4331): ...
-}
-of type
-{
-  "(TE: 4332)": TypeError<"(TE: 4332)", undefined> | undefined;
-  "(TE: 4331)": TypeError<"(TE: 4331)", undefined> | undefined;
-  "(TE: 4330)": TypeError<"(TE: 4330)", undefined> | undefined;
-}
+  Returns {
+    (TE: 4330): ...,
+    (TE: 4331): ...
+  }
+  of type
+  {
+    "(TE: 4332)": TypeError<"(TE: 4332)", undefined> | undefined;
+    "(TE: 4331)": TypeError<"(TE: 4331)", undefined> | undefined;
+    "(TE: 4330)": TypeError<"(TE: 4330)", undefined> | undefined;
+  }
 */
 typeErrors.getErrors();
 ```

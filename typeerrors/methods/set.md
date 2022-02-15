@@ -68,11 +68,10 @@ const typeErrors = new RangeErrors('RE: 4332', 'RE: 4331', 'RE: 4330');
 // Set the `TypeErrors` objects under the given identification numbers.
 typeErrors
   .set(
-    'Age is 99',
+    'Age is 99 string type',
     'Age must be',
-    'RE: 4330',
-    9,
-    27
+    '(TE: 4330)',
+    'number'
   )
-  .set('Detected numbers', 'Provide only letters', 'RE: 4331');
+  .set('Detected numbers', 'Provide only letters', '(TE: 4330)');
 ```

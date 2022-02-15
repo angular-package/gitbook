@@ -58,18 +58,7 @@ validationErrors
   .set('Age is 99', 'Age must be', '(VE: 4330)')
   .set('Detected numbers', 'Provide only letters', '(VE: 4331)');
 
-/*
-  Returns
-  {
-    (VE: 4330): ...,
-    (VE: 4331): ...
-  }
-  of type
-  {
-    "(VE: 4332)": ValidationError<"(VE: 4332)">;
-    "(VE: 4331)": ValidationError<"(VE: 4331)">;
-    "(VE: 4330)": ValidationError<"(VE: 4330)">;
-  }
-*/
-validationErrors.getErrors()
+
+// Returns ValidationError: Problem(VE: 4330): Age is 99 => Fix: Age must be
+validationErrors.get('(VE: 4330)');
 ```

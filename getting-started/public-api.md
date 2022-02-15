@@ -1,3 +1,7 @@
+---
+description: '@angular-package/error'
+---
+
 # Public API
 
 Public features that can be imported.
@@ -29,8 +33,8 @@ import {
 
 ``[`TypeError`](broken-reference)``
 
-TypeErrors
+``[`TypeErrors`](broken-reference)``
 
-ValidationError
+``[`ValidationError`](broken-reference)``
 
-ValidationErrors
+``[`ValidationErrors`](broken-reference)``

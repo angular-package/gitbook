@@ -57,5 +57,5 @@ validationErrors
     "(VE: 4330)": ValidationError<"(VE: 4330)"> | undefined;
   }
 */
-validationErrors.toObject();
+validationErrors.getErrors();
 ```

@@ -58,7 +58,7 @@ rangeErrors
   )
   .set('Detected numbers', 'Provide only letters', 'RE: 4331');
 
-// Returns RangeError
+// Returns RangeError: ProblemRE: 4330: Age is 99 must be between 9 and 27 => Fix: Age must be
 // of type RangeError<"EG: 4330", undefined, undefined> | undefined.
 rangeErrors.get('RE: 4330');
 ```

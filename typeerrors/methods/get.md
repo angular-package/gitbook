@@ -57,8 +57,11 @@ typeErrors
   )
   .set('Detected numbers', 'Provide only letters', '(TE: 4331)', 'number');
 
-
-// Returns the TypeError<"(TE: 4330)", undefined> | undefined.
+/*
+  Returns TypeError: Problem(TE: 4330): Age is 99 => Fix: Age must be must be of the string
+  of type
+  TypeError<"(TE: 4330)", undefined> | undefined
+*/
 typeErrors.get('(TE: 4330)');
 
 // Returns undefined of type TypeError<"(TE: 4332)", undefined> | undefined
