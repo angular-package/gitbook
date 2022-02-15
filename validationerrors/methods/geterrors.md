@@ -1,16 +1,16 @@
 ---
-description: The method returns the JSON object of set errors
+description: Returns the object of set validation errors
 ---
 
-# toObject()
+# getErrors()
 
-## `ValidationErrors.prototype.toObject()`
+## `ValidationErrors.prototype.getErrors()`
 
-The method returns the [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/JSON) object of set errors, where the key is a [unique identification](../../getting-started/basic-concepts.md#unique-identification).
+Returns the object of set validation errors, where the key is a [unique identification](../../getting-started/basic-concepts.md#unique-identification).
 
 {% code title="validation-errors.class.ts" %}
 ```typescript
-public toObject(): { [Key in Id]: ValidationError<Id> } {
+public getErrors(): { [Key in Id]: ValidationError<Key> | undefined } {
   return Object.fromEntries(this.errors.entries()) as any;
 }
 ```
@@ -45,10 +45,17 @@ validationErrors
   .set('Detected numbers', 'Provide only letters', '(VE: 4331)');
 
 /*
-Returns:
-{(VE: 4330): ValidationError: Problem(VE: 4330): Age is 99 => Fix: Age must be
-    at ValidationErrors.set (http…, (VE: 4331): ValidationError: Problem(VE: 4331): Detected numbers => Fix: Provide only letters
-    at Validation…}
+  Returns:
+  {
+    (VE: 4330): ...,
+    (VE: 4331): ...
+  }
+  of type
+  {
+    "(VE: 4332)": ValidationError<"(VE: 4332)"> | undefined;
+    "(VE: 4331)": ValidationError<"(VE: 4331)"> | undefined;
+    "(VE: 4330)": ValidationError<"(VE: 4330)"> | undefined;
+  }
 */
 validationErrors.toObject();
 ```

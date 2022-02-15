@@ -1,3 +1,7 @@
+---
+description: The `Error` object generic type variables
+---
+
 # Generic type variables
 
 ## `Error<`<mark style="color:green;background-color:green;">`Id`</mark>`>`

@@ -1,3 +1,7 @@
+---
+description: Checks whether the error of the given id exists in a specified object
+---
+
 # has()
 
 ## `CommonErrors.prototype.has()`

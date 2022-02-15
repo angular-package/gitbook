@@ -70,8 +70,9 @@
 * [Generic type variables](errors/generic-type-variables.md)
 * [Constructor](errors/constructor.md)
 * [Methods](errors/methods/README.md)
+  * [get()](errors/methods/get.md)
+  * [getErrors()](errors/methods/geterrors.md)
   * [set()](errors/methods/set.md)
-  * [toObject()](errors/methods/toobject.md)
 * [Example usage](errors/example-usage.md)
 
 ## RangeError {}
@@ -99,8 +100,9 @@
 * [Generic type variables](rangeerrors/generic-type-variables.md)
 * [Constructor](rangeerrors/constructor.md)
 * [Methods](rangeerrors/methods/README.md)
+  * [get()](rangeerrors/methods/get.md)
+  * [getErrors()](rangeerrors/methods/geterrors.md)
   * [set()](rangeerrors/methods/set.md)
-  * [toObject()](rangeerrors/methods/toobject.md)
 * [Example usage](rangeerrors/example-usage.md)
 
 ## TypeError {}
@@ -125,8 +127,9 @@
 * [Generic type variables](typeerrors/generic-type-variables.md)
 * [Constructor](typeerrors/constructor.md)
 * [Methods](typeerrors/methods/README.md)
+  * [get()](typeerrors/methods/get.md)
+  * [getErrors()](typeerrors/methods/geterrors.md)
   * [set()](typeerrors/methods/set.md)
-  * [toObject()](typeerrors/methods/toobject.md)
 
 ## ValidationError {}
 
@@ -146,8 +149,9 @@
 * [Generic type variables](validationerrors/generic-type-variables.md)
 * [Constructor](validationerrors/v-constructor.md)
 * [Methods](validationerrors/v-methods/README.md)
+  * [get()](validationerrors/methods/get.md)
+  * [getErrors()](validationerrors/methods/geterrors.md)
   * [set()](validationerrors/v-methods/v-set.md)
-  * [toObject()](validationerrors/v-methods/v-toobject.md)
 
 ## Change log
 

@@ -1,3 +1,7 @@
+---
+description: Deletes the error of a specified id from the object
+---
+
 # delete()
 
 ## `CommonErrors.prototype.delete()`

@@ -10,7 +10,7 @@ description: The `ValidationErrors` object generic type variables
 
 ​A generic type variable constrained by the [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String), by default of the value **captured** from the provided [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest\_parameters) [`id`](v-constructor.md#...id-id) indicates the identification type of a new [`TypeErrors`](broken-reference) instance.
 
-{% code title="type-errors.class.ts" %}
+{% code title="validation-errors.class.ts" %}
 ```typescript
 class ValidationErrors<
   Id extends string // <--- Declare generic type variable Id.

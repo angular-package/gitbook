@@ -1,3 +1,7 @@
+---
+description: Checks whether the given identification number was provided in the constructor
+---
+
 # isAllowedId()
 
 ## `CommonErrors.prototype.isAllowedId()`

@@ -1,3 +1,7 @@
+---
+description: Throws an error of the given identification
+---
+
 # throw()
 
 ## `CommonErrors.prototype.throw()`

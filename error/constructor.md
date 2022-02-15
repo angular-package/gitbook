@@ -1,3 +1,7 @@
+---
+description: The `Error` object constructor
+---
+
 # Constructor
 
 ## `Error()`
