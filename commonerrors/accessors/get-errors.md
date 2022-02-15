@@ -18,7 +18,7 @@ protected get errors(): Map<Id, any> {
 
 ### Return type
 
-#### `Map<`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#wrap-opening)`,`<mark style="color:green;">`any`</mark>`>`
+#### `Map<`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#commonerrors-less-than-id-greater-than)`,`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#any)`>`
 
 ### Returns
 
