@@ -2,7 +2,7 @@
 
 ## `CommonErrors.prototype.throw()`
 
-Throws an error of the given [`id`](throw.md#id-errorid) if the unique id was provided in the [constructor](../v-constructor.md).
+Throws an error of the given [`id`](throw.md#id-errorid) if the unique id was provided in the [constructor](../constructor.md).
 
 {% code title="common-errors.class.ts" %}
 ```typescript
@@ -16,9 +16,9 @@ public throw<ErrorId extends Id>(id: ErrorId): void {
 
 ### Generic type variables
 
-#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../v-generic-type-variables.md#commonerrors-less-than-id-greater-than)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">`ErrorId`</mark>`extends`[<mark style="color:green;">`Id`</mark>](../generic-type-variables.md#commonerrors-less-than-id-greater-than)<mark style="color:green;">``</mark>
 
-A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../v-generic-type-variables.md#commonerrors-less-than-id-greater-than) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../v-generic-type-variables.md#commonerrors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
+A generic type variable `ErrorId` constrained by the generic type variable [`Id`](../generic-type-variables.md#commonerrors-less-than-id-greater-than) of the [`CommonErrors`](broken-reference) object indicates the type picked from the [`Id`](../generic-type-variables.md#commonerrors-less-than-id-greater-than) and its exact type is useful in picking the specific error from the storage.
 
 ### Parameters
 

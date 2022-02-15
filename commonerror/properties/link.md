@@ -8,7 +8,7 @@ description: >-
 
 ## `#link?`
 
-The optional privately stored link redirects to read more about the thrown error of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type.
+The optional privately stored link of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type redirects to read more about the thrown error.
 
 {% code title="common-error.class.ts" %}
 ```typescript

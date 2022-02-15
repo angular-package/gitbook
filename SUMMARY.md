@@ -38,8 +38,8 @@
 ## CommonErrors {}
 
 * [Overview](commonerrors/overview.md)
-* [v: Generic type variables](commonerrors/v-generic-type-variables.md)
-* [v: Constructor](commonerrors/v-constructor.md)
+* [Generic type variables](commonerrors/generic-type-variables.md)
+* [Constructor](commonerrors/constructor.md)
 * [Accessors](commonerrors/accessors/README.md)
   * [get errors()](commonerrors/accessors/get-errors.md)
 * [Properties](commonerrors/properties/README.md)
