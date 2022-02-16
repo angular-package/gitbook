@@ -33,7 +33,7 @@ The **return value** is the link of a [`string`](https://developer.mozilla.org/e
 import { CommonError } from '@angular-package/error';
 
 // Extend the `CommonError` class.
-class TestError extends CommonError {}
+class TestError<Id extends string> extends CommonError<Id> {}
 
 // Returns "http://duckduckgo.com".
 new TestError('problem', 'Fix accessor.', '(AE:427)', undefined, {

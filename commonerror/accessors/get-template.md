@@ -30,8 +30,8 @@ The **return value** is the [template](../../getting-started/basic-concepts.md#t
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
-// Returns "Problem{id}: {problem} => Fix: {fix}".
-new TestError('Problem accessor.', 'Fix accessor.', '(AE:427)').template;
+// Extend the `CommonError` class.
+class TestError<Id extends string> extends CommonError<Id> {}
 
 // Returns "{problem} {fix} {id}".
 new TestError(

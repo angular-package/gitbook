@@ -1,3 +1,7 @@
+---
+description: The `CommonError` object constructor
+---
+
 # Constructor
 
 ## `CommonError()`
@@ -52,7 +56,7 @@ By default, the value is equal to the static property [`template`](properties/st
 An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) consists of optional `link`, `min`, `max`, and `type` properties to define the error [`message`](accessors/get-message.md).&#x20;
 
 `link` - The link to read more about the thrown error replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{link}`](properties/static-template.md#link) tag.\
-`max`    - The maximum number replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{max}`](properties/static-template.md#max) tag.\
+`max`   - The maximum number replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{max}`](properties/static-template.md#max) tag.\
 `min`   - The minimum number is replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as [`{min}`](properties/static-template.md#min) tag.\
 `type` - The type indicates the expected type that isn't throwing an error or the not expected type that is throwing an error replaceable on the given [`template`](constructor.md#template-string-commonerror.template) as the [`{type}`](properties/static-template.md#type) tag.
 

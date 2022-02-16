@@ -33,7 +33,7 @@ The **return value** is the error [identification](../../getting-started/basic-c
 import { CommonError } from '@angular-package/error';
 
 // Extend the `CommonError` class.
-class TestError extends CommonError {}
+class TestError<Id extends string> extends CommonError<Id> {}
 
 // Returns "(AE:427)".
 new TestError('problem', 'Fix accessor.', '(AE:427)').id;
