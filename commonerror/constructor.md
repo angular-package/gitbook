@@ -41,7 +41,7 @@ Optional unique [identification](../getting-started/basic-concepts.md#identifica
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`CommonError`</mark>`.template`
 
-A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags.
+A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), `{link}`, [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags.
 
 {% hint style="info" %}
 By default, the value is equal to the static property [`template`](properties/static-template.md).
@@ -60,6 +60,8 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 ### Basic usage
 
+Example with the given required `problem` and `fix`.
+
 ```typescript
 // Example usage.
 import { CommonError } from '@angular-package/error';
@@ -75,6 +77,8 @@ throw new TestError(
 ```
 
 ### `id`
+
+Example with the given `id`.
 
 ```typescript
 // Example usage.
@@ -92,6 +96,8 @@ throw new TestError(
 ```
 
 ### `id`, `template`
+
+Example with the given `id` and `template`.
 
 ```typescript
 // Example usage.
@@ -111,6 +117,8 @@ throw new TestError(
 
 ### `id`, `template`, `additional{ min }`
 
+Example with the given `id`, `template` and property `min` of `additional`.
+
 ```typescript
 // Example usage.
 import { CommonError } from '@angular-package/error';
@@ -128,7 +136,9 @@ throw new TestError(
 );
 ```
 
-### Parameter `additional{ min, max }`&#x20;
+### `id`, `template`, `additional{ min, max }`&#x20;
+
+Example with the given `id`, `template` and property `min` and `max` of `additional`.
 
 ```typescript
 // Example usage.
@@ -147,7 +157,9 @@ throw new TestError(
 );
 ```
 
-### Parameter `additional{ min, max, type }`&#x20;
+### `id`, `template`, `additional{ min, max, type }`&#x20;
+
+Example with the given `id`, `template`, property `min`, `max` and `type` of `additional`.
 
 ```typescript
 // Example usage.
