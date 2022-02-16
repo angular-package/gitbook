@@ -156,6 +156,7 @@
 ## Change log
 
 * [Keep a changelog](change-log/keep-a-changelog.md)
+* [CHANGELOG.md](https://github.com/angular-package/error/blob/3.0.x/CHANGELOG.md)
 * [v3.0.0-rc](change-log/v3.0.0-rc.md)
 
 ## GIT

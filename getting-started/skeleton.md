@@ -12,7 +12,7 @@ Run `ng generate component component-name --project error` to generate a new com
 
 ### Build
 
-Run `ng build error` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build error` to build the project. The build artifacts will be stored in the `dist/error` directory.
 
 ### **Publishing**
 
@@ -20,10 +20,10 @@ After building your library with `ng build error`, go to the dist folder `cd dis
 
 ### **Running unit tests**
 
-Before the test can be performed install `@angular-package/testing` with command:&#x20;
+Before the test can be performed install [`@angular-package/testing`](https://github.com/angular-package/testing) and [`@angular-package/type`](https://type.angular-package.dev) with command:&#x20;
 
 ```bash
-npm i @angular-package/testing --no-save
+npm i @angular-package/testing @angular-package/type --no-save
 ```
 
 Run `ng test error` to execute the unit tests via [Karma](https://karma-runner.github.io).
