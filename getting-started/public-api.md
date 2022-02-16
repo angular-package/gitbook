@@ -10,6 +10,7 @@ Public features that can be imported.
 import {
   // Class.
   CommonError,
+  CommonErrors,
   Error,
   Errors,
   RangeError,
@@ -22,6 +23,8 @@ import {
 ```
 
 ``[`CommonError`](broken-reference)``
+
+``[`CommonErrors`](broken-reference)``
 
 ``[`Error`](broken-reference)``
 
