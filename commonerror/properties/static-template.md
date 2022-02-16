@@ -8,11 +8,7 @@ description: A template of the error message of string type with the replaceable
 
 A template of the error message of [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type with the replaceable [`{problem}`](../constructor.md#problem), [`{fix}`](../constructor.md#fix) and optional [`{id}`](static-template.md#id), [`{link}`](static-template.md#link), [`{max}`](static-template.md#max), [`{min}`](static-template.md#min), [`{type}`](static-template.md#type) tags.
 
-{% hint style="info" %}
-By default, it's set to:
-
-`Problem{id}: {problem} => Fix: {fix}`.
-{% endhint %}
+By default, it's set to `Problem{id}: {problem} => Fix: {fix}`.
 
 {% code title="common-error.class.ts" %}
 ```typescript
@@ -56,17 +52,17 @@ Replaceable by the property `type` of the given [`additional`](../constructor.md
 
 ```typescript
 // Example usage.
-import { CommonError } from '@angular-package/error';
+import { CommonError } from '@angular-package/error'; 
 
 // Change the template.
 CommonError.template = `Problem({id}): {problem} => Fix: {fix}`;
 
 // Extend the `CommonError` class.
-class TestError<Id extends string> extends CommonError<Id> {}
+class TestError extends CommonError {}
 
 // Returns
 // Error: Problem(AE:427): The `age` parameter is wrong. => Fix: Provided `age`
-// must be different type.
+// must be different type. 
 new TestError(
   'The `age` parameter is wrong.', // Problem
   'Provided `age` must be different type. ', // Fix

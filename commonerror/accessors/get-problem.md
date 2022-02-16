@@ -31,8 +31,9 @@ The **return value** is the [problem](../../getting-started/basic-concepts.md#pr
 import { CommonError } from '@angular-package/error';
 
 // Extend the `CommonError` class.
-class TestError<Id extends string> extends CommonError<Id> {}
+class TestError extends CommonError {}
 
 // Returns "Problem accessor."
 new TestError('Problem accessor.', 'Fix accessor.', '(AE:427)').problem;
 ```
+

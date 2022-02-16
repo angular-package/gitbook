@@ -18,16 +18,15 @@ protected static defineMessage(
     fix: string,
     id: string | undefined,
     template: string,
-    additional: { link?: string; min?: number; max?: number; type?: string };
+    additional: { min?: number; max?: number; type?: string; };
   [problem, fix, id, template, additional] = values;
   template = (template || CommonError.template)
-    .replace('{problem}', problem || '')
+    .replace('{fix}', fix || '')
     .replace(/{id}/g, id || '')
-    .replace(/{link}/g, additional?.link ? additional.link : '')
-    .replace(/{max}/g, additional?.max ? String(additional.max) : '')
-    .replace(/{min}/g, additional?.min ? String(additional.min) : '')
-    .replace(/{type}/g, additional?.type ? additional.type : '')
-    .replace('{fix}', fix || '');
+    .replace('{problem}', problem || '')
+    .replace(/{max}/g, additional?.max ? String(additional?.max) : '')
+    .replace(/{min}/g, additional?.min ? String(additional?.min) : '')
+    .replace(/{type}/g, additional?.type ? additional?.type : '');
   return template;
 }
 ```
@@ -41,11 +40,11 @@ protected static defineMessage(
 
 #### `...values:`[<mark style="color:green;">`any`</mark>](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)`[]`
 
-A rest parameter of expressions in order [`${problem}`](../constructor.md#problem-string), [`${fix}`](../constructor.md#fix-string), [`${id}`](../constructor.md#id-id), [`${template}`](../constructor.md#template-string-commonerror.template) and [`${additional}`](../constructor.md#additional-link-string-min-number-max-number-type-string).
+A rest parameter of expressions in order `${problem}`, `${fix}`, `${id}`, `${template}` and `${additional}`.
 
 ### Returns
 
-The re**turn value** is the error message of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type created from the expressions given in the [`values`](static-definemessage.md#...values-any).
+The **return value** is a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type&#x20;
 
 ## Example usage
 
@@ -75,7 +74,8 @@ class TestError<Id extends string> extends CommonError<Id> {
   }
 }
 
-// Returns
-// Issue(AE: 427): The given `age` parameter must be of number between range 9 and 27. Provided string type is not accepted, change to number
+// Returns 
+// Issue(AE: 427): The given `age` parameter must be of number between range 9
+// and 27. Provided string type is not accepted, change to number
 TestError.defineMessage`${problem}${fix}${id}${template}${additional}`;
 ```
