@@ -1,12 +1,12 @@
 ---
-description: The `get` accessor obtains error name
+description: The `get` accessor obtains error object name
 ---
 
 # get name()
 
 ## `Error.prototype.name`
 
-Error name of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, set to [`Error`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Error) that is being thrown.
+Error name of a [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) type, set to [`'Error'`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Error) that is being thrown.
 
 {% code title="error.class.ts" %}
 ```typescript

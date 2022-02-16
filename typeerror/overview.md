@@ -8,8 +8,8 @@ description: The `TypeError` object
 
 The `TypeError` object is an extension of the [`CommonError`](broken-reference) class and is thrown when an operation could not be performed, typically(but not exclusively) when a value is not of the expected type, with the [message](../commonerror/accessors/get-message.md) built from the described problem and its solution, optional an explicit identification and type, on the given or stored template.
 
-{% embed url="https://github.com/angular-package/error/blob/main/src/lib/type-error.class.ts" %}
-`type-error.class.ts`
+{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/type-error.class.ts" %}
+type-error.class.ts
 {% endembed %}
 
 ### Accessors

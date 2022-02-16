@@ -43,7 +43,7 @@ Optional unique [identification](../../getting-started/basic-concepts.md#identif
 
 #### `template =`<mark style="color:green;">`Error`</mark>`.template`
 
-A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id), [`{max}`](../../commonerror/properties/static-template.md#max), [`{min}`](../../commonerror/properties/static-template.md#min) and [`{type}`](../../commonerror/properties/static-template.md#type) tags. By default, the value is equal to the static property [`template`](../../commonerror/properties/static-template.md).
+A template of error message with the replaceable [`{problem}`](../../commonerror/properties/static-template.md#problem), [`{fix}`](../../commonerror/properties/static-template.md#fix) and optional [`{id}`](../../commonerror/properties/static-template.md#id) tags. By default, the value is equal to the static property [`template`](../../commonerror/properties/static-template.md).
 
 ### Return type
 

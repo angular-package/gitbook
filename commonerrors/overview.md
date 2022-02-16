@@ -8,7 +8,7 @@ description: The `CommonErrors` object
 
 The `CommonErrors` object represents the storage of errors with unique identification numbers.
 
-{% embed url="https://github.com/angular-package/error/blob/main/src/lib/common-errors.class.ts" %}
+{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/common-errors.class.ts" %}
 `common-errors.class.ts`
 {% endembed %}
 
