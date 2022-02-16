@@ -156,7 +156,7 @@
 ## Change log
 
 * [Keep a changelog](change-log/keep-a-changelog.md)
-* [v2.0.2](change-log/v2.0.2.md)
+* [v3.0.0-rc](change-log/v3.0.0-rc.md)
 
 ## GIT
 
