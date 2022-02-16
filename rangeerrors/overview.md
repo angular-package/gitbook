@@ -8,7 +8,9 @@ description: The `RangeErrors` object
 
 The `RangeErrors` is an extension of the [`CommonErrors`](broken-reference) object that represents multiple identification numbers under which the errors of the [`RangeError`](broken-reference) type are prepared to throw.
 
-{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/range-error.class.ts" %}
+{% embed url="https://github.com/angular-package/error/blob/main/src/lib/range-errors.class.ts" %}
+`range-errors.class.ts`
+{% endembed %}
 
 ### Methods
 

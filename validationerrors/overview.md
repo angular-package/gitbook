@@ -8,7 +8,9 @@ description: The `ValidationErrors` object
 
 The `ValidationErrors` is an extension of the [`CommonErrors`](broken-reference) object that represents multiple identification numbers under which the errors of the [`ValidationError`](broken-reference) type are prepared to throw.
 
-{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/validation-errors.class.ts" %}
+{% embed url="https://github.com/angular-package/error/blob/main/src/lib/validation-errors.class.ts" %}
+`validation-errors.class.ts`
+{% endembed %}
 
 ### Methods
 

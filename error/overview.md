@@ -8,7 +8,7 @@ description: The `Error` object
 
 The `Error` object is an extension of the [`CommonError`](broken-reference) class and is thrown when a runtime error occurs with a [message](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-message) built from a [solution](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-fix) to the described [problem](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-problem) but with additional identification, on the [template](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-template).
 
-{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/error.class.ts" %}
+{% embed url="https://github.com/angular-package/error/blob/main/src/lib/error.class.ts" %}
 `error.class.ts`
 {% endembed %}
 

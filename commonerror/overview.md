@@ -12,7 +12,7 @@ description: >-
 
 The `CommonError` abstract object to throw an [identified](../getting-started/basic-concepts.md#identification) error with a [solution](../getting-started/basic-concepts.md#fix) to the described [problem](../getting-started/basic-concepts.md#problem), additional [type](../getting-started/basic-concepts.md#type), and [range](../getting-started/basic-concepts.md#range) built on the [template](../getting-started/basic-concepts.md#template).
 
-{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/common-error.class.ts" %}
+{% embed url="https://github.com/angular-package/error/blob/main/src/lib/common-error.class.ts" %}
 `common-error.class.ts`
 {% endembed %}
 

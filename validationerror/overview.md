@@ -8,8 +8,8 @@ description: The `ValidationError` object
 
 The `ValidationError` object is an extension of the [`CommonError`](broken-reference) class and is thrown when an operation could not be performed despite proper type(but not exclusively) with the [message](../commonerror/accessors/get-message.md) built from the described problem and its solution, along with additional identification on the given or stored template.
 
-{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/validation-error.class.ts" %}
-validation-error.class.ts
+{% embed url="https://github.com/angular-package/error/blob/main/src/lib/validation-error.class.ts" %}
+`validation-error.class.ts`
 {% endembed %}
 
 ### Accessors

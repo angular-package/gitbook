@@ -8,7 +8,7 @@ description: The `RangeError` object
 
 The `RangeError` object is an extension of the [`CommonError`](broken-reference) class and is thrown when a value is not in the set or range of allowed values with the message built from the described problem and its solution, optional explicit identification and minimum/maximum range on the given or stored template.
 
-{% embed url="https://github.com/angular-package/error/blob/3.0.x/src/lib/range-error.class.ts" %}
+{% embed url="https://github.com/angular-package/error/blob/main/src/lib/range-error.class.ts" %}
 `range-error.class.ts`
 {% endembed %}
 

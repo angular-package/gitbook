@@ -56,7 +56,7 @@
 
 * [Overview](error/overview.md)
 * [Generic type variables](error/generic-type-variables.md)
-* [Constructor](error/constructor.md)
+* [★ Constructor](error/constructor.md)
 * [Accessors](error/accessors/README.md)
   * [get name()](error/accessors/get-name.md)
   * [get \[Symbol.toStringTag\]()](error/accessors/get-symbol.tostringtag.md)
@@ -79,7 +79,7 @@
 
 * [Overview](rangeerror/overview.md)
 * [Generic type variables](rangeerror/generic-type-variables.md)
-* [Constructor](rangeerror/constructor.md)
+* [★ Constructor](rangeerror/constructor.md)
 * [Accessors](rangeerror/accessors/README.md)
   * [get max()](rangeerror/accessors/get-max.md)
   * [get min()](rangeerror/accessors/get-min.md)
@@ -109,7 +109,7 @@
 
 * [Overview](typeerror/overview.md)
 * [Generic type variables](typeerror/generic-type-variables.md)
-* [Constructor](typeerror/v-constructor.md)
+* [★ Constructor](typeerror/v-constructor.md)
 * [Accessors](typeerror/accessors/README.md)
   * [get name()](typeerror/accessors/get-name.md)
   * [get type()](typeerror/accessors/get-type.md)
@@ -135,7 +135,7 @@
 
 * [Overview](validationerror/overview.md)
 * [Generic type variables](validationerror/generic-type-variables.md)
-* [Constructor](validationerror/constructor.md)
+* [★ Constructor](validationerror/constructor.md)
 * [Accessors](validationerror/accessors.md)
   * [get name()](validationerror/accessors/get-name.md)
   * [get \[Symbol.toStringTag\]()](validationerror/accessors/get-symbol.tostringtag.md)
@@ -165,7 +165,7 @@
 
 ## License
 
-* [MIT](https://github.com/angular-package/wrapper/blob/master/LICENSE)
+* [MIT](https://github.com/angular-package/error/blob/main/LICENSE)
 
 ## Social
 
