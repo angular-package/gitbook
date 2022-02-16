@@ -41,7 +41,11 @@ Optional unique [identification](../getting-started/basic-concepts.md#identifica
 
 #### `template:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`=`<mark style="color:green;">`CommonError`</mark>`.template`
 
-A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags. By default, the value is equal to the static property [`template`](properties/static-template.md).
+A template of error message with the replaceable [`{problem}`](constructor.md#problem), [`{fix}`](constructor.md#fix) and optional [`{id}`](constructor.md#id), [`{max}`](constructor.md#max), [`{min}`](constructor.md#min) and [`{type}`](constructor.md#type) tags.
+
+{% hint style="info" %}
+By default, the value is equal to the static property [`template`](properties/static-template.md).
+{% endhint %}
 
 #### `additional: {link?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`; min?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)`; max?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)`; type?:`[<mark style="color:green;">`string`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)`}`
 
@@ -60,58 +64,100 @@ An optional [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
-class TestError extends CommonError {}
+// Create `TestError` to extend.
+class TestError<Id extends string> extends CommonError<Id> {}
 
-// Returns Error: Problem: problem => Fix: fix
-new TestError('problem', 'fix');
+// Uncaught Error: Problem: problem => Fix: fix
+throw new TestError(
+  'problem',
+  'fix'
+);
 ```
 
-### Parameter `id` and `template`
+### `id`
 
 ```typescript
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
-class TestError extends CommonError {}
+// Create `TestError` to extend.
+class TestError<Id extends string> extends CommonError<Id> {}
 
-// Returns Error: Problem(AE:427): problem => Fix: fix
-new TestError('problem', 'fix', '(AE:427)');
-
-// Returns Error: problem(AE:427). fix
-new TestError('problem', 'fix', 'AE:427', '{problem}({id}). {fix}');
+// Uncaught Error: Problem(AE:427): problem => Fix: fix
+throw new TestError(
+  'problem',
+  'fix',
+  '(AE:427)' // <--- Parameter `id`.
+);
 ```
 
-### Parameter `additional`
+### `id`, `template`
 
 ```typescript
 // Example usage.
 import { CommonError } from '@angular-package/error';
 
-class TestError extends CommonError {}
+// Create `TestError` to extend.
+class TestError<Id extends string> extends CommonError<Id> {}
 
-// Returns Error: (AE:427)Age must be above 9. Provide age more than 9
-new TestError(
+// Uncaught Error: problem(AE:427). fix
+throw new TestError(
+  'problem',
+  'fix',
+  'AE:427', // <--- Parameter `id`
+  '{problem}({id}). {fix}' // <--- Parameter `template`
+);
+```
+
+### `id`, `template`, `additional{ min }`
+
+```typescript
+// Example usage.
+import { CommonError } from '@angular-package/error';
+
+// Create `TestError` to extend.
+class TestError<Id extends string> extends CommonError<Id> {}
+
+// Uncaught Error: (AE:427)Age must be above 9. Provide age more than 9
+throw new TestError(
   'Age must be above ', // Problem
   'Provide age more than ', // Fix
   'AE:427', // Identification
   '({id}){problem}{min}. {fix}{min}', // Template
   { min: 9 } // Additional
 );
+```
 
-// Returns 
-// Error: (AE:427)The `age` parameter is 45. Provided `age` must be between 9 and 12
-new TestError(
+### Parameter `additional{ min, max }`&#x20;
+
+```typescript
+// Example usage.
+import { CommonError } from '@angular-package/error';
+
+// Create `TestError` to extend.
+class TestError<Id extends string> extends CommonError<Id> {}
+
+// Uncaught Error: (AE:427)The `age` parameter is 45. Provided `age` must be between 9 and 12
+throw new TestError(
   'The `age` parameter is 45.', // Problem
   'Provided `age` must be', // Fix
   'AE:427', // Identification
-  '({id}){problem} . {fix} between {min} and {max}', // Template
+  '({id}){problem} {fix} between {min} and {max}', // Template
   { min: 9, max: 12 } // Additional
 );
+```
 
-// Returns
-// Error: (AE:427)The `age` parameter is not a number. Provided `age` must be a
-// number between 9 and 12.
-new TestError(
+### Parameter `additional{ min, max, type }`&#x20;
+
+```typescript
+// Example usage.
+import { CommonError } from '@angular-package/error';
+
+// Create `TestError` to extend.
+class TestError<Id extends string> extends CommonError<Id> {}
+
+// Uncaught Error: (AE:427)The `age` parameter is not a number. Provided `age` must be a  number between 9 and 12.
+throw new TestError(
   'The `age` parameter is not a', // Problem
   'Provided `age` must be a ', // Fix
   'AE:427', // Identification
