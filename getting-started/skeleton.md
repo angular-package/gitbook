@@ -12,7 +12,7 @@ Run `ng generate component component-name --project type` to generate a new comp
 
 ### Build
 
-Run `ng build type` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build type` to build the project. The build artifacts will be stored in the `dist/type` directory.
 
 ### **Publishing**
 
@@ -20,7 +20,7 @@ After building your library with `ng build type`, go to the dist folder `cd dist
 
 ### **Running unit tests**
 
-Before the test can be performed install `@angular-package/testing` with command:&#x20;
+Before the test can be performed install [`@angular-package/testing`](https://github.com/angular-package/testing) with command:&#x20;
 
 ```bash
 npm i @angular-package/testing --no-save
