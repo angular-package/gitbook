@@ -2,11 +2,10 @@
 cover: >-
   https://images.unsplash.com/photo-1543699539-33a389c5dcfe?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw2fHxiaXRjb2lufGVufDB8fHx8MTY0MjUyMTM3Ng&ixlib=rb-1.2.1&q=85
 coverY: 0
+description: Become a sponsor to the angular-package by sending the cryptocurrency
 ---
 
 # ฿ Cryptocurrency
-
-Become a sponsor to the **angular package** by sending the cryptocurrency:
 
 ## Bitcoin (BTC)
 
