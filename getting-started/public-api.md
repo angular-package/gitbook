@@ -32,7 +32,7 @@ The [`CommonErrors`](broken-reference) object represents the storage of errors w
 
 ### `Error`
 
-The [`Error`](public-api.md#error) object is an extension of the [`CommonError`](broken-reference) class and is thrown when a runtime error occurs with a [message](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-message) built from a [solution](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-fix) to the described [problem](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-problem) but with additional identification, on the [template](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-template).
+The [`Error`](broken-reference) object is an extension of the [`CommonError`](broken-reference) class and is thrown when a runtime error occurs with a [message](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-message) built from a [solution](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-fix) to the described [problem](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-problem) but with additional identification, on the [template](https://app.gitbook.com/s/23iV8ygEQUrhqw7I3D8g/\~/changes/lXvTfsmAkHoNRKsQjxlq/commonerror/accessors/get-template).
 
 ### `Errors`
 
