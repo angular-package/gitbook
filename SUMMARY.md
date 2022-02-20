@@ -64,6 +64,7 @@
       * [hasOpening()](design-processes/string-wrapper-objects/wrap/methods/hasopening.md)
       * [isWrapped()](design-processes/string-wrapper-objects/wrap/methods/iswrapped.md)
   * [Wrapper](design-processes/string-wrapper-objects/wrapper.md)
+* [Number Wrapper Objects](design-processes/number-wrapper-objects.md)
 
 ## Benefits
 
