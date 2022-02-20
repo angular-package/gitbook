@@ -1,6 +1,10 @@
+---
+description: The `Wrap` primitive wrapper object generic type variables
+---
+
 # Generic type variables
 
-## `Wrap<`<mark style="color:green;background-color:green;">`Opening`</mark>`,Text,Closing>` <a href="#wrap-opening" id="wrap-opening"></a>
+## `Wrap<`<mark style="color:green;background-color:green;">`Opening`</mark>`,`<mark style="color:green;">`Text`</mark>`,`<mark style="color:green;">`Closing`</mark>`>` <a href="#wrap-opening" id="wrap-opening"></a>
 
 #### <mark style="color:green;">`Opening`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
 
@@ -24,7 +28,7 @@ class Wrap<
 ```
 {% endcode %}
 
-## `Wrap<Opening,`<mark style="color:green;background-color:green;">`Text`</mark>`,Closing>`
+## `Wrap<`<mark style="color:green;">`Opening`</mark>`,`<mark style="color:green;background-color:green;">`Text`</mark>`,`<mark style="color:green;">`Closing`</mark>`>`
 
 #### <mark style="color:green;">`Text`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">` `` `</mark>
 
@@ -52,7 +56,7 @@ class Wrap<
 ```
 {% endcode %}
 
-## `Wrap<Opening,Text,`<mark style="color:green;background-color:green;">`Closing`</mark>`>` <a href="#wrap-closing" id="wrap-closing"></a>
+## `Wrap<`<mark style="color:green;">`Opening`</mark>`,`<mark style="color:green;">`Text`</mark>`,`<mark style="color:green;background-color:green;">`Closing`</mark>`>` <a href="#wrap-closing" id="wrap-closing"></a>
 
 #### <mark style="color:green;">`Closing`</mark>`extends`<mark style="color:green;">`string`</mark>`=`<mark style="color:green;">`string`</mark>
 

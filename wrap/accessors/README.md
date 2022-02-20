@@ -1,3 +1,7 @@
+---
+description: The `Wrap` primitive wrapper object accessors
+---
+
 # Accessors
 
 ## Public

@@ -1,6 +1,7 @@
 ---
 cover: ../.gitbook/assets/wrap-cover-3d.png
 coverY: 846.1451612903227
+description: The `Wrap` primitive wrapper object
 ---
 
 # Overview

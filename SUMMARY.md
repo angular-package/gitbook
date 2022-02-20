@@ -102,10 +102,17 @@
 
 * [MIT](https://github.com/angular-package/wrapper/blob/master/LICENSE)
 
+## Social
+
+* [Gettr](https://gettr.com/user/angularpackage)
+* [Twitter](https://twitter.com/angularpackage)
+* [YouTube](https://www.youtube.com/channel/UC\_AfUapk36KbBoROeA8a\_lg/featured)
+
 ## Contact
 
 * [⋯ Chat](contact/chat.md)
 * [@ Email](contact/email.md)
+* [✆ Phone](contact/phone.md)
 
 ## Donate
 
