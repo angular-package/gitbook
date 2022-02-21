@@ -1,0 +1,11 @@
+---
+description: The `Maximum` primitive wrapper object methods
+---
+
+# Methods
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><strong>public static</strong> <a href="static-create.md"><strong>create()</strong></a>: <mark style="color:green;">Maximum</mark>&#x3C;<mark style="color:green;">Value</mark>><br>Creates the <a href="broken-reference"><code>Maximum</code></a> instance with the given primitive <a href="static-create.md#maximum.create"><code>value</code></a>.</p>                                                                                              |
+| <p><strong>public static</strong> <a href="static-ismaximum.md#maximum.ismaximum"><strong>isMaximum()</strong></a>: <mark style="color:green;">boolean</mark><br>Checks whether the value of <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html#any"><code>any</code></a> type is the <a href="broken-reference"><code>Maximum</code></a> instance of any or the given primitive <a href="static-ismaximum.md#value-any">value</a>.</p> |
+| <p><strong>public</strong> <a href="valueof.md#maximum.prototype.valueof"><strong>valueOf()</strong></a>: <mark style="color:green;">Value</mark><br><mark style="color:green;"></mark>Returns the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf">primitive value</a> of a specified <a href="broken-reference"><code>Maximum</code></a> object.</p>                                             |
