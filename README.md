@@ -10,8 +10,4 @@ The error package contains a typical, range, type, and validation error object e
 
 The package contains prepared objects to manage the errors of the same type and multiple identification numbers, and their purpose is to set and throw errors under the given identification.
 
-## Roadmap
-
-Development timeline roadmap for the year **2022**.
-
-![Roadmap 2022](.gitbook/assets/roadmap-small.jpg)
+Let's see what are the benefits.
