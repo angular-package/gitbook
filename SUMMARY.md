@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Roadmap](roadmap.md)
 * [Packages](packages.md)
 
 ## GitHub

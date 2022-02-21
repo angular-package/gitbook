@@ -13,5 +13,3 @@ Some of them are designed in a **business logic** way for **intuitive** exchange
 Some of the functionalities are based on **non-conventional** javascript usage resulting from the use of primitive wrapper objects to achieve specific-purpose immutable types with **intuitive** names and their **unique** features.
 
 An **angular package** contains objects like range, preferences, user, settings to build an **intuitive user interface**, and on the next page, there is a list of them, even those currently unavailable.
-
-![Roadmap 2022](.gitbook/assets/roadmap-small.jpg)

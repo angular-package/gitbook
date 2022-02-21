@@ -8,12 +8,12 @@ Below is the list of all **angular packages.** Some of them are **not** publishe
 | change-detection                               | Improves application **performance**.                             |
 | component-loader                               | Handles dynamic loading components.                               |
 | core                                           | Core features.                                                    |
-| error                                          | Manages an **error**.                                             |
+| [error](https://error.angular-package.dev)     | Manages an **error**.                                             |
 | name                                           | The **name** with prefix and suffix.                              |
 | preferences                                    | Preferences, settings, options, configuration and setup in steps. |
 | prism                                          | [**Prism**](https://prismjs.com) highlighter module.              |
 | property                                       | Handles object properties.                                        |
-| range                                          | The range between a **minimum** and **maximum**.                  |
+| [range](https://range.angular-package.dev)     | The range between a **minimum** and **maximum**.                  |
 | reactive                                       | Automatize the process of creating rxjs features.                 |
 | storage                                        | The **storage** of data under allowed names.                      |
 | [tag](https://tag.angular-package.dev)         | Any tag with optional attributes.                                 |
