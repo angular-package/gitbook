@@ -24,3 +24,4 @@ Range has some values.
 
 Range has every value.
 
+Enumerable getter.
