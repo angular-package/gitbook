@@ -4,7 +4,7 @@ description: The `Less` primitive wrapper object generic type variables
 
 # Generic type variables
 
-## `Less<`<mark style="color:green;background-color:green;">`Value`</mark>`>`
+### `Less<`<mark style="color:green;background-color:green;">`Value`</mark>`>`
 
 #### <mark style="color:green;">`Value`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
