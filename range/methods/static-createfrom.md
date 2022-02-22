@@ -1,8 +1,12 @@
+---
+description: Creates the `Range` instance from the given random numbers and the step
+---
+
 # static createFrom()
 
 ## `Range.createFrom()`
 
-Creates the [`Range`](broken-reference) instance from the given random numbers and the step.
+Creates the [`Range`](broken-reference) instance from the given random [`numbers`](static-createfrom.md#numbers-number) and the [`step`](static-createfrom.md#step-step).
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -33,13 +37,13 @@ An [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 
 #### `step:`<mark style="color:green;">`Step`</mark>
 
-Optional step of generic type variable [`Step`](static-createfrom.md#step-extends-number-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
+Optional step of generic type variable [`Step`](static-createfrom.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
 
 ### Return type
 
 #### `Range<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`Step`</mark>](static-createfrom.md#stepextendsnumber-1)`>`
 
-The **return type** is the [`Range`](broken-reference) object that takes generic type variable [`Min`](static-createfrom.md#minextendsnumber), [`Max`](static-createfrom.md#maxextendsnumber) and [`Step`](static-createfrom.md#step-extends-number-1).
+The **return type** is the [`Range`](broken-reference) object that takes generic type variable [`Step`](static-createfrom.md#stepextendsnumber-1).
 
 ### Returns
 
@@ -51,9 +55,9 @@ The **return value** is the [`Range`](broken-reference) instance created from th
 // Example usage.
 import { Range } from '@angular-package/range';
 
-// Returns Range {min: 4, max: 27} of Range<4, 27, 1>
-Range.create(4, 27);
+// Returns Range {min: 4, max: 27} of type Range<number, number, 1>.
+Range.createFrom([12, 14, 5, 23, 14, 27, 17, 4, 11, 12]);
 
-// Returns Range {min: 4, max: 27} of Range<4, 27, 1.5>
-Range.create(4, 27, 1.5);
+// Returns Range {min: 4, max: 27} of type Range<number, number, 1.5>.
+Range.createFrom([12, 14, 5, 23, 14, 27, 17, 4, 11, 12]);
 ```
