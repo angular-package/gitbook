@@ -90,8 +90,8 @@
 ## Range {}
 
 * [Overview](range/overview.md)
-* [r: Generic type variables](range/r-generic-type-variables.md)
-* [r: ★ Constructor](range/r-constructor.md)
+* [r: Generic type variables](range/generic-type-variables.md)
+* [r: ★ Constructor](range/constructor.md)
 * [Accessors](range/accessors/README.md)
   * [get range()](range/accessors/get-range.md)
   * [get step()](range/accessors/get-step.md)

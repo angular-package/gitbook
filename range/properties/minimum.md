@@ -9,7 +9,7 @@ description: >-
 
 ## `#minimum`
 
-Private property of the [`Minimum`](broken-reference) [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) with a primitive value from a given [`min`](../r-constructor.md#min-min) of the [`Range`](broken-reference) constructor indicates the minimum range.
+Private property of the [`Minimum`](broken-reference) [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) with a primitive value from a given [`min`](../constructor.md#min-min) of the [`Range`](broken-reference) constructor indicates the minimum range.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -19,4 +19,4 @@ Private property of the [`Minimum`](broken-reference) [primitive wrapper object]
 
 ### Type
 
-#### `Minimum<`[<mark style="color:green;">`Min`</mark>](../r-generic-type-variables.md#minextendsnumber)`>`
+#### `Minimum<`[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#minextendsnumber)`>`

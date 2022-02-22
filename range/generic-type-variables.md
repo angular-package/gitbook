@@ -8,7 +8,7 @@ description: The `Range` object generic type variables
 
 #### <mark style="color:green;">`Min`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
-​A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value **captured** from the supplied [`min`](r-constructor.md#min-min) indicates the minimum range type of a new [`Range`](broken-reference) instance.
+​A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value **captured** from the supplied [`min`](constructor.md#min-min) indicates the minimum range type of a new [`Range`](broken-reference) instance.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -47,7 +47,7 @@ class Range<
 
 #### <mark style="color:green;">`Max`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value **captured** from the supplied [`max`](r-constructor.md#max-max) indicates the maximum range type of a new [`Range`](broken-reference) instance.
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value **captured** from the supplied [`max`](constructor.md#max-max) indicates the maximum range type of a new [`Range`](broken-reference) instance.
 
 ```typescript
 class Range<
@@ -84,7 +84,7 @@ class Range<
 
 #### <mark style="color:green;">`Step`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`= 1`
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value equal to `1`, optionally **captured** from the supplied [`step`](r-constructor.md#step-step) indicates the range step type of a new [`Range`](broken-reference) instance.
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value equal to `1`, optionally **captured** from the supplied [`step`](constructor.md#step-step) indicates the range step type of a new [`Range`](broken-reference) instance.
 
 ```typescript
 class Range<

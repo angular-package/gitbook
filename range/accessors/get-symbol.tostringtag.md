@@ -1,7 +1,7 @@
 ---
 description: >-
-  The get accessor, with the help of toStringTag, changes the default tag to
-  'Range' for an instance of Range
+  The `get` accessor, with the help of `toStringTag`, changes the default tag to
+  'Range' for an instance of `Range`
 ---
 
 # get \[Symbol.toStringTag]\()

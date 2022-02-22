@@ -6,7 +6,7 @@ description: The maximum range of a specified `Range` object
 
 ## `Range.prototype.max`
 
-The `max` read-only property is the maximum range of generic type variable [`Max`](../r-generic-type-variables.md#maxextendsnumber) of a specified [`Range`](broken-reference) object.
+The `max` read-only property is the maximum range of generic type variable [`Max`](../generic-type-variables.md#maxextendsnumber) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -16,7 +16,7 @@ public readonly max!: Max;
 
 ### Type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../r-generic-type-variables.md#maxextendsnumber)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#maxextendsnumber)<mark style="color:green;">``</mark>
 
 ## Example usage
 

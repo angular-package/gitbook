@@ -9,7 +9,7 @@ description: >-
 
 ## `#maximum`
 
-Private property of the [`Maximum`](broken-reference) [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) with a primitive value from a given [`max`](../r-constructor.md#max-max) of the [`Range`](broken-reference) constructor indicates the maximum range.
+Private property of the [`Maximum`](broken-reference) [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) with a primitive value from a given [`max`](../constructor.md#max-max) of the [`Range`](broken-reference) constructor indicates the maximum range.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -19,4 +19,4 @@ Private property of the [`Maximum`](broken-reference) [primitive wrapper object]
 
 ### Type
 
-#### `Maximum<`[<mark style="color:green;">`Max`</mark>](../r-generic-type-variables.md#maxextendsnumber)`>`
+#### `Maximum<`[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#maxextendsnumber)`>`

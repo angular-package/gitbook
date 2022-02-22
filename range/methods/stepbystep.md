@@ -32,13 +32,13 @@ public stepByStep(
 
 ### Parameters
 
-#### `callbackFn: (value:`[<mark style="color:green;">`Generator`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*)`<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`>, step:`[<mark style="color:green;">`Step`</mark>](../r-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)`, max:`[<mark style="color:green;">`Max`</mark>](../r-generic-type-variables.md#range-less-than-min-max-step-greater-than-1)`) => void`
+#### `callbackFn: (value:`[<mark style="color:green;">`Generator`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*)`<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`>, step:`[<mark style="color:green;">`Step`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2)`, max:`[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-1)`) => void`
 
 A function that accepts up to three arguments. The `value` is a function generator that allows deciding when to move to the next step, `step` is the step, and `max` is the maximum of a specified `Range` object.
 
-**`value:`**<mark style="color:green;">**`Generator`**</mark>**`<`**[<mark style="color:green;">**`number`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)**`>`** - Function generator that allows deciding when to move to the next step of the range.\
-**`step:`**[<mark style="color:green;">**`Step`**</mark>](../r-generic-type-variables.md#range-less-than-min-max-step-greater-than-2) - The step of a specified [`Range`](broken-reference) object.\
-**`max:`**[<mark style="color:green;">**`Max`**</mark>](../r-generic-type-variables.md#range-less-than-min-max-step-greater-than-1) - The maximum range of a specified [`Range`](broken-reference) object.
+**`value:`**<mark style="color:green;">**`Generator`**</mark>**`<`**[<mark style="color:green;">**`number`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)**`>`** - Function generator allows deciding when to move to the next range step.\
+**`step:`**[<mark style="color:green;">**`Step`**</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2) - The step of a specified [`Range`](broken-reference) object.\
+**`max:`**[<mark style="color:green;">**`Max`**</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-1) - The maximum range of a specified [`Range`](broken-reference) object.
 
 ### Return type
 
@@ -55,7 +55,22 @@ The **return value** is the [`Range`](broken-reference) instance.
 import { Range } from '@angular-package/range';
 
 // Create new instance.
-const range = new Range(4, 27);
+const range = new Range(4, 27, 1.5);
 
-
+range.stepByStep((value) => {
+  // Returns 4
+  value.next().value;
+  // Returns 5.5
+  value.next().value;
+  // Returns 7
+  value.next().value;
+  // Returns 8.5
+  value.next().value;
+  // Returns 10
+  value.next().value;
+  // Returns 11.5
+  value.next().value;
+  // Returns 13
+  value.next().value;
+});
 ```
