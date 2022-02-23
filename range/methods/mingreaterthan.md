@@ -1,3 +1,9 @@
+---
+description: >-
+  Checks whether the value is less than a minimum range of a specified `Range`
+  object
+---
+
 # minGreaterThan()
 
 ## `Range.prototype.minGreaterThan()`

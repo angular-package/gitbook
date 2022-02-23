@@ -1,5 +1,7 @@
 ---
-description: checks
+description: >-
+  Checks whether the value is greater than the maximum range of a specified
+  `Range` object
 ---
 
 # maxLessThan()

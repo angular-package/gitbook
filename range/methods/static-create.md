@@ -48,13 +48,13 @@ The **maximum** range of generic type variable [`Max`](static-create.md#maxexten
 
 #### `step:`<mark style="color:green;">`Step`</mark>
 
-Optional step of generic type variable [`Step`](static-create.md#step-extends-number-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
+Optional step of generic type variable [`Step`](static-create.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
 
 ### Return type
 
-#### `Range<`[<mark style="color:green;">`Min`</mark>](static-create.md#minextendsnumber)`,`[<mark style="color:green;">`Max`</mark>](static-create.md#maxextendsnumber)`,`[<mark style="color:green;">`Step`</mark>](static-create.md#step-extends-number-1)`>`
+#### `Range<`[<mark style="color:green;">`Min`</mark>](static-create.md#minextendsnumber)`,`[<mark style="color:green;">`Max`</mark>](static-create.md#maxextendsnumber)`,`[<mark style="color:green;">`Step`</mark>](static-create.md#stepextendsnumber-1)`>`
 
-The **return type** is the [`Range`](broken-reference) object that takes generic type variable [`Min`](static-create.md#minextendsnumber), [`Max`](static-create.md#maxextendsnumber) and [`Step`](static-create.md#step-extends-number-1).
+The **return type** is the [`Range`](broken-reference) object that takes generic type variable [`Min`](static-create.md#minextendsnumber), [`Max`](static-create.md#maxextendsnumber) and [`Step`](static-create.md#stepextendsnumber-1).
 
 ### Returns
 

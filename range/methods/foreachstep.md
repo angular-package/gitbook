@@ -1,3 +1,7 @@
+---
+description: Performs the specified action for each step in the range of an array
+---
+
 # forEachStep()
 
 ## `Range.prototype.forEachStep()`

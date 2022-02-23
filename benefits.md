@@ -24,13 +24,11 @@ Some objects are based on [primitive wrapper objects](https://developer.mozilla.
 
 <summary>Object as types</summary>
 
-<mark style="color:green;">**✓**</mark> Specific in functionality objects with generic type variables(which preserves type), act as **precise** types.
-
 <mark style="color:green;">**✓**</mark> Objects have the [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Symbol/toStringTag) changed to **unique immutable** names.
 
 <mark style="color:green;">**✓**</mark> Type of the objects can be determined by the [`Object.prototype.toString.call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Function/call). because of its **uniqueness** and **immutability**.&#x20;
 
-<mark style="color:green;">**✓**</mark> There is prepared function `typeOf()` function of `@angular-package/type` to determine these objects type.
+<mark style="color:green;">**✓**</mark> There is prepared function [`typeOf()`](https://docs.angular-package.dev/v/type/helper/typeof) function of [`@angular-package/type`](https://docs.angular-package.dev/v/type) to determine these objects type.
 
 </details>
 

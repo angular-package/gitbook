@@ -1,3 +1,9 @@
+---
+description: >-
+  Returns a read-only object consisting of the primitive values of `Minimum` and
+  `Maximum` instances
+---
+
 # valueOf()
 
 ## `Range.prototype.valueOf()`
