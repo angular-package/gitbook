@@ -19,4 +19,4 @@ Private property of the [`Minimum`](broken-reference) [primitive wrapper object]
 
 ### Type
 
-#### ``[<mark style="color:green;">`Minimum`</mark>](broken-reference)`<`[<mark style="color:green;">`Min`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than)`>`
+#### ``[<mark style="color:green;">`Minimum`</mark>](broken-reference)`<`[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than)`>`

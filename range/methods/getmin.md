@@ -22,11 +22,11 @@ public getMin(): Min {
 
 ### Return type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Min`</mark>](../g-generic-type-variables.md#minextendsnumber)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#minextendsnumber)<mark style="color:green;">``</mark>
 
 ### Returns
 
-The **return value** is the [**minimum**](../properties/min.md#range.prototype.min) range of a generic type variable [`Min`](../g-generic-type-variables.md#minextendsnumber).
+The **return value** is the [**minimum**](../properties/min.md#range.prototype.min) range of a generic type variable [`Min`](../generic-type-variables.md#minextendsnumber).
 
 ## Example usage
 

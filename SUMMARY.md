@@ -94,7 +94,7 @@
 ## Range {}
 
 * [Overview](range/overview.md)
-* [g: Generic type variables](range/g-generic-type-variables.md)
+* [Generic type variables](range/generic-type-variables.md)
 * [★ Constructor](range/constructor.md)
 * [Accessors](range/accessors/README.md)
   * [get range()](range/accessors/get-range.md)
@@ -116,7 +116,7 @@
   * [static isRange()](range/methods/static-isrange.md)
   * [↓ Instance](range/methods/instance.md)
   * [forEachStep()](range/methods/foreachstep.md)
-  * [getFullRange()](range/methods/getfullrange.md)
+  * [getCurrentRange()](range/methods/getcurrentrange.md)
   * [⚠ getMax()](range/methods/getmax.md)
   * [⚠ getMin()](range/methods/getmin.md)
   * [getRange()](range/methods/getrange.md)

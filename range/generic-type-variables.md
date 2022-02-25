@@ -2,7 +2,7 @@
 description: The `Range` object generic type variables
 ---
 
-# g: Generic type variables
+# Generic type variables
 
 ### `Range<`<mark style="color:green;background-color:green;">`Min`</mark>`,`<mark style="color:green;">`Max`</mark>`,`<mark style="color:green;">`Step`</mark>`>`
 

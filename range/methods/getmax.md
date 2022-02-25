@@ -22,11 +22,11 @@ public getMax(): Max {
 
 ### Return type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../g-generic-type-variables.md#maxextendsnumber)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#maxextendsnumber)<mark style="color:green;">``</mark>
 
 ### Returns
 
-The **return value** is the [**maximum**](../properties/max.md#range.prototype.max) range of a generic type variable [`Max`](../g-generic-type-variables.md#maxextendsnumber).
+The **return value** is the [**maximum**](../properties/max.md#range.prototype.max) range of a generic type variable [`Max`](../generic-type-variables.md#maxextendsnumber).
 
 ## Example usage
 

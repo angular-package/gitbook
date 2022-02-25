@@ -8,11 +8,11 @@ description: >-
 
 ## `Range.prototype.getRange()`
 
-The `getRange()` method returns range of numbers from [minimum](../properties/min.md#range.prototype.min) to the given [`value`](getrange.md#value-this.value-or-or-this.max) with the step of a specified [`Range`](broken-reference) object.
+The `getRange()` method returns range of numbers from [minimum](../properties/min.md#range.prototype.min) to the given [`value`](getrange.md#value-this.value-or-or-this.max) with the [`step`](../accessors/get-step.md#range.prototype.step) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
-public getRange(value = this.value || this.max): Readonly<Array<number>> {
+public getRange(value = this.max): Readonly<Array<number>> {
   const range = [];
   let current: number = this.min - this.step;
   while (current < value) {
@@ -26,9 +26,9 @@ public getRange(value = this.value || this.max): Readonly<Array<number>> {
 
 ### Parameters
 
-#### `value = this.value || this.`<mark style="color:green;">`max`</mark>
+#### `value:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`= this.max`
 
-Optional maximum range value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type of returned [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) by default the [`value`](getrange.md#value-this.value-or-or-this.max) is the range current [value](../properties/value.md#range.prototype.value), and if it's not set the [maximum](../properties/max.md#range.prototype.max) range is set.
+Optional maximum range value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type of returned [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) by default the [`value`](getrange.md#value-this.value-or-or-this.max) is the [maximum](../properties/max.md#range.prototype.max) range.
 
 ### Return type
 
@@ -45,8 +45,12 @@ The **return value** is a range of numbers from [minimum](../properties/min.md#r
 import { Method } from '@angular-package/range';
 
 // Create new instance.
-const range = new Range(4, 27);
+// Returns Range {min: 3, max: 27, value: 10} of Range<3, 27, 3>.
+const range = new Range(3, 27, 10, 3);
 
-// Returns 4 of type 4.
-range.getMin();
+// Returns (9) [3, 6, 9, 12, 15, 18, 21, 24, 27] of readonly number[]
+range.getRange();
+
+// Returns (3) [3, 6, 9] of readonly number[]
+range.getRange(10);
 ```

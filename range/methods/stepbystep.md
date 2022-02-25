@@ -32,13 +32,13 @@ public stepByStep(
 
 ### Parameters
 
-#### `callbackFn: (value:`[<mark style="color:green;">`Generator`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*)`<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`>, step:`[<mark style="color:green;">`Step`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)`, max:`[<mark style="color:green;">`Max`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-1)`) => void`
+#### `callbackFn: (value:`[<mark style="color:green;">`Generator`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*)`<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`>, step:`[<mark style="color:green;">`Step`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2)`, max:`[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-1)`) => void`
 
 A function that accepts up to three arguments. The `value` is a function generator that allows deciding when to move to the next step, `step` is the step, and `max` is the maximum of a specified `Range` object.
 
 **`value:`**<mark style="color:green;">**`Generator`**</mark>**`<`**[<mark style="color:green;">**`number`**</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)**`>`** - Function generator allows deciding when to move to the next range step.\
-**`step:`**[<mark style="color:green;">**`Step`**</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2) - The step of a specified [`Range`](broken-reference) object.\
-**`max:`**[<mark style="color:green;">**`Max`**</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-1) - The maximum range of a specified [`Range`](broken-reference) object.
+**`step:`**[<mark style="color:green;">**`Step`**</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2) - The step of a specified [`Range`](broken-reference) object.\
+**`max:`**[<mark style="color:green;">**`Max`**</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-1) - The maximum range of a specified [`Range`](broken-reference) object.
 
 ### Return type
 

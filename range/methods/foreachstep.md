@@ -37,6 +37,8 @@ The **return value** is the [`Range`](broken-reference) instance.
 
 ## Example usage
 
+### Maximum range
+
 ```typescript
 // Example usage.
 import { Range } from '@angular-package/range';
@@ -54,6 +56,8 @@ range.forEachStep((step, index, r) => {
   r;
 });
 ```
+
+### Range of current value
 
 ```typescript
 // Example usage.

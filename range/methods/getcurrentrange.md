@@ -4,9 +4,9 @@ description: >-
   specified `Range` object
 ---
 
-# getFullRange()
+# getCurrentRange()
 
-## `Range.prototype.getFullRange()`
+## `Range.prototype.getCurrentRange()`
 
 The `getRange()` method returns a range of numbers from [minimum](../properties/min.md#range.prototype.min) to [maximum](../properties/max.md) with the [step](../accessors/get-step.md#range.prototype.step) of a specified [`Range`](broken-reference) object.
 

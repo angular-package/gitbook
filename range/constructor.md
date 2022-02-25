@@ -37,21 +37,21 @@ constructor(min: Min, max: Max, value?: number, step: Step = 1 as Step) {
 
 ### Parameters
 
-#### `min:`[<mark style="color:green;">`Min`</mark>](g-generic-type-variables.md#range-less-than-min-max-step-greater-than)<mark style="color:green;">``</mark>
+#### `min:`[<mark style="color:green;">`Min`</mark>](generic-type-variables.md#range-less-than-min-max-step-greater-than)<mark style="color:green;">``</mark>
 
-The **minimum** range of generic type variable [`Min`](g-generic-type-variables.md#range-less-than-min-max-step-greater-than) to set with a new [`Range`](broken-reference) instance.
+The **minimum** range of generic type variable [`Min`](generic-type-variables.md#range-less-than-min-max-step-greater-than) to set with a new [`Range`](broken-reference) instance.
 
-#### `max:`[<mark style="color:green;">`Max`</mark>](g-generic-type-variables.md#range-less-than-min-max-step-greater-than-1)<mark style="color:green;">``</mark>
+#### `max:`[<mark style="color:green;">`Max`</mark>](generic-type-variables.md#range-less-than-min-max-step-greater-than-1)<mark style="color:green;">``</mark>
 
-The **maximum** range of generic type variable [`Max`](g-generic-type-variables.md#range-less-than-min-max-step-greater-than-1) to set with a new [`Range`](broken-reference) instance.
+The **maximum** range of generic type variable [`Max`](generic-type-variables.md#range-less-than-min-max-step-greater-than-1) to set with a new [`Range`](broken-reference) instance.
 
 #### `value?:`[<mark style="color:green;">`number`</mark>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number)<mark style="color:green;">``</mark>
 
 The optional value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the given [`min`](constructor.md#min-min) and [`max`](constructor.md#max-max) specifies the default value of a new [`Range`](broken-reference) instance.
 
-#### `step:`[<mark style="color:green;">`Step`</mark>](g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)=`1 as`[<mark style="color:green;">`Step`</mark>](g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
+#### `step:`[<mark style="color:green;">`Step`</mark>](generic-type-variables.md#range-less-than-min-max-step-greater-than-2)=`1 as`[<mark style="color:green;">`Step`</mark>](generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
 
-Optional step of generic type variable [`Step`](g-generic-type-variables.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
+Optional step of generic type variable [`Step`](generic-type-variables.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
 
 {% hint style="info" %}
 The step is used by the [`range`](accessors/get-range.md) accessor and [`stepByStep()`](methods/stepbystep.md) method to return the entire range.&#x20;
