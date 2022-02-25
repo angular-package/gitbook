@@ -6,7 +6,7 @@ description: Private property of the generic type variable `Step` indicates the 
 
 ## `#step`
 
-Private property of the generic type variable [`Step`](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2) indicates the range step.
+Private property of the generic type variable [`Step`](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2) indicates the range step.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -16,4 +16,4 @@ Private property of the generic type variable [`Step`](../generic-type-variables
 
 ### Type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Step`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Step`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>

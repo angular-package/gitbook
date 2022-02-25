@@ -41,7 +41,7 @@ Optional step of generic type variable [`Step`](static-createfrom.md#stepextends
 
 ### Return type
 
-#### `Range<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`Step`</mark>](static-createfrom.md#stepextendsnumber-1)`>`
+#### ``[<mark style="color:green;">`Range`</mark>](broken-reference)`<`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`Step`</mark>](static-createfrom.md#stepextendsnumber-1)`>`
 
 The **return type** is the [`Range`](broken-reference) object that takes generic type variable [`Step`](static-createfrom.md#stepextendsnumber-1).
 

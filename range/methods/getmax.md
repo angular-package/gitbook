@@ -2,9 +2,13 @@
 description: Gets the maximum range of a specified `Range` object
 ---
 
-# getMax()
+# ⚠ getMax()
 
 ## `Range.prototype.getMax()`
+
+{% hint style="danger" %}
+**Deprecated**: This feature is no longer recommended. Avoid using it, and update existing code if possible. Be aware that this feature may cease to work at any time.
+{% endhint %}
 
 The `getMax()` method gets the **maximum** range of a specified [`Range`](broken-reference) object.
 
@@ -18,11 +22,11 @@ public getMax(): Max {
 
 ### Return type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#maxextendsnumber)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Max`</mark>](../g-generic-type-variables.md#maxextendsnumber)<mark style="color:green;">``</mark>
 
 ### Returns
 
-The **return value** is the **maximum** range of a generic type variable [`Max`](../generic-type-variables.md#maxextendsnumber).
+The **return value** is the [**maximum**](../properties/max.md#range.prototype.max) range of a generic type variable [`Max`](../g-generic-type-variables.md#maxextendsnumber).
 
 ## Example usage
 

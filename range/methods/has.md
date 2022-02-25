@@ -22,7 +22,7 @@ public has(value: number): boolean {
 
 ### Parameters
 
-#### `value:`<mark style="color:green;">`number`</mark>
+#### `value:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
 The value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type to test.
 

@@ -41,7 +41,7 @@ A generic type variable constrained by the [`number`](https://www.typescriptlang
 
 A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value **captured** from the supplied [`max`](static-isrange.md#max-max) indicates the **maximum** range type via the [return type](static-isrange.md#return-type).
 
-#### <mark style="color:green;">`Step`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`= 1`
+#### <mark style="color:green;">`Step`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)
 
 A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value equal to **`1`**, optionally **captured** from the supplied [`step`](static-isrange.md#step-step) indicates the range step type via [return type](static-isrange.md#return-type).
 
@@ -59,7 +59,7 @@ The optional **minimum** range of generic type variable [`Min`](static-isrange.m
 
 The optional **maximum** range of generic type variable [`Max`](static-isrange.md#maxextendsnumber) to check whether it's equal to a **maximum** of the given [`value`](static-isrange.md#value-any).
 
-#### `step?: Step`
+#### `step?:`[<mark style="color:green;">`Step`</mark>](static-isrange.md#stepextendsnumber-1)<mark style="color:green;">``</mark>
 
 Optional step of generic type variable [`Step`](static-isrange.md#step-extends-number-1) to check whether it's equal to the step of the given [`value`](static-isrange.md#value-any).
 

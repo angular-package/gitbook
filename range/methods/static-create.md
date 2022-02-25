@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.create()`
 
-The static `create()` method returns a new instance of [`Range`](broken-reference) with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional [`step`](static-create.md#step-step).
+The static `create()` method returns a new instance of [`Range`](broken-reference) with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional [`value`](static-create.md#value-number), [`step`](static-create.md#step-step).
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -16,8 +16,8 @@ public static create<
   Min extends number,
   Max extends number,
   Step extends number = 1
->(min: Min, max: Max, step?: Step): Range<Min, Max, Step> {
-  return new this(min, max, step);
+>(min: Min, max: Max, value?: number, step?: Step): Range<Min, Max, Step> {
+  return new this(min, max, value, step);
 }
 ```
 {% endcode %}
@@ -46,7 +46,11 @@ The **minimum** range of generic type variable [`Min`](static-create.md#minexten
 
 The **maximum** range of generic type variable [`Max`](static-create.md#maxextendsnumber) to set with a new [`Range`](broken-reference) instance.
 
-#### `step:`<mark style="color:green;">`Step`</mark>
+#### `value?:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
+
+The optional value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the given [`min`](static-create.md#min-min) and [`max`](static-create.md#max-max) specifies the default value of a new [`Range`](broken-reference) instance.
+
+#### `step:`<mark style="color:green;">`Step`</mark>=`1 as`[<mark style="color:green;">`Step`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
 
 Optional step of generic type variable [`Step`](static-create.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
 
@@ -58,7 +62,7 @@ The **return type** is the [`Range`](broken-reference) object that takes generic
 
 ### Returns
 
-The **return value** is the [`Range`](broken-reference) instance with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional [`step`](static-create.md#step-step).
+The **return value** is the [`Range`](broken-reference) instance with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [value](static-create.md#value-number), [`step`](static-create.md#step-step).
 
 ## Example usage
 
@@ -70,5 +74,8 @@ import { Range } from '@angular-package/range';
 Range.create(4, 27);
 
 // Returns Range {min: 4, max: 27} of Range<4, 27, 1.5>
-Range.create(4, 27, 1.5);
+Range.create(4, 27, undefined, 1.5);
+
+// Returns Range {min: 4, max: 27, value: 4} of Range<4, 27, 1.5>
+Range.create(4, 27, 4, 1.5);
 ```

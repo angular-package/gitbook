@@ -18,7 +18,7 @@ public get step(): Step {
 
 ### Type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Step`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Step`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
 
 ## Example usage
 
@@ -27,8 +27,8 @@ public get step(): Step {
 import { Range } from '@angular-package/range';
 
 // Create new instance.
-// Returns Range {min: 4, max: 27} of Range<4, 27, 1.5>.
-const range = new Range(4, 27, 1.5);
+// Returns Range {min: 4, max: 27, value: 4} of Range<4, 27, 1.5>.
+const range = new Range(4, 27, 4, 1.5);
 
 // Returns 1.5 of type 1.5
 range.step;

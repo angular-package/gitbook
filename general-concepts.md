@@ -2,7 +2,7 @@
 
 ### ⚠
 
-The warning sign indicates the element is **not** **available**.
+The warning sign indicates the element is **not** **available** or **deprecated**.
 
 ### ★
 

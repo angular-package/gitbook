@@ -2,7 +2,7 @@
 description: The `Range` object generic type variables
 ---
 
-# r: Generic type variables
+# g: Generic type variables
 
 ### `Range<`<mark style="color:green;background-color:green;">`Min`</mark>`,`<mark style="color:green;">`Max`</mark>`,`<mark style="color:green;">`Step`</mark>`>`
 
@@ -20,25 +20,9 @@ class Range<
   constructor(
     min: Min, // <--- Capture generic type variable Min.
     max: Max,
+    value?: number,
     step: Step = 1 as Step
-  ) {
-    this.#maximum = new Maximum(max);
-    this.#minimum = new Minimum(min);
-    this.#step = step;
-    // Define the `min` and `max` property.
-    Object.defineProperties(this, {
-      min: {
-        value: min,
-        enumerable: true,
-        writable: false,
-      },
-      max: {
-        value: max,
-        enumerable: true,
-        writable: false,
-      },
-    });
-  }
+  ) { }
 }
 ```
 {% endcode %}
@@ -58,25 +42,9 @@ class Range<
   constructor(
     min: Min,
     max: Max, // <--- Capture generic type variable Max.
+    value?: number,
     step: Step = 1 as Step
-  ) {
-    this.#maximum = new Maximum(max);
-    this.#minimum = new Minimum(min);
-    this.#step = step;
-    // Define the `min` and `max` property.
-    Object.defineProperties(this, {
-      min: {
-        value: min,
-        enumerable: true,
-        writable: false,
-      },
-      max: {
-        value: max,
-        enumerable: true,
-        writable: false,
-      },
-    });
-  }
+  ) {}
 }
 ```
 
@@ -95,24 +63,8 @@ class Range<
   constructor(
     min: Min,
     max: Max,
+    value?: number,
     step: Step = 1 as Step // <--- Capture generic type variable Step.
-  ) {
-    this.#maximum = new Maximum(max);
-    this.#minimum = new Minimum(min);
-    this.#step = step;
-    // Define the `min` and `max` property.
-    Object.defineProperties(this, {
-      min: {
-        value: min,
-        enumerable: true,
-        writable: false,
-      },
-      max: {
-        value: max,
-        enumerable: true,
-        writable: false,
-      },
-    });
-  }
+  ) { }
 }
 ```

@@ -87,10 +87,14 @@
   * [valueOf()](minimum/methods/valueof.md)
 * [Example usage](minimum/example-usage.md)
 
+## Number
+
+* [Overview](number/overview.md)
+
 ## Range {}
 
 * [Overview](range/overview.md)
-* [Generic type variables](range/generic-type-variables.md)
+* [g: Generic type variables](range/g-generic-type-variables.md)
 * [★ Constructor](range/constructor.md)
 * [Accessors](range/accessors/README.md)
   * [get range()](range/accessors/get-range.md)
@@ -99,6 +103,7 @@
 * [Properties](range/properties/README.md)
   * [max](range/properties/max.md)
   * [min](range/properties/min.md)
+  * [value?](range/properties/value.md)
   * [#maximum](range/properties/maximum.md)
   * [#minimum](range/properties/minimum.md)
   * [#step](range/properties/step.md)
@@ -111,8 +116,9 @@
   * [static isRange()](range/methods/static-isrange.md)
   * [↓ Instance](range/methods/instance.md)
   * [forEachStep()](range/methods/foreachstep.md)
-  * [getMax()](range/methods/getmax.md)
-  * [getMin()](range/methods/getmin.md)
+  * [getFullRange()](range/methods/getfullrange.md)
+  * [⚠ getMax()](range/methods/getmax.md)
+  * [⚠ getMin()](range/methods/getmin.md)
   * [getRange()](range/methods/getrange.md)
   * [has()](range/methods/has.md)
   * [hasEvery()](range/methods/hasevery.md)
@@ -124,6 +130,7 @@
   * [maxLessThan()](range/methods/maxlessthan.md)
   * [minGreaterThan()](range/methods/mingreaterthan.md)
   * [minLessThan()](range/methods/minlessthan.md)
+  * [setValue()](range/methods/setvalue.md)
   * [stepByStep()](range/methods/stepbystep.md)
   * [toArray()](range/methods/toarray.md)
   * [valueOf()](range/methods/valueof.md)

@@ -19,4 +19,4 @@ Private property of the [`Maximum`](broken-reference) [primitive wrapper object]
 
 ### Type
 
-#### `Maximum<`[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#maxextendsnumber)`>`
+#### ``[<mark style="color:green;">`Maximum`</mark>](broken-reference)`<`[<mark style="color:green;">`Max`</mark>](../g-generic-type-variables.md#range-less-than-min-max-step-greater-than-1)`>`

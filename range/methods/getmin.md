@@ -2,9 +2,13 @@
 description: Gets the minimum range of a specified `Range` object
 ---
 
-# getMin()
+# ⚠ getMin()
 
 ## `Range.prototype.getMin()`
+
+{% hint style="danger" %}
+**Deprecated**: This feature is no longer recommended. Avoid using it, and update existing code if possible. Be aware that this feature may cease to work at any time.
+{% endhint %}
 
 The `getMin()` method gets the **minimum** range of a specified [`Range`](broken-reference) object.
 
@@ -18,11 +22,11 @@ public getMin(): Min {
 
 ### Return type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#minextendsnumber)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Min`</mark>](../g-generic-type-variables.md#minextendsnumber)<mark style="color:green;">``</mark>
 
 ### Returns
 
-The **return value** is the **minimum** range of a generic type variable [`Min`](../generic-type-variables.md#minextendsnumber).
+The **return value** is the [**minimum**](../properties/min.md#range.prototype.min) range of a generic type variable [`Min`](../g-generic-type-variables.md#minextendsnumber).
 
 ## Example usage
 
