@@ -14,7 +14,7 @@ Checks whether the range of a specified [`Range`](broken-reference) object is be
 ```typescript
 public isBetweenSome(...ranges: [number, number][]): boolean {
   return ranges.some((range) =>
-    range[0] < range[1] ? this.hasEvery(...range) : false
+    range[0] <= range[1] ? this.hasEvery(...range) : false
   );
 }
 ```
@@ -24,7 +24,7 @@ public isBetweenSome(...ranges: [number, number][]): boolean {
 
 #### `...ranges: [`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`][]`
 
-A rest parameter of numbers to test.
+A rest parameter of ranges of an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) type to test.
 
 ### Return type
 

@@ -2,9 +2,13 @@
 description: Returns a read-only array of the range in order minimum and maximum
 ---
 
-# toArray()
+# ⚠ toArray()
 
 ## `Range.prototype.toArray()`
+
+{% hint style="danger" %}
+**Deprecated**: This feature is no longer recommended. Avoid using it, and update existing code if possible. Be aware that this feature may cease to work at any time.
+{% endhint %}
 
 The `toArray()` method returns a read-only array of the range in order minimum and maximum.
 

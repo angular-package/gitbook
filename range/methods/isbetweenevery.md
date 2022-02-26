@@ -8,13 +8,13 @@ description: >-
 
 ## `Range.prototype.isBetweenEvery()`
 
-Checks whether the range of a specified [`Range`](broken-reference) object is between every range of the given [`ranges`](isbetweenevery.md#...values-number).
+Checks whether the range of a specified [`Range`](broken-reference) object is between every range of the given [`ranges`](isbetweenevery.md#...ranges-number-number).
 
 {% code title="range.class.ts" %}
 ```typescript
 public isBetweenEvery(...ranges: [number, number][]): boolean {
   return ranges.every((range) =>
-    range[0] < range[1] ? this.hasEvery(...range) : false
+    range[0] <= range[1] ? this.hasEvery(...range) : false
   );
 }
 ```
@@ -24,7 +24,7 @@ public isBetweenEvery(...ranges: [number, number][]): boolean {
 
 #### `...ranges: [`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`,`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`][]`
 
-A rest parameter of numbers to test.
+A rest parameter of ranges of an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) type to test.
 
 ### Return type
 
@@ -32,7 +32,7 @@ A rest parameter of numbers to test.
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the range of a specified [`Range`](broken-reference) object is between **every** range of the given [`ranges`](isbetweenevery.md#...values-number).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the range of a specified [`Range`](broken-reference) object is between **every** range of the given [`ranges`](isbetweenevery.md#...ranges-number-number).
 
 ## Example usage
 

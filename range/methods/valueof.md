@@ -4,9 +4,13 @@ description: >-
   `Maximum` instances
 ---
 
-# valueOf()
+# ⚠ valueOf()
 
 ## `Range.prototype.valueOf()`
+
+{% hint style="danger" %}
+**Deprecated**: This feature is no longer recommended. Avoid using it, and update existing code if possible. Be aware that this feature may cease to work at any time.
+{% endhint %}
 
 The `valueOf()` method returns a read-only object consisting of the primitive values of [`Minimum`](broken-reference) and [`Maximum`](broken-reference) instances.
 

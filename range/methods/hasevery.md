@@ -30,7 +30,7 @@ A rest parameter of numbers to test.
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether every value of the given [`values`](hasevery.md#parameter-type) is in the range of a specified [`Range`](broken-reference) object.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether every value of the given [`values`](hasevery.md#...values-number) is in the range of a specified [`Range`](broken-reference) object.
 
 ## Example usage
 

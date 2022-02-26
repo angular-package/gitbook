@@ -6,7 +6,7 @@ description: The `get` accessor obtains the step of a specified `Range` object
 
 ## `Range.prototype.step`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains the step of a specified [`Range`](broken-reference) object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains the step of a specified [`Range`](broken-reference) object. It's used to return the entire range or current range.
 
 {% code title="range.class.ts" %}
 ```typescript

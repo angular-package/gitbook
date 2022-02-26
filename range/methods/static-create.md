@@ -1,7 +1,7 @@
 ---
 description: >-
   Returns a new instance of `Range` with a range of the given required `min`,
-  `max` and optional current  `step`
+  `max` and optional current `value`,  `step`
 ---
 
 # static create()
@@ -62,7 +62,7 @@ The **return type** is the [`Range`](broken-reference) object that takes generic
 
 ### Returns
 
-The **return value** is the [`Range`](broken-reference) instance with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [value](static-create.md#value-number), [`step`](static-create.md#step-step).
+The **return value** is the [`Range`](broken-reference) instance with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [`value`](static-create.md#value-number), [`step`](static-create.md#step-step).
 
 ## Example usage
 

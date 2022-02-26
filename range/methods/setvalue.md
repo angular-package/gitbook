@@ -8,12 +8,13 @@ description: >-
 
 ## `Range.prototype.setValue()`
 
-The method `setValue()` sets the range [value](../properties/value.md#range.prototype.value) between the [minimum](../properties/min.md#range.prototype.min) and [maximum](../properties/max.md#range.prototype.max) of a specified [`Range`](broken-reference) object.
+The method `setValue()` sets the range [value](../properties/value.md#range.prototype.value) between the [minimum](../properties/min.md#range.prototype.min) and [maximum](../properties/max.md#range.prototype.max) of a specified [`Range`](broken-reference) object. If the given [`value`](setvalue.md#value-number) is not within range, it's not set.
 
 {% code title="range.class.ts" %}
 ```typescript
 public setValue(value: number): this {
-  this.has(value) &&
+  typeof value === 'number' &&
+    this.has(value) &&
     Object.defineProperty(this, 'value', {
       configurable: true,
       value,
@@ -28,7 +29,7 @@ public setValue(value: number): this {
 
 #### `value:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
-The value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type to test.
+The value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type to set.
 
 ### Return type
 

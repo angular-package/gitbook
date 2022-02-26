@@ -1,6 +1,6 @@
 ---
 description: >-
-  Checks whether the value is an instance of `Range of any or the given minimum
+  Checks whether the value is an instance of `Range` of any or the given minimum
   and maximum range
 ---
 

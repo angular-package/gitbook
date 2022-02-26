@@ -13,7 +13,7 @@ The `isBetween()` method checks whether range of the given [`min`](isbetween.md#
 {% code title="range.class.ts" %}
 ```typescript
 public isBetween(min: number, max: number): boolean {
-  return min < max ? this.hasEvery(min, max) : false;
+  return min <= max ? this.hasEvery(min, max) : false;
 }
 ```
 {% endcode %}

@@ -9,7 +9,7 @@ description: >-
 
 ## `Range.prototype.value`
 
-The optional read-only `value` property indicates the range current value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the [minimum](min.md#range.prototype.min) and [maximum](max.md) of a specified [`Range`](broken-reference) object. Despite it being a read-only property, it can be set by the `setValue()` method because it checks whether the value is between the range of a specified object before the set.
+The optional read-only `value` property indicates the range current value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the [minimum](min.md#range.prototype.min) and [maximum](max.md) of a specified [`Range`](broken-reference) object. Despite it being a read-only property, it can be set by the [`setValue()`](../methods/setvalue.md#range.prototype.setvalue) method because it checks whether the value is between the range of a specified object before the set.
 
 {% code title="range.class.ts" %}
 ```typescript
