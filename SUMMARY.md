@@ -85,11 +85,16 @@
   * [static create()](minimum/methods/static-create.md)
   * [static isMinimum()](minimum/methods/static-isminimum.md)
   * [valueOf()](minimum/methods/valueof.md)
-* [Example usage](minimum/example-usage.md)
 
-## Number
+## Number {}
 
 * [Overview](number/overview.md)
+* [Generic type variables](number/generic-type-variables.md)
+* [★ Constructor](number/constructor.md)
+* [Methods](number/methods/README.md)
+  * [static create()](number/methods/static-create.md)
+  * [static isNumber()](number/methods/static-isnumber.md)
+  * [valueOf()](number/methods/valueof.md)
 
 ## Range {}
 

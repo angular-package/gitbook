@@ -51,7 +51,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](static-isminimum.md#value-any) is an instance of [`Minimum`](broken-reference) of any or the given [`min`](static-isminimum.md#min-value).
 
-### Example usage
+## Example usage
 
 ```typescript
 // Example usage.
