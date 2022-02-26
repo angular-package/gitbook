@@ -40,6 +40,10 @@ The [`Maximum`](broken-reference) [primitive wrapper object](https://developer.m
 
 The [`Minimum`](broken-reference) [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) extended by the [`Inequality`](broken-reference) abstract primitive wrapper [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) represents the minimum [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) **greater** or **less** than the given.
 
+### `Number`
+
+The [`Number`](broken-reference) [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) extended by the [`Inequality`](broken-reference) abstract primitive wrapper [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) represents the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) **greater** or **less** than the given.
+
 ### `Range`
 
 The [`Range`](broken-reference) object represents a range between a minimum and maximum.

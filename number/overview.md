@@ -8,7 +8,9 @@ description: The `Number` primitive wrapper object
 
 The `Number` [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive\_wrapper\_objects\_in\_javascript) extended by the [`Inequality`](broken-reference) abstract primitive wrapper [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) represents the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) **greater** or **less** than the given.
 
-
+{% embed url="https://github.com/angular-package/range/blob/main/src/lib/number.class.ts" %}
+`number.class.ts`
+{% endembed %}
 
 {% embed url="https://github.com/angular-package/range/blob/main/src/lib/inequality.class.ts" %}
 `Inequality.class.ts`
