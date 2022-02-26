@@ -128,9 +128,13 @@ Some objects are based on [primitive wrapper objects](https://developer.mozilla.
 
 <summary>Range</summary>
 
-<mark style="color:green;">**✓**</mark> Indicates the range of **minimum and maximum**.
+<mark style="color:green;">**✓**</mark> Indicates the range of **minimum and maximum** with the **value** and **step**.
 
-<mark style="color:green;">**✓**</mark> Checks whether range of the given `min` and `max` is between the range of a specified `Range` object.
+<mark style="color:green;">**✓**</mark> The range value gives the current range.
+
+<mark style="color:green;">**✓**</mark> Updates current range by specified steps down/up, or exact to the step.
+
+<mark style="color:green;">**✓**</mark> Checks whether range of the given minimum and maximum is between the range of a specified `Range` object.
 
 <mark style="color:green;">**✓**</mark> Checks whether the range of a specified `Range` object is between every range of the given `ranges`.
 
