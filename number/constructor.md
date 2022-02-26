@@ -20,7 +20,7 @@ constructor(value: Value) {
 
 #### `value:`[<mark style="color:green;">`Value`</mark>](../minimum/generic-type-variables.md#minimum-less-than-value-greater-than)<mark style="color:green;">``</mark>
 
-The value of the generic type variable [`Value`](../minimum/generic-type-variables.md#minimum-less-than-value-greater-than) is the primitive value of the new instance.
+The value of the generic type variable [`Value`](generic-type-variables.md#number-less-than-value-greater-than) is the primitive value of the new instance.
 
 ## Example usage
 

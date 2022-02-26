@@ -49,7 +49,7 @@ The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handboo
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](static-isnumber.md#value-any) is an instance of [`Number`](broken-reference) of any or the given [<mark style="background-color:purple;">`numberValue`</mark>](static-isnumber.md#min-value).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](static-isnumber.md#value-any) is an instance of [`Number`](broken-reference) of any or the given [<mark style="background-color:purple;">`numberValue`</mark>](static-isnumber.md#numbervalue-value).
 
 ## Example usage
 

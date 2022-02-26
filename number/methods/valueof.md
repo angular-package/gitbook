@@ -10,7 +10,13 @@ description: >-
 
 The `valueOf()` method returns the [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/valueOf) of the generic type variable [`Value`](../generic-type-variables.md#number-less-than-value-greater-than) of the specified [`Number`](broken-reference) object.
 
+{% embed url="https://github.com/angular-package/range/blob/main/src/lib/range.class.ts" %}
+`range.class.ts`
+{% endembed %}
+
 {% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf" %}
+`String.prototype.valueOf()`
+{% endembed %}
 
 {% code title="number.class.ts" %}
 ```typescript

@@ -36,7 +36,7 @@ The **return type** is the [`Number`](broken-reference) [primitive wrapper objec
 
 ### Returns
 
-The **return value** is the [`Number`](broken-reference) instance with the [primitive value](../../minimum/methods/valueof.md#minimum.prototype.valueof) of the given [`value`](static-create.md#value-value).
+The **return value** is the [`Number`](broken-reference) instance with the [primitive value](valueof.md#number.prototype.valueof) of the given [`value`](static-create.md#value-value).
 
 ## Example usage
 

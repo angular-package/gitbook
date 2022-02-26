@@ -152,6 +152,7 @@
 
 * [Keep a changelog](change-log/keep-a-changelog.md)
 * [CHANGELOG.md](https://github.com/angular-package/range/blob/main/CHANGELOG.md)
+* [v1.0.0-rc](change-log/v1.0.0-rc.md)
 * [v1.0.0-beta.0](change-log/v1.0.0-beta.0.md)
 
 ## GIT
