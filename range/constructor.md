@@ -16,6 +16,8 @@ constructor(min: Min, max: Max, value?: number, step: Step = 1 as Step) {
   this.#maximum = new Maximum(max);
   this.#minimum = new Minimum(min);
   this.#step = step;
+  // Sets the range value between the given `min` and `max`.
+  this.value = value;
   // Define the `min` and `max` property.
   Object.defineProperties(this, {
     min: {
@@ -29,8 +31,6 @@ constructor(min: Min, max: Max, value?: number, step: Step = 1 as Step) {
       writable: false,
     },
   });
-  // Sets the range value between the given `min` and `max`.
-  typeof value === 'number' && this.setValue(value);
 }
 ```
 {% endcode %}

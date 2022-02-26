@@ -13,13 +13,7 @@ The method `setValue()` sets the range [value](../properties/value.md#range.prot
 {% code title="range.class.ts" %}
 ```typescript
 public setValue(value: number): this {
-  typeof value === 'number' &&
-    this.has(value) &&
-    Object.defineProperty(this, 'value', {
-      configurable: true,
-      value,
-      writable: false,
-    });
+  this.value = value;
   return this;
 }
 ```
@@ -48,9 +42,6 @@ import { Range } from '@angular-package/range';
 // Create new instance.
 // Returns Range {min: 3, max: 27, value: 10} of Range<3, 27, 3>.
 const range = new Range(3, 27, 10, 3);
-
-// Cannot assign to 'value' because it is a read-only property.ts(2540)
-range.value = 12;
 
 // Returns 10 of type number | undefined.
 range.setValue(300).value;
