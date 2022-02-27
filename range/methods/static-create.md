@@ -50,7 +50,7 @@ The **maximum** range of generic type variable [`Max`](static-create.md#maxexten
 
 The optional value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the given [`min`](static-create.md#min-min) and [`max`](static-create.md#max-max) specifies the default value of a new [`Range`](broken-reference) instance.
 
-#### `step:`<mark style="color:green;">`Step`</mark>=`1 as`[<mark style="color:green;">`Step`</mark>](../r-generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
+#### `step:`<mark style="color:green;">`Step`</mark>=`1 as`[<mark style="color:green;">`Step`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2)<mark style="color:green;">``</mark>
 
 Optional step of generic type variable [`Step`](static-create.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
 

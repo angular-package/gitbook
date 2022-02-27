@@ -99,13 +99,13 @@
 ## Range {}
 
 * [Overview](range/overview.md)
-* [r: Generic type variables](range/r-generic-type-variables.md)
+* [r: Generic type variables](range/generic-type-variables.md)
 * [★ Constructor](range/constructor.md)
 * [Accessors](range/accessors/README.md)
   * [get range()](range/accessors/get-range.md)
   * [get step()](range/accessors/get-step.md)
   * [get steps()](range/accessors/get-steps.md)
-  * [value?](range/accessors/value.md)
+  * [value()?](range/accessors/value.md)
   * [get \[Symbol.toStringTag\]()](range/accessors/get-symbol.tostringtag.md)
 * [Properties](range/properties/README.md)
   * [max!](range/properties/max.md)

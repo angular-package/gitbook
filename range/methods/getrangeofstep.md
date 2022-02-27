@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.getRangeOfStep()`
 
-The `getRangeOfStep()` method returns a range of numbers by the specified [step](../accessors/get-step.md) from the [minimum](../properties/min.md) to the given [`step`](getrangeofstep.md#step-number) of a specified [`Range`](broken-reference) object.
+The `getRangeOfStep()` method returns a range of numbers by the specified [`step`](../accessors/get-step.md) from the [minimum](../properties/min.md) to the given [`step`](getrangeofstep.md#step-number) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript

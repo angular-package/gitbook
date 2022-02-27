@@ -27,9 +27,9 @@ public valueOf(): Readonly<{ min: Min; max: Max }> {
 
 ### Return type
 
-#### <mark style="color:green;">`Readonly`</mark>`<{ min:`[<mark style="color:green;">`Min`</mark>](../r-generic-type-variables.md#minextendsnumber)`; max:`[<mark style="color:green;">`Max`</mark>](../r-generic-type-variables.md#maxextendsnumber)`; }>`
+#### <mark style="color:green;">`Readonly`</mark>`<{ min:`[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#minextendsnumber)`; max:`[<mark style="color:green;">`Max`</mark>](../generic-type-variables.md#maxextendsnumber)`; }>`
 
-The **return type** is the [`Readonly`](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype) object consisting of property `min` of a generic type variable [`Min`](../r-generic-type-variables.md#minextendsnumber) and a `max` of generic type variable [`Max`](../r-generic-type-variables.md#maxextendsnumber).
+The **return type** is the [`Readonly`](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype) object consisting of property `min` of a generic type variable [`Min`](../generic-type-variables.md#minextendsnumber) and a `max` of generic type variable [`Max`](../generic-type-variables.md#maxextendsnumber).
 
 ### Returns
 
