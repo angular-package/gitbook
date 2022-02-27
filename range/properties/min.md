@@ -2,11 +2,11 @@
 description: The minimum range of a specified `Range` object
 ---
 
-# min!
+# min
 
 ## `Range.prototype.min`
 
-The `min` read-only property is the minimum range of generic type variable [`Min`](../generic-type-variables.md#range-less-than-min-max-step-greater-than) of a specified [`Range`](broken-reference) object.
+The `min` read-only property is the minimum range of generic type variable [`Min`](../generic-type-variables.md#minextendsnumber) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -16,7 +16,7 @@ public readonly min!: Min;
 
 ### Type
 
-#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#range-less-than-min-max-step-greater-than)<mark style="color:green;">``</mark>
+#### <mark style="color:green;">``</mark>[<mark style="color:green;">`Min`</mark>](../generic-type-variables.md#minextendsnumber)<mark style="color:green;">``</mark>
 
 ## Example usage
 

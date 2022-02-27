@@ -6,7 +6,7 @@ description: Performs the specified action for each step in the maximum range of
 
 ## `Range.prototype.forEachStep()`
 
-The `forEachStep()` method performs the specified action for each step in the [maximum](../properties/max.md) range of an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).
+The `forEachStep()` method performs the specified action for each step in the [maximum](../properties/max.md#range.prototype.max) range of an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).
 
 {% code title="range.class.ts" %}
 ```typescript

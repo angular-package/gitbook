@@ -1,5 +1,5 @@
 ---
-description: Returns the range value of the given `step`
+description: Returns the range value of the given step
 ---
 
 # getValueOfStep()
@@ -7,10 +7,6 @@ description: Returns the range value of the given `step`
 ## `Range.prototype.getValueOfStep()`
 
 The `getValueOfStep()` method returns the range value of the given [`step`](getvalueofstep.md#step-number).
-
-{% hint style="warning" %}
-If the given [`step`](getvalueofstep.md#step-number) is not within range returns [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
-{% endhint %}
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -32,7 +28,7 @@ Step parameter of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 ### Returns
 
-The **return value** is the range value of the given [`step`](getvalueofstep.md#step-number) within a range otherwise [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+The **return value** is the range value of the given [`step`](getvalueofstep.md#step-number) if exists otherwise [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 ## Example usage
 

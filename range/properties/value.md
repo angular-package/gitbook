@@ -6,7 +6,7 @@ description: The private property of the number type indicates the range value
 
 ## `#value?`
 
-The private property of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type indicates the range value.  It can be set by the [`setValue()`](../methods/setvalue.md) method and [`setter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) [`value`](../accessors/value.md).
+The private property of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type indicates the range value.
 
 {% code title="range.class.ts" %}
 ```typescript

@@ -8,7 +8,7 @@ description: >-
 
 ## `#step`
 
-The private property of the generic type variable [`Step`](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2) indicates the range step. It's used to return the entire range, get the step of the range value, and change the range value.
+The private property of the generic type variable [`Step`](../generic-type-variables.md#range-less-than-min-max-step-greater-than-2) indicates the range step.
 
 {% code title="range.class.ts" %}
 ```typescript

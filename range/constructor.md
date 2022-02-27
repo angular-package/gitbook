@@ -8,7 +8,7 @@ description: >-
 
 ## `Range()`
 
-Creates the [`Range`](broken-reference) instance with a range of the given required [`min`](constructor.md#min-min), [`max`](constructor.md#max-max) and optional current [`value`](constructor.md#value-number), [`step`](constructor.md#step-step-1-asstep).
+Creates the [`Range`](broken-reference) instance with a range of the given required [`min`](constructor.md#min-min), [`max`](constructor.md#max-max) and optional current [`value`](constructor.md#public-value-number), [`step`](constructor.md#step-step).
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -54,7 +54,7 @@ The optional value of the [`number`](https://developer.mozilla.org/en-US/docs/We
 Optional step of generic type variable [`Step`](generic-type-variables.md#stepextendsnumber-1) to set with a new [`Range`](broken-reference) instance, by default **`1`**.
 
 {% hint style="info" %}
-The step is used by the [`range`](accessors/get-range.md) accessor, [`getRange()`](methods/getrange.md) , [`getRangeOfStep()`](methods/getrangeofstep.md) and [`stepByStep()`](methods/stepbystep.md) methods to return the entire range and also by the [`valueDown()`](methods/valuedown.md), [`valueUp()`](methods/valueup.md) methods to respectively decrement, increment range value.
+The step is used by the [`range`](accessors/get-range.md) accessor and [`stepByStep()`](methods/stepbystep.md) method to return the entire range.&#x20;
 {% endhint %}
 
 ## Example usage

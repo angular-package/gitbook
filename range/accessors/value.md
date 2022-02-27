@@ -12,7 +12,7 @@ The `value` accessor indicates the range current value of the [number](https://d
 
 ### `get`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor retrieves the [`#value`](../properties/value.md#value) property that indicates the range current value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type of a specified [`Range`](broken-reference) object. It can be set by the [`setValue()`](../methods/setvalue.md) method.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor retrieves the [`#value`](../properties/value.md#value) property that indicates the range current value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type of a specified [`Range`](broken-reference) object. It can be set by the [`setValue()`](../methods/setvalue.md#range.prototype.setvalue) method.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -24,7 +24,7 @@ public get value(): number | undefined {
 
 ### `set`
 
-The [`set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) accessor sets the range current value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the [minimum](../properties/min.md) and [maximum](../properties/max.md) of a specified [`Range`](broken-reference) object.
+The [`set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) accessor sets the range current value of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type between the [minimum](../properties/min.md#range.prototype.min) and [maximum](../properties/max.md#range.prototype.max) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript

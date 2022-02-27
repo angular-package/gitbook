@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.minGreaterThan()`
 
-The `minGreaterThan()` method checks whether the [`value`](mingreaterthan.md#value-number) is **less** than a [**minimum**](../properties/min.md) **range** of a specified [`Range`](broken-reference) object.
+The `minGreaterThan()` method checks whether the value is **less** than a **minimum range** of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -30,7 +30,7 @@ The value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](mingreaterthan.md#value-number) is less than [**minimum**](../properties/min.md) **range** of a specified [`Range`](broken-reference) object.
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](mingreaterthan.md#value-number) is less than **minimum range** of a specified [`Range`](broken-reference) object.
 
 ## Example usage
 

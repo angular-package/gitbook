@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.range`
 
-The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains the range of an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of the [minimum](../properties/min.md) to the [maximum](../properties/max.md) with the [step](get-step.md) of a specified [`Range`](broken-reference) object.
+The [`get`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) accessor obtains the range of an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of the [minimum](../properties/min.md#range.prototype.min) to the [maximum](../properties/max.md#range.prototype.max) with the [step](get-step.md#range.prototype.step) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -24,7 +24,7 @@ public get range(): Readonly<Array<number>> {
 
 ### Returns
 
-The **return value** is the range from [minimum](../properties/min.md) to the [maximum](../properties/max.md) of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
+The **return value** is the range from [minimum](../properties/min.md#range.prototype.min) to the [maximum](../properties/max.md#range.prototype.max) of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number).
 
 ## Example usage
 

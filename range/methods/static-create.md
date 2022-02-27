@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.create()`
 
-The static `create()` method returns a new instance of [`Range`](broken-reference) with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [`value`](static-create.md#value-number), [`step`](static-create.md#step-step-1-asstep).
+The static `create()` method returns a new instance of [`Range`](broken-reference) with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [`value`](static-create.md#value-number), [`step`](static-create.md#step-step).
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -34,7 +34,7 @@ A generic type variable constrained by the [`number`](https://www.typescriptlang
 
 #### <mark style="color:green;">`Step`</mark>`extends`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`= 1`
 
-A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value equal to **`1`**, optionally **captured** from the supplied [`step`](static-create.md#step-step-1-asstep) indicates the range step type of a new [`Range`](broken-reference) instance.
+A generic type variable constrained by the [`number`](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), by default of the value equal to **`1`**, optionally **captured** from the supplied [`step`](static-create.md#step-step) indicates the range step type of a new [`Range`](broken-reference) instance.
 
 ### Parameters
 
@@ -62,7 +62,7 @@ The **return type** is the [`Range`](broken-reference) object that takes generic
 
 ### Returns
 
-The **return value** is the [`Range`](broken-reference) instance with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [`value`](static-create.md#value-number), [`step`](static-create.md#step-step-1-asstep).
+The **return value** is the [`Range`](broken-reference) instance with a range of the given required [`min`](static-create.md#min-min), [`max`](static-create.md#max-max) and optional current [`value`](static-create.md#value-number), [`step`](static-create.md#step-step).
 
 ## Example usage
 

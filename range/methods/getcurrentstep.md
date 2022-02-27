@@ -6,13 +6,13 @@ description: Returns the step of the range value
 
 ## `Range.prototype.getCurrentStep()`
 
-The `getCurrentStep()` method returns the step of the range [value](../accessors/value.md).
+The `getCurrentStep()` method returns the step of the range [value](../properties/value.md).
 
 {% code title="range.class.ts" %}
 ```typescript
 public getCurrentStep(): number | undefined {
   return typeof this.value === 'number'
-    ? Math.floor(this.value / this.#step)
+    ? Math.floor(this.value / this.step)
     : undefined;
 }
 ```
@@ -24,7 +24,7 @@ public getCurrentStep(): number | undefined {
 
 ### Returns
 
-The **return value** is the step of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type, if range [value](../accessors/value.md) is set, otherwise [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
+The **return value** is the step of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type, if range [value](../properties/value.md#range.prototype.value) is set, otherwise [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 ## Example usage
 
