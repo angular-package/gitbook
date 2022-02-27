@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.maxLessThan()`
 
-The `maxLessThan()` method checks whether the [`value`](maxlessthan.md#value-number) is greater than the **maximum range** of a specified [`Range`](broken-reference) object.
+The `maxLessThan()` method checks whether the [`value`](maxlessthan.md#value-number) is greater than the [**maximum**](../properties/max.md) **range** of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -30,7 +30,7 @@ The value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 
 ### Returns
 
-The **return value**  is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](maxlessthan.md#value-number) is greater than **maximum range** of a specified [`Range`](broken-reference) object.
+The **return value**  is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) type indicating whether the given [`value`](maxlessthan.md#value-number) is greater than [**maximum**](../properties/max.md) **range** of a specified [`Range`](broken-reference) object.
 
 ## Example usage
 

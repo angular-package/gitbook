@@ -1,14 +1,14 @@
 ---
 description: >-
-  Returns range of numbers from minimum to the given `value` with the step of a
-  specified `Range` object
+  Returns a range of numbers by the specified `step` from minimum to the given
+  `value` of the specified `Range` object
 ---
 
 # getRange()
 
 ## `Range.prototype.getRange()`
 
-The `getRange ()` method returns a range of numbers by the specified [`step`](../accessors/get-step.md#range.prototype.step) from [minimum](../properties/min.md#range.prototype.min) to the given [`value`](getrange.md#value-number-this.max) of the specified `` [`Range`](broken-reference) object.
+The `getRange()` method returns a range of numbers by the specified [`step`](../accessors/get-step.md) from [minimum](../properties/min.md) to the given [`value`](getrange.md#value-number-this.max) of the specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -27,7 +27,7 @@ public getRange(value: number = this.max): Readonly<Array<number>> {
 
 #### `value:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)`= this.max`
 
-Optional maximum range value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type of returned [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) by default the [`value`](getrange.md#value-this.value-or-or-this.max) is the [maximum](../properties/max.md#range.prototype.max) range.
+Optional maximum range value of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type of returned [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) by default it's the [maximum](../properties/max.md) range.
 
 ### Return type
 
@@ -35,7 +35,7 @@ Optional maximum range value of [`number`](https://developer.mozilla.org/en-US/d
 
 ### Returns
 
-The **return value** is a range of numbers of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) from [minimum](../properties/min.md#range.prototype.min) to the given [`value`](getrange.md#value-number-this.max).
+The **return value** is a range of numbers of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) from [minimum](../properties/min.md) to the given [`value`](getrange.md#value-number-this.max).
 
 ## Example usage
 

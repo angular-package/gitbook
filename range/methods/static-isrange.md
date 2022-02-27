@@ -1,7 +1,7 @@
 ---
 description: >-
-  Checks whether the value is an instance of `Range` of any or the given minimum
-  and maximum range
+  Checks whether the value is an instance of `Range` of any or the given
+  minimum, maximum, and step
 ---
 
 # static isRange()
@@ -61,17 +61,17 @@ The optional **maximum** range of generic type variable [`Max`](static-isrange.m
 
 #### `step?:`[<mark style="color:green;">`Step`</mark>](static-isrange.md#stepextendsnumber-1)<mark style="color:green;">``</mark>
 
-Optional step of generic type variable [`Step`](static-isrange.md#step-extends-number-1) to check whether it's equal to the step of the given [`value`](static-isrange.md#value-any).
+Optional step of generic type variable [`Step`](static-isrange.md#stepextendsnumber) to check whether it's equal to the step of the given [`value`](static-isrange.md#value-any).
 
 ### Return type
 
-#### `value is`[<mark style="color:green;">`Range`</mark>](broken-reference)`<`[<mark style="color:green;">`Min`</mark>](static-isrange.md#minextendsnumber)`,`[<mark style="color:green;">`Max`</mark>](static-isrange.md#max-max)`,`[<mark style="color:green;">`Step`</mark>](static-isrange.md#step-extends-number-1)`>`
+#### `value is`[<mark style="color:green;">`Range`</mark>](broken-reference)`<`[<mark style="color:green;">`Min`</mark>](static-isrange.md#minextendsnumber)`,`[<mark style="color:green;">`Max`</mark>](static-isrange.md#maxextendsnumber)`,`[<mark style="color:green;">`Step`</mark>](static-isrange.md#stepextendsnumber)`>`
 
-The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) resulting from its statement indicating the [`value`](static-isrange.md#value-any) is the [`Range`](broken-reference) object that takes the generic type variable [`Min`](static-isrange.md#minextendsnumber), [`Max`](static-isrange.md#maxextendsnumber) and [`Step`](static-isrange.md#step-extends-number-1).
+The **return type** is a [`boolean`](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean) resulting from its statement indicating the [`value`](static-isrange.md#value-any) is the [`Range`](broken-reference) object that takes the generic type variable [`Min`](static-isrange.md#minextendsnumber), [`Max`](static-isrange.md#maxextendsnumber) and [`Step`](static-isrange.md#stepextendsnumber).
 
 ### Returns
 
-The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](static-isrange.md#value-any) is an instance of [`Range`](broken-reference) of any or the given [minimum](static-isrange.md#min-min), [maximum](static-isrange.md#max-max) range and [`step`](static-isrange.md#step-extends-number-1).
+The **return value** is a [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) indicating whether the provided [`value`](static-isrange.md#value-any) is an instance of [`Range`](broken-reference) of any or the given [minimum](static-isrange.md#min-min), [maximum](static-isrange.md#max-max) range and [`step`](static-isrange.md#step-step).
 
 ## Example usage
 

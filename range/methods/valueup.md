@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.valueUp()`
 
-The `valueUp()` method increments the range [value](../properties/value.md#range.prototype.value) of a specified [`Range`](broken-reference) object by the range [step](../accessors/get-step.md#range.prototype.step) or given [`stepIncrement`](valueup.md#stepincrement-number).
+The `valueUp()` method increments the range [value](../accessors/value.md) of a specified [`Range`](broken-reference) object by the range [step](../accessors/get-step.md) or given [`stepIncrement`](valueup.md#stepincrement-number).
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -24,7 +24,7 @@ public valueUp(stepIncrement = 1): this {
 
 #### `stepIncrement:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
-The optional `stepIncrement` parameter of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type increments the range [`value`](../properties/value.md#range.prototype.value). If no parameter is passed, `stepIncrement` defaults to **`1`**.
+The optional `stepIncrement` parameter of the [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type increments the range [`value`](../accessors/value.md). If no parameter is passed, `stepIncrement` defaults to **`1`**.
 
 ### Return type
 

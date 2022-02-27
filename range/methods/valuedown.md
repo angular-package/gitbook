@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.valueDown()`
 
-The `valueDown()` method decrements the range [value](../properties/value.md#range.prototype.value) of a specified [`Range`](broken-reference) object by the range [step](../accessors/get-step.md#range.prototype.step) or given [`stepDecrement`](valuedown.md#stepincrement-number).
+The `valueDown()` method decrements the range [value](../accessors/value.md) of a specified [`Range`](broken-reference) object by the range [step](../accessors/get-step.md) or given [`stepDecrement`](valuedown.md#stepdecrement-number).
 
 {% code title="range.class.ts" %}
 ```typescript

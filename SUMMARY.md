@@ -99,7 +99,7 @@
 ## Range {}
 
 * [Overview](range/overview.md)
-* [Generic type variables](range/generic-type-variables.md)
+* [r: Generic type variables](range/r-generic-type-variables.md)
 * [★ Constructor](range/constructor.md)
 * [Accessors](range/accessors/README.md)
   * [get range()](range/accessors/get-range.md)

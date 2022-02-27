@@ -8,7 +8,7 @@ description: >-
 
 ## `Range.prototype.getRangeOfStep()`
 
-The `getRangeOfStep()` method returns a range of numbers by the specified step from the [minimum](../properties/min.md#range.prototype.min) to the given [`step`](getrangeofstep.md#step-number) of a specified [`Range`](broken-reference) object.
+The `getRangeOfStep()` method returns a range of numbers by the specified [step](../accessors/get-step.md) from the [minimum](../properties/min.md) to the given [`step`](getrangeofstep.md#step-number) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -28,7 +28,11 @@ public getRangeOfStep(step: number): Readonly<Array<number>> {
 
 #### `step:`[<mark style="color:green;">`number`</mark>](https://www.typescriptlang.org/docs/handbook/basic-types.html#number)<mark style="color:green;">``</mark>
 
-Step of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type is the maximum range of the returned [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array). The value must be less or equal to the number of range [`steps`](../accessors/get-steps.md#range.prototype.steps).
+Step of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number) type is the maximum range of the returned [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).&#x20;
+
+{% hint style="warning" %}
+The value must be less or equal to the number of range [`steps`](../accessors/get-steps.md).
+{% endhint %}
 
 ### Return type
 
@@ -36,7 +40,7 @@ Step of [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 ### Returns
 
-The **return value** is a range of numbers of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) from [minimum](../properties/min.md#range.prototype.min) to the given [`value`](getrangeofstep.md#step-number).
+The **return value** is a range of numbers of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) from [minimum](../properties/min.md) to step of the given [`step`](getrangeofstep.md#step-number) if the given [`step`](getrangeofstep.md#step-number) is within a range, otherwise an empty [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).
 
 ## Example usage
 
