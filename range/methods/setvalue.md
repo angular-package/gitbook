@@ -8,7 +8,11 @@ description: >-
 
 ## `Range.prototype.setValue()`
 
-The method `setValue()` sets the range [value](../properties/value.md#range.prototype.value) between the [minimum](../properties/min.md#range.prototype.min) and [maximum](../properties/max.md#range.prototype.max) of a specified [`Range`](broken-reference) object. If the given [`value`](setvalue.md#value-number) is not within range, it's not set.
+The method `setValue()` sets the range [value](../accessors/value.md#range.prototype.value) between the [minimum](../properties/min.md#range.prototype.min) and [maximum](../properties/max.md#range.prototype.max) of a specified [`Range`](broken-reference) object.
+
+{% hint style="warning" %}
+If the given [`value`](setvalue.md#value-number) is not within range, it's not set.
+{% endhint %}
 
 {% code title="range.class.ts" %}
 ```typescript

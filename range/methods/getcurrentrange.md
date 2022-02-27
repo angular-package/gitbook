@@ -1,14 +1,14 @@
 ---
 description: >-
-  Returns a range of numbers from minimum to the current value with the step of
-  a specified `Range` object
+  Returns a range of numbers from minimum to the current value by the step of a
+  specified `Range` object
 ---
 
 # getCurrentRange()
 
 ## `Range.prototype.getCurrentRange()`
 
-The `getCurrentRange()` method returns a range of numbers from [minimum](../properties/min.md#range.prototype.min) to the current [value](../properties/value.md#range.prototype.value) by the [`step`](../accessors/get-step.md#range.prototype.step) of a specified [`Range`](broken-reference) object.
+The `getCurrentRange()` method returns a range of numbers from [minimum](../properties/min.md#range.prototype.min) to the current [`value`](../accessors/value.md#range.prototype.value) by the [`step`](../accessors/get-step.md#range.prototype.step) of a specified [`Range`](broken-reference) object.
 
 {% code title="range.class.ts" %}
 ```typescript
@@ -26,7 +26,7 @@ public getCurrentRange(): Readonly<Array<number>> | undefined {
 
 ### Returns
 
-The **return value** is a range of numbers from [minimum](../properties/min.md#range.prototype.min) to the given [`value`](getcurrentrange.md#value-number-this.max) of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array).
+The **return value** is a range of numbers of a read-only [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) from [minimum](../properties/min.md#range.prototype.min) to the current [`value`](../accessors/value.md#range.prototype.value), if the current [`value`](../accessors/value.md#range.prototype.value) is set, otherwise [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/undefined).
 
 ## Example usage
 
