@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Roadmap](roadmap.md)
 * [Packages](packages.md)
+* [MIT License](mit-license.md)
 
 ## GitHub
 
