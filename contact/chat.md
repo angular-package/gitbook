@@ -5,8 +5,6 @@
 Feel free to ask any questions about the **angular package** project in a general chat room on the discord.
 
 {% embed url="https://discord.com/channels/925168966098386944/925168966098386948" %}
-Discord general
-{% endembed %}
 
 ## Gitter
 
