@@ -6,7 +6,7 @@ description: General information about what the angular package provides.
 
 The documentation provides general information about **angular-package** features.
 
-In a few sentences, angular-package supports the **development** process of [**angular**](https://angular.io)-based applications in varied ways through the thoughtful, reusable, easy-to-use small pieces of code called packages.
+In a few sentences, angular-package supports the **development** process of [**angular**](https://angular.io/)-based applications in varied ways through the thoughtful, reusable, easy-to-use small pieces of code called packages.
 
 Some of them are designed in a **business logic** way for **intuitive** exchange data between database and user interface and by having a mind in the **simplicity** of the javascript-typescript integration.
 
