@@ -11,6 +11,7 @@
 * [name](https://github.com/angular-package/name#readme)
 * [property](https://github.com/angular-package/property#readme)
 * [range](https://github.com/angular-package/range#readme)
+* [sass](https://github.com/angular-package/sass)
 * [storage](https://github.com/angular-package/storage#readme)
 * [tag](https://github.com/angular-package/tag)
 * [testing](https://github.com/angular-package/testing#readme)
