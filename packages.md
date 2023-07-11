@@ -2,7 +2,7 @@
 
 Below is the list of all **angular packages.** Some of them are **not** published yet. **Click** on the package name opens documentation on [GitBook](https://gitbook.com).
 
-| Name                                             | Description                                                           |
+|                                                  |                                                                       |
 | ------------------------------------------------ | --------------------------------------------------------------------- |
 | callback                                         | Manages the **callback** function.                                    |
 | change-detection                                 | Improves application **performance**.                                 |

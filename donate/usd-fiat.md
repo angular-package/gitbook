@@ -20,6 +20,6 @@ Become a sponsor to the **angular package** by using the **GitHub** sponsor [pag
 
 ## Patreon
 
-Become a sponsor to the **angular package** through my private sciborrudnicki account on the Patreon [page](https://www.patreon.com/sciborrudnicki).
+Become a sponsor to the **angular package** through angularpackage account on the Patreon [page](https://www.patreon.com/angularpackage).
 
-{% embed url="https://www.patreon.com/sciborrudnicki" %}
+{% embed url="https://www.patreon.com/angularpackage" %}
