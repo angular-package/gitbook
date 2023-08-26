@@ -27,5 +27,5 @@
 
 ## Donate
 
-* [Cryptocurrency](donate/cryptocurrency.md)
-* [Fiat](donate/fiat.md)
+* [Cryptocurrency](donate/thb-cryptocurrency.md)
+* [Fiat](donate/usd-fiat.md)
