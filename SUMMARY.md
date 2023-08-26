@@ -21,10 +21,11 @@
 
 ## Contact
 
-* [⋯ Chat](contact/chat.md)
-* [@ Email](contact/email.md)
+* [Chat](contact/chat.md)
+* [Email](contact/email.md)
+* [Phone](contact/phone.md)
 
 ## Donate
 
-* [฿ Cryptocurrency](donate/thb-cryptocurrency.md)
-* [$ Fiat](donate/usd-fiat.md)
+* [Cryptocurrency](donate/cryptocurrency.md)
+* [Fiat](donate/fiat.md)
